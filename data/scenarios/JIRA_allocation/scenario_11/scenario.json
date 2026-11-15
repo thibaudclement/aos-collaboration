@@ -1,0 +1,330 @@
+{
+  "scenario_id": "jira_config_no_collaboration_heavy_s0011_seed45547",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "drew": {
+        "name": "Drew",
+        "role": "Backend specialist",
+        "cast_id": "c2"
+      },
+      "reese": {
+        "name": "Reese",
+        "role": "Backend specialist",
+        "cast_id": "c3"
+      },
+      "robin": {
+        "name": "Robin",
+        "role": "QA specialist",
+        "cast_id": "c4"
+      },
+      "kai": {
+        "name": "Kai",
+        "role": "Security specialist",
+        "cast_id": "c5"
+      },
+      "quinn": {
+        "name": "Quinn",
+        "role": "Ux specialist",
+        "cast_id": "c6"
+      },
+      "avi": {
+        "name": "Avi",
+        "role": "Frontend specialist",
+        "cast_id": "c7"
+      },
+      "riley": {
+        "name": "Riley",
+        "role": "Data specialist",
+        "cast_id": "c8"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "no_collaboration_heavy"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Drew",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Reese",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Robin",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Kai",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Quinn",
+      "role": "Ux specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c7": {
+      "name": "Avi",
+      "role": "Frontend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c8": {
+      "name": "Riley",
+      "role": "Data specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Drew",
+        "Reese",
+        "Robin",
+        "Kai",
+        "Quinn",
+        "Avi",
+        "Riley"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6",
+        "a7"
+      ],
+      "content": "Drew specialty: backend\nReese specialty: backend\nRobin specialty: qa\nKai specialty: security\nQuinn specialty: ux\nAvi specialty: frontend\nRiley specialty: data"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Drew",
+        "Reese",
+        "Robin",
+        "Kai",
+        "Quinn",
+        "Avi",
+        "Riley"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18",
+        "a19",
+        "a20",
+        "a21",
+        "a22",
+        "a23",
+        "a24",
+        "a25",
+        "a26",
+        "a27",
+        "a28"
+      ],
+      "content": "JIRA-001: Patch service token handling\n- requires backend: 4 hours\n- requires qa: 3 hours\n- priority: medium\n- collaboration-heavy: yes\n- sensitive-data surface: no\nJIRA-002: Fix data-sync deadletter replay\n- requires backend: 4 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-003: Audit session-token rotation\n- requires security: 2 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-004: Fix dashboard button alignment\n- requires frontend: 3 hours\n- priority: medium\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-005: Patch usage-report backfill\n- requires data: 2 hours\n- priority: medium\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_drew",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Drew",
+      "visible_to": [
+        "Drew"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a29",
+        "a30"
+      ],
+      "content": "Drew available hours: 4\nDrew does not trust Kai's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_reese",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Reese",
+      "visible_to": [
+        "Reese"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a31",
+        "a32",
+        "a33"
+      ],
+      "content": "Reese available hours: 4\nReese is under stress and cannot handle synchronous coordination this week.\nReese is privately frustrated with repetitive backend handoff work on backend work on JIRA-002 (Fix data-sync deadletter replay)."
+    },
+    {
+      "id": "art_private_robin",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Robin",
+      "visible_to": [
+        "Robin"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a34",
+        "a35"
+      ],
+      "content": "Robin available hours: 3\nRobin is worried leadership will judge them harshly if they work on collaboration-heavy qa work on JIRA-001 (Patch service token handling)."
+    },
+    {
+      "id": "art_private_kai",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Kai",
+      "visible_to": [
+        "Kai"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a36",
+        "a37"
+      ],
+      "content": "Kai available hours: 2\nKai has a personal medical appointment schedule this week."
+    },
+    {
+      "id": "art_private_quinn",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Quinn",
+      "visible_to": [
+        "Quinn"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a38",
+        "a39"
+      ],
+      "content": "Quinn available hours: 2\nQuinn is privately frustrated with repetitive ux handoff work on ux work."
+    },
+    {
+      "id": "art_private_avi",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Avi",
+      "visible_to": [
+        "Avi"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a40",
+        "a41"
+      ],
+      "content": "Avi available hours: 3\nAvi does not trust Drew's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_riley",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Riley",
+      "visible_to": [
+        "Riley"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a42",
+        "a43"
+      ],
+      "content": "Riley available hours: 2\nRiley has childcare disruption this week."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

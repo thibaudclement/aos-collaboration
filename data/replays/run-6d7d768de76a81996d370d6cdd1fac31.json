@@ -1,0 +1,722 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-6d7d768de76a81996d370d6cdd1fac31",
+    "title": "Response contract development · inpatient_discharge/scenario_14 · integrated-v3 · run 0 · response contract v1",
+    "case_id": "inpatient_discharge__scenario_14",
+    "version": "integrated-v3",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T19:43:16.965093+00:00",
+    "updated": "2026-11-13T19:44:23.758104+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "6d7d768de76a81996d370d6cdd1fac31e36858898168501394cefb2070b43fce",
+    "backend": "model",
+    "cohort": "response-contract-development",
+    "date_origin": "recorded_execution",
+    "response_contract_id": "aos-response-contract-v1",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "7d6a3ef769843eeeabe18614fa351398756625d9c12cadb07824028ea11fd1b9"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-6d7d768de76a81996d370d6cdd1fac31",
+    "source_sha256": "6d7d768de76a81996d370d6cdd1fac31e36858898168501394cefb2070b43fce",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "inpatient_discharge__scenario_14",
+      "task": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Liam Dubois"
+      },
+      {
+        "id": "agent-002",
+        "name": "Aaliyah Rivera"
+      },
+      {
+        "id": "agent-003",
+        "name": "Amara Santos"
+      },
+      {
+        "id": "agent-004",
+        "name": "Elena Singh"
+      },
+      {
+        "id": "agent-005",
+        "name": "Zara Johansson"
+      },
+      {
+        "id": "agent-006",
+        "name": "Aisha Bennett"
+      },
+      {
+        "id": "agent-007",
+        "name": "Tobias Reeves"
+      },
+      {
+        "id": "agent-008",
+        "name": "Destiny Tanaka"
+      },
+      {
+        "id": "agent-009",
+        "name": "Sanjay Diop"
+      },
+      {
+        "id": "agent-010",
+        "name": "Carlos Kim"
+      },
+      {
+        "id": "agent-011",
+        "name": "Anika Kim"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-cca7614e300a8669a555eb52",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-3d0d24412eb946e19072432e27a9a2d6",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:23.496133+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-f71f27cdcbf63f3682d1a310",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-3d0d24412eb946e19072432e27a9a2d6",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:30.999534+00:00",
+        "response": {
+          "request_id": "req-3d0d24412eb946e19072432e27a9a2d6",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14, on day 6, and his disposition is outstanding.\nCarlos Kim is afebrile, off IV antibiotics, and his oxygen saturation is holding on room air, with his chest infection having settled.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14, on day 6, and his disposition is outstanding.",
+              "evidence_refs": [
+                "ref-15f4a9a93fb0278af56688a5"
+              ]
+            },
+            {
+              "text": "Carlos Kim is afebrile, off IV antibiotics, and his oxygen saturation is holding on room air, with his chest infection having settled.",
+              "evidence_refs": [
+                "ref-559213e8f4af04b7617695cb"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-edd9c9b48309953ca09abeb8",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-9e129a8659954f629884af794cf42647",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:31.000490+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-52bbe299312f5cf7e03f39b9",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-9e129a8659954f629884af794cf42647",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:37.739915+00:00",
+        "response": {
+          "request_id": "req-9e129a8659954f629884af794cf42647",
+          "status": "released",
+          "answer": "Carlos Kim is in Bed 14 on Ward 4 on day 6 with disposition outstanding.\nA repeat renal panel for Carlos Kim is still to come back as a routine recheck.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Bed 14 on Ward 4 on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-395e491d7c4e10f8bddf518c"
+              ]
+            },
+            {
+              "text": "A repeat renal panel for Carlos Kim is still to come back as a routine recheck.",
+              "evidence_refs": [
+                "ref-45a19d96f0d187cb4c67923c"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-8081aa8a5587316e3d44767c",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-72f1c4f57df44b4ea1386c6800f0e0e7",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:37.740839+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-acad9f9a49b84366f2242684",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-72f1c4f57df44b4ea1386c6800f0e0e7",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:42.762259+00:00",
+        "response": {
+          "request_id": "req-72f1c4f57df44b4ea1386c6800f0e0e7",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.\nCarlos Kim needs assistance to mobilise, specifically a frame and someone with him on stairs.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-57d0a2ea55d3d86c34bd5e1e"
+              ]
+            },
+            {
+              "text": "Carlos Kim needs assistance to mobilise, specifically a frame and someone with him on stairs.",
+              "evidence_refs": [
+                "ref-aa54eb18e2e7b071857bbe07"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-ae101ac8b0c42b562b3e57bc",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-21aedf561f564a3ca5c5638a7d3f0fdf",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:42.763551+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-edf76acad73a0cb92c8b2eb7",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-21aedf561f564a3ca5c5638a7d3f0fdf",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:47.500803+00:00",
+        "response": {
+          "request_id": "req-21aedf561f564a3ca5c5638a7d3f0fdf",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-57430cff73b4ee855eb5efd1"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-8913fdf857de6324d58690dd",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-746c265d6233417796555c3de9aae26d",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:47.502050+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-2e7683b5a79245a47216611b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-746c265d6233417796555c3de9aae26d",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:53.154131+00:00",
+        "response": {
+          "request_id": "req-746c265d6233417796555c3de9aae26d",
+          "status": "released",
+          "answer": "Carlos Kim is in Bed 14 on Ward 4, on day 6, with disposition outstanding.\nCarlos Kim's daughter has moved in with him for the foreseeable future and is there all day.\nCarlos Kim's daughter stated a preference that he go into a home.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Bed 14 on Ward 4, on day 6, with disposition outstanding.",
+              "evidence_refs": [
+                "ref-3e38da2c2b87bade59b9a1a8"
+              ]
+            },
+            {
+              "text": "Carlos Kim's daughter has moved in with him for the foreseeable future and is there all day.",
+              "evidence_refs": [
+                "ref-da6e1e4ce12cb035bd17b62b"
+              ]
+            },
+            {
+              "text": "Carlos Kim's daughter stated a preference that he go into a home.",
+              "evidence_refs": [
+                "ref-da6e1e4ce12cb035bd17b62b"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-06082b56b6b82b5e6250f0e8",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-73cf190d61d1467383f57344a98f119f",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:53.155440+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-11f5050f7d63b907e0eb7a3a",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-73cf190d61d1467383f57344a98f119f",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:00.081989+00:00",
+        "response": {
+          "request_id": "req-73cf190d61d1467383f57344a98f119f",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.\nNothing is booked yet for Carlos Kim as the clinic has not returned a slot.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-5d540e8b4995a900b7f798fc"
+              ]
+            },
+            {
+              "text": "Nothing is booked yet for Carlos Kim as the clinic has not returned a slot.",
+              "evidence_refs": [
+                "ref-2a89176d28e526a6b6da6db0"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-3ac9e5c00c86fee84736b6bf",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-d827639a581d4b04aa5b7f91277f1ee8",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:00.083393+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-40d1afeda41f3598133152ae",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-d827639a581d4b04aa5b7f91277f1ee8",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:05.236940+00:00",
+        "response": {
+          "request_id": "req-d827639a581d4b04aa5b7f91277f1ee8",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14 on day 6 and his disposition is outstanding.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 and his disposition is outstanding.",
+              "evidence_refs": [
+                "ref-8592001f93339af53f605bbe"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-68f31083be4589841b466328",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 14,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-009",
+        "request_id": "req-a60fc66fe59147d1a567f0c42e3b0e1b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:05.238465+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-6933b46d1175172dff2a25a0",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 15,
+        "kind": "response",
+        "sender_id": "agent-009",
+        "recipient_id": "agent-001",
+        "request_id": "req-a60fc66fe59147d1a567f0c42e3b0e1b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:10.580450+00:00",
+        "response": {
+          "request_id": "req-a60fc66fe59147d1a567f0c42e3b0e1b",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14 on day 6 with disposition outstanding.\nCarlos Kim is a patient who can be kept another day or two.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-a6765c377b927bdf35a25262"
+              ]
+            },
+            {
+              "text": "Carlos Kim is a patient who can be kept another day or two.",
+              "evidence_refs": [
+                "ref-ba4ab82410b339856f76ff1e"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-014dcdb3bee730d8b3157a01",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 16,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-010",
+        "request_id": "req-357d1ed8384941b2a85ac3815e06f758",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:10.582188+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-9103f450c18a3269d3b7634d",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 17,
+        "kind": "response",
+        "sender_id": "agent-010",
+        "recipient_id": "agent-001",
+        "request_id": "req-357d1ed8384941b2a85ac3815e06f758",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:16.803355+00:00",
+        "response": {
+          "request_id": "req-357d1ed8384941b2a85ac3815e06f758",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+              "evidence_refs": [
+                "ref-21d40f119b52421353f8da1a"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-0b3b96ef19ac28732a17e789",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 18,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-011",
+        "request_id": "req-975d640e26df4c5ebf388ac8da358532",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:16.805128+00:00",
+        "body": "Decide the discharge disposition for an inpatient and record it on the discharge plan with a justification."
+      },
+      {
+        "event_id": "viewer-7a922ffc90741279a1ac80fa",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 19,
+        "kind": "response",
+        "sender_id": "agent-011",
+        "recipient_id": "agent-001",
+        "request_id": "req-975d640e26df4c5ebf388ac8da358532",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:44:16.936099+00:00",
+        "response": {
+          "request_id": "req-975d640e26df4c5ebf388ac8da358532",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-253198b2f34ae92c6105442b",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-c90654bae2734de3bc53685474e78db6",
+          "status": "released",
+          "answer": "Carlos Kim is in Ward 4, Bed 14 on day 6 with an outstanding disposition.",
+          "claims": [
+            {
+              "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 with an outstanding disposition.",
+              "evidence_refs": [
+                "ref-3be27bc5866a9dc4f7465fff"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 20,
+    "confirmed_received_responses": 10,
+    "answer": {
+      "state": "completed",
+      "text": "The discharge disposition cannot be established at this time because Carlos Kim's disposition is explicitly noted as outstanding, a repeat renal panel is still pending, and there are conflicting preferences between the patient's daughter (who wants him to go into a home) and his current living situation where she has moved in with him, meaning the final discharge plan and disposition cannot be definitively decided from the current evidence.",
+      "used_evidence_refs": [
+        "ref-15f4a9a93fb0278af56688a5",
+        "ref-45a19d96f0d187cb4c67923c",
+        "ref-da6e1e4ce12cb035bd17b62b"
+      ],
+      "insufficient_evidence": true
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-c90654bae2734de3bc53685474e78db6:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-c90654bae2734de3bc53685474e78db6",
+        "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 with an outstanding disposition.",
+        "evidence_refs": [
+          "ref-3be27bc5866a9dc4f7465fff"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-3d0d24412eb946e19072432e27a9a2d6:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-3d0d24412eb946e19072432e27a9a2d6",
+        "text": "Carlos Kim is in Ward 4, Bed 14, on day 6, and his disposition is outstanding.",
+        "evidence_refs": [
+          "ref-15f4a9a93fb0278af56688a5"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-3d0d24412eb946e19072432e27a9a2d6:c2",
+        "owner_id": "agent-002",
+        "request_id": "req-3d0d24412eb946e19072432e27a9a2d6",
+        "text": "Carlos Kim is afebrile, off IV antibiotics, and his oxygen saturation is holding on room air, with his chest infection having settled.",
+        "evidence_refs": [
+          "ref-559213e8f4af04b7617695cb"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-9e129a8659954f629884af794cf42647:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-9e129a8659954f629884af794cf42647",
+        "text": "Carlos Kim is in Bed 14 on Ward 4 on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-395e491d7c4e10f8bddf518c"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-9e129a8659954f629884af794cf42647:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-9e129a8659954f629884af794cf42647",
+        "text": "A repeat renal panel for Carlos Kim is still to come back as a routine recheck.",
+        "evidence_refs": [
+          "ref-45a19d96f0d187cb4c67923c"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-72f1c4f57df44b4ea1386c6800f0e0e7:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-72f1c4f57df44b4ea1386c6800f0e0e7",
+        "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-57d0a2ea55d3d86c34bd5e1e"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-72f1c4f57df44b4ea1386c6800f0e0e7:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-72f1c4f57df44b4ea1386c6800f0e0e7",
+        "text": "Carlos Kim needs assistance to mobilise, specifically a frame and someone with him on stairs.",
+        "evidence_refs": [
+          "ref-aa54eb18e2e7b071857bbe07"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-21aedf561f564a3ca5c5638a7d3f0fdf:c1",
+        "owner_id": "agent-005",
+        "request_id": "req-21aedf561f564a3ca5c5638a7d3f0fdf",
+        "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-57430cff73b4ee855eb5efd1"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-746c265d6233417796555c3de9aae26d:c1",
+        "owner_id": "agent-006",
+        "request_id": "req-746c265d6233417796555c3de9aae26d",
+        "text": "Carlos Kim is in Bed 14 on Ward 4, on day 6, with disposition outstanding.",
+        "evidence_refs": [
+          "ref-3e38da2c2b87bade59b9a1a8"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-746c265d6233417796555c3de9aae26d:c2",
+        "owner_id": "agent-006",
+        "request_id": "req-746c265d6233417796555c3de9aae26d",
+        "text": "Carlos Kim's daughter has moved in with him for the foreseeable future and is there all day.",
+        "evidence_refs": [
+          "ref-da6e1e4ce12cb035bd17b62b"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-746c265d6233417796555c3de9aae26d:c3",
+        "owner_id": "agent-006",
+        "request_id": "req-746c265d6233417796555c3de9aae26d",
+        "text": "Carlos Kim's daughter stated a preference that he go into a home.",
+        "evidence_refs": [
+          "ref-da6e1e4ce12cb035bd17b62b"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-73cf190d61d1467383f57344a98f119f:c1",
+        "owner_id": "agent-007",
+        "request_id": "req-73cf190d61d1467383f57344a98f119f",
+        "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-5d540e8b4995a900b7f798fc"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-73cf190d61d1467383f57344a98f119f:c2",
+        "owner_id": "agent-007",
+        "request_id": "req-73cf190d61d1467383f57344a98f119f",
+        "text": "Nothing is booked yet for Carlos Kim as the clinic has not returned a slot.",
+        "evidence_refs": [
+          "ref-2a89176d28e526a6b6da6db0"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-d827639a581d4b04aa5b7f91277f1ee8:c1",
+        "owner_id": "agent-008",
+        "request_id": "req-d827639a581d4b04aa5b7f91277f1ee8",
+        "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 and his disposition is outstanding.",
+        "evidence_refs": [
+          "ref-8592001f93339af53f605bbe"
+        ]
+      },
+      {
+        "claim_id": "agent-009:req-a60fc66fe59147d1a567f0c42e3b0e1b:c1",
+        "owner_id": "agent-009",
+        "request_id": "req-a60fc66fe59147d1a567f0c42e3b0e1b",
+        "text": "Carlos Kim is in Ward 4, Bed 14 on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-a6765c377b927bdf35a25262"
+        ]
+      },
+      {
+        "claim_id": "agent-009:req-a60fc66fe59147d1a567f0c42e3b0e1b:c2",
+        "owner_id": "agent-009",
+        "request_id": "req-a60fc66fe59147d1a567f0c42e3b0e1b",
+        "text": "Carlos Kim is a patient who can be kept another day or two.",
+        "evidence_refs": [
+          "ref-ba4ab82410b339856f76ff1e"
+        ]
+      },
+      {
+        "claim_id": "agent-010:req-357d1ed8384941b2a85ac3815e06f758:c1",
+        "owner_id": "agent-010",
+        "request_id": "req-357d1ed8384941b2a85ac3815e06f758",
+        "text": "Carlos Kim is in Ward 4, Bed 14, on day 6 with disposition outstanding.",
+        "evidence_refs": [
+          "ref-21d40f119b52421353f8da1a"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T19:43:16.965093+00:00",
+    "recorded_finished": "2026-11-13T19:44:23.758104+00:00",
+    "recorded_seconds": 66.79425783455372,
+    "response_contract_id": "aos-response-contract-v1"
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T19:44:23.758104+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/inpatient_discharge/scenario_14/integrated/run0/actor/run.json",
+      "sha256": "6d7d768de76a81996d370d6cdd1fac31e36858898168501394cefb2070b43fce"
+    },
+    "cohort": "response-contract-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/inpatient_discharge/scenario_14/integrated/run0/generate.json",
+        "sha256": "7d6a3ef769843eeeabe18614fa351398756625d9c12cadb07824028ea11fd1b9",
+        "status": "ok",
+        "finished": "2026-11-13T19:44:23.779736+00:00",
+        "elapsed_seconds": 69.723
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/inpatient_discharge/scenario_14/integrated/run0/pipeline.json",
+      "sha256": "b985028fb5bcee6fa9a782d19d5dd8135dd90c651fdf00d591443ca70e2621e1"
+    }
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-e9bf3a64a05edcaef522a736d3b9e0c6",
+    "title": "Response contract development · thesis_readiness/scenario_18 · integrated-v3 · run 0 · response contract v1",
+    "case_id": "thesis_readiness__scenario_18",
+    "version": "integrated-v3",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T19:45:50.420933+00:00",
+    "updated": "2026-11-13T19:46:37.119320+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "e9bf3a64a05edcaef522a736d3b9e0c67864bbafb71b69f7a57119d2302bd8ff",
+    "backend": "model",
+    "cohort": "response-contract-development",
+    "date_origin": "recorded_execution",
+    "response_contract_id": "aos-response-contract-v1",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "38dd94fb4306245988a7571da502c6e9e296019ca29aabd9a5e10478babf0092"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-e9bf3a64a05edcaef522a736d3b9e0c6",
+    "source_sha256": "e9bf3a64a05edcaef522a736d3b9e0c67864bbafb71b69f7a57119d2302bd8ff",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "thesis_readiness__scenario_18",
+      "task": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Aaliyah Hassan"
+      },
+      {
+        "id": "agent-002",
+        "name": "Samir Adebayo"
+      },
+      {
+        "id": "agent-003",
+        "name": "Leila Williams"
+      },
+      {
+        "id": "agent-004",
+        "name": "Mira Novak"
+      },
+      {
+        "id": "agent-005",
+        "name": "Kofi Alvarez"
+      },
+      {
+        "id": "agent-006",
+        "name": "Anika Reeves"
+      },
+      {
+        "id": "agent-007",
+        "name": "Aisha Larsson"
+      },
+      {
+        "id": "agent-008",
+        "name": "Clara Okonkwo"
+      },
+      {
+        "id": "agent-009",
+        "name": "Priya Johansson"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-d88a95559618cae4da46862f",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:45:54.842152+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-c8300eb0c18d4133727999d5",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:45:59.819247+00:00",
+        "response": {
+          "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+          "status": "released",
+          "answer": "There is no substantive manuscript work that should hold up the defense, and it is ready to be defended.\nPriya Johansson stated that their new employer expects them to start next month and cannot move the date again, creating strong practical pressure to schedule the defense immediately.\nPriya Johansson's current draft defense slides still contain several unfinished figures and inconsistent formatting.",
+          "claims": [
+            {
+              "text": "There is no substantive manuscript work that should hold up the defense, and it is ready to be defended.",
+              "evidence_refs": [
+                "ref-179bbf88f8eacb087ca2eda4"
+              ]
+            },
+            {
+              "text": "Priya Johansson stated that their new employer expects them to start next month and cannot move the date again, creating strong practical pressure to schedule the defense immediately.",
+              "evidence_refs": [
+                "ref-179bbf88f8eacb087ca2eda4"
+              ]
+            },
+            {
+              "text": "Priya Johansson's current draft defense slides still contain several unfinished figures and inconsistent formatting.",
+              "evidence_refs": [
+                "ref-179bbf88f8eacb087ca2eda4"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-fbd73ad3cbbcf73184b52539",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-830cb03975134a57a1fca698f8fb70ad",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:45:59.820048+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-21a5855940700d0f72761b9e",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-830cb03975134a57a1fca698f8fb70ad",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:05.369887+00:00",
+        "response": {
+          "request_id": "req-830cb03975134a57a1fca698f8fb70ad",
+          "status": "released",
+          "answer": "Participants are coordinating the assigned organizational task.\nThe supervisory committee endorses proceeding to defense without additional academic conditions.",
+          "claims": [
+            {
+              "text": "Participants are coordinating the assigned organizational task.",
+              "evidence_refs": [
+                "ref-6b39b29c67db5bb3d5ebb4b1"
+              ]
+            },
+            {
+              "text": "The supervisory committee endorses proceeding to defense without additional academic conditions.",
+              "evidence_refs": [
+                "ref-4c0ec108d13f54642582dc38"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-c9899387a0cc7c440aae8ba2",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-24ffa945b353472fb907572b58ae1a05",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:05.371257+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-2e638595a319e2e31fbae80c",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-24ffa945b353472fb907572b58ae1a05",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:11.710939+00:00",
+        "response": {
+          "request_id": "req-24ffa945b353472fb907572b58ae1a05",
+          "status": "released",
+          "answer": "Participants are coordinating the assigned organizational task.",
+          "claims": [
+            {
+              "text": "Participants are coordinating the assigned organizational task.",
+              "evidence_refs": [
+                "ref-f446455ddec7e479c6895c4d"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-9287d86b329b30d595308dbc",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-2a3067eedc9e4422ab76ea9a11d383f2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:11.711965+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-8cca89ace3c5c4b75ab813ea",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-2a3067eedc9e4422ab76ea9a11d383f2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:16.393953+00:00",
+        "response": {
+          "request_id": "req-2a3067eedc9e4422ab76ea9a11d383f2",
+          "status": "released",
+          "answer": "There are no outstanding defense-authorization items in the file, and the required administrative steps for scheduling have been satisfied.",
+          "claims": [
+            {
+              "text": "There are no outstanding defense-authorization items in the file, and the required administrative steps for scheduling have been satisfied.",
+              "evidence_refs": [
+                "ref-9b84a4ed5e3c06428241d132"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-32149a1a5a0079db42f8e046",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-8c73131dfa464f9aaeaa07dd21bac5a0",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:16.395349+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-bdcd67705878c1ccece1e7f9",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-8c73131dfa464f9aaeaa07dd21bac5a0",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:21.288480+00:00",
+        "response": {
+          "request_id": "req-8c73131dfa464f9aaeaa07dd21bac5a0",
+          "status": "released",
+          "answer": "Participants are coordinating the assigned organizational task.\nA required academic milestone that must precede defense has not yet been recorded as complete.",
+          "claims": [
+            {
+              "text": "Participants are coordinating the assigned organizational task.",
+              "evidence_refs": [
+                "ref-4d1ecf130e2996660af5c074"
+              ]
+            },
+            {
+              "text": "A required academic milestone that must precede defense has not yet been recorded as complete.",
+              "evidence_refs": [
+                "ref-844a96876c6fd223a71b9697"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-4efac439dc518424e2077e1f",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:21.289870+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-95471846076b7ba26cf6b4a5",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:26.809432+00:00",
+        "response": {
+          "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+          "status": "released",
+          "answer": "Two earlier examiner invitations for this defense were declined.\nThe student expects the current arrangement to fall through as well.\nThe current examiner has passed the eligibility check and indicated willingness to act.\nOnly the formal appointment confirmation is still outstanding for the current examiner despite earlier setbacks.",
+          "claims": [
+            {
+              "text": "Two earlier examiner invitations for this defense were declined.",
+              "evidence_refs": [
+                "ref-a3fcf0e0a3f413b3ae7af793"
+              ]
+            },
+            {
+              "text": "The student expects the current arrangement to fall through as well.",
+              "evidence_refs": [
+                "ref-a3fcf0e0a3f413b3ae7af793"
+              ]
+            },
+            {
+              "text": "The current examiner has passed the eligibility check and indicated willingness to act.",
+              "evidence_refs": [
+                "ref-a3fcf0e0a3f413b3ae7af793"
+              ]
+            },
+            {
+              "text": "Only the formal appointment confirmation is still outstanding for the current examiner despite earlier setbacks.",
+              "evidence_refs": [
+                "ref-a3fcf0e0a3f413b3ae7af793"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-3359454e84f347b84824c5af",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-7b7f94bf836b4bbc9bd8c4b962e07305",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:26.811208+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-79ec26c656daca9809c4e9d7",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-7b7f94bf836b4bbc9bd8c4b962e07305",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:31.055778+00:00",
+        "response": {
+          "request_id": "req-7b7f94bf836b4bbc9bd8c4b962e07305",
+          "status": "released",
+          "answer": "Participants are coordinating the assigned organizational task.",
+          "claims": [
+            {
+              "text": "Participants are coordinating the assigned organizational task.",
+              "evidence_refs": [
+                "ref-c41da4986f8e505899200cb9"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-3961b3ea0389880f759ca039",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 14,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-009",
+        "request_id": "req-69f2a40aeddf411d8e4744467f608258",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:31.057230+00:00",
+        "body": "Decide the appropriate disposition for a graduate student's proposed thesis defense by integrating distributed evidence about manuscript readiness, academic milestones, committee assessments, examiner arrangements, outstanding requirements, and feasible next steps, and record one disposition with a justification."
+      },
+      {
+        "event_id": "viewer-a758c4d011a69ba29583660a",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 15,
+        "kind": "response",
+        "sender_id": "agent-009",
+        "recipient_id": "agent-001",
+        "request_id": "req-69f2a40aeddf411d8e4744467f608258",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:32.566147+00:00",
+        "response": {
+          "request_id": "req-69f2a40aeddf411d8e4744467f608258",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-f751680a2ff8e2801894125c",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-ac8df75a21f14f328bb09306c924d976",
+          "status": "released",
+          "answer": "Participants are coordinating the assigned organizational task.",
+          "claims": [
+            {
+              "text": "Participants are coordinating the assigned organizational task.",
+              "evidence_refs": [
+                "ref-b997c9b3ec2a39a8e583c2c5"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 16,
+    "confirmed_received_responses": 8,
+    "answer": {
+      "state": "completed",
+      "text": "The appropriate disposition is to hold the approval of the thesis defense pending the completion of the required academic milestone that must precede defense, even though the manuscript is ready and administrative steps are largely satisfied.",
+      "used_evidence_refs": [
+        "ref-179bbf88f8eacb087ca2eda4",
+        "ref-4c0ec108d13f54642582dc38",
+        "ref-844a96876c6fd223a71b9697",
+        "ref-9b84a4ed5e3c06428241d132",
+        "ref-a3fcf0e0a3f413b3ae7af793"
+      ],
+      "insufficient_evidence": false
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-ac8df75a21f14f328bb09306c924d976:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-ac8df75a21f14f328bb09306c924d976",
+        "text": "Participants are coordinating the assigned organizational task.",
+        "evidence_refs": [
+          "ref-b997c9b3ec2a39a8e583c2c5"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-d0f07b2f919740a6855ee7a5d203dcfb:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+        "text": "There is no substantive manuscript work that should hold up the defense, and it is ready to be defended.",
+        "evidence_refs": [
+          "ref-179bbf88f8eacb087ca2eda4"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-d0f07b2f919740a6855ee7a5d203dcfb:c2",
+        "owner_id": "agent-002",
+        "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+        "text": "Priya Johansson stated that their new employer expects them to start next month and cannot move the date again, creating strong practical pressure to schedule the defense immediately.",
+        "evidence_refs": [
+          "ref-179bbf88f8eacb087ca2eda4"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-d0f07b2f919740a6855ee7a5d203dcfb:c3",
+        "owner_id": "agent-002",
+        "request_id": "req-d0f07b2f919740a6855ee7a5d203dcfb",
+        "text": "Priya Johansson's current draft defense slides still contain several unfinished figures and inconsistent formatting.",
+        "evidence_refs": [
+          "ref-179bbf88f8eacb087ca2eda4"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-830cb03975134a57a1fca698f8fb70ad:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-830cb03975134a57a1fca698f8fb70ad",
+        "text": "Participants are coordinating the assigned organizational task.",
+        "evidence_refs": [
+          "ref-6b39b29c67db5bb3d5ebb4b1"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-830cb03975134a57a1fca698f8fb70ad:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-830cb03975134a57a1fca698f8fb70ad",
+        "text": "The supervisory committee endorses proceeding to defense without additional academic conditions.",
+        "evidence_refs": [
+          "ref-4c0ec108d13f54642582dc38"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-24ffa945b353472fb907572b58ae1a05:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-24ffa945b353472fb907572b58ae1a05",
+        "text": "Participants are coordinating the assigned organizational task.",
+        "evidence_refs": [
+          "ref-f446455ddec7e479c6895c4d"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-2a3067eedc9e4422ab76ea9a11d383f2:c1",
+        "owner_id": "agent-005",
+        "request_id": "req-2a3067eedc9e4422ab76ea9a11d383f2",
+        "text": "There are no outstanding defense-authorization items in the file, and the required administrative steps for scheduling have been satisfied.",
+        "evidence_refs": [
+          "ref-9b84a4ed5e3c06428241d132"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-8c73131dfa464f9aaeaa07dd21bac5a0:c1",
+        "owner_id": "agent-006",
+        "request_id": "req-8c73131dfa464f9aaeaa07dd21bac5a0",
+        "text": "Participants are coordinating the assigned organizational task.",
+        "evidence_refs": [
+          "ref-4d1ecf130e2996660af5c074"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-8c73131dfa464f9aaeaa07dd21bac5a0:c2",
+        "owner_id": "agent-006",
+        "request_id": "req-8c73131dfa464f9aaeaa07dd21bac5a0",
+        "text": "A required academic milestone that must precede defense has not yet been recorded as complete.",
+        "evidence_refs": [
+          "ref-844a96876c6fd223a71b9697"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-4abb435c02d04bca83e29dabb1709361:c1",
+        "owner_id": "agent-007",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "text": "Two earlier examiner invitations for this defense were declined.",
+        "evidence_refs": [
+          "ref-a3fcf0e0a3f413b3ae7af793"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-4abb435c02d04bca83e29dabb1709361:c2",
+        "owner_id": "agent-007",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "text": "The student expects the current arrangement to fall through as well.",
+        "evidence_refs": [
+          "ref-a3fcf0e0a3f413b3ae7af793"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-4abb435c02d04bca83e29dabb1709361:c3",
+        "owner_id": "agent-007",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "text": "The current examiner has passed the eligibility check and indicated willingness to act.",
+        "evidence_refs": [
+          "ref-a3fcf0e0a3f413b3ae7af793"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-4abb435c02d04bca83e29dabb1709361:c4",
+        "owner_id": "agent-007",
+        "request_id": "req-4abb435c02d04bca83e29dabb1709361",
+        "text": "Only the formal appointment confirmation is still outstanding for the current examiner despite earlier setbacks.",
+        "evidence_refs": [
+          "ref-a3fcf0e0a3f413b3ae7af793"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-7b7f94bf836b4bbc9bd8c4b962e07305:c1",
+        "owner_id": "agent-008",
+        "request_id": "req-7b7f94bf836b4bbc9bd8c4b962e07305",
+        "text": "Participants are coordinating the assigned organizational task.",
+        "evidence_refs": [
+          "ref-c41da4986f8e505899200cb9"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T19:45:50.420933+00:00",
+    "recorded_finished": "2026-11-13T19:46:37.119320+00:00",
+    "recorded_seconds": 46.70936470851302,
+    "response_contract_id": "aos-response-contract-v1"
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T19:46:37.119320+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/thesis_readiness/scenario_18/integrated/run0/actor/run.json",
+      "sha256": "e9bf3a64a05edcaef522a736d3b9e0c67864bbafb71b69f7a57119d2302bd8ff"
+    },
+    "cohort": "response-contract-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/thesis_readiness/scenario_18/integrated/run0/generate.json",
+        "sha256": "38dd94fb4306245988a7571da502c6e9e296019ca29aabd9a5e10478babf0092",
+        "status": "ok",
+        "finished": "2026-11-13T19:46:37.131897+00:00",
+        "elapsed_seconds": 49.354
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/thesis_readiness/scenario_18/integrated/run0/pipeline.json",
+      "sha256": "8772ca836c73001c704560fb33c8a24d395b62cce0043fd129c865589c9d0279"
+    }
+  }
+}

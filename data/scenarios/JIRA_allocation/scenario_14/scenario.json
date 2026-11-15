@@ -1,0 +1,258 @@
+{
+  "scenario_id": "jira_config_no_collaboration_heavy_s0014_seed13232",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "quinn": {
+        "name": "Quinn",
+        "role": "Backend specialist",
+        "cast_id": "c2"
+      },
+      "sasha": {
+        "name": "Sasha",
+        "role": "Backend specialist",
+        "cast_id": "c3"
+      },
+      "nova": {
+        "name": "Nova",
+        "role": "QA specialist",
+        "cast_id": "c4"
+      },
+      "sam": {
+        "name": "Sam",
+        "role": "Security specialist",
+        "cast_id": "c5"
+      },
+      "val": {
+        "name": "Val",
+        "role": "Ux specialist",
+        "cast_id": "c6"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "no_collaboration_heavy"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Quinn",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Sasha",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Nova",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Sam",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Val",
+      "role": "Ux specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Quinn",
+        "Sasha",
+        "Nova",
+        "Sam",
+        "Val"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "content": "Quinn specialty: backend\nSasha specialty: backend\nNova specialty: qa\nSam specialty: security\nVal specialty: ux"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Quinn",
+        "Sasha",
+        "Nova",
+        "Sam",
+        "Val"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a6",
+        "a7",
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18"
+      ],
+      "content": "JIRA-001: Fix data-sync deadletter replay\n- requires backend: 4 hours\n- requires qa: 3 hours\n- priority: medium\n- collaboration-heavy: yes\n- sensitive-data surface: no\nJIRA-002: Patch service token handling\n- requires backend: 4 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-003: Review PII log access regression\n- requires security: 2 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_quinn",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Quinn",
+      "visible_to": [
+        "Quinn"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a19",
+        "a20"
+      ],
+      "content": "Quinn available hours: 4\nQuinn is distracted by an unresolved conflict with Nova."
+    },
+    {
+      "id": "art_private_sasha",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Sasha",
+      "visible_to": [
+        "Sasha"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a21",
+        "a22",
+        "a23"
+      ],
+      "content": "Sasha available hours: 4\nSasha is under stress and cannot handle synchronous coordination this week.\nSasha does not trust Nova's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_nova",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Nova",
+      "visible_to": [
+        "Nova"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a24",
+        "a25"
+      ],
+      "content": "Nova available hours: 3\nNova is distracted by an unresolved conflict with Sam."
+    },
+    {
+      "id": "art_private_sam",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Sam",
+      "visible_to": [
+        "Sam"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a26",
+        "a27"
+      ],
+      "content": "Sam available hours: 2\nSam is worried leadership will judge them harshly if they work on security work on JIRA-003 (Review PII log access regression)."
+    },
+    {
+      "id": "art_private_val",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Val",
+      "visible_to": [
+        "Val"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a28",
+        "a29"
+      ],
+      "content": "Val available hours: 2\nVal has a personal medical appointment schedule this week."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "scenario_id": "jira_config_cannot_be_sole_owner_s0018_seed27482",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "dev": {
+        "name": "Dev",
+        "role": "Backend specialist",
+        "cast_id": "c2"
+      },
+      "henry": {
+        "name": "Henry",
+        "role": "Security specialist",
+        "cast_id": "c3"
+      },
+      "blair": {
+        "name": "Blair",
+        "role": "Security specialist",
+        "cast_id": "c4"
+      },
+      "harper": {
+        "name": "Harper",
+        "role": "QA specialist",
+        "cast_id": "c5"
+      },
+      "hayden": {
+        "name": "Hayden",
+        "role": "Frontend specialist",
+        "cast_id": "c6"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "cannot_be_sole_owner"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Dev",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Henry",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Blair",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Harper",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Hayden",
+      "role": "Frontend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Dev",
+        "Henry",
+        "Blair",
+        "Harper",
+        "Hayden"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "content": "Dev specialty: backend\nHenry specialty: security\nBlair specialty: security\nHarper specialty: qa\nHayden specialty: frontend"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Dev",
+        "Henry",
+        "Blair",
+        "Harper",
+        "Hayden"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a6",
+        "a7",
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18"
+      ],
+      "content": "JIRA-001: Review customer key-access trace\n- requires security: 3 hours\n- priority: medium\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-002: Patch service token handling\n- requires backend: 4 hours\n- requires security: 2 hours\n- priority: medium\n- collaboration-heavy: yes\n- sensitive-data surface: yes\nJIRA-003: Recheck regression suite for reporting bug\n- requires qa: 2 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_dev",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Dev",
+      "visible_to": [
+        "Dev"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a19",
+        "a20"
+      ],
+      "content": "Dev available hours: 4\nDev is worried that sensitive-data collaboration-heavy backend work on JIRA-002 (Patch service token handling) may expose a mistake from a previous sprint."
+    },
+    {
+      "id": "art_private_henry",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Henry",
+      "visible_to": [
+        "Henry"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a21",
+        "a22",
+        "a23"
+      ],
+      "content": "Henry available hours: 3\nHenry is in a probationary ramp-up period after performance concerns.\nHenry is distracted by an unresolved conflict with Dev."
+    },
+    {
+      "id": "art_private_blair",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Blair",
+      "visible_to": [
+        "Blair"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a24",
+        "a25"
+      ],
+      "content": "Blair available hours: 3\nBlair is distracted by an unresolved conflict with Dev."
+    },
+    {
+      "id": "art_private_harper",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Harper",
+      "visible_to": [
+        "Harper"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a26",
+        "a27"
+      ],
+      "content": "Harper available hours: 2\nHarper is worried that qa work on JIRA-003 (Recheck regression suite for reporting bug) may expose a mistake from a previous sprint."
+    },
+    {
+      "id": "art_private_hayden",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Hayden",
+      "visible_to": [
+        "Hayden"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a28",
+        "a29"
+      ],
+      "content": "Hayden available hours: 2\nHayden is worried that frontend work may expose a mistake from a previous sprint."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

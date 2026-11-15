@@ -1,0 +1,258 @@
+{
+  "scenario_id": "jira_config_cannot_pair_s0001_seed15876",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "drew": {
+        "name": "Drew",
+        "role": "Backend specialist",
+        "cast_id": "c2"
+      },
+      "morgan": {
+        "name": "Morgan",
+        "role": "Security specialist",
+        "cast_id": "c3"
+      },
+      "reese": {
+        "name": "Reese",
+        "role": "Security specialist",
+        "cast_id": "c4"
+      },
+      "harper": {
+        "name": "Harper",
+        "role": "QA specialist",
+        "cast_id": "c5"
+      },
+      "jordan": {
+        "name": "Jordan",
+        "role": "Frontend specialist",
+        "cast_id": "c6"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "cannot_pair_with_person"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Drew",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Morgan",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Reese",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Harper",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Jordan",
+      "role": "Frontend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Drew",
+        "Morgan",
+        "Reese",
+        "Harper",
+        "Jordan"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "content": "Drew specialty: backend\nMorgan specialty: security\nReese specialty: security\nHarper specialty: qa\nJordan specialty: frontend"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Drew",
+        "Morgan",
+        "Reese",
+        "Harper",
+        "Jordan"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a6",
+        "a7",
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18"
+      ],
+      "content": "JIRA-001: Patch service token handling\n- requires backend: 4 hours\n- requires security: 3 hours\n- priority: medium\n- collaboration-heavy: yes\n- sensitive-data surface: yes\nJIRA-002: Run smoke tests on release candidate\n- requires qa: 3 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-003: Clean up workflow-builder panel\n- requires frontend: 2 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_drew",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Drew",
+      "visible_to": [
+        "Drew"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a19",
+        "a20"
+      ],
+      "content": "Drew available hours: 4\nDrew is privately frustrated with repetitive backend handoff work on sensitive-data collaboration-heavy backend work on JIRA-001 (Patch service token handling)."
+    },
+    {
+      "id": "art_private_morgan",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Morgan",
+      "visible_to": [
+        "Morgan"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a21",
+        "a22",
+        "a23"
+      ],
+      "content": "Morgan available hours: 3\nMorgan has an HR-mediated conflict with Drew.\nMorgan is privately frustrated with repetitive security handoff work on sensitive-data collaboration-heavy security work on JIRA-001 (Patch service token handling)."
+    },
+    {
+      "id": "art_private_reese",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Reese",
+      "visible_to": [
+        "Reese"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a24",
+        "a25"
+      ],
+      "content": "Reese available hours: 3\nReese is privately frustrated with repetitive security handoff work on sensitive-data collaboration-heavy security work on JIRA-001 (Patch service token handling)."
+    },
+    {
+      "id": "art_private_harper",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Harper",
+      "visible_to": [
+        "Harper"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a26",
+        "a27"
+      ],
+      "content": "Harper available hours: 3\nHarper does not trust Reese's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_jordan",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Jordan",
+      "visible_to": [
+        "Jordan"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a28",
+        "a29"
+      ],
+      "content": "Jordan available hours: 2\nJordan is distracted by an unresolved conflict with Drew."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

@@ -1,0 +1,3272 @@
+{
+  "schema": "aos-collaboration-bundle-v1",
+  "dataset": {
+    "name": "ServiceNow/PiSAs",
+    "revision": "8a1ba30ba210d4a430bbd25cf4a3500d0e22c5b9",
+    "source_manifest_sha256": "2dbe463d4352607c995079ff5103be828dddbc4a3b81b8e92766b8147a2ee4ed",
+    "upstream_code_revision": "1a47ea461f1f78f2b7a87e38d351e4ebc7380fbd"
+  },
+  "scenarios": [
+    {
+      "case_id": "JIRA_allocation__scenario_01",
+      "path": "scenarios/JIRA_allocation/scenario_01/scenario.json",
+      "sha256": "9db28333ea4f2f03d26996c8e7db6c8da764d6bf48add032fd7d0c417006b0b8",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_01",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_02",
+      "path": "scenarios/JIRA_allocation/scenario_02/scenario.json",
+      "sha256": "fd1005715e8c3ed18ce69ba0fa34c974cb330187bfbd81ad50a255fb9316cab9",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_02",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_03",
+      "path": "scenarios/JIRA_allocation/scenario_03/scenario.json",
+      "sha256": "618a6b671d1592170ab367318afff9ef62bd0c85cd54298295b13c9f7d24559b",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_03",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_04",
+      "path": "scenarios/JIRA_allocation/scenario_04/scenario.json",
+      "sha256": "ec05e8787b999acc38d8a55378e5b0ac39893e78308557a148aa3e7aba64af36",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_04",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_05",
+      "path": "scenarios/JIRA_allocation/scenario_05/scenario.json",
+      "sha256": "499f27b33cf529ce7afb75a0b0c2a0d1b0bb8fd26745a68f34bcfa1b595857a4",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_05",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_06",
+      "path": "scenarios/JIRA_allocation/scenario_06/scenario.json",
+      "sha256": "d82af5c895340988e9d1e005fb99b2d4b2e9a5d4da910c22a057994a4b2cfebd",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_06",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_07",
+      "path": "scenarios/JIRA_allocation/scenario_07/scenario.json",
+      "sha256": "b81d7f3fa5f626c39f51de13d30af98069b950de2e2902b40fbc4a137b7d939b",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_07",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_08",
+      "path": "scenarios/JIRA_allocation/scenario_08/scenario.json",
+      "sha256": "a4904b4d033cac40fe6040881c107f1985d6577731975badc98713406c3066bd",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_08",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_09",
+      "path": "scenarios/JIRA_allocation/scenario_09/scenario.json",
+      "sha256": "94bdde64f002087ee1f00fb8bdf28e05afbaef375fe87f8a5cf80f3b359bfe95",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_09",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_10",
+      "path": "scenarios/JIRA_allocation/scenario_10/scenario.json",
+      "sha256": "86023cec68055595b62c3f9feaaba19737b2c52769a8a07ba5701b66e878e706",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_10",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_11",
+      "path": "scenarios/JIRA_allocation/scenario_11/scenario.json",
+      "sha256": "b371c8d0b7f80f241550906fadadd62f3c527ef98b5a087846de64e57b7ed727",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_11",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_12",
+      "path": "scenarios/JIRA_allocation/scenario_12/scenario.json",
+      "sha256": "d9abf73f1eaa03f4fc0c97dc6211f661e401dd1941eb503b808108171c8e83c8",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_12",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_13",
+      "path": "scenarios/JIRA_allocation/scenario_13/scenario.json",
+      "sha256": "991edb6eb59f000c28d36750b88c617cbbb55d529cd0668677d6521cb39af5cc",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_13",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_14",
+      "path": "scenarios/JIRA_allocation/scenario_14/scenario.json",
+      "sha256": "0bded669951e8f2288c2894d934c1f091b2362b979d766f4d8e4e8d2e1ad9f55",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_14",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_15",
+      "path": "scenarios/JIRA_allocation/scenario_15/scenario.json",
+      "sha256": "0a51635c90c41c384dea71c14f722b64b298763a5d0c6c2afb10b69fae9f91cf",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_15",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_16",
+      "path": "scenarios/JIRA_allocation/scenario_16/scenario.json",
+      "sha256": "e8ac4ae574e5d595a338e3163ca6f31855a453af28741acf894c3ee322f4e203",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_16",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_17",
+      "path": "scenarios/JIRA_allocation/scenario_17/scenario.json",
+      "sha256": "8c0375362783bd1da7c5417ecfe7e21a1f11473e349fca2428e9a3ed51f94eb4",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_17",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_18",
+      "path": "scenarios/JIRA_allocation/scenario_18/scenario.json",
+      "sha256": "587a6108a6d63090a6cd7baa8824873c1256439d13cf7e62fe15e7e33ea059fb",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_18",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_19",
+      "path": "scenarios/JIRA_allocation/scenario_19/scenario.json",
+      "sha256": "8023c3b1b0f91a02a3204f28769ef862eb7474671de11545006c70098475e1d7",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_19",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_20",
+      "path": "scenarios/JIRA_allocation/scenario_20/scenario.json",
+      "sha256": "af172cc622a4a7ff7a5253e0fb1660d100f08eda656f1cc06c107126612090e6",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_20",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_21",
+      "path": "scenarios/JIRA_allocation/scenario_21/scenario.json",
+      "sha256": "e62fcd5635db365c219f3ce391675cbfd94ac798c0e0d1ccd21e686953cbe893",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_21",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_22",
+      "path": "scenarios/JIRA_allocation/scenario_22/scenario.json",
+      "sha256": "d84790561de1d5712a7c6985adc1bf7c0aff6c73b34387152aaeab72c216cc05",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_22",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_23",
+      "path": "scenarios/JIRA_allocation/scenario_23/scenario.json",
+      "sha256": "9f5575a00e055f0100fba289bcd8eddd4bd4ae453b24022c446c015a40bfc500",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_23",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_24",
+      "path": "scenarios/JIRA_allocation/scenario_24/scenario.json",
+      "sha256": "a49736fcc2f53c6ed31db2fc8873ffedce5324dc9857a979550726b1659de8df",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_24",
+      "task_fallback": true
+    },
+    {
+      "case_id": "JIRA_allocation__scenario_25",
+      "path": "scenarios/JIRA_allocation/scenario_25/scenario.json",
+      "sha256": "6b927be1da9b92f0c68f8dae677128207a4bca1a7e6194f3bb7532cf5e5fdc97",
+      "family": "JIRA_allocation",
+      "scenario": "scenario_25",
+      "task_fallback": true
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_01",
+      "path": "scenarios/inpatient_discharge/scenario_01/scenario.json",
+      "sha256": "b25d56c990af520eef197b35d3d3b95b40c1e7e477643d058db642c628983ba4",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_02",
+      "path": "scenarios/inpatient_discharge/scenario_02/scenario.json",
+      "sha256": "4de8d4df18720e5cb87d9c388ea09dfbcba9362de7c421b8cc7659af58d1d31d",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_03",
+      "path": "scenarios/inpatient_discharge/scenario_03/scenario.json",
+      "sha256": "01331cfb1b597640e1100dce055f3df5fc2222453c65120a9eb9251c7fadf88d",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_04",
+      "path": "scenarios/inpatient_discharge/scenario_04/scenario.json",
+      "sha256": "3fecc0bb04b36c8a7f4348cb69d8526e4d546b4d1be2f3e20e582a5f96f8d718",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_05",
+      "path": "scenarios/inpatient_discharge/scenario_05/scenario.json",
+      "sha256": "65308b8de2f1d55ba6358be0f7924d05a5d915fd93ceaca30eddc0acdae62a64",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_06",
+      "path": "scenarios/inpatient_discharge/scenario_06/scenario.json",
+      "sha256": "aa45261270598b800615394435afb89fa23c848a7f91ac2e81885a181fecc70e",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_07",
+      "path": "scenarios/inpatient_discharge/scenario_07/scenario.json",
+      "sha256": "ca1e26fa69fcd1f6421fcfdec871b5b055eb9c21dc014994e9f6c2622ea5ccb2",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_08",
+      "path": "scenarios/inpatient_discharge/scenario_08/scenario.json",
+      "sha256": "c0f3d1f19bc08be879fb383372b96486e67f2742f37ad3e81e17cdd2437daaa4",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_09",
+      "path": "scenarios/inpatient_discharge/scenario_09/scenario.json",
+      "sha256": "efeb9780fe57449f342bcdbd3f4118c210059955946d6dd8ca99d13967f6b231",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_10",
+      "path": "scenarios/inpatient_discharge/scenario_10/scenario.json",
+      "sha256": "ff8c859bebbef2948e98732832b64cf0f08a16f9cae6da5c132a3054dcd705cb",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_11",
+      "path": "scenarios/inpatient_discharge/scenario_11/scenario.json",
+      "sha256": "799fb04a7b627aff066f78c7ee9a54d26f2b390fb5321e01bf01f9300bc49be2",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_12",
+      "path": "scenarios/inpatient_discharge/scenario_12/scenario.json",
+      "sha256": "8befdd3060e478ede91cbb5197b6d5f0621bf6524989b22767c61beaec2cc87f",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_13",
+      "path": "scenarios/inpatient_discharge/scenario_13/scenario.json",
+      "sha256": "ad98cd6bd4a1fec21dbf9c8a5e281eead77f85c551a28bb9ca43ad600f2263b3",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_14",
+      "path": "scenarios/inpatient_discharge/scenario_14/scenario.json",
+      "sha256": "1ff953b9e7167c1ead548f96e86b93be0581da65a88d25cac8f0928e48d3050f",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_15",
+      "path": "scenarios/inpatient_discharge/scenario_15/scenario.json",
+      "sha256": "6d15308876d667874355077a7ec312f94923ffe5debbc8eae6c48d6e89e2566a",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_16",
+      "path": "scenarios/inpatient_discharge/scenario_16/scenario.json",
+      "sha256": "980369f9eb18ebc6e626e86b42593ee001f1d49f76bcf4ff119fb8fd867a04b6",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_17",
+      "path": "scenarios/inpatient_discharge/scenario_17/scenario.json",
+      "sha256": "687ad7f0c855dcd763cefb516889ba4a1411c60f931ea9860bec9df0842a4ead",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_18",
+      "path": "scenarios/inpatient_discharge/scenario_18/scenario.json",
+      "sha256": "275f80bd37e7f5c7de701b1653e9cd8ba0aa90c9edd9a21a56c37e7e093710f8",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_19",
+      "path": "scenarios/inpatient_discharge/scenario_19/scenario.json",
+      "sha256": "b173b8efff2d5c65e97e390914f5b71b5c20c1b1ce2226792b920e9b40ee69fb",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_20",
+      "path": "scenarios/inpatient_discharge/scenario_20/scenario.json",
+      "sha256": "03507810a058f092fb6e2586a339ab7069b12e8a60369f9c9116384ab44de36b",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_21",
+      "path": "scenarios/inpatient_discharge/scenario_21/scenario.json",
+      "sha256": "7da55a889e6c6270745f011ad8f21d985063971a91a93e038e527944b14c3cce",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_22",
+      "path": "scenarios/inpatient_discharge/scenario_22/scenario.json",
+      "sha256": "463f83930dbc04b1e766225f3551527ece92a0a7b0258a2c2e6dcb9200c8f203",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_23",
+      "path": "scenarios/inpatient_discharge/scenario_23/scenario.json",
+      "sha256": "f3941dbd1cce82ce53c70d04f7ed8c6829ab5918837faabbb360be59f5ca8543",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_24",
+      "path": "scenarios/inpatient_discharge/scenario_24/scenario.json",
+      "sha256": "7fef3956c762e9fb43899a67b5569f10401292e37a4e7020573be0eaeb7c19d6",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_25",
+      "path": "scenarios/inpatient_discharge/scenario_25/scenario.json",
+      "sha256": "6dec411fe679e88d1e895c2433f451542460c7f34f53a16f29c1005f8f15d35f",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_26",
+      "path": "scenarios/inpatient_discharge/scenario_26/scenario.json",
+      "sha256": "0dc3a2e65a311eeaf4a036e57aae5a1b387784f4c82266c176a8b89d14ec7da1",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_27",
+      "path": "scenarios/inpatient_discharge/scenario_27/scenario.json",
+      "sha256": "095659e5e581426b030bcbaee59020358216696245ef1c7103adf5c6ce3fdc51",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_28",
+      "path": "scenarios/inpatient_discharge/scenario_28/scenario.json",
+      "sha256": "728e19dc713a5912e10cebc6d889bcf4713e484d2c61d6f9e73d9ee5bf33c961",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_29",
+      "path": "scenarios/inpatient_discharge/scenario_29/scenario.json",
+      "sha256": "cb722f665ea64259e5c78b21891a4698bceddfd46b07879b5971ce9534398af2",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "inpatient_discharge__scenario_30",
+      "path": "scenarios/inpatient_discharge/scenario_30/scenario.json",
+      "sha256": "b8a303416f2c25b35785235a69072fbba80e7dfbdfc351c3898ec46cdb2d14c1",
+      "family": "inpatient_discharge",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_01",
+      "path": "scenarios/manuscript_submission/scenario_01/scenario.json",
+      "sha256": "73dc1254b35c79af004dad847eac1a8092ed25211647f529d3781d897a57ca17",
+      "family": "manuscript_submission",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_02",
+      "path": "scenarios/manuscript_submission/scenario_02/scenario.json",
+      "sha256": "388efdf14a66ad31ea1c5550f3730a0dbd0913c559a9012e8e4a1da5be431ed0",
+      "family": "manuscript_submission",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_03",
+      "path": "scenarios/manuscript_submission/scenario_03/scenario.json",
+      "sha256": "494b829e27d0a2213301f3cc1e8c3211d9c7a1eb5de94fc2aa08fa0f7f183e23",
+      "family": "manuscript_submission",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_04",
+      "path": "scenarios/manuscript_submission/scenario_04/scenario.json",
+      "sha256": "bfb2e8f2f6cb6b088329b545b2c6b0e5501d994a1f022f0a6918c0fc68191dea",
+      "family": "manuscript_submission",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_05",
+      "path": "scenarios/manuscript_submission/scenario_05/scenario.json",
+      "sha256": "b725ef460a72398ba407ee9a2eb25fac7b13f091424d65601bafa44a8722788e",
+      "family": "manuscript_submission",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_06",
+      "path": "scenarios/manuscript_submission/scenario_06/scenario.json",
+      "sha256": "d1dc651b5462a916716efdc4e72f70d103ceb278644e40bf390f4859baa7be70",
+      "family": "manuscript_submission",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_07",
+      "path": "scenarios/manuscript_submission/scenario_07/scenario.json",
+      "sha256": "afee5d2c9a6dc417fe2cb5a1774e7af60929144d1df84b8e5e5f68b6d98e73c0",
+      "family": "manuscript_submission",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_08",
+      "path": "scenarios/manuscript_submission/scenario_08/scenario.json",
+      "sha256": "cadcef1f5e9f7ae3a8b6777470b7c7d8873de964be5a6678d2a579caf7bdf25b",
+      "family": "manuscript_submission",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_09",
+      "path": "scenarios/manuscript_submission/scenario_09/scenario.json",
+      "sha256": "e90ce60a1613d1bc5a7a93723885236885f6627ef5a0c8fcf93f9b032d207053",
+      "family": "manuscript_submission",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_10",
+      "path": "scenarios/manuscript_submission/scenario_10/scenario.json",
+      "sha256": "f7c04d95e5cca439c315881771e2c2d9f7b27b8f1dd435fc7c8afdf36d6cccfb",
+      "family": "manuscript_submission",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_11",
+      "path": "scenarios/manuscript_submission/scenario_11/scenario.json",
+      "sha256": "a4f766eda4e90fa9998206d9705de2951ed290295c4d1e390ed84ef4792baaae",
+      "family": "manuscript_submission",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_12",
+      "path": "scenarios/manuscript_submission/scenario_12/scenario.json",
+      "sha256": "3f92cd76498b06658e49c7807c5ac91a26ac87951e47127f6414af14f7c72f45",
+      "family": "manuscript_submission",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_13",
+      "path": "scenarios/manuscript_submission/scenario_13/scenario.json",
+      "sha256": "b0133d8f5275e4cebebdeb6ff694613169786c42a15f6476ac09399658c359db",
+      "family": "manuscript_submission",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_14",
+      "path": "scenarios/manuscript_submission/scenario_14/scenario.json",
+      "sha256": "e1c395c6c8378636fafd77e65749d59155cd05d71114ca242addb15a93e3179e",
+      "family": "manuscript_submission",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_15",
+      "path": "scenarios/manuscript_submission/scenario_15/scenario.json",
+      "sha256": "304f787a04a90a532de966f501d428bf3ad6a2db5297faa623ded990f33f03ec",
+      "family": "manuscript_submission",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_16",
+      "path": "scenarios/manuscript_submission/scenario_16/scenario.json",
+      "sha256": "bd0b944129cbaf8e4583420f85c69c8ad99052c5a87c75561a239d68e438db20",
+      "family": "manuscript_submission",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_17",
+      "path": "scenarios/manuscript_submission/scenario_17/scenario.json",
+      "sha256": "5c9987ea9933b50976c0bd20a08a2ef3dcff0864833d92955bda2604e195251b",
+      "family": "manuscript_submission",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_18",
+      "path": "scenarios/manuscript_submission/scenario_18/scenario.json",
+      "sha256": "f1588d2b8d5b750292fdabdedda87f4fd732dd737edf89260125fe5c4f8c20e5",
+      "family": "manuscript_submission",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_19",
+      "path": "scenarios/manuscript_submission/scenario_19/scenario.json",
+      "sha256": "5839f90a6249839df3e98bb5bfdd82b7a59a34ef301903a04250f90255e7151b",
+      "family": "manuscript_submission",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_20",
+      "path": "scenarios/manuscript_submission/scenario_20/scenario.json",
+      "sha256": "3f68a6e9c8cef8e8fda13588dba392b860fb1741781c5d3dad79bc0b17f67075",
+      "family": "manuscript_submission",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_21",
+      "path": "scenarios/manuscript_submission/scenario_21/scenario.json",
+      "sha256": "93a6fb11bee8334a59ccdec9222aeeb8e48e980f678b64a151882370341f2ed8",
+      "family": "manuscript_submission",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_22",
+      "path": "scenarios/manuscript_submission/scenario_22/scenario.json",
+      "sha256": "76b4e2d3ab80f95a23bf84122279a450350959f890dc7c4cfd8940208280fc0b",
+      "family": "manuscript_submission",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_23",
+      "path": "scenarios/manuscript_submission/scenario_23/scenario.json",
+      "sha256": "c36947466c06b8e8f14fd9d59d6f83bcbf9aecadaecebf84c4d51e1168ba25bc",
+      "family": "manuscript_submission",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_24",
+      "path": "scenarios/manuscript_submission/scenario_24/scenario.json",
+      "sha256": "4eb2a0c7fc8eed70a6796354b311033966d7aea05849aede2a159da052381cd5",
+      "family": "manuscript_submission",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_25",
+      "path": "scenarios/manuscript_submission/scenario_25/scenario.json",
+      "sha256": "00a19115dbc6ea200e34576becd1cc37be7c180c171e04cab6c474d239a90c54",
+      "family": "manuscript_submission",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_26",
+      "path": "scenarios/manuscript_submission/scenario_26/scenario.json",
+      "sha256": "2e00c30182b15ade340c6740ad3474311d1816d4263cc74f1b8fc128a45f639c",
+      "family": "manuscript_submission",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_27",
+      "path": "scenarios/manuscript_submission/scenario_27/scenario.json",
+      "sha256": "65bf9e72845609fc0a07e0e0fcd818a8ac172c8378c1b966d3da4cb720014eba",
+      "family": "manuscript_submission",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_28",
+      "path": "scenarios/manuscript_submission/scenario_28/scenario.json",
+      "sha256": "24c92599c95f5295160bcbbf01bee42fd20adbf481018ddc231be18b06ee8f7f",
+      "family": "manuscript_submission",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_29",
+      "path": "scenarios/manuscript_submission/scenario_29/scenario.json",
+      "sha256": "a5c98cceefd69132fadecd036cf46aebb81e0dad3f1dfe01ecfc202179d6fee9",
+      "family": "manuscript_submission",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "manuscript_submission__scenario_30",
+      "path": "scenarios/manuscript_submission/scenario_30/scenario.json",
+      "sha256": "8c41f569bf2c94e0e5a8c2bcea817cf1b5e5d7a27e38dc491d63d13425ec050a",
+      "family": "manuscript_submission",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    },
+    {
+      "case_id": "meeting_allocation__scenario_01",
+      "path": "scenarios/meeting_allocation/scenario_01/scenario.json",
+      "sha256": "fa0e044e1f68ff7dced3e3ecc3a70b7bd8939d8fbb2957363deb8db758210e5b",
+      "family": "meeting_allocation",
+      "scenario": "scenario_01",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_02",
+      "path": "scenarios/meeting_allocation/scenario_02/scenario.json",
+      "sha256": "0d50bf5b45df4bc8ef2a3f5d354ce4718e56b7ad3851889d4bd2d7bbb703afaf",
+      "family": "meeting_allocation",
+      "scenario": "scenario_02",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_03",
+      "path": "scenarios/meeting_allocation/scenario_03/scenario.json",
+      "sha256": "05819360fc0b5d96e85bf6bb8deaad0b996a14492543dab65caa18aaf4e8b796",
+      "family": "meeting_allocation",
+      "scenario": "scenario_03",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_04",
+      "path": "scenarios/meeting_allocation/scenario_04/scenario.json",
+      "sha256": "9864a1c60b2ecfa81de44bfcf68f571aeba15dcd6519dc7a458d0a68cad3711c",
+      "family": "meeting_allocation",
+      "scenario": "scenario_04",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_05",
+      "path": "scenarios/meeting_allocation/scenario_05/scenario.json",
+      "sha256": "ca4c40fe6307256984d75726cb9061f950c3e89ccf878fe5cfd8292ce6344752",
+      "family": "meeting_allocation",
+      "scenario": "scenario_05",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_06",
+      "path": "scenarios/meeting_allocation/scenario_06/scenario.json",
+      "sha256": "0fdadb37081db08036c65c0f7c28b1bf13430c9bc4d7eafe0e4e34a9c5ecf269",
+      "family": "meeting_allocation",
+      "scenario": "scenario_06",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_07",
+      "path": "scenarios/meeting_allocation/scenario_07/scenario.json",
+      "sha256": "bf63ce06995dc0d89d18818ed213bec0bc0b6fc4d165e47366bb04fe15b99b98",
+      "family": "meeting_allocation",
+      "scenario": "scenario_07",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_08",
+      "path": "scenarios/meeting_allocation/scenario_08/scenario.json",
+      "sha256": "db1dddf9b019e583b787bdeef18c6ac52c51edf5581263ec0cfca499be71389e",
+      "family": "meeting_allocation",
+      "scenario": "scenario_08",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_09",
+      "path": "scenarios/meeting_allocation/scenario_09/scenario.json",
+      "sha256": "7145222366669b80a0e14809757da06e18e90b03b9c3b450e5977333e298bc44",
+      "family": "meeting_allocation",
+      "scenario": "scenario_09",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_10",
+      "path": "scenarios/meeting_allocation/scenario_10/scenario.json",
+      "sha256": "0ee9ae896d4e06e6ee55202b4532642e5f29141438694794b55c18c0ef8c930e",
+      "family": "meeting_allocation",
+      "scenario": "scenario_10",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_11",
+      "path": "scenarios/meeting_allocation/scenario_11/scenario.json",
+      "sha256": "30d16bb73f10f8b6bef24a54bea19d59d2af80f1573df73903d5bc2db4e780cb",
+      "family": "meeting_allocation",
+      "scenario": "scenario_11",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_12",
+      "path": "scenarios/meeting_allocation/scenario_12/scenario.json",
+      "sha256": "0f9be3c5b138f504f443d087d5a16772a2716480b44eda6306c148d780421032",
+      "family": "meeting_allocation",
+      "scenario": "scenario_12",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_13",
+      "path": "scenarios/meeting_allocation/scenario_13/scenario.json",
+      "sha256": "c06d5551b1dc28d2434b73249c11b8143cfd5d5793a2bac17807c4ec9493a861",
+      "family": "meeting_allocation",
+      "scenario": "scenario_13",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_14",
+      "path": "scenarios/meeting_allocation/scenario_14/scenario.json",
+      "sha256": "9eac992866a153ad45187b88e85e9d8760c326823fa90ccd330fd863c7a89139",
+      "family": "meeting_allocation",
+      "scenario": "scenario_14",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_15",
+      "path": "scenarios/meeting_allocation/scenario_15/scenario.json",
+      "sha256": "953575ed38cc1e39dff02f62b27d9eb88b116c8ac88e6bdf34d77a7d19921856",
+      "family": "meeting_allocation",
+      "scenario": "scenario_15",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_16",
+      "path": "scenarios/meeting_allocation/scenario_16/scenario.json",
+      "sha256": "a9c367f3128953927c25d75ba6bdff888965d23fb4e228dcf325c36bfc80f362",
+      "family": "meeting_allocation",
+      "scenario": "scenario_16",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_17",
+      "path": "scenarios/meeting_allocation/scenario_17/scenario.json",
+      "sha256": "00659ceb82c5b2d998b40a570108f079391dbe83669fbf012299059019e9f9dc",
+      "family": "meeting_allocation",
+      "scenario": "scenario_17",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_18",
+      "path": "scenarios/meeting_allocation/scenario_18/scenario.json",
+      "sha256": "952245bec7ae0b69cbae2a6fb0e35698848cf8b6be36846828263836a06690d8",
+      "family": "meeting_allocation",
+      "scenario": "scenario_18",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_19",
+      "path": "scenarios/meeting_allocation/scenario_19/scenario.json",
+      "sha256": "3316d74ab5bbfadfa9847603f4fd74c5bf98bc9834b86f6dbe7c6ca63dc9d6d0",
+      "family": "meeting_allocation",
+      "scenario": "scenario_19",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_20",
+      "path": "scenarios/meeting_allocation/scenario_20/scenario.json",
+      "sha256": "e9098fc97289bd862e3f0d001fe4b74e13c84503fb6a75ca6515ca4fd8df0db4",
+      "family": "meeting_allocation",
+      "scenario": "scenario_20",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_21",
+      "path": "scenarios/meeting_allocation/scenario_21/scenario.json",
+      "sha256": "00dd1cdcf1b00b0e734755a51f05db362975cd55854bf728e2926a356c057c32",
+      "family": "meeting_allocation",
+      "scenario": "scenario_21",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_22",
+      "path": "scenarios/meeting_allocation/scenario_22/scenario.json",
+      "sha256": "5b36afd3a3feb98f8bd6ec6e57807e31a475ea8dcaa33adae4db58324cf04985",
+      "family": "meeting_allocation",
+      "scenario": "scenario_22",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_23",
+      "path": "scenarios/meeting_allocation/scenario_23/scenario.json",
+      "sha256": "7bc825c58ceb76bce91e686c2590314c5bab6bc201820dc8822b320d8f46abf7",
+      "family": "meeting_allocation",
+      "scenario": "scenario_23",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_24",
+      "path": "scenarios/meeting_allocation/scenario_24/scenario.json",
+      "sha256": "ba6095de145eee5fcc1f1eee7474e2273e8222b15a885c6b5995cc46a14e8348",
+      "family": "meeting_allocation",
+      "scenario": "scenario_24",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_25",
+      "path": "scenarios/meeting_allocation/scenario_25/scenario.json",
+      "sha256": "1f12d6631029c0202841aec8ad919dfa87b0c70ea4e7f9ff19f6846028fa5e81",
+      "family": "meeting_allocation",
+      "scenario": "scenario_25",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_26",
+      "path": "scenarios/meeting_allocation/scenario_26/scenario.json",
+      "sha256": "d4dd8af7b0a61b06c8476ab293945cc97669afa0ed26e41b70998cf8bdc1a8af",
+      "family": "meeting_allocation",
+      "scenario": "scenario_26",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_27",
+      "path": "scenarios/meeting_allocation/scenario_27/scenario.json",
+      "sha256": "85932a1dd96e45ed4fc35918a2ecc481ae3cb487afba82a41218935f0dd8cd7e",
+      "family": "meeting_allocation",
+      "scenario": "scenario_27",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_28",
+      "path": "scenarios/meeting_allocation/scenario_28/scenario.json",
+      "sha256": "d7afb6bc8af2272c487b520818008830f51f9b17ed3a1a36a16e7659e4b01fa5",
+      "family": "meeting_allocation",
+      "scenario": "scenario_28",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_29",
+      "path": "scenarios/meeting_allocation/scenario_29/scenario.json",
+      "sha256": "ee6d0de23427b8602ab76d989f4cf725c1856b11bb64fdb5a3950c8d28b98364",
+      "family": "meeting_allocation",
+      "scenario": "scenario_29",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_30",
+      "path": "scenarios/meeting_allocation/scenario_30/scenario.json",
+      "sha256": "2e51565523006b2b6c89851fd3cb3334cf45b7fa96e7ca88eeb524b37e53b058",
+      "family": "meeting_allocation",
+      "scenario": "scenario_30",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_31",
+      "path": "scenarios/meeting_allocation/scenario_31/scenario.json",
+      "sha256": "7ea9bb8ed128fb0c207cd54895e984452a7ef92e3155ebeb3334caa4e3117c31",
+      "family": "meeting_allocation",
+      "scenario": "scenario_31",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_32",
+      "path": "scenarios/meeting_allocation/scenario_32/scenario.json",
+      "sha256": "6150e47a7fd087b9f47e2c9b3907556ac542184374baf2ac4278509780095c3e",
+      "family": "meeting_allocation",
+      "scenario": "scenario_32",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_33",
+      "path": "scenarios/meeting_allocation/scenario_33/scenario.json",
+      "sha256": "476efc5bb0e9813a0a8f060683532405f4cc0101c4099e84592469c51fad3dc9",
+      "family": "meeting_allocation",
+      "scenario": "scenario_33",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_34",
+      "path": "scenarios/meeting_allocation/scenario_34/scenario.json",
+      "sha256": "f3a05197fc7bfd8df3c3c30bbaf574cfc499e734630b2b1f4b7d91528650290a",
+      "family": "meeting_allocation",
+      "scenario": "scenario_34",
+      "task_fallback": true
+    },
+    {
+      "case_id": "meeting_allocation__scenario_35",
+      "path": "scenarios/meeting_allocation/scenario_35/scenario.json",
+      "sha256": "86115792acf09071bce8ded8a0cdd402812cb9c865c916cec3738e0bf8c9e031",
+      "family": "meeting_allocation",
+      "scenario": "scenario_35",
+      "task_fallback": true
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_01",
+      "path": "scenarios/outgoing_museum_loan/scenario_01/scenario.json",
+      "sha256": "0949c68902f4f61779524ebb08957e5c649b3fecfc5ecfbe707b1194600c271c",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_02",
+      "path": "scenarios/outgoing_museum_loan/scenario_02/scenario.json",
+      "sha256": "df07ef5675be0ccc45c3d86fa056e79a10988b2be32c364f150f26413414b8bd",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_03",
+      "path": "scenarios/outgoing_museum_loan/scenario_03/scenario.json",
+      "sha256": "aacdd5dce683d4e452d66d8e9edda0f8030d51fc749abf74653784141b9e89af",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_04",
+      "path": "scenarios/outgoing_museum_loan/scenario_04/scenario.json",
+      "sha256": "2ea3001d68ea6f8b70446059e474cd729113664f3ab5810ed4233e3d8b397050",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_05",
+      "path": "scenarios/outgoing_museum_loan/scenario_05/scenario.json",
+      "sha256": "6df1b66723dcb096d6f40870d52d439735aef27d9249137f55d7535829a2a6bd",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_06",
+      "path": "scenarios/outgoing_museum_loan/scenario_06/scenario.json",
+      "sha256": "bc660d6f7aed912b4ca46da1163785ee4556c89ca4ca199d31394d84b27f64c6",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_07",
+      "path": "scenarios/outgoing_museum_loan/scenario_07/scenario.json",
+      "sha256": "b51f75511d36bc72c3b8208a38e9408c83a51b3eaf3c82b41b7e033cf23093f9",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_08",
+      "path": "scenarios/outgoing_museum_loan/scenario_08/scenario.json",
+      "sha256": "9722427d4f80ae3aecc66c5b732f18473af3ab4e2270b462e6aa9b652f907b0f",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_09",
+      "path": "scenarios/outgoing_museum_loan/scenario_09/scenario.json",
+      "sha256": "cf27f19c6ef3f3f2932f6f5ac2aeb2a37c0907c9978d25b12fd505eedaf0cf65",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_10",
+      "path": "scenarios/outgoing_museum_loan/scenario_10/scenario.json",
+      "sha256": "5d67895e84985ffe487f65a144658fc8a255cf45eb981e4f9ed136b59a4ec74e",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_11",
+      "path": "scenarios/outgoing_museum_loan/scenario_11/scenario.json",
+      "sha256": "8444859f86e8c22471f88074553be963eb3832b752275962f2124fe0667583db",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_12",
+      "path": "scenarios/outgoing_museum_loan/scenario_12/scenario.json",
+      "sha256": "6bc5be8752866b8c476aec312a7638296e356eb2e42bf60e1882d09980f6596c",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_13",
+      "path": "scenarios/outgoing_museum_loan/scenario_13/scenario.json",
+      "sha256": "f4232973e8aee529360cbe32b3cf971bb93a97c11c4bbe967f3e083c4b65a3fa",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_14",
+      "path": "scenarios/outgoing_museum_loan/scenario_14/scenario.json",
+      "sha256": "9ab28e4705d8adb641f6ad6ccdf7c073f56006e155131f6f82549338997e7b93",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_15",
+      "path": "scenarios/outgoing_museum_loan/scenario_15/scenario.json",
+      "sha256": "6e989c26d2c93e854d25f59f50050e530cb7c4a4f7fb6c19561c3c673fcf2446",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_16",
+      "path": "scenarios/outgoing_museum_loan/scenario_16/scenario.json",
+      "sha256": "d4df0a4f50225ad0eceb1c605e2567108a38bd03ad12ec331a4c7ae1c0c25bbd",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_17",
+      "path": "scenarios/outgoing_museum_loan/scenario_17/scenario.json",
+      "sha256": "0c2e418eee9ea5ad560193e38137c5316cba2f67693fa42404723caabea19eb5",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_18",
+      "path": "scenarios/outgoing_museum_loan/scenario_18/scenario.json",
+      "sha256": "c70f86c4248d52a533e970fda385df8bf2403606dc2b49076e3f6fe0bc6f19df",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_19",
+      "path": "scenarios/outgoing_museum_loan/scenario_19/scenario.json",
+      "sha256": "0fe3557ae47c251c7babb13678412880d6553428ab2bbc7060d14e9fccf0bd0b",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_20",
+      "path": "scenarios/outgoing_museum_loan/scenario_20/scenario.json",
+      "sha256": "0080d77b80aa9bfb6c5c866a847f35adae01a7d93238abe5286a668942a743c0",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_21",
+      "path": "scenarios/outgoing_museum_loan/scenario_21/scenario.json",
+      "sha256": "0d4a651a5301447d04a664a815b1e9e877e348b349674f0cc828ed0c80710ba1",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_22",
+      "path": "scenarios/outgoing_museum_loan/scenario_22/scenario.json",
+      "sha256": "c5557c90c9fb177b2dababceecc6c43a611c73e561cedbd40e1a84eeb570c5fa",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_23",
+      "path": "scenarios/outgoing_museum_loan/scenario_23/scenario.json",
+      "sha256": "766e013b0c4e5c5fa262d44d39631d39247f110f159a73c69fa08737ba0d58b7",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_24",
+      "path": "scenarios/outgoing_museum_loan/scenario_24/scenario.json",
+      "sha256": "227f9d2447cda67b0167378f94a92501b33bb67b83ceaf96ef98c46ebd089d23",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_25",
+      "path": "scenarios/outgoing_museum_loan/scenario_25/scenario.json",
+      "sha256": "5a1dd84ee676b7c506e1645b5dd1e828e993fbda407f715a270710d34ff8f82d",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_26",
+      "path": "scenarios/outgoing_museum_loan/scenario_26/scenario.json",
+      "sha256": "85adcf665ea776aa9d1347168e6716a3fea219193066f4af159c3dd599512851",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_27",
+      "path": "scenarios/outgoing_museum_loan/scenario_27/scenario.json",
+      "sha256": "68a434819d4da97076999869ecf47cc15395aa86aa6ba0c3460f180900d8b8d7",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_28",
+      "path": "scenarios/outgoing_museum_loan/scenario_28/scenario.json",
+      "sha256": "4698970f506cbdf81e79b114dc4293b29d0d9e9271bd551aa0ef2bf8870b0a1b",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_29",
+      "path": "scenarios/outgoing_museum_loan/scenario_29/scenario.json",
+      "sha256": "66a9b916cbc10978e2e0fa1714cc2407aa68c9d9f34b1d81f89c3c088224ea8e",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "outgoing_museum_loan__scenario_30",
+      "path": "scenarios/outgoing_museum_loan/scenario_30/scenario.json",
+      "sha256": "b69f0194343c772e1fa7f4f68e213382e0885d868f6f96dd4ce0d08049812903",
+      "family": "outgoing_museum_loan",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_01",
+      "path": "scenarios/severity_classification/scenario_01/scenario.json",
+      "sha256": "4deca00e8caac0cf4df6e225003f286c94f9607b9e0c9054191ce236937d28f1",
+      "family": "severity_classification",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_02",
+      "path": "scenarios/severity_classification/scenario_02/scenario.json",
+      "sha256": "c8e9e154396b1f6b23876bd6b126629ec69c51ad3ec53020b471a49f80f4d6c0",
+      "family": "severity_classification",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_03",
+      "path": "scenarios/severity_classification/scenario_03/scenario.json",
+      "sha256": "b37ca244bf9b55ea22b062f5c65fe0b12d3057f59cade7b474aea1124f72f06a",
+      "family": "severity_classification",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_04",
+      "path": "scenarios/severity_classification/scenario_04/scenario.json",
+      "sha256": "67a0726c2b8e37f1d436bf56c165c89cc801cf7b6bf1e4780f9f59a2a8570cf4",
+      "family": "severity_classification",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_05",
+      "path": "scenarios/severity_classification/scenario_05/scenario.json",
+      "sha256": "5a43918ae7da80830607fdbf5b8ea952da6154a1c181d21660b85c6f0249a981",
+      "family": "severity_classification",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_06",
+      "path": "scenarios/severity_classification/scenario_06/scenario.json",
+      "sha256": "fb6bc414998d8364a30e13352a89a372289152e939e51b324066dc205bd000b4",
+      "family": "severity_classification",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_07",
+      "path": "scenarios/severity_classification/scenario_07/scenario.json",
+      "sha256": "fb08d830bf91a58ed20741689c9ab914a0a6ffe929392e548a6980d8484b7d35",
+      "family": "severity_classification",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_08",
+      "path": "scenarios/severity_classification/scenario_08/scenario.json",
+      "sha256": "6870adc18c1c557c5e96239b2bf08be3995c3493b79dfe5c3e66e9974a6ce5b5",
+      "family": "severity_classification",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_09",
+      "path": "scenarios/severity_classification/scenario_09/scenario.json",
+      "sha256": "4ec632d19b755b6317c1e07f5dfefff9337a76b9341138310602be97835b844a",
+      "family": "severity_classification",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_10",
+      "path": "scenarios/severity_classification/scenario_10/scenario.json",
+      "sha256": "eff686b639d8d39d00921153316ea7224f8a506205b5a834a519de9795b0c937",
+      "family": "severity_classification",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_11",
+      "path": "scenarios/severity_classification/scenario_11/scenario.json",
+      "sha256": "42cb420ae4e05a6adaf61cbf05e5214507277a5af0a488d8a4e2c7ed599d9982",
+      "family": "severity_classification",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_12",
+      "path": "scenarios/severity_classification/scenario_12/scenario.json",
+      "sha256": "8749b00d0c968a3a0d1774c4b1557998a80016758467675576abe2d63a504699",
+      "family": "severity_classification",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_13",
+      "path": "scenarios/severity_classification/scenario_13/scenario.json",
+      "sha256": "54c85ea41fcec3424e7b229ac09d747fd7171322fe10f0ca88b86c00bda2c00e",
+      "family": "severity_classification",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_14",
+      "path": "scenarios/severity_classification/scenario_14/scenario.json",
+      "sha256": "492dea33a34d5f3740b0c7c14d4fd7cb08e60c8a5e85a4c62a294dd53456ba17",
+      "family": "severity_classification",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_15",
+      "path": "scenarios/severity_classification/scenario_15/scenario.json",
+      "sha256": "d340ab88f7bbce15c6953c39da7db81828bb718611b6eab71a3dd53bb8d60f1c",
+      "family": "severity_classification",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_16",
+      "path": "scenarios/severity_classification/scenario_16/scenario.json",
+      "sha256": "87695a9f3a8946680f74df009e8e08ef710186d5347b69fb6b6cf8d794cb37f6",
+      "family": "severity_classification",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_17",
+      "path": "scenarios/severity_classification/scenario_17/scenario.json",
+      "sha256": "0a6ba1e4390fb31e9cebf8dbb07ed10381f7860a7ec41c04b31b08d11d6fa7c0",
+      "family": "severity_classification",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_18",
+      "path": "scenarios/severity_classification/scenario_18/scenario.json",
+      "sha256": "093c389b96fa6c0219842eb74c7e301289f27ce2c85b861f0f618ff164cb2f1e",
+      "family": "severity_classification",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_19",
+      "path": "scenarios/severity_classification/scenario_19/scenario.json",
+      "sha256": "d904e58d8c33ea38273887c58a17b4224e909ce0dbbd5b0d793b5c76245b4146",
+      "family": "severity_classification",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_20",
+      "path": "scenarios/severity_classification/scenario_20/scenario.json",
+      "sha256": "283fb6fb209b6473b06496772ba88151e9dc4330b07fa8be8a2de8d9d71823e4",
+      "family": "severity_classification",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_21",
+      "path": "scenarios/severity_classification/scenario_21/scenario.json",
+      "sha256": "2ea8ed0a8cb07c621a23784f9c89b4e401cb4297163fa1d0b488612ee6c83c71",
+      "family": "severity_classification",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_22",
+      "path": "scenarios/severity_classification/scenario_22/scenario.json",
+      "sha256": "767777bdd8ba297ad01926cfdf94ff70e92278e9f8b644307b4dec54992aecf5",
+      "family": "severity_classification",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_23",
+      "path": "scenarios/severity_classification/scenario_23/scenario.json",
+      "sha256": "a2da43183e40b1f6a294e9a034fd962a7b803c9591c890ee9d3e2fb04c28e368",
+      "family": "severity_classification",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_24",
+      "path": "scenarios/severity_classification/scenario_24/scenario.json",
+      "sha256": "795e83d52b8968ac44559d14dae8b90aa02a9f26e8cecd4ac4c367a75b1f10d2",
+      "family": "severity_classification",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "severity_classification__scenario_25",
+      "path": "scenarios/severity_classification/scenario_25/scenario.json",
+      "sha256": "6ba2dee13a4909736b93b8c54cb55305642256f1e424387421d6ccfdf03c4e91",
+      "family": "severity_classification",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_01",
+      "path": "scenarios/special_event_permit_readiness/scenario_01/scenario.json",
+      "sha256": "95abd24f77b09cf18c90eedc075e9d409e746d372487a06d6e3e00e7ffd73c23",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_02",
+      "path": "scenarios/special_event_permit_readiness/scenario_02/scenario.json",
+      "sha256": "8b4c61b16322a75fd93a3d327e0f7f2fc23cac6c7287efe48976ed1e118df1bb",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_03",
+      "path": "scenarios/special_event_permit_readiness/scenario_03/scenario.json",
+      "sha256": "ec23602c18c75b4962e2ac48c8aa86905199715de071f2d2454e8629ee74d65a",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_04",
+      "path": "scenarios/special_event_permit_readiness/scenario_04/scenario.json",
+      "sha256": "90178c251f189552b6ebb3d8bc1b528c56199043d7a16e034605401cb7947c75",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_05",
+      "path": "scenarios/special_event_permit_readiness/scenario_05/scenario.json",
+      "sha256": "9c2826c182a7ba71b2cdd19a8d98145e1ecd9d11c41f224c2dca546b804451a8",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_06",
+      "path": "scenarios/special_event_permit_readiness/scenario_06/scenario.json",
+      "sha256": "8448fc21b25dbbdf02e29a127e732b777d98ce915717638f630b5205e7d78ed3",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_07",
+      "path": "scenarios/special_event_permit_readiness/scenario_07/scenario.json",
+      "sha256": "0a8be9d8b07ebca0c5e0f3a9b5667e2ae1bb8ec717e83673f6e6c91c199dd168",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_08",
+      "path": "scenarios/special_event_permit_readiness/scenario_08/scenario.json",
+      "sha256": "51b6417f192c0e23edba574783abd9ed07ac090b786cdc29993fde8a17241455",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_09",
+      "path": "scenarios/special_event_permit_readiness/scenario_09/scenario.json",
+      "sha256": "3f63bcac91fda66f73c26fbcc99a60ced4fdcb49a6355b9c45c7605699e6ec5b",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_10",
+      "path": "scenarios/special_event_permit_readiness/scenario_10/scenario.json",
+      "sha256": "1e14ba02e2e8828632b62de800fffe0d282451a7df90bf28aa20354dc15b12ca",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_11",
+      "path": "scenarios/special_event_permit_readiness/scenario_11/scenario.json",
+      "sha256": "caa7719871ffff40f13f8338a548d13f71fd5a0ff5b192a1560289fd152de95b",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_12",
+      "path": "scenarios/special_event_permit_readiness/scenario_12/scenario.json",
+      "sha256": "c22b4f96e81d62ada2ad1147f650463fca1c7ded341d388d76075f4794ba7de0",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_13",
+      "path": "scenarios/special_event_permit_readiness/scenario_13/scenario.json",
+      "sha256": "b4f493b23744a4dd429b9aba0252388d069657584a127b59b83d762adbb59b60",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_14",
+      "path": "scenarios/special_event_permit_readiness/scenario_14/scenario.json",
+      "sha256": "fbce844e2d39facd711ab15e77280f156a9807c1af83eff035558be9089674a9",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_15",
+      "path": "scenarios/special_event_permit_readiness/scenario_15/scenario.json",
+      "sha256": "612ada40bf374c728cdc179dbfa2d28cf76fcc2f014852cbe8f2fb192b6b0655",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_16",
+      "path": "scenarios/special_event_permit_readiness/scenario_16/scenario.json",
+      "sha256": "37d52fe0546e484c84ad03f9e1bb41b862d6fe3985113f4e484f0d4b97e54a54",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_17",
+      "path": "scenarios/special_event_permit_readiness/scenario_17/scenario.json",
+      "sha256": "ab6d07cf845d455ad3d328dbbaa506fbe33e32248c4154a366537440da65effd",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_18",
+      "path": "scenarios/special_event_permit_readiness/scenario_18/scenario.json",
+      "sha256": "3e0ece615724a9316c13995e37434fdcdf8ddd6236c77b005a8fee66a0f0945c",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_19",
+      "path": "scenarios/special_event_permit_readiness/scenario_19/scenario.json",
+      "sha256": "8e7eafa248e021ff1f8f7a8367d192ac266250c0ceff60626d41576b2469f99e",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_20",
+      "path": "scenarios/special_event_permit_readiness/scenario_20/scenario.json",
+      "sha256": "ff1294cd12731ee0f98da3f1488175ae1d194f84ceefc18128014093fe56208e",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_21",
+      "path": "scenarios/special_event_permit_readiness/scenario_21/scenario.json",
+      "sha256": "d92d47262a193e26723a1ad103880f676993d49738f7477993f0b864a7decccd",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_22",
+      "path": "scenarios/special_event_permit_readiness/scenario_22/scenario.json",
+      "sha256": "75ea9ceee0e4ec6e8a170343b28768a28088f964c61c687a9ade5840f2eccc48",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "path": "scenarios/special_event_permit_readiness/scenario_23/scenario.json",
+      "sha256": "a48a53efb6731cccbbea4291d6e62a4baf2f07a35f45edd2b28afa916c45a58c",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_24",
+      "path": "scenarios/special_event_permit_readiness/scenario_24/scenario.json",
+      "sha256": "bc810fbdf1af9407f749a4f3382b429e2e46a9cd5513f92ee29cc334f2963dd0",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_25",
+      "path": "scenarios/special_event_permit_readiness/scenario_25/scenario.json",
+      "sha256": "09cddcf5704913e9afa9197c513876a62989fb236a9ff6d5b76c4b118e42a70c",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_26",
+      "path": "scenarios/special_event_permit_readiness/scenario_26/scenario.json",
+      "sha256": "72b222164ac0b8c16b64303bd752954b0caee173d1f293570e3ae218fa9e8715",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_27",
+      "path": "scenarios/special_event_permit_readiness/scenario_27/scenario.json",
+      "sha256": "29ea4513b92f35005cbd677d014f3eb7afd0fbfb853500c6ab35b855bf1a012c",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_28",
+      "path": "scenarios/special_event_permit_readiness/scenario_28/scenario.json",
+      "sha256": "a61c9ce74689a4d09f93ea569812a50b6c8967859dd914806a67605dec12aa47",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_29",
+      "path": "scenarios/special_event_permit_readiness/scenario_29/scenario.json",
+      "sha256": "e424273558d90406ea12c547a7c82d6c514bbec6cf963442a0ef5c9d7a52fbdf",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "special_event_permit_readiness__scenario_30",
+      "path": "scenarios/special_event_permit_readiness/scenario_30/scenario.json",
+      "sha256": "13647694610f9b0a5c40191e4fb6663ed96964798c467c4578655885d00f2927",
+      "family": "special_event_permit_readiness",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_01",
+      "path": "scenarios/thesis_readiness/scenario_01/scenario.json",
+      "sha256": "e7d2cb5daeb024084e3123c0d56c112751c45a1647cf16cca24ba73fb4f20f7d",
+      "family": "thesis_readiness",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_02",
+      "path": "scenarios/thesis_readiness/scenario_02/scenario.json",
+      "sha256": "c54cf1fbc48d2afae7fe7b27c85a08dbe099718f598f39d2b7bdec5a2094c390",
+      "family": "thesis_readiness",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_03",
+      "path": "scenarios/thesis_readiness/scenario_03/scenario.json",
+      "sha256": "35f4f042e84868059a3fea945ad732188922d8a5b2259519955197856ea27e1e",
+      "family": "thesis_readiness",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_04",
+      "path": "scenarios/thesis_readiness/scenario_04/scenario.json",
+      "sha256": "8846240071d8d63eb924239edf033123fa592bb452bc46799725ab98e238ad2b",
+      "family": "thesis_readiness",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_05",
+      "path": "scenarios/thesis_readiness/scenario_05/scenario.json",
+      "sha256": "36a840ed50a6382a60308556a3c03e8f8367086b772e4cb633044ec32afdc166",
+      "family": "thesis_readiness",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_06",
+      "path": "scenarios/thesis_readiness/scenario_06/scenario.json",
+      "sha256": "34817ac9e2169eeb967a8486e379c55a73771a98d716bb76bb3d2262551c3f0d",
+      "family": "thesis_readiness",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_07",
+      "path": "scenarios/thesis_readiness/scenario_07/scenario.json",
+      "sha256": "487049633a43d1bb57ff226edc61cf65cdc1762b937d0a0eb02e169abf8dfc45",
+      "family": "thesis_readiness",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_08",
+      "path": "scenarios/thesis_readiness/scenario_08/scenario.json",
+      "sha256": "7067144d93de86f0b0507ecc1b43ec67cdbd6600c35bc314d0577887c459b5eb",
+      "family": "thesis_readiness",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_09",
+      "path": "scenarios/thesis_readiness/scenario_09/scenario.json",
+      "sha256": "8d76eaf8a2fc332a513d1eafc47c83575849d61f42ba9ca8bd0b2d6c07cf8951",
+      "family": "thesis_readiness",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_10",
+      "path": "scenarios/thesis_readiness/scenario_10/scenario.json",
+      "sha256": "afaec823c4cc3dfa6e8445e38259ffca4b6b0daf685940df61406f45050cae8e",
+      "family": "thesis_readiness",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_11",
+      "path": "scenarios/thesis_readiness/scenario_11/scenario.json",
+      "sha256": "3a709d7cd9d9f5027647c02369ad475d58f230ffa5fd335f4043f970494868b8",
+      "family": "thesis_readiness",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_12",
+      "path": "scenarios/thesis_readiness/scenario_12/scenario.json",
+      "sha256": "8bb3e4288b0ff38367c4e8a79b34b981a1325d1c157c6b1a9fe6c1ebe98edade",
+      "family": "thesis_readiness",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_13",
+      "path": "scenarios/thesis_readiness/scenario_13/scenario.json",
+      "sha256": "a9fdffc0033e28d382826f45733ea0fa44aeeb9c8b003cd1004780c41fc9e8b0",
+      "family": "thesis_readiness",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_14",
+      "path": "scenarios/thesis_readiness/scenario_14/scenario.json",
+      "sha256": "d89d0d9d4990fdd70c03cb100d274d1b3014906c1b5f736372fc06ab6d34ec4f",
+      "family": "thesis_readiness",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_15",
+      "path": "scenarios/thesis_readiness/scenario_15/scenario.json",
+      "sha256": "f43bcb1daf8a73cc743ff929803d577ccd5dffa91c7a1ab8d4fe38258898fddb",
+      "family": "thesis_readiness",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_16",
+      "path": "scenarios/thesis_readiness/scenario_16/scenario.json",
+      "sha256": "0b353c5ebfe3034e81f3bfc5dcb7bafaabe03903961da14c03c4ad441bab7597",
+      "family": "thesis_readiness",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_17",
+      "path": "scenarios/thesis_readiness/scenario_17/scenario.json",
+      "sha256": "75c22ce3b17a484b888b9837d5dc279ca71e37a42fc5b1e6efa7fa4472f1531c",
+      "family": "thesis_readiness",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_18",
+      "path": "scenarios/thesis_readiness/scenario_18/scenario.json",
+      "sha256": "c5991f4e79e0fa059de9c34a2cfe207dd5b0e6497249eff8cf5ef0a58e658df8",
+      "family": "thesis_readiness",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_19",
+      "path": "scenarios/thesis_readiness/scenario_19/scenario.json",
+      "sha256": "65d6bbceb531cd2fbb4ea95496f8194ae1bc819b2bf03941a9dcd137aef134e2",
+      "family": "thesis_readiness",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_20",
+      "path": "scenarios/thesis_readiness/scenario_20/scenario.json",
+      "sha256": "7d63f33300ab1e9ced20a255e3d285bf46eab622d0b3110db64f57bbaeb2f103",
+      "family": "thesis_readiness",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_21",
+      "path": "scenarios/thesis_readiness/scenario_21/scenario.json",
+      "sha256": "5268c67f5420bdb213ff3152b8885fd7956a4f751dd4a7eed4e4bc96b9bbb843",
+      "family": "thesis_readiness",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_22",
+      "path": "scenarios/thesis_readiness/scenario_22/scenario.json",
+      "sha256": "b156a8688cb50c800312dbcd93c1ee7b5e0007648d0ae7efc70158089513aa53",
+      "family": "thesis_readiness",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_23",
+      "path": "scenarios/thesis_readiness/scenario_23/scenario.json",
+      "sha256": "c423d01067517ef89cf91a2989ae05ff5c7455f54ef0d6bd60e16489d383c3c9",
+      "family": "thesis_readiness",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_24",
+      "path": "scenarios/thesis_readiness/scenario_24/scenario.json",
+      "sha256": "6f313574c963c6b2a437a3de58441d1a201960bc2e78845039070cff845bf5d4",
+      "family": "thesis_readiness",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_25",
+      "path": "scenarios/thesis_readiness/scenario_25/scenario.json",
+      "sha256": "daa51cf682ff7b9d4f9f000cd983d6f58edceecc96558990ce6261ea819d1b97",
+      "family": "thesis_readiness",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_26",
+      "path": "scenarios/thesis_readiness/scenario_26/scenario.json",
+      "sha256": "295db9b2552b1d3147aa6ce85f28bac3a9dbd5d2a73e583faaf9f766ba3246f3",
+      "family": "thesis_readiness",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_27",
+      "path": "scenarios/thesis_readiness/scenario_27/scenario.json",
+      "sha256": "c60d53e9c87bcf3048418b7c07cfe0075b55da89014fb299501a95a90a5187dc",
+      "family": "thesis_readiness",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_28",
+      "path": "scenarios/thesis_readiness/scenario_28/scenario.json",
+      "sha256": "ccf8852879e8a29c6cada1e61176ace2ff6d79c49b6480aba1e4cc67d37b69f2",
+      "family": "thesis_readiness",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_29",
+      "path": "scenarios/thesis_readiness/scenario_29/scenario.json",
+      "sha256": "e21a55f769919c7150e9f819ed630190733e3290da18b245d5b4d9ba31515565",
+      "family": "thesis_readiness",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "thesis_readiness__scenario_30",
+      "path": "scenarios/thesis_readiness/scenario_30/scenario.json",
+      "sha256": "a02a0788de278bc9b6347c20bd73aa263623fcd91709d6ee08a095e4305a2adb",
+      "family": "thesis_readiness",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_01",
+      "path": "scenarios/uas_flight_readiness/scenario_01/scenario.json",
+      "sha256": "5f324b11e1d539623fa7e4f5f88507b6d526a8d3307b329a75bba137ca8b24e0",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_01",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_02",
+      "path": "scenarios/uas_flight_readiness/scenario_02/scenario.json",
+      "sha256": "043fdcad378b5ac223240b2a9b96ef0f81043522bf48080700cf5f0924f80d78",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_02",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_03",
+      "path": "scenarios/uas_flight_readiness/scenario_03/scenario.json",
+      "sha256": "4cebbb22fa64b4892814954787616a12a14fde9805e7d4124354e2f3747bae1b",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_03",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_04",
+      "path": "scenarios/uas_flight_readiness/scenario_04/scenario.json",
+      "sha256": "1e3adfbbe6ca6d69501ed614732017f39176af633bcbf8e597c52ef591a6deb4",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_04",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_05",
+      "path": "scenarios/uas_flight_readiness/scenario_05/scenario.json",
+      "sha256": "9e90a9930b89fa7fee1e7e6aebb199ad16c060d28572c57a50c6e78ee28627b6",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_05",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_06",
+      "path": "scenarios/uas_flight_readiness/scenario_06/scenario.json",
+      "sha256": "a94e11fbaf36fb153a404337add9f2526b2f5e2543468d45157647bb61be2e72",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_06",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_07",
+      "path": "scenarios/uas_flight_readiness/scenario_07/scenario.json",
+      "sha256": "c107dbc85de4d1851243dd8b26c980154239e38c0e6fcfa71c5a1d687dfb849d",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_07",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_08",
+      "path": "scenarios/uas_flight_readiness/scenario_08/scenario.json",
+      "sha256": "789adf34524b88b2ddbc6a17918350562f3dc697d231ed057c5475b25992f0bb",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_08",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_09",
+      "path": "scenarios/uas_flight_readiness/scenario_09/scenario.json",
+      "sha256": "7ccf738bd6d20c4adf28dc0e07e0b80cae00b5ce7fb171f3a0b5e523e92d8819",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_09",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_10",
+      "path": "scenarios/uas_flight_readiness/scenario_10/scenario.json",
+      "sha256": "52c460c3161b0653cbcd36640059ebeb28c94f74e663277a9d23b71d5de87532",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_10",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_11",
+      "path": "scenarios/uas_flight_readiness/scenario_11/scenario.json",
+      "sha256": "52b753bb6cf15b79ed0f79911db0090e30579f0bbdcb899e00c347794cba4831",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_11",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_12",
+      "path": "scenarios/uas_flight_readiness/scenario_12/scenario.json",
+      "sha256": "531d88c9f407ba51b66c26c5265c3d7a621eb43e82c59efa8296b4a8413d5d9b",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_12",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_13",
+      "path": "scenarios/uas_flight_readiness/scenario_13/scenario.json",
+      "sha256": "9156b45f0faa25483f9b4d4484c21a2ed35308c08329a9eef05927d78c53b4d9",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_13",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_14",
+      "path": "scenarios/uas_flight_readiness/scenario_14/scenario.json",
+      "sha256": "bcd86b911348c3352bb0c1b48d96eaeec60ae84d648a6bf1fcdcf0a98879b295",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_14",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_15",
+      "path": "scenarios/uas_flight_readiness/scenario_15/scenario.json",
+      "sha256": "c73dcc85d05aac917a2c64cbedda6585053e2aa416370fa51ac02f2d388e2167",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_15",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_16",
+      "path": "scenarios/uas_flight_readiness/scenario_16/scenario.json",
+      "sha256": "ed25cddcc99f801abb3a5c5979567f874072c30673dcab7f7f94abfa3a886aec",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_16",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_17",
+      "path": "scenarios/uas_flight_readiness/scenario_17/scenario.json",
+      "sha256": "60f922b374830bff6bf55d8426054d5fea3563df4978d57a06c0b924300efc29",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_17",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_18",
+      "path": "scenarios/uas_flight_readiness/scenario_18/scenario.json",
+      "sha256": "7676f73904b38a3beeafbe85dd5c3b040c626add913e08c44508c0ada7da1da9",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_18",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_19",
+      "path": "scenarios/uas_flight_readiness/scenario_19/scenario.json",
+      "sha256": "aeac18a9827ff19bd32e32fddd661d5c9ed3e69ce4a36810c1f5391bf60fb1c5",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_19",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_20",
+      "path": "scenarios/uas_flight_readiness/scenario_20/scenario.json",
+      "sha256": "b1ee2402f9a2475d947caf49b87008b241e17957818e0371898abc9a33d6c787",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_20",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_21",
+      "path": "scenarios/uas_flight_readiness/scenario_21/scenario.json",
+      "sha256": "73d44bbbfb8cdf58950cdd63803586ce99df5036584e14f76cb2127d4d420900",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_21",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_22",
+      "path": "scenarios/uas_flight_readiness/scenario_22/scenario.json",
+      "sha256": "14d3de99524460d84422af4020469449d1766a3053c2265be5d46f541a541e5a",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_22",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_23",
+      "path": "scenarios/uas_flight_readiness/scenario_23/scenario.json",
+      "sha256": "9762e20ac0a54c9ed81e30ae1d741ead3cf949023436c0dfa003c5e7ec24aec6",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_23",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_24",
+      "path": "scenarios/uas_flight_readiness/scenario_24/scenario.json",
+      "sha256": "e1ea120c4b8b08bdf6e75c640d2fbfada994f39a9169973f31582b19be11e4b2",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_24",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_25",
+      "path": "scenarios/uas_flight_readiness/scenario_25/scenario.json",
+      "sha256": "abf7f9ca6866828a5c848b627ca9ac3fe5a2a86eab7c2e4e9cd9f63bb81fa228",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_25",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_26",
+      "path": "scenarios/uas_flight_readiness/scenario_26/scenario.json",
+      "sha256": "225650487d9adc8e1fe1475d2b5fc50be7a13d1d05a9faafdc0b8c0a773e8d1e",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_26",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_27",
+      "path": "scenarios/uas_flight_readiness/scenario_27/scenario.json",
+      "sha256": "45107a210f736392deda36cd6e1b02d396ac6f9a2dd98763b788fb44b342a22c",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_27",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_28",
+      "path": "scenarios/uas_flight_readiness/scenario_28/scenario.json",
+      "sha256": "8345d23ed67f0ef46c3fed8a799ead4d4c4a17fe4ca0ca5873b8488a7dbdc88c",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_28",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_29",
+      "path": "scenarios/uas_flight_readiness/scenario_29/scenario.json",
+      "sha256": "a8860b83e216dc1d67d2b4025e395ca11e41a990f57a28392a1aa0ddec7c7958",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_29",
+      "task_fallback": false
+    },
+    {
+      "case_id": "uas_flight_readiness__scenario_30",
+      "path": "scenarios/uas_flight_readiness/scenario_30/scenario.json",
+      "sha256": "048a347032d2f1b8a76a319500115c50c69c121646588af4c7a055f4fcc27156",
+      "family": "uas_flight_readiness",
+      "scenario": "scenario_30",
+      "task_fallback": false
+    }
+  ],
+  "replays": [
+    {
+      "run_id": "run-04a0a93f3d27d5861f065bf02d5361c6",
+      "path": "replays/run-04a0a93f3d27d5861f065bf02d5361c6.json",
+      "sha256": "dece638c8b51a7e1578b40690ad6a698722e73bda1ef31afe9fb2333616147d1",
+      "case_id": "meeting_allocation__scenario_01",
+      "cohort": "canary",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-0666927711bb6718d5994b5b9413b661",
+      "path": "replays/run-0666927711bb6718d5994b5b9413b661.json",
+      "sha256": "b02535e46f7817ebadcfd3eb250c30cd5b09957b2c4df0fa0439c0c29fac1638",
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-116c098f11dd477dff4562506179797f",
+      "path": "replays/run-116c098f11dd477dff4562506179797f.json",
+      "sha256": "72cf455b19d68851703194b44dc298039cd9804f3d9c8f3648c3114a5e8885fb",
+      "case_id": "severity_classification__scenario_09",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-1484e5da0fc4409d49325ccf138cee8f",
+      "path": "replays/run-1484e5da0fc4409d49325ccf138cee8f.json",
+      "sha256": "56e7acad6094a5ffac07fb9f305df64e5250a067197660f028fca51b25993bf4",
+      "case_id": "inpatient_discharge__scenario_14",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-1519ab196d146bbded2735496460080a",
+      "path": "replays/run-1519ab196d146bbded2735496460080a.json",
+      "sha256": "ee65284ceddd42e59bdc726e1d94232fc5e528133d2084d993de83e0a9043a53",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-17aec1a6191ab284f34cb2290cee8c7e",
+      "path": "replays/run-17aec1a6191ab284f34cb2290cee8c7e.json",
+      "sha256": "5f19c27a232894e429bd1108c9d609b3cee22c1004d71c243a221d92dd0dd28f",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-18e57d03cf2704209aa99bfb8e18f494",
+      "path": "replays/run-18e57d03cf2704209aa99bfb8e18f494.json",
+      "sha256": "5c68f4bcf6079813cafd4b78e1b9e49b4c3deb4bda7861d99f6d8fc2d5d71a8b",
+      "case_id": "manuscript_submission__scenario_13",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-19251916972c66610cac1c30010aa895",
+      "path": "replays/run-19251916972c66610cac1c30010aa895.json",
+      "sha256": "927e8572536340d0ae4304420c22832f1778dd8417c1029598becf8b9f50a9b1",
+      "case_id": "thesis_readiness__scenario_18",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-1c031e3de404984623101ad7f5cb09ca",
+      "path": "replays/run-1c031e3de404984623101ad7f5cb09ca.json",
+      "sha256": "287275d17724489d8400d66d0e02915f1fb0f7fafe4ff2efa733d0698e412e39",
+      "case_id": "meeting_allocation__scenario_07",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-1c9ac359e40c26fadc8fc40aa52328fb",
+      "path": "replays/run-1c9ac359e40c26fadc8fc40aa52328fb.json",
+      "sha256": "f45f365658be2982d4a9bbee8a79847e7bcc2cdc70a5ed827fbc011f1eef8f8c",
+      "case_id": "JIRA_allocation__scenario_08",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-1f6a54c2375d94581b020251a14f40e4",
+      "path": "replays/run-1f6a54c2375d94581b020251a14f40e4.json",
+      "sha256": "94ffc3f0ad44d8e91950181b5c85a185f646bbfae1cead4de059adfad496b95a",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "integrated-development",
+      "version": "integrated-v3",
+      "status": "failed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-237a5af0cc9ebbe87225287e2348329c",
+      "path": "replays/run-237a5af0cc9ebbe87225287e2348329c.json",
+      "sha256": "40be86f240a9e7c47712e6d45e31e3f709bb3ea7b07e051cb1b1697d194c4d5c",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-2668042e942f7635dfa6dd3b1cd2960e",
+      "path": "replays/run-2668042e942f7635dfa6dd3b1cd2960e.json",
+      "sha256": "73c2191661a34c2930ee2d8e16a520f2bc9aab98d04e5faf9e81f154b229234c",
+      "case_id": "JIRA_allocation__scenario_22",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-272909d91f4ffb1e49b349fa9ed0d4e9",
+      "path": "replays/run-272909d91f4ffb1e49b349fa9ed0d4e9.json",
+      "sha256": "3bf67578f718952f1ae33ef8dc05eebdf3a2d0a7a86625de57b4a01808aff6ea",
+      "case_id": "special_event_permit_readiness__scenario_19",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-2900ef8b37866508a8eb2acce0f850a6",
+      "path": "replays/run-2900ef8b37866508a8eb2acce0f850a6.json",
+      "sha256": "902bdbdb7fcf28fff8565ad4f2078bd2826b7569f39bab56d777000550b7130f",
+      "case_id": "JIRA_allocation__scenario_22",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-2addda342f3c10ad29ad021413cc1339",
+      "path": "replays/run-2addda342f3c10ad29ad021413cc1339.json",
+      "sha256": "b79323aecb2e2fde6d40104da9eb781ab1b35a964a58d1e5c35e7e03bec50783",
+      "case_id": "JIRA_allocation__scenario_08",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-2b11b623fb75f08b741b7e992b1db9a1",
+      "path": "replays/run-2b11b623fb75f08b741b7e992b1db9a1.json",
+      "sha256": "3b24015e2e4e25eae29766ab6599b0e88a823ad1c57a016b24da5d757a261236",
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-326503208a7a0dafb15220fef09d73fd",
+      "path": "replays/run-326503208a7a0dafb15220fef09d73fd.json",
+      "sha256": "765556cd3d4404ab18e2b23b965281b8c765f5879f238d9b7afe08c942977db0",
+      "case_id": "uas_flight_readiness__scenario_01",
+      "cohort": "initial-smoke",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-33f7c2f962bbb352d437b5a4bec2b1cb",
+      "path": "replays/run-33f7c2f962bbb352d437b5a4bec2b1cb.json",
+      "sha256": "e0e5b7220d7d349bee3251c1235cff6192d9fd30d6d8ee02d09b44d46d47e4f4",
+      "case_id": "meeting_allocation__scenario_19",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-35fbfa92124e0c4794f4571e2ef2afd5",
+      "path": "replays/run-35fbfa92124e0c4794f4571e2ef2afd5.json",
+      "sha256": "75aaaad8b94bd28475b5002ea71484dcceabfba4be402f6e15badd64af7f2237",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-364a2204f047041d8f990b6afdc66b8f",
+      "path": "replays/run-364a2204f047041d8f990b6afdc66b8f.json",
+      "sha256": "fa7a54543b17aa574ed45adbe4d608b89737527dd84a2b74c47bba656c990839",
+      "case_id": "severity_classification__scenario_04",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-3681bdb9a36a09ee5b85fdd6b60151c9",
+      "path": "replays/run-3681bdb9a36a09ee5b85fdd6b60151c9.json",
+      "sha256": "d2b7176dbec217bd64b9f8893dbf7fdef7e493dad0395935e3a3d042bd8e3b83",
+      "case_id": "inpatient_discharge__scenario_02",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-38d2112e629072516fef3dabfea295bf",
+      "path": "replays/run-38d2112e629072516fef3dabfea295bf.json",
+      "sha256": "f70f949ac59d041bed27f793e592f0de5235ac7019b456fc3dbfe3f6e094ac47",
+      "case_id": "severity_classification__scenario_20",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-39b5482701ca975ac147625fabec9819",
+      "path": "replays/run-39b5482701ca975ac147625fabec9819.json",
+      "sha256": "f5508f1f9ad274be27e568b156320fe717fbc8fbb6ddfc485319f4fa0f93b615",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-3b223095303bb052e14b40889a59f25d",
+      "path": "replays/run-3b223095303bb052e14b40889a59f25d.json",
+      "sha256": "5dbdd370ca4b560bd69c693ee9ec4bf054b18eaf4bfb356cd0158e0cf0862b68",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-3b69cd56c631dbc0b19c881c1dc062bc",
+      "path": "replays/run-3b69cd56c631dbc0b19c881c1dc062bc.json",
+      "sha256": "414665f1d9d07437a3807659f09137b551ac9bdb6c236765f2fcedbd05beb46d",
+      "case_id": "inpatient_discharge__scenario_02",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-3c810d79e4f08142b22d82a1ab640d41",
+      "path": "replays/run-3c810d79e4f08142b22d82a1ab640d41.json",
+      "sha256": "88f66826e5fc3fefdc8f6c715af63380e368281cddf0872762d2bd9e0e211ac9",
+      "case_id": "inpatient_discharge__scenario_14",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-4099e88e7f2051594293b06c82ec0a83",
+      "path": "replays/run-4099e88e7f2051594293b06c82ec0a83.json",
+      "sha256": "b3833617a60e831115a2bd91a4310e311eb402ce5163cd717b8e54d159fe87d9",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-45260f8a6fa656402a1b1331c8f39b8b",
+      "path": "replays/run-45260f8a6fa656402a1b1331c8f39b8b.json",
+      "sha256": "a9beae372ddc46b2c62d84427d2a84148f4d0962a6031aabc958420166ecf479",
+      "case_id": "uas_flight_readiness__scenario_01",
+      "cohort": "initial-smoke",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-462ea4de8cbb290a2db3cedd862383da",
+      "path": "replays/run-462ea4de8cbb290a2db3cedd862383da.json",
+      "sha256": "ab658a565c8397742127ff822b616d89cf5b894fd8d641f4c29701c21c630d58",
+      "case_id": "manuscript_submission__scenario_24",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-4895bdc957ce482b15498783cb472f94",
+      "path": "replays/run-4895bdc957ce482b15498783cb472f94.json",
+      "sha256": "d6b2752da37ac3decd4d15ba2e0cc02a0ada06dd172c44786f72b37b0b3c379c",
+      "case_id": "inpatient_discharge__scenario_02",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-49b752762f8950c4b3fefde65cb6b328",
+      "path": "replays/run-49b752762f8950c4b3fefde65cb6b328.json",
+      "sha256": "ff9ed9f14cd68984ee35870150c32119553e235ff8e94956d473c874ccca7a61",
+      "case_id": "manuscript_submission__scenario_24",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-510d56293a668433c07c5351df97db4b",
+      "path": "replays/run-510d56293a668433c07c5351df97db4b.json",
+      "sha256": "05f7b476eecbfeee1254ddfb36fcbce3fff52112ca553dd44f640df8ed455797",
+      "case_id": "uas_flight_readiness__scenario_01",
+      "cohort": "initial-smoke",
+      "version": "governed-v1",
+      "status": "failed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-5189676e95f1fd8b3bb0097c0c013229",
+      "path": "replays/run-5189676e95f1fd8b3bb0097c0c013229.json",
+      "sha256": "88a8c42b477d28510e96062f45edfa0658b9c9cb278285c8af11badde0b974d7",
+      "case_id": "severity_classification__scenario_04",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-51d659824a697fd50979ac0e4219cea0",
+      "path": "replays/run-51d659824a697fd50979ac0e4219cea0.json",
+      "sha256": "6336d4bfdf46799f0df52e98c881d00f6f627f13b12055d1186bc102a193a79f",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-52f0bc97dd5642d6f95d8779c7160611",
+      "path": "replays/run-52f0bc97dd5642d6f95d8779c7160611.json",
+      "sha256": "84e3dc5ebe54118aced55b45811f5d6faf53d8b2ab9263fc149ed0f19b4d5301",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-55c2090bb93d935a67747bd2084ffb83",
+      "path": "replays/run-55c2090bb93d935a67747bd2084ffb83.json",
+      "sha256": "aaad1a74a620ed8c3aa9322c447d664ba2f42cd24d3dfc1a40fac36a3b393480",
+      "case_id": "meeting_allocation__scenario_01",
+      "cohort": "canary",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-59fa0c1e51a97a1e7263eb066d8e1468",
+      "path": "replays/run-59fa0c1e51a97a1e7263eb066d8e1468.json",
+      "sha256": "7ede06bc15ad2c30c91d5e9127e259f397ff3884606fc200e90c231c3adcd388",
+      "case_id": "manuscript_submission__scenario_13",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-5c93a98cf8bf8c98db8a41a8732c8e72",
+      "path": "replays/run-5c93a98cf8bf8c98db8a41a8732c8e72.json",
+      "sha256": "af28ccc45f60fe7d3ac767ff94d6733bccb4934a0f3f5c2c4c107818d8cc8f69",
+      "case_id": "uas_flight_readiness__scenario_12",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-5d201031def7848bfd7d583f087c1713",
+      "path": "replays/run-5d201031def7848bfd7d583f087c1713.json",
+      "sha256": "2ea0256dc009ac7b41e951b011a02bbe7d5e9257a008ccba9fbee8e188a53b0b",
+      "case_id": "thesis_readiness__scenario_15",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-5e183cfdc14adac308ed7f3b279b4166",
+      "path": "replays/run-5e183cfdc14adac308ed7f3b279b4166.json",
+      "sha256": "efafe893cdcf9113e6d5b381af996db817bcb03f7557f36d532af459d0ac1e26",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-60df7ec61b956f7a2151176d0a471e67",
+      "path": "replays/run-60df7ec61b956f7a2151176d0a471e67.json",
+      "sha256": "664bd15a34a4a47aae40d4c66cd26581711fa18c411b092021fdfb3aca9ed311",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-61e240da5de52fe26a649f94f15296f2",
+      "path": "replays/run-61e240da5de52fe26a649f94f15296f2.json",
+      "sha256": "38997d67f54a8448064520721d6e848172358759e9558b88334729b5888762ce",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-626e3c2f4c58a15e9504230d42f6a6fa",
+      "path": "replays/run-626e3c2f4c58a15e9504230d42f6a6fa.json",
+      "sha256": "f74cd5c25a8708365030339b34b0505191d2d21b7e12fbcb0d8748ae488b462d",
+      "case_id": "severity_classification__scenario_09",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-6359fb2e8665b75b14d49ed2cfa0166f",
+      "path": "replays/run-6359fb2e8665b75b14d49ed2cfa0166f.json",
+      "sha256": "3cddf0cdd37f4d9f2ec18df0bd34e7461704e6ae2f415b4b220388bc6727230a",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "integrated-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-64c3f3d5a84ffb21a0bd5c03d2316803",
+      "path": "replays/run-64c3f3d5a84ffb21a0bd5c03d2316803.json",
+      "sha256": "b9bf3823424fc7abb49a9469294b7a2d97161e7bbfbaaf2fca9614b81e7fef45",
+      "case_id": "uas_flight_readiness__scenario_13",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-6d3b3368d7f7832769e9e4ae3ec12c00",
+      "path": "replays/run-6d3b3368d7f7832769e9e4ae3ec12c00.json",
+      "sha256": "a390df7d5b62064ace25e2c2f387985485adedba0c4e51e0a508cec0aff54d46",
+      "case_id": "outgoing_museum_loan__scenario_11",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-6d7d768de76a81996d370d6cdd1fac31",
+      "path": "replays/run-6d7d768de76a81996d370d6cdd1fac31.json",
+      "sha256": "d89fcbbfa316d2c95a11401897be5977a0deef0ca852bd4e649bf9c918242765",
+      "case_id": "inpatient_discharge__scenario_14",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-6e24be475831f1dd67bd19e31a6457e1",
+      "path": "replays/run-6e24be475831f1dd67bd19e31a6457e1.json",
+      "sha256": "406e59d319e1d4587fc158c5ddfb792ed9960bbd419b42decc458a75bb9e6757",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "initial-pilot",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-72b18a5abdd1d65dee40d498731e285a",
+      "path": "replays/run-72b18a5abdd1d65dee40d498731e285a.json",
+      "sha256": "db478f625abac7f8bd70db83d5db8632c7a6007d6d91dbde22214ba7dbfc4ea5",
+      "case_id": "inpatient_discharge__scenario_14",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-77748887fcb87aafb93a917ec822d40a",
+      "path": "replays/run-77748887fcb87aafb93a917ec822d40a.json",
+      "sha256": "24f7d76e6c9a0dccd12199d3b0fea8ebcd88067147847b7cbf219095d55c0e6b",
+      "case_id": "thesis_readiness__scenario_15",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-77e76f461dfc08e12ee487b132c5f3cb",
+      "path": "replays/run-77e76f461dfc08e12ee487b132c5f3cb.json",
+      "sha256": "db967b8df4c93c7c5adb6cc2de52ae215f7d0e82013368a8d173ecdcc1913269",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-799e7b9882ba96122218dd80d4acde0b",
+      "path": "replays/run-799e7b9882ba96122218dd80d4acde0b.json",
+      "sha256": "ecf6d9791a8bdd8f6032d63cfe1538989138a3fb16965853a331d23a2535eebb",
+      "case_id": "uas_flight_readiness__scenario_21",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-7bc7a2955ec9b5d7dc1acf9294d67079",
+      "path": "replays/run-7bc7a2955ec9b5d7dc1acf9294d67079.json",
+      "sha256": "163a4fdc8eaf01e83fe5f928483dadc3deadb2f0ed099ff1454b7b0da4bcbbdc",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-7c9256285828c8541237eed3008afb21",
+      "path": "replays/run-7c9256285828c8541237eed3008afb21.json",
+      "sha256": "0f9b97ad23e3576da5327800ecc8e942846991517f13207483beefb63e3846ac",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "integrated-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-7f3c277c22943122b9b4badcc5c51b1f",
+      "path": "replays/run-7f3c277c22943122b9b4badcc5c51b1f.json",
+      "sha256": "34c38f1224805881642b8ec57a5172582b932513e0568a511dccc1631b911f31",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-8453a3c8a1349ca50a30835330877fed",
+      "path": "replays/run-8453a3c8a1349ca50a30835330877fed.json",
+      "sha256": "b83de5a2b16034c5b5d2739c3b6e5e560094c0fbd77a7de927cdb005474785d0",
+      "case_id": "outgoing_museum_loan__scenario_11",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-846e050283e1f2d111f836487d6dc1c6",
+      "path": "replays/run-846e050283e1f2d111f836487d6dc1c6.json",
+      "sha256": "08f4c24da4f3ab6ed3bf0ce2a6ea924d081d60c67ed06c8d8bd95859910bef1a",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-8635fad7cbe1b2fabd5a141e4aa38074",
+      "path": "replays/run-8635fad7cbe1b2fabd5a141e4aa38074.json",
+      "sha256": "ba3f8920f472e3c4fb0d2e491daebc8fe08f29e8cee46bd8c75face2d67ec3e5",
+      "case_id": "thesis_readiness__scenario_22",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-8acb1f41e2900c12d7aacfabf5ca46d8",
+      "path": "replays/run-8acb1f41e2900c12d7aacfabf5ca46d8.json",
+      "sha256": "8252beab15c442273b193012d3544c838c45d9f65801038624a86dfa60efd4ec",
+      "case_id": "manuscript_submission__scenario_12",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-8c44deaae0135613ebb5f7f2ccace336",
+      "path": "replays/run-8c44deaae0135613ebb5f7f2ccace336.json",
+      "sha256": "01c5bd30435900d40ae00a4e2b8976c3ecbe6b62ff3ae96173607e236d8a5d03",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-8e594991a8f8e1b4aa10e5919cfc6824",
+      "path": "replays/run-8e594991a8f8e1b4aa10e5919cfc6824.json",
+      "sha256": "5ecc85d9ee8987208b7de136c9cc2b59ca0e20d979c23d0fdf12ffd54c979dd8",
+      "case_id": "special_event_permit_readiness__scenario_07",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-9097be0e6ce2826f1f7793a66bc91dc1",
+      "path": "replays/run-9097be0e6ce2826f1f7793a66bc91dc1.json",
+      "sha256": "db2179a7ba99293a01cc33c119085c69e2e7df20898c6e6cf12987e57a147c7f",
+      "case_id": "thesis_readiness__scenario_18",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-96ede591c1561685d368b60f34d44048",
+      "path": "replays/run-96ede591c1561685d368b60f34d44048.json",
+      "sha256": "31329c48b43497143e9b8aac81cdeb30b72e7c7287c6a4cfad0fbf7d32a2dc1c",
+      "case_id": "severity_classification__scenario_09",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-99b18227cf2d70d6f04e4cbf5dcaf4f5",
+      "path": "replays/run-99b18227cf2d70d6f04e4cbf5dcaf4f5.json",
+      "sha256": "b8d7ce13fd4af424d5644516e9138ac0b16762ef07ed41cbd853aa1f3801b89b",
+      "case_id": "meeting_allocation__scenario_19",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-9ceca899db6fc33fb447f8a974e2ec10",
+      "path": "replays/run-9ceca899db6fc33fb447f8a974e2ec10.json",
+      "sha256": "5e6edef1c83ec08978ce59fc78f8ebe7a0206c46d12b27ad8a3180ec25d04541",
+      "case_id": "thesis_readiness__scenario_15",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-9f617fec72df5802ba56bd6ab616cf8a",
+      "path": "replays/run-9f617fec72df5802ba56bd6ab616cf8a.json",
+      "sha256": "bb6862d6807f30a0152793cd9f6940d06f9475c9f4a01245e2c608d82598021e",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-a0af8084c6ffda06a55742a09d5f496e",
+      "path": "replays/run-a0af8084c6ffda06a55742a09d5f496e.json",
+      "sha256": "81173d992141cda59233eda77a50beddbd61d9007b2377da1a91a9058eb04f3a",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-a3b2b44947eefa7acc00e7d0a027df84",
+      "path": "replays/run-a3b2b44947eefa7acc00e7d0a027df84.json",
+      "sha256": "4dbc044c3f7a08369562c1c722fff7d30b21ecf033354b89e405febbf4bad94a",
+      "case_id": "severity_classification__scenario_20",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-a5827b7978fa63c666112215cf1dd752",
+      "path": "replays/run-a5827b7978fa63c666112215cf1dd752.json",
+      "sha256": "54db9d46bc78404923ae357b90e5642b394442d233804980c7b763a5fd0566ac",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-a778639ab497d6902c15d8ea15c7119e",
+      "path": "replays/run-a778639ab497d6902c15d8ea15c7119e.json",
+      "sha256": "dfe53712c7baa1a110349ca02a6c5fb9d90c0454aab0dc9a39b709b7d63b0bc8",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "external-baseline",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-aa46f68f3571ed36f41fdb9651c20ad5",
+      "path": "replays/run-aa46f68f3571ed36f41fdb9651c20ad5.json",
+      "sha256": "870450bcd3db357687361d4691840e3a6aa7fdd5219e6833c44198b34684d001",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-ad166603a9ed97e6643d25852a812089",
+      "path": "replays/run-ad166603a9ed97e6643d25852a812089.json",
+      "sha256": "74e68ce8b33764074b0731c73c79041fc8ea26a3c73df44dfb938c67fad5bd4d",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-ada992185302287074a970e765596e6d",
+      "path": "replays/run-ada992185302287074a970e765596e6d.json",
+      "sha256": "c1af15534807f91e5a3c59d4bcf36996b2578694ac6a8e8d76c760405f168a04",
+      "case_id": "uas_flight_readiness__scenario_12",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-add407d2c5e0f1076ca4fafac24e8c05",
+      "path": "replays/run-add407d2c5e0f1076ca4fafac24e8c05.json",
+      "sha256": "282f8c5ced997d91b9663e4d3721e4dffc5c56d869e8a6ad4be2d1d5bb318245",
+      "case_id": "uas_flight_readiness__scenario_04",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-af856003b8bfa6629a711508ee5ffc16",
+      "path": "replays/run-af856003b8bfa6629a711508ee5ffc16.json",
+      "sha256": "be5fe7a6fcaba9d9059afc714d30fc9737c37cbb1e79266c9943a9227614ac07",
+      "case_id": "thesis_readiness__scenario_18",
+      "cohort": "observed-demo",
+      "version": "observed-v2",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-af964099111b5b34d77e9f76a5a48bfb",
+      "path": "replays/run-af964099111b5b34d77e9f76a5a48bfb.json",
+      "sha256": "8bfc6a35c3b697ee49e23a2e5420b771051897960643b66cfdbd0f643afeb5f6",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-b0f3e10011800d5ebd056cf2c5822212",
+      "path": "replays/run-b0f3e10011800d5ebd056cf2c5822212.json",
+      "sha256": "56bdfa22dd59a511515e4ed5ab4090b1e7be00f401f5b25b8f9cf64a5eeb9d1c",
+      "case_id": "outgoing_museum_loan__scenario_18",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-b298eaa785c4e46e37558a3f1bdf845f",
+      "path": "replays/run-b298eaa785c4e46e37558a3f1bdf845f.json",
+      "sha256": "e25fa5221e43d2a7a93044ce23b7322395d7f8f5e8bfe67a495eafac6a9a0bda",
+      "case_id": "uas_flight_readiness__scenario_13",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-b3cb85987338fb1a023a8ab1a9231f48",
+      "path": "replays/run-b3cb85987338fb1a023a8ab1a9231f48.json",
+      "sha256": "6fb998f457615eecdbb53ebb436971ac811fd32c0bd8c016b772e403b842df64",
+      "case_id": "outgoing_museum_loan__scenario_25",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-b66c382837f222641bc2184fac851de5",
+      "path": "replays/run-b66c382837f222641bc2184fac851de5.json",
+      "sha256": "a1e2d9569f1027e092695edfaf3d128373a93627edcf2089556e836595568fce",
+      "case_id": "thesis_readiness__scenario_22",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-b7a4131dd1d6f6e8fd98642ff9fadbb1",
+      "path": "replays/run-b7a4131dd1d6f6e8fd98642ff9fadbb1.json",
+      "sha256": "be49b25daea2f79ea761864408bcc7cdb9a23582809a337fd81a8f981e748f87",
+      "case_id": "uas_flight_readiness__scenario_02",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-be4d3b75b7991f9c15265c680aff659b",
+      "path": "replays/run-be4d3b75b7991f9c15265c680aff659b.json",
+      "sha256": "579ae07b4778e530793ab789c85a4b7cec66f8cebab302c6035079c81f465849",
+      "case_id": "special_event_permit_readiness__scenario_07",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-bf4f42a7d7562f9cb7a309c3438048fd",
+      "path": "replays/run-bf4f42a7d7562f9cb7a309c3438048fd.json",
+      "sha256": "77870aa10df5ee7f390cceefe57cf65e7ca9f8d880b280c58a219e49fe3b8dab",
+      "case_id": "outgoing_museum_loan__scenario_18",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-c07e7c37356ee9287582aec0757a8db1",
+      "path": "replays/run-c07e7c37356ee9287582aec0757a8db1.json",
+      "sha256": "0e496deedd42a40609e38d75837f939d669981d7df4620edc30e0428fe3b4936",
+      "case_id": "uas_flight_readiness__scenario_21",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-c4a9ebe5d3403ff63c15dba5baa0c5a9",
+      "path": "replays/run-c4a9ebe5d3403ff63c15dba5baa0c5a9.json",
+      "sha256": "5a60518a78d8d7464f914759a3fb2a631a15d4284bdfdf4a71e7589c4681c1d3",
+      "case_id": "manuscript_submission__scenario_24",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-c50fd643b548a99072519a4acd1bf821",
+      "path": "replays/run-c50fd643b548a99072519a4acd1bf821.json",
+      "sha256": "a2d4cc3ec52c5f5a269977f2adf19d992890777ec886171f0a4e9bc8bbe01401",
+      "case_id": "inpatient_discharge__scenario_07",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-c881530d2f9f12b944cc2a52ddd1d0da",
+      "path": "replays/run-c881530d2f9f12b944cc2a52ddd1d0da.json",
+      "sha256": "7c865bc800659e0d2564737b00e8bad62a543d93c190f9dce67723b448ef90cc",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-d0d4b6043144613d9528d22916175f8c",
+      "path": "replays/run-d0d4b6043144613d9528d22916175f8c.json",
+      "sha256": "5e005b4495ec1e5989b493a27c5743b4a8dc688916f40a1cb52a73da9e6c557c",
+      "case_id": "meeting_allocation__scenario_19",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-d5cbe39519fb77cf43517832d041fd93",
+      "path": "replays/run-d5cbe39519fb77cf43517832d041fd93.json",
+      "sha256": "4b5fc240a590728097b00cac886ef6924a5415472ed43838ea19a3949fdff865",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-d5fdbb467202fca61f387fbf13bbd2f2",
+      "path": "replays/run-d5fdbb467202fca61f387fbf13bbd2f2.json",
+      "sha256": "fc963ad3999c27422edec5f75906297838330268b6a376fa7e9cdca816eb295e",
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "cohort": "response-contract-development",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-d62385788fc045b00bd3be37f0aea2b4",
+      "path": "replays/run-d62385788fc045b00bd3be37f0aea2b4.json",
+      "sha256": "bed3f6b26185d93ae7a753de5ad98e00e4ddc014496756b92cce4ca9d2ef343b",
+      "case_id": "thesis_readiness__scenario_18",
+      "cohort": "calibration",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-d63d3aa19a4c9cb4ae8b8bbc78f28a74",
+      "path": "replays/run-d63d3aa19a4c9cb4ae8b8bbc78f28a74.json",
+      "sha256": "8177ea38228f29079389ee03b546a4fbc3f7a83e26e5554c178d0e83109549d6",
+      "case_id": "JIRA_allocation__scenario_07",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-dbd1feddfe21662bcbde8d0382f86a82",
+      "path": "replays/run-dbd1feddfe21662bcbde8d0382f86a82.json",
+      "sha256": "b6c898c4c1aca27e2a7789654a5600a5843790e5ca70b94d898e980da67eaa08",
+      "case_id": "severity_classification__scenario_09",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-e4d9693f79b7c4765a58ef054c27deca",
+      "path": "replays/run-e4d9693f79b7c4765a58ef054c27deca.json",
+      "sha256": "de77c91a22b60f5df80e9df8c2da68fe1233d689b631aff3c06e12a1f15d4847",
+      "case_id": "meeting_allocation__scenario_07",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "failed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-e67fd072110d9a36854df9bcf8a243d6",
+      "path": "replays/run-e67fd072110d9a36854df9bcf8a243d6.json",
+      "sha256": "b95ea8eb891e94a23dfd20fb0ba3e50b327a6b08f4e41da42cfb75683388f3de",
+      "case_id": "outgoing_museum_loan__scenario_25",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-e924c94800665927027eec0539b0656c",
+      "path": "replays/run-e924c94800665927027eec0539b0656c.json",
+      "sha256": "3497bc0648910124a03ffa1de4a79a83b2f5a71195877dcb2efda6d12691292c",
+      "case_id": "meeting_allocation__scenario_28",
+      "cohort": "wave1",
+      "version": "governed-v1",
+      "status": "failed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-e9bf3a64a05edcaef522a736d3b9e0c6",
+      "path": "replays/run-e9bf3a64a05edcaef522a736d3b9e0c6.json",
+      "sha256": "7368eb8b2bb0796e9315f8638ae88627d99d9d9d402f80ac204faa659f919d8a",
+      "case_id": "thesis_readiness__scenario_18",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-eaa0aa41b78fc5fb636fa40ab6330697",
+      "path": "replays/run-eaa0aa41b78fc5fb636fa40ab6330697.json",
+      "sha256": "042f1e42ec4e348f192ee2a7697b8e02af6292a8a7110bd09407978d6177ce75",
+      "case_id": "special_event_permit_readiness__scenario_19",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-ebf7ee121c8ac0d7a463f91a5eb5800e",
+      "path": "replays/run-ebf7ee121c8ac0d7a463f91a5eb5800e.json",
+      "sha256": "5f2ac735a6758d952a0e57c5eff4dcb9c7031a85f782a6fd4da7565d7969ee53",
+      "case_id": "JIRA_allocation__scenario_08",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-edf74a5453b602967b0f380b000d9a1c",
+      "path": "replays/run-edf74a5453b602967b0f380b000d9a1c.json",
+      "sha256": "a7bc5d316cbcd00975db13201757a1a75c5e639f2a7c357ec266cbd30188c7c5",
+      "case_id": "inpatient_discharge__scenario_07",
+      "cohort": "calibration",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f20f4d7632584369e26c46b304023bf1",
+      "path": "replays/run-f20f4d7632584369e26c46b304023bf1.json",
+      "sha256": "cafa82f1646a958850690bf82e7d66a35757535aca84b4eacc330d118862924b",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f3d1afca2bff1997a9706e69dfd76ac3",
+      "path": "replays/run-f3d1afca2bff1997a9706e69dfd76ac3.json",
+      "sha256": "e536b666eae811cfd55869343122a0ab166cfada9667680da11a4e8a7296e234",
+      "case_id": "uas_flight_readiness__scenario_12",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f62b04023c8f615344fe64cc2cacb061",
+      "path": "replays/run-f62b04023c8f615344fe64cc2cacb061.json",
+      "sha256": "57e22595117477163062c6cc84584701e3e88585e83b1944e4eb0ea693aec4a9",
+      "case_id": "outgoing_museum_loan__scenario_18",
+      "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f6aadf60ca60f25baccddc182c6496a2",
+      "path": "replays/run-f6aadf60ca60f25baccddc182c6496a2.json",
+      "sha256": "4d1bd00e69fb03d39b707c7f0d9fd1ac8ccad5e5e47690d46ec746803a5319ce",
+      "case_id": "uas_flight_readiness__scenario_03",
+      "cohort": "initial-pilot",
+      "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f6cdfbc5be3b2fd274c21240d47e7797",
+      "path": "replays/run-f6cdfbc5be3b2fd274c21240d47e7797.json",
+      "sha256": "5d1f927404b5936aeecdd399a415ce37c1221d172963efb0ff379717ef8bd8af",
+      "case_id": "manuscript_submission__scenario_12",
+      "cohort": "wave1",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-f856da4048f32ea4ea2c2974f52217e0",
+      "path": "replays/run-f856da4048f32ea4ea2c2974f52217e0.json",
+      "sha256": "f0c2ea375ab3b163c15814ae539b7f02d216a48a2b5d2b06afcabdb8caa0f5ec",
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "cohort": "response-contract-development",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-fa9dc93940f1b012078556ea5a861e6d",
+      "path": "replays/run-fa9dc93940f1b012078556ea5a861e6d.json",
+      "sha256": "5afd087771daa054e85e07093b937c90249559571b872efcedc0419efcd1d9d0",
+      "case_id": "special_event_permit_readiness__scenario_19",
+      "cohort": "wave2",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-fd6606f499b8771f56e59e5158aaa480",
+      "path": "replays/run-fd6606f499b8771f56e59e5158aaa480.json",
+      "sha256": "db5107ab1fcf41746acb17d745f675a52bbdb24c180e39a85e979162b6b84f4d",
+      "case_id": "severity_classification__scenario_20",
+      "cohort": "wave2",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    }
+  ],
+  "counts": {
+    "scenarios": 265,
+    "task_descriptions": 205,
+    "task_fallbacks": 60,
+    "replays": 109,
+    "by_cohort": {
+      "calibration": 18,
+      "canary": 2,
+      "external-baseline": 12,
+      "initial-pilot": 12,
+      "initial-smoke": 3,
+      "integrated-development": 3,
+      "observed-demo": 1,
+      "response-contract-development": 12,
+      "wave1": 19,
+      "wave2": 27
+    },
+    "by_version": {
+      "governed-v1": 50,
+      "integrated-v3": 17,
+      "native-decentralized": 34,
+      "observed-v2": 1,
+      "prompt-only-v1": 7
+    },
+    "by_status": {
+      "completed": 105,
+      "failed": 4
+    },
+    "by_evaluation_status": {
+      "attached": 90,
+      "not_loaded": 19
+    }
+  },
+  "wave2_completion": {
+    "archive": "wave-two-cumulative-analysis-20261114-200507.zip",
+    "archive_sha256": "016896a507300cb67e7d736d3250f55ac39b452f57dd2523c275285166df7a5a",
+    "analysis_index_sha256": "77f0f5d840ab3803ed4769f410ad78504f0d65ca87b77733d1e1ec1615db4dc6",
+    "status_sha256": "466f3fb773eaf6775e6445f22dfdd409155882357e3fb760ca57316b25e8fecd",
+    "cases": 9,
+    "conversations": 27,
+    "successful_stages": 54,
+    "new_conversations": 26,
+    "updated_conversation_id": "run-ebf7ee121c8ac0d7a463f91a5eb5800e",
+    "preserved_prior_failed_judge_attempts": 3,
+    "historical_unknown_cost_calls": 1,
+    "new_unknown_cost_calls": 0,
+    "evaluation_profile": "aos-judge-output-capacity-v1",
+    "operational_profile": "aos-judge-reuse-v1"
+  }
+}

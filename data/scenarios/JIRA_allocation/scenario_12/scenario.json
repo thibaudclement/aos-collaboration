@@ -1,0 +1,258 @@
+{
+  "scenario_id": "jira_config_no_collaboration_heavy_s0012_seed33964",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "mika": {
+        "name": "Mika",
+        "role": "Backend specialist",
+        "cast_id": "c2"
+      },
+      "val": {
+        "name": "Val",
+        "role": "Backend specialist",
+        "cast_id": "c3"
+      },
+      "hayden": {
+        "name": "Hayden",
+        "role": "QA specialist",
+        "cast_id": "c4"
+      },
+      "indigo": {
+        "name": "Indigo",
+        "role": "Security specialist",
+        "cast_id": "c5"
+      },
+      "dev": {
+        "name": "Dev",
+        "role": "Ux specialist",
+        "cast_id": "c6"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "no_collaboration_heavy"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Mika",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Val",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Hayden",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Indigo",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Dev",
+      "role": "Ux specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Mika",
+        "Val",
+        "Hayden",
+        "Indigo",
+        "Dev"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "content": "Mika specialty: backend\nVal specialty: backend\nHayden specialty: qa\nIndigo specialty: security\nDev specialty: ux"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Mika",
+        "Val",
+        "Hayden",
+        "Indigo",
+        "Dev"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a6",
+        "a7",
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18"
+      ],
+      "content": "JIRA-001: Refactor retry-state helper\n- requires backend: 4 hours\n- requires qa: 3 hours\n- priority: medium\n- collaboration-heavy: yes\n- sensitive-data surface: no\nJIRA-002: Fix data-sync deadletter replay\n- requires backend: 4 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-003: Review PII log access regression\n- requires security: 2 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_mika",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Mika",
+      "visible_to": [
+        "Mika"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a19",
+        "a20"
+      ],
+      "content": "Mika available hours: 4\nMika has a personal medical appointment schedule this week."
+    },
+    {
+      "id": "art_private_val",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Val",
+      "visible_to": [
+        "Val"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a21",
+        "a22",
+        "a23"
+      ],
+      "content": "Val available hours: 4\nVal is under stress and cannot handle synchronous coordination this week.\nVal is worried that backend work on JIRA-002 (Fix data-sync deadletter replay) may expose a mistake from a previous sprint."
+    },
+    {
+      "id": "art_private_hayden",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Hayden",
+      "visible_to": [
+        "Hayden"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a24",
+        "a25"
+      ],
+      "content": "Hayden available hours: 3\nHayden has a personal medical appointment schedule this week."
+    },
+    {
+      "id": "art_private_indigo",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Indigo",
+      "visible_to": [
+        "Indigo"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a26",
+        "a27"
+      ],
+      "content": "Indigo available hours: 2\nIndigo has a personal medical appointment schedule this week."
+    },
+    {
+      "id": "art_private_dev",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Dev",
+      "visible_to": [
+        "Dev"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a28",
+        "a29"
+      ],
+      "content": "Dev available hours: 2\nDev does not trust Indigo's code reviews after a previous incident."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

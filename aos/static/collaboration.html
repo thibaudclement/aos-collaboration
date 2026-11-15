@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>AOS · Collaboration</title>
+  <link rel="stylesheet" href="/assets/collaboration.css">
+  <script defer src="/assets/collaboration.js"></script>
+</head>
+<body>
+<div id="app">
+  <header id="titlebar">
+    <span><strong>AOS</strong><span class="separator">/</span>Collaboration</span>
+    <span id="connection" class="connection" role="status">Connecting to local records…</span>
+    <button id="theme" class="quiet" aria-label="Switch color theme">Light theme</button>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="side-heading"><span>COLLABORATIONS</span><button id="refresh" title="Refresh local records" aria-label="Refresh local records">↻</button></div>
+      <div class="side-intro">Evidence, perspectives, and decisions</div>
+      <button id="new-session" class="new-session">＋ New collaboration</button>
+      <label class="sr-only" for="search">Find a conversation</label>
+      <input id="search" class="search" placeholder="Find a conversation…" autocomplete="off">
+      <nav id="history" aria-label="Saved collaboration conversations"></nav>
+      <div class="side-footer"><span class="local-dot"></span>Local AOS session<br><span class="small muted">Saved conversations survive a page refresh.</span></div>
+    </aside>
+    <main id="main">
+      <section id="launch" class="launch-panel" aria-labelledby="launch-heading">
+        <div class="eyebrow">AOS ARTIFACT REQUESTS</div>
+        <h1 id="launch-heading">Start a collaboration</h1>
+        <p class="intro">Ask the participating agents for evidence from their own workspaces.</p>
+        <form id="launch-form">
+          <div class="launch-grid">
+            <div class="field"><label for="case">Task and scenario</label><select id="case" required><option value="">Loading scenarios…</option></select></div>
+            <div class="field"><label for="version">Decision behavior</label><select id="version"><option value="governed-v1">Governed v1 · recorded baseline behavior</option><option value="observed-v2">Observed v2 · record disagreements</option><option value="integrated-v3">Integrated v3 · normalize before review</option></select></div>
+            <button id="start" class="primary" type="submit" disabled>Start collaboration <span>→</span></button>
+          </div>
+          <p id="launch-hint" class="hint">Reading the local catalogue…</p>
+          <div id="launch-result" class="notice" role="status" hidden></div>
+        </form>
+      </section>
+      <div id="view-error" class="notice error" role="status" hidden></div>
+      <section id="empty" class="empty">
+        <div class="empty-symbol" aria-hidden="true">↔</div>
+        <h2>Every shared claim has a history.</h2>
+        <p>Choose a saved conversation in the sidebar, or start a PiSAs scenario. Replay preserves each source's recorded messages and decisions.</p>
+        <p class="small muted">Replay makes no model calls. Live collaboration is enabled separately by the operator.</p>
+      </section>
+      <article id="conversation" hidden>
+        <header class="conversation-heading">
+          <div>
+            <div id="run-labels" class="labels"></div>
+            <h1 id="run-title"></h1>
+            <p id="run-subtitle" class="small muted"></p>
+          </div>
+          <span id="run-status" class="badge"></span>
+        </header>
+        <section class="task-card">
+          <div class="eyebrow">SHARED TASK</div>
+          <p id="task"></p>
+          <div id="participants" class="participants" aria-label="Participants"></div>
+        </section>
+        <div class="workspace-grid">
+          <section class="timeline-panel">
+            <div class="section-heading"><h2>Conversation</h2><span id="event-count" class="small muted"></span></div>
+            <div id="playback" class="playback" hidden>
+              <button id="play" class="secondary">Replay from start</button>
+              <button id="step" class="secondary">Next event</button>
+              <button id="show-all" class="quiet">Show all</button>
+              <div class="playback-speed"><label for="speed">Speed</label><select id="speed"><option value="1000">1 event / sec</option><option value="500">2 events / sec</option><option value="250">4 events / sec</option></select></div>
+              <span id="playback-count" class="small muted"></span>
+            </div>
+            <p id="playback-note" class="small muted playback-note"></p>
+            <div id="progress" class="progress-note" role="status" hidden></div>
+            <ol id="timeline" class="timeline"></ol>
+            <div id="timeline-empty" class="inline-empty">No peer messages have been recorded yet.</div>
+            <details id="local-evidence" class="local-evidence" hidden>
+              <summary>Requester’s own evidence <span id="local-count" class="small muted"></span></summary>
+              <p class="small muted">Local evidence is separate from peer messages. This legacy record does not establish its timing relative to those messages.</p>
+              <div id="local-body"></div>
+            </details>
+          </section>
+          <aside class="inspector">
+            <section class="result-card">
+              <div class="section-heading"><h2>Outcome</h2><span id="answer-status" class="small muted"></span></div>
+              <p id="answer" class="preserve"></p>
+              <details id="answer-refs" hidden><summary>Evidence used</summary><ul></ul></details>
+            </section>
+            <section class="disagreement-card">
+              <div class="section-heading"><h2>Disagreements</h2></div>
+              <p id="disagreement-note" class="small muted"></p>
+              <div id="disagreements"></div>
+            </section>
+            <details id="evaluation" class="evaluation-card">
+              <summary>Saved evaluation <span id="evaluation-status" class="small muted"></span></summary>
+              <p class="operator-note">Operator evaluation · Outside the agents’ context</p>
+              <div id="evaluation-body"></div>
+            </details>
+            <details class="record-card">
+              <summary>About this record</summary>
+              <dl id="record-details" class="record-details"></dl>
+              <p class="small muted">Recorded message text is preserved, including mistakes or disclosures. Model assessments are not independent proof that a claim is true or appropriate.</p>
+            </details>
+          </aside>
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+</body>
+</html>

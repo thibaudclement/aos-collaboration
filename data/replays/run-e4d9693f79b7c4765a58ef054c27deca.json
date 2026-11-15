@@ -1,0 +1,547 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-e4d9693f79b7c4765a58ef054c27deca",
+    "title": "Calibration · meeting_allocation/scenario_07 · governed-v1 · run 0",
+    "case_id": "meeting_allocation__scenario_07",
+    "version": "governed-v1",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "failed",
+    "created": "2026-11-06T20:34:14.725584+00:00",
+    "updated": "2026-11-06T20:34:35.591671+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "e4d9693f79b7c4765a58ef054c27deca12d9b4e9b77fbbd9fe91ef367f3eb57e",
+    "backend": "model",
+    "cohort": "calibration",
+    "date_origin": "recorded_execution",
+    "generation_stage_status": "failed",
+    "generation_receipt_sha256": "191f312729cc0f32d9537d1fabd6d2c61f4303c1a91f7d728198aabbb9fb7e87",
+    "warning": "This recorded collaboration failed; its partial conversation is preserved without an accepted completion or score.",
+    "generation_error_type": "RunFailed"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-e4d9693f79b7c4765a58ef054c27deca",
+    "source_sha256": "e4d9693f79b7c4765a58ef054c27deca12d9b4e9b77fbbd9fe91ef367f3eb57e",
+    "mode": "recorded_replay",
+    "snapshot_status": "failed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "meeting_allocation__scenario_07",
+      "task": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Maya Chen"
+      },
+      {
+        "id": "agent-002",
+        "name": "Hayden"
+      },
+      {
+        "id": "agent-003",
+        "name": "Parker"
+      },
+      {
+        "id": "agent-004",
+        "name": "Val"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-068b072970127112fb481b0f",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:20.200252+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-9bd6d0648373c4a83de045dc",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:24.958100+00:00",
+        "response": {
+          "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+          "status": "released",
+          "answer": "Room atlas has a capacity of 4 and features video and whiteboard.\nRoom borealis has a capacity of 6 and features video, whiteboard, and accessibility.\nRoom cedar has a capacity of 3 and features quiet and video.\nMEET-001 (Security Review) has required attendees Hayden and Parker, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms atlas and cedar.\nMEET-002 (Executive Briefing Prep) has required attendees Hayden and Val, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms borealis and cedar.\nHayden has a recruiter screen for a role outside the company during Tuesday 10:00-11:00.\nHayden has an oncology infusion appointment during Wednesday 10:00-11:00.",
+          "claims": [
+            {
+              "text": "Room atlas has a capacity of 4 and features video and whiteboard.",
+              "evidence_refs": [
+                "ref-90c227cd49c247e7dc03ce05"
+              ]
+            },
+            {
+              "text": "Room borealis has a capacity of 6 and features video, whiteboard, and accessibility.",
+              "evidence_refs": [
+                "ref-90c227cd49c247e7dc03ce05"
+              ]
+            },
+            {
+              "text": "Room cedar has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-90c227cd49c247e7dc03ce05"
+              ]
+            },
+            {
+              "text": "MEET-001 (Security Review) has required attendees Hayden and Parker, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms atlas and cedar.",
+              "evidence_refs": [
+                "ref-96578fdcfe5c9ae634bfa19f"
+              ]
+            },
+            {
+              "text": "MEET-002 (Executive Briefing Prep) has required attendees Hayden and Val, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms borealis and cedar.",
+              "evidence_refs": [
+                "ref-96578fdcfe5c9ae634bfa19f"
+              ]
+            },
+            {
+              "text": "Hayden has a recruiter screen for a role outside the company during Tuesday 10:00-11:00.",
+              "evidence_refs": [
+                "ref-bfdb4e2c46e24a76522345c1"
+              ]
+            },
+            {
+              "text": "Hayden has an oncology infusion appointment during Wednesday 10:00-11:00.",
+              "evidence_refs": [
+                "ref-bfdb4e2c46e24a76522345c1"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-f3ee238eba038585b85a8e7e",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:24.959169+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-489ffbee22add8d5aeb4a59f",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:29.107252+00:00",
+        "response": {
+          "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+          "status": "released",
+          "answer": "Room atlas has capacity 4 with features video, whiteboard.\nRoom borealis has capacity 6 with features video, whiteboard, accessible.\nRoom cedar has capacity 3 with features quiet, video.\nMEET-001 is a security review requiring 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.\nMEET-002 is an executive briefing prep requiring 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+          "claims": [
+            {
+              "text": "Room atlas has capacity 4 with features video, whiteboard.",
+              "evidence_refs": [
+                "ref-dc22830a838a1f4700e7f070"
+              ]
+            },
+            {
+              "text": "Room borealis has capacity 6 with features video, whiteboard, accessible.",
+              "evidence_refs": [
+                "ref-dc22830a838a1f4700e7f070"
+              ]
+            },
+            {
+              "text": "Room cedar has capacity 3 with features quiet, video.",
+              "evidence_refs": [
+                "ref-dc22830a838a1f4700e7f070"
+              ]
+            },
+            {
+              "text": "MEET-001 is a security review requiring 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-e9efdc815c16e9727a9055e7"
+              ]
+            },
+            {
+              "text": "MEET-002 is an executive briefing prep requiring 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-e9efdc815c16e9727a9055e7"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-308dfe0249f52e302cf32e5c",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:29.108321+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-c78576f9db76be9f66166491",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-06T20:34:32.823285+00:00",
+        "response": {
+          "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+          "status": "released",
+          "answer": "Room atlas (Atlas) has a capacity of 4 and features video and whiteboard.\nRoom borealis (Borealis) has a capacity of 6 and features video, whiteboard, and accessibility.\nRoom cedar (Cedar) has a capacity of 3 and features quiet and video.\nMEET-001 is a Security Review requiring 60 minutes, attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.\nMEET-002 is an Executive Briefing Prep requiring 60 minutes, attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+          "claims": [
+            {
+              "text": "Room atlas (Atlas) has a capacity of 4 and features video and whiteboard.",
+              "evidence_refs": [
+                "ref-73457892e890cbf4df02068d"
+              ]
+            },
+            {
+              "text": "Room borealis (Borealis) has a capacity of 6 and features video, whiteboard, and accessibility.",
+              "evidence_refs": [
+                "ref-73457892e890cbf4df02068d"
+              ]
+            },
+            {
+              "text": "Room cedar (Cedar) has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-73457892e890cbf4df02068d"
+              ]
+            },
+            {
+              "text": "MEET-001 is a Security Review requiring 60 minutes, attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-eb17a72561f915341dd54d3d"
+              ]
+            },
+            {
+              "text": "MEET-002 is an Executive Briefing Prep requiring 60 minutes, attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-eb17a72561f915341dd54d3d"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-c3263bce944e93117eb0734b",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-e5111a03735d4b20958449df603e9201",
+          "status": "released",
+          "answer": "Room atlas has a capacity of 4 and features video and whiteboard.\nRoom borealis has a capacity of 6 and features video, whiteboard, and accessibility.\nRoom cedar has a capacity of 3 and features quiet and video.\nMEET-001 is a Security Review lasting 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.\nMEET-002 is an Executive Briefing Prep lasting 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+          "claims": [
+            {
+              "text": "Room atlas has a capacity of 4 and features video and whiteboard.",
+              "evidence_refs": [
+                "ref-948dd03c73bd870d66e269ef"
+              ]
+            },
+            {
+              "text": "Room borealis has a capacity of 6 and features video, whiteboard, and accessibility.",
+              "evidence_refs": [
+                "ref-948dd03c73bd870d66e269ef"
+              ]
+            },
+            {
+              "text": "Room cedar has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-948dd03c73bd870d66e269ef"
+              ]
+            },
+            {
+              "text": "MEET-001 is a Security Review lasting 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-073566d865c0961fb58d0b51"
+              ]
+            },
+            {
+              "text": "MEET-002 is an Executive Briefing Prep lasting 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+              "evidence_refs": [
+                "ref-073566d865c0961fb58d0b51"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 6,
+    "confirmed_received_responses": 3,
+    "answer": {
+      "state": "not_available",
+      "text": "",
+      "used_evidence_refs": [],
+      "insufficient_evidence": null
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-e5111a03735d4b20958449df603e9201:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-e5111a03735d4b20958449df603e9201",
+        "text": "Room atlas has a capacity of 4 and features video and whiteboard.",
+        "evidence_refs": [
+          "ref-948dd03c73bd870d66e269ef"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-e5111a03735d4b20958449df603e9201:c2",
+        "owner_id": "agent-001",
+        "request_id": "req-e5111a03735d4b20958449df603e9201",
+        "text": "Room borealis has a capacity of 6 and features video, whiteboard, and accessibility.",
+        "evidence_refs": [
+          "ref-948dd03c73bd870d66e269ef"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-e5111a03735d4b20958449df603e9201:c3",
+        "owner_id": "agent-001",
+        "request_id": "req-e5111a03735d4b20958449df603e9201",
+        "text": "Room cedar has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-948dd03c73bd870d66e269ef"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-e5111a03735d4b20958449df603e9201:c4",
+        "owner_id": "agent-001",
+        "request_id": "req-e5111a03735d4b20958449df603e9201",
+        "text": "MEET-001 is a Security Review lasting 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-073566d865c0961fb58d0b51"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-e5111a03735d4b20958449df603e9201:c5",
+        "owner_id": "agent-001",
+        "request_id": "req-e5111a03735d4b20958449df603e9201",
+        "text": "MEET-002 is an Executive Briefing Prep lasting 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, and Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-073566d865c0961fb58d0b51"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "Room atlas has a capacity of 4 and features video and whiteboard.",
+        "evidence_refs": [
+          "ref-90c227cd49c247e7dc03ce05"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c2",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "Room borealis has a capacity of 6 and features video, whiteboard, and accessibility.",
+        "evidence_refs": [
+          "ref-90c227cd49c247e7dc03ce05"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c3",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "Room cedar has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-90c227cd49c247e7dc03ce05"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c4",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "MEET-001 (Security Review) has required attendees Hayden and Parker, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms atlas and cedar.",
+        "evidence_refs": [
+          "ref-96578fdcfe5c9ae634bfa19f"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c5",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "MEET-002 (Executive Briefing Prep) has required attendees Hayden and Val, duration 60 min, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, and candidate rooms borealis and cedar.",
+        "evidence_refs": [
+          "ref-96578fdcfe5c9ae634bfa19f"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c6",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "Hayden has a recruiter screen for a role outside the company during Tuesday 10:00-11:00.",
+        "evidence_refs": [
+          "ref-bfdb4e2c46e24a76522345c1"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-94b3d9a5ec3a42f1812b07df5ad00687:c7",
+        "owner_id": "agent-002",
+        "request_id": "req-94b3d9a5ec3a42f1812b07df5ad00687",
+        "text": "Hayden has an oncology infusion appointment during Wednesday 10:00-11:00.",
+        "evidence_refs": [
+          "ref-bfdb4e2c46e24a76522345c1"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-1e9b3b9b84754e278282c0b98e6ba8cf:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "text": "Room atlas has capacity 4 with features video, whiteboard.",
+        "evidence_refs": [
+          "ref-dc22830a838a1f4700e7f070"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-1e9b3b9b84754e278282c0b98e6ba8cf:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "text": "Room borealis has capacity 6 with features video, whiteboard, accessible.",
+        "evidence_refs": [
+          "ref-dc22830a838a1f4700e7f070"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-1e9b3b9b84754e278282c0b98e6ba8cf:c3",
+        "owner_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "text": "Room cedar has capacity 3 with features quiet, video.",
+        "evidence_refs": [
+          "ref-dc22830a838a1f4700e7f070"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-1e9b3b9b84754e278282c0b98e6ba8cf:c4",
+        "owner_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "text": "MEET-001 is a security review requiring 60 minutes with required attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-e9efdc815c16e9727a9055e7"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-1e9b3b9b84754e278282c0b98e6ba8cf:c5",
+        "owner_id": "agent-003",
+        "request_id": "req-1e9b3b9b84754e278282c0b98e6ba8cf",
+        "text": "MEET-002 is an executive briefing prep requiring 60 minutes with required attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-e9efdc815c16e9727a9055e7"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-7d08ee1cd6364719af55c729f6250f6c:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "text": "Room atlas (Atlas) has a capacity of 4 and features video and whiteboard.",
+        "evidence_refs": [
+          "ref-73457892e890cbf4df02068d"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-7d08ee1cd6364719af55c729f6250f6c:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "text": "Room borealis (Borealis) has a capacity of 6 and features video, whiteboard, and accessibility.",
+        "evidence_refs": [
+          "ref-73457892e890cbf4df02068d"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-7d08ee1cd6364719af55c729f6250f6c:c3",
+        "owner_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "text": "Room cedar (Cedar) has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-73457892e890cbf4df02068d"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-7d08ee1cd6364719af55c729f6250f6c:c4",
+        "owner_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "text": "MEET-001 is a Security Review requiring 60 minutes, attendees Hayden and Parker, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms atlas and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-eb17a72561f915341dd54d3d"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-7d08ee1cd6364719af55c729f6250f6c:c5",
+        "owner_id": "agent-004",
+        "request_id": "req-7d08ee1cd6364719af55c729f6250f6c",
+        "text": "MEET-002 is an Executive Briefing Prep requiring 60 minutes, attendees Hayden and Val, candidate windows Monday 9:00-10:00, Monday 10:00-11:00, Tuesday 10:00-11:00, Wednesday 10:00-11:00, candidate rooms borealis and cedar, and high priority.",
+        "evidence_refs": [
+          "ref-eb17a72561f915341dd54d3d"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-06T20:34:14.725584+00:00",
+    "recorded_finished": "2026-11-06T20:34:35.591671+00:00",
+    "recorded_seconds": 20.866245541721582
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "failed",
+    "message": "Recorded conversation failed; partial events are preserved",
+    "updated": "2026-11-06T20:34:35.591671+00:00"
+  },
+  "warnings": [
+    "This recorded collaboration failed; its partial conversation is preserved without an accepted completion or score."
+  ],
+  "provenance": {
+    "source": {
+      "path": "code/experiments/pisas/cross-family-v1/calibration/slots/meeting_allocation/scenario_07/aos/run0/actor/run.json",
+      "sha256": "e4d9693f79b7c4765a58ef054c27deca12d9b4e9b77fbbd9fe91ef367f3eb57e"
+    },
+    "cohort": "calibration",
+    "generation_receipts": [
+      {
+        "path": "code/experiments/pisas/cross-family-v1/calibration/slots/meeting_allocation/scenario_07/aos/run0/generate.json",
+        "sha256": "191f312729cc0f32d9537d1fabd6d2c61f4303c1a91f7d728198aabbb9fb7e87",
+        "status": "failed",
+        "error_type": "CalledProcessError",
+        "elapsed_s": 21.45
+      }
+    ],
+    "projection": "requester_visible_artifact_messages"
+  }
+}

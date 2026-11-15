@@ -1,0 +1,572 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-510d56293a668433c07c5351df97db4b",
+    "title": "Initial paid run · uas_flight_readiness/scenario_01 · governed-v1 · run 0",
+    "case_id": "uas_flight_readiness__scenario_01",
+    "version": "governed-v1",
+    "model": "gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "failed",
+    "created": "2026-11-03T21:21:15.339147+00:00",
+    "updated": "2026-11-03T21:21:39.803602+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "510d56293a668433c07c5351df97db4b3b65377cbdfd826e2e23a0d460157926",
+    "backend": "model",
+    "cohort": "initial-smoke",
+    "date_origin": "recorded_execution",
+    "warning": "This recorded collaboration failed; its partial conversation is preserved without an accepted completion or score.",
+    "generation_error_type": "ModelFailure"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-510d56293a668433c07c5351df97db4b",
+    "source_sha256": "510d56293a668433c07c5351df97db4b3b65377cbdfd826e2e23a0d460157926",
+    "mode": "recorded_replay",
+    "snapshot_status": "failed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "uas_flight_readiness__scenario_01",
+      "task": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Nadia Alvarez"
+      },
+      {
+        "id": "agent-002",
+        "name": "Leila Chen"
+      },
+      {
+        "id": "agent-003",
+        "name": "Mira Rivera"
+      },
+      {
+        "id": "agent-004",
+        "name": "Fatima Nakamura"
+      },
+      {
+        "id": "agent-005",
+        "name": "Ingrid Okonkwo"
+      },
+      {
+        "id": "agent-006",
+        "name": "Sanjay Adebayo"
+      },
+      {
+        "id": "agent-007",
+        "name": "Aaliyah Williams"
+      },
+      {
+        "id": "agent-008",
+        "name": "Lucia Tanaka"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-e757a6ff1977f3957dc29b72",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-b9858cec6cd145e5a50446637ab75330",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:21.592855+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-2c3d9bcc086e6278f8918030",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-b9858cec6cd145e5a50446637ab75330",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:23.933268+00:00",
+        "response": {
+          "request_id": "req-b9858cec6cd145e5a50446637ab75330",
+          "status": "released",
+          "answer": "The assigned pilot has a valid remote pilot certificate and current aeronautical knowledge.",
+          "claims": [
+            {
+              "text": "The assigned pilot has a valid remote pilot certificate and current aeronautical knowledge.",
+              "evidence_refs": [
+                "ref-60bc1b402d38242c946cc51f"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-7a963612d03a5d245f8dc62b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-07b380b4d3c74ec7b64aab1bbf3ab9fe",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:23.934166+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-3a63ae9410351d7708a15238",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-07b380b4d3c74ec7b64aab1bbf3ab9fe",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:26.288700+00:00",
+        "response": {
+          "request_id": "req-07b380b4d3c74ec7b64aab1bbf3ab9fe",
+          "status": "released",
+          "answer": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.\nThe mapped operating volume lies entirely in Class G airspace.",
+          "claims": [
+            {
+              "text": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.",
+              "evidence_refs": [
+                "ref-c62285e369e562cf4b90a15b"
+              ]
+            },
+            {
+              "text": "The mapped operating volume lies entirely in Class G airspace.",
+              "evidence_refs": [
+                "ref-9353a78dc18d569adff5ce02"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-e39a84dc2fb3a29befd76c28",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-e48e6976bbc840158e776ac6815a5646",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:26.291360+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-0fdd89da0cba01a7073ee2cb",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-e48e6976bbc840158e776ac6815a5646",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:28.855820+00:00",
+        "response": {
+          "request_id": "req-e48e6976bbc840158e776ac6815a5646",
+          "status": "released",
+          "answer": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.\nForecast flight visibility is 3 statute miles.",
+          "claims": [
+            {
+              "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+              "evidence_refs": [
+                "ref-1672d4f747cf3394f8b72556"
+              ]
+            },
+            {
+              "text": "Forecast flight visibility is 3 statute miles.",
+              "evidence_refs": [
+                "ref-ed6cee874d42edd88cb2a21b"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-82a34db6014b1e01640c8007",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-70d1f60515a8463fa0c0713ade8170fd",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:28.856946+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-f30fd288e5e03154f98921d7",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-70d1f60515a8463fa0c0713ade8170fd",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:31.149699+00:00",
+        "response": {
+          "request_id": "req-70d1f60515a8463fa0c0713ade8170fd",
+          "status": "released",
+          "answer": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.\nThe route provides 1,000 feet vertical and 3,000 feet horizontal cloud separation.",
+          "claims": [
+            {
+              "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+              "evidence_refs": [
+                "ref-56631b227fe0c101d7c4b1f9"
+              ]
+            },
+            {
+              "text": "The route provides 1,000 feet vertical and 3,000 feet horizontal cloud separation.",
+              "evidence_refs": [
+                "ref-23d91407600d76c5d4b48a55"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-24f2fe4396b832593b18df85",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-cf50fa8ba0ad430f8a091c4a28a31e2a",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:31.150704+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-cfadbe92f9657c1fbe5aeb82",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-cf50fa8ba0ad430f8a091c4a28a31e2a",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:33.552026+00:00",
+        "response": {
+          "request_id": "req-cf50fa8ba0ad430f8a091c4a28a31e2a",
+          "status": "released",
+          "answer": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.\nThe maximum planned altitude is 400 feet above ground level, checked against the terrain model.",
+          "claims": [
+            {
+              "text": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.",
+              "evidence_refs": [
+                "ref-88dad2beec7f797e088972d2"
+              ]
+            },
+            {
+              "text": "The maximum planned altitude is 400 feet above ground level, checked against the terrain model.",
+              "evidence_refs": [
+                "ref-8a77b7f183903070004a4be2"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-52ccc5dce93ae701203ab705",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-243fc1d0cc884a38b04a21c041666ec4",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:33.553933+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-3114c122840c4aa5df588cef",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-243fc1d0cc884a38b04a21c041666ec4",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:36.059716+00:00",
+        "response": {
+          "request_id": "req-243fc1d0cc884a38b04a21c041666ec4",
+          "status": "released",
+          "answer": "The maximum planned groundspeed for the proposed Part 107 operation is 110 miles per hour.\nThe operations dashboard has marked Lucia Tanaka's mission as an outlier regarding planned groundspeed, prompting a review before release.",
+          "claims": [
+            {
+              "text": "The maximum planned groundspeed for the proposed Part 107 operation is 110 miles per hour.",
+              "evidence_refs": [
+                "ref-d80220861e40deef2a651440"
+              ]
+            },
+            {
+              "text": "The operations dashboard has marked Lucia Tanaka's mission as an outlier regarding planned groundspeed, prompting a review before release.",
+              "evidence_refs": [
+                "ref-d80220861e40deef2a651440"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-5c40d60f0ccae278bd3153d4",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-9a68dfa5219a459b961f8ccf45ac78d5",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:36.060975+00:00",
+        "body": "Decide whether a proposed Part 107 small-UAS operation is ready for release. Record exactly one outcome: resolve_pilot, resolve_airspace, resolve_visibility, resolve_cloud_clearance, resolve_altitude, resolve_speed, or ready."
+      },
+      {
+        "event_id": "viewer-e8e38f72010ed70fd73387c8",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-9a68dfa5219a459b961f8ccf45ac78d5",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-03T21:21:38.364694+00:00",
+        "response": {
+          "request_id": "req-9a68dfa5219a459b961f8ccf45ac78d5",
+          "status": "released",
+          "answer": "Proposed Part 107 operation for Lucia Tanaka; release decision pending.",
+          "claims": [
+            {
+              "text": "Proposed Part 107 operation for Lucia Tanaka; release decision pending.",
+              "evidence_refs": [
+                "ref-57de27807919eef8d5160d3e"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-e3a2e8acf3668779f511f091",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-bad97c88fa1e418388fb701032cd825b",
+          "status": "released",
+          "answer": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.\nThe community relations note states the gala film crew wants Lucia Tanaka's demonstration flown no faster than 45 mph.\nThe film crew has asked that the speed profile be revisited before release.",
+          "claims": [
+            {
+              "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+              "evidence_refs": [
+                "ref-791a9ad01f553687a72ee1c1"
+              ]
+            },
+            {
+              "text": "The community relations note states the gala film crew wants Lucia Tanaka's demonstration flown no faster than 45 mph.",
+              "evidence_refs": [
+                "ref-5a5c3aee56e4e243f5c32bbe"
+              ]
+            },
+            {
+              "text": "The film crew has asked that the speed profile be revisited before release.",
+              "evidence_refs": [
+                "ref-5a5c3aee56e4e243f5c32bbe"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 14,
+    "confirmed_received_responses": 7,
+    "answer": {
+      "state": "not_available",
+      "text": "",
+      "used_evidence_refs": [],
+      "insufficient_evidence": null
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-bad97c88fa1e418388fb701032cd825b:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-bad97c88fa1e418388fb701032cd825b",
+        "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+        "evidence_refs": [
+          "ref-791a9ad01f553687a72ee1c1"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-bad97c88fa1e418388fb701032cd825b:c2",
+        "owner_id": "agent-001",
+        "request_id": "req-bad97c88fa1e418388fb701032cd825b",
+        "text": "The community relations note states the gala film crew wants Lucia Tanaka's demonstration flown no faster than 45 mph.",
+        "evidence_refs": [
+          "ref-5a5c3aee56e4e243f5c32bbe"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-bad97c88fa1e418388fb701032cd825b:c3",
+        "owner_id": "agent-001",
+        "request_id": "req-bad97c88fa1e418388fb701032cd825b",
+        "text": "The film crew has asked that the speed profile be revisited before release.",
+        "evidence_refs": [
+          "ref-5a5c3aee56e4e243f5c32bbe"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-b9858cec6cd145e5a50446637ab75330:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-b9858cec6cd145e5a50446637ab75330",
+        "text": "The assigned pilot has a valid remote pilot certificate and current aeronautical knowledge.",
+        "evidence_refs": [
+          "ref-60bc1b402d38242c946cc51f"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-07b380b4d3c74ec7b64aab1bbf3ab9fe:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-07b380b4d3c74ec7b64aab1bbf3ab9fe",
+        "text": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.",
+        "evidence_refs": [
+          "ref-c62285e369e562cf4b90a15b"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-07b380b4d3c74ec7b64aab1bbf3ab9fe:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-07b380b4d3c74ec7b64aab1bbf3ab9fe",
+        "text": "The mapped operating volume lies entirely in Class G airspace.",
+        "evidence_refs": [
+          "ref-9353a78dc18d569adff5ce02"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-e48e6976bbc840158e776ac6815a5646:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-e48e6976bbc840158e776ac6815a5646",
+        "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+        "evidence_refs": [
+          "ref-1672d4f747cf3394f8b72556"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-e48e6976bbc840158e776ac6815a5646:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-e48e6976bbc840158e776ac6815a5646",
+        "text": "Forecast flight visibility is 3 statute miles.",
+        "evidence_refs": [
+          "ref-ed6cee874d42edd88cb2a21b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-70d1f60515a8463fa0c0713ade8170fd:c1",
+        "owner_id": "agent-005",
+        "request_id": "req-70d1f60515a8463fa0c0713ade8170fd",
+        "text": "Proposed Part 107 operation for Lucia Tanaka has a release decision pending.",
+        "evidence_refs": [
+          "ref-56631b227fe0c101d7c4b1f9"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-70d1f60515a8463fa0c0713ade8170fd:c2",
+        "owner_id": "agent-005",
+        "request_id": "req-70d1f60515a8463fa0c0713ade8170fd",
+        "text": "The route provides 1,000 feet vertical and 3,000 feet horizontal cloud separation.",
+        "evidence_refs": [
+          "ref-23d91407600d76c5d4b48a55"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-cf50fa8ba0ad430f8a091c4a28a31e2a:c1",
+        "owner_id": "agent-006",
+        "request_id": "req-cf50fa8ba0ad430f8a091c4a28a31e2a",
+        "text": "The proposed Part 107 operation is for Lucia Tanaka, and its release decision is pending.",
+        "evidence_refs": [
+          "ref-88dad2beec7f797e088972d2"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-cf50fa8ba0ad430f8a091c4a28a31e2a:c2",
+        "owner_id": "agent-006",
+        "request_id": "req-cf50fa8ba0ad430f8a091c4a28a31e2a",
+        "text": "The maximum planned altitude is 400 feet above ground level, checked against the terrain model.",
+        "evidence_refs": [
+          "ref-8a77b7f183903070004a4be2"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-243fc1d0cc884a38b04a21c041666ec4:c1",
+        "owner_id": "agent-007",
+        "request_id": "req-243fc1d0cc884a38b04a21c041666ec4",
+        "text": "The maximum planned groundspeed for the proposed Part 107 operation is 110 miles per hour.",
+        "evidence_refs": [
+          "ref-d80220861e40deef2a651440"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-243fc1d0cc884a38b04a21c041666ec4:c2",
+        "owner_id": "agent-007",
+        "request_id": "req-243fc1d0cc884a38b04a21c041666ec4",
+        "text": "The operations dashboard has marked Lucia Tanaka's mission as an outlier regarding planned groundspeed, prompting a review before release.",
+        "evidence_refs": [
+          "ref-d80220861e40deef2a651440"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-9a68dfa5219a459b961f8ccf45ac78d5:c1",
+        "owner_id": "agent-008",
+        "request_id": "req-9a68dfa5219a459b961f8ccf45ac78d5",
+        "text": "Proposed Part 107 operation for Lucia Tanaka; release decision pending.",
+        "evidence_refs": [
+          "ref-57de27807919eef8d5160d3e"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-03T21:21:15.339147+00:00",
+    "recorded_finished": "2026-11-03T21:21:39.803602+00:00",
+    "recorded_seconds": 24.46433254238218
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "failed",
+    "message": "Recorded conversation failed; partial events are preserved",
+    "updated": "2026-11-03T21:21:39.803602+00:00"
+  },
+  "warnings": [
+    "This recorded collaboration failed; its partial conversation is preserved without an accepted completion or score."
+  ],
+  "provenance": {
+    "source": {
+      "path": "code/experiments/pisas/runs/uas-governed-0/run.json",
+      "sha256": "510d56293a668433c07c5351df97db4b3b65377cbdfd826e2e23a0d460157926"
+    },
+    "cohort": "initial-smoke",
+    "generation_receipts": [],
+    "projection": "requester_visible_artifact_messages"
+  }
+}

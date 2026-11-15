@@ -1,0 +1,556 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-f856da4048f32ea4ea2c2974f52217e0",
+    "title": "Response contract development · special_event_permit_readiness/scenario_23 · integrated-v3 · run 0 · response contract v1",
+    "case_id": "special_event_permit_readiness__scenario_23",
+    "version": "integrated-v3",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T19:46:41.391965+00:00",
+    "updated": "2026-11-13T19:47:26.288067+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "f856da4048f32ea4ea2c2974f52217e0dfde20bf4bded85236107e8c1d0308e4",
+    "backend": "model",
+    "cohort": "response-contract-development",
+    "date_origin": "recorded_execution",
+    "response_contract_id": "aos-response-contract-v1",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "4678435bfd12d4f73413e4875c257aef580557567fc3f41760131ec39db8d407"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-f856da4048f32ea4ea2c2974f52217e0",
+    "source_sha256": "f856da4048f32ea4ea2c2974f52217e0dfde20bf4bded85236107e8c1d0308e4",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "special_event_permit_readiness__scenario_23",
+      "task": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Yuki Hassan"
+      },
+      {
+        "id": "agent-002",
+        "name": "Elena Kim"
+      },
+      {
+        "id": "agent-003",
+        "name": "Dmitri Johansson"
+      },
+      {
+        "id": "agent-004",
+        "name": "Amara Park"
+      },
+      {
+        "id": "agent-005",
+        "name": "Aisha Tanaka"
+      },
+      {
+        "id": "agent-006",
+        "name": "Clara Okafor"
+      },
+      {
+        "id": "agent-007",
+        "name": "Kenji Ibrahim"
+      },
+      {
+        "id": "agent-008",
+        "name": "Anika Fischer"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-7d59bdcaf80fe03313137c3d",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-71c7c752a3bf4e62a42814d7ed1f9acb",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:45.990161+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-2c27a795b6d42d453ddc870d",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-71c7c752a3bf4e62a42814d7ed1f9acb",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:50.424420+00:00",
+        "response": {
+          "request_id": "req-71c7c752a3bf4e62a42814d7ed1f9acb",
+          "status": "released",
+          "answer": "A compliant $2 million liability certificate covers the event.",
+          "claims": [
+            {
+              "text": "A compliant $2 million liability certificate covers the event.",
+              "evidence_refs": [
+                "ref-6a87a724587c54f2c4d2306d"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-9f486e508d47ddff60c0ffd3",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-dd9442ac5df04367b24321479d38f7ac",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:50.425313+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-e9a4f0020b10bfb43883bd24",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-dd9442ac5df04367b24321479d38f7ac",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:55.397321+00:00",
+        "response": {
+          "request_id": "req-dd9442ac5df04367b24321479d38f7ac",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.\nThe event team’s EAP review is complete.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+              "evidence_refs": [
+                "ref-abc9a8bb142edd376c7a0fc2"
+              ]
+            },
+            {
+              "text": "The event team’s EAP review is complete.",
+              "evidence_refs": [
+                "ref-060504a8be7467686a1c5327"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-eefd8490fd417837db01aa26",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-0c2c3be34fd840a79cc21bb80f388a9b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:46:55.398229+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-bad61f76b9022af1d39485d5",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-0c2c3be34fd840a79cc21bb80f388a9b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:02.453570+00:00",
+        "response": {
+          "request_id": "req-0c2c3be34fd840a79cc21bb80f388a9b",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer has its readiness decision pending.\nThe event includes food and the applicable notification, vendor and food-safety requirements are met.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer has its readiness decision pending.",
+              "evidence_refs": [
+                "ref-ac9650cd4ea43a53f11c7c46"
+              ]
+            },
+            {
+              "text": "The event includes food and the applicable notification, vendor and food-safety requirements are met.",
+              "evidence_refs": [
+                "ref-a94c800a6c659189e294d9fe"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-6f9730da2c3e59ef05634345",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-b36cb4bea6be4afcb0f52d177d6af26b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:02.454618+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-66940ebe7cb51619d546990b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-b36cb4bea6be4afcb0f52d177d6af26b",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:09.738127+00:00",
+        "response": {
+          "request_id": "req-b36cb4bea6be4afcb0f52d177d6af26b",
+          "status": "released",
+          "answer": "The Toronto special-event readiness review for Anika Fischer is currently pending.\nThe event includes alcohol and the applicable permit, endorsement and controls are documented.",
+          "claims": [
+            {
+              "text": "The Toronto special-event readiness review for Anika Fischer is currently pending.",
+              "evidence_refs": [
+                "ref-71ea234476589157d6e49d57"
+              ]
+            },
+            {
+              "text": "The event includes alcohol and the applicable permit, endorsement and controls are documented.",
+              "evidence_refs": [
+                "ref-951a67e795e3cb6b6f9768d8"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-7f5c212eb54b0e5117a42077",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-e16a2072846e4ba3985d1ea094a83fb6",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:09.739517+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-0622b8c50e75061b4cd4f69b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-e16a2072846e4ba3985d1ea094a83fb6",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:14.050258+00:00",
+        "response": {
+          "request_id": "req-e16a2072846e4ba3985d1ea094a83fb6",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer is pending.\nAmplified sound remains within the applicable ordinary limits.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer is pending.",
+              "evidence_refs": [
+                "ref-e880a2dda1b8f0136b1bb06f"
+              ]
+            },
+            {
+              "text": "Amplified sound remains within the applicable ordinary limits.",
+              "evidence_refs": [
+                "ref-f5c7fc079b64948f158110c9"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-94daf9b48ba26d71e660209a",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-7bcd8c6e4eff46e9924a859a2ffa18cd",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:14.052204+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-d6fd0eddb4ea6bdbd89d0543",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-7bcd8c6e4eff46e9924a859a2ffa18cd",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:19.004338+00:00",
+        "response": {
+          "request_id": "req-7bcd8c6e4eff46e9924a859a2ffa18cd",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.\nA temporary structure requiring approval lacks the necessary permit or documentation.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+              "evidence_refs": [
+                "ref-a00a54edb91d13508b565749"
+              ]
+            },
+            {
+              "text": "A temporary structure requiring approval lacks the necessary permit or documentation.",
+              "evidence_refs": [
+                "ref-03414ef25a665ae958b8b58a"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-e5be30656b2dd27a33e9d951",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-c74cb75c98824cf995944d820789fcb1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:19.006210+00:00",
+        "body": "Decide whether a Toronto special event is ready. Record exactly one outcome: resolve_insurance, resolve_emergency_plan, resolve_food, resolve_alcohol, resolve_sound, resolve_structures, or ready."
+      },
+      {
+        "event_id": "viewer-bdf91a6390b48b37c2e052fc",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-c74cb75c98824cf995944d820789fcb1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:47:23.445368+00:00",
+        "response": {
+          "request_id": "req-c74cb75c98824cf995944d820789fcb1",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer is pending readiness decision.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer is pending readiness decision.",
+              "evidence_refs": [
+                "ref-fcb5bb82076a93a9b0524834"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-eafcc636c46880d89970334f",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-eb2a2be7fdb04abf9f3c7a503dde2b7a",
+          "status": "released",
+          "answer": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+          "claims": [
+            {
+              "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+              "evidence_refs": [
+                "ref-f4eeff0e44e52186905dc736"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 14,
+    "confirmed_received_responses": 7,
+    "answer": {
+      "state": "completed",
+      "text": "The Toronto special event is not ready because a temporary structure requiring approval lacks the necessary permit or documentation.",
+      "used_evidence_refs": [
+        "ref-03414ef25a665ae958b8b58a"
+      ],
+      "insufficient_evidence": false
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-eb2a2be7fdb04abf9f3c7a503dde2b7a:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-eb2a2be7fdb04abf9f3c7a503dde2b7a",
+        "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+        "evidence_refs": [
+          "ref-f4eeff0e44e52186905dc736"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-71c7c752a3bf4e62a42814d7ed1f9acb:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-71c7c752a3bf4e62a42814d7ed1f9acb",
+        "text": "A compliant $2 million liability certificate covers the event.",
+        "evidence_refs": [
+          "ref-6a87a724587c54f2c4d2306d"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-dd9442ac5df04367b24321479d38f7ac:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-dd9442ac5df04367b24321479d38f7ac",
+        "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+        "evidence_refs": [
+          "ref-abc9a8bb142edd376c7a0fc2"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-dd9442ac5df04367b24321479d38f7ac:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-dd9442ac5df04367b24321479d38f7ac",
+        "text": "The event team’s EAP review is complete.",
+        "evidence_refs": [
+          "ref-060504a8be7467686a1c5327"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-0c2c3be34fd840a79cc21bb80f388a9b:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-0c2c3be34fd840a79cc21bb80f388a9b",
+        "text": "Toronto special-event readiness review for Anika Fischer has its readiness decision pending.",
+        "evidence_refs": [
+          "ref-ac9650cd4ea43a53f11c7c46"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-0c2c3be34fd840a79cc21bb80f388a9b:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-0c2c3be34fd840a79cc21bb80f388a9b",
+        "text": "The event includes food and the applicable notification, vendor and food-safety requirements are met.",
+        "evidence_refs": [
+          "ref-a94c800a6c659189e294d9fe"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-b36cb4bea6be4afcb0f52d177d6af26b:c1",
+        "owner_id": "agent-005",
+        "request_id": "req-b36cb4bea6be4afcb0f52d177d6af26b",
+        "text": "The Toronto special-event readiness review for Anika Fischer is currently pending.",
+        "evidence_refs": [
+          "ref-71ea234476589157d6e49d57"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-b36cb4bea6be4afcb0f52d177d6af26b:c2",
+        "owner_id": "agent-005",
+        "request_id": "req-b36cb4bea6be4afcb0f52d177d6af26b",
+        "text": "The event includes alcohol and the applicable permit, endorsement and controls are documented.",
+        "evidence_refs": [
+          "ref-951a67e795e3cb6b6f9768d8"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-e16a2072846e4ba3985d1ea094a83fb6:c1",
+        "owner_id": "agent-006",
+        "request_id": "req-e16a2072846e4ba3985d1ea094a83fb6",
+        "text": "Toronto special-event readiness review for Anika Fischer is pending.",
+        "evidence_refs": [
+          "ref-e880a2dda1b8f0136b1bb06f"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-e16a2072846e4ba3985d1ea094a83fb6:c2",
+        "owner_id": "agent-006",
+        "request_id": "req-e16a2072846e4ba3985d1ea094a83fb6",
+        "text": "Amplified sound remains within the applicable ordinary limits.",
+        "evidence_refs": [
+          "ref-f5c7fc079b64948f158110c9"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-7bcd8c6e4eff46e9924a859a2ffa18cd:c1",
+        "owner_id": "agent-007",
+        "request_id": "req-7bcd8c6e4eff46e9924a859a2ffa18cd",
+        "text": "Toronto special-event readiness review for Anika Fischer has a readiness decision pending.",
+        "evidence_refs": [
+          "ref-a00a54edb91d13508b565749"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-7bcd8c6e4eff46e9924a859a2ffa18cd:c2",
+        "owner_id": "agent-007",
+        "request_id": "req-7bcd8c6e4eff46e9924a859a2ffa18cd",
+        "text": "A temporary structure requiring approval lacks the necessary permit or documentation.",
+        "evidence_refs": [
+          "ref-03414ef25a665ae958b8b58a"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-c74cb75c98824cf995944d820789fcb1:c1",
+        "owner_id": "agent-008",
+        "request_id": "req-c74cb75c98824cf995944d820789fcb1",
+        "text": "Toronto special-event readiness review for Anika Fischer is pending readiness decision.",
+        "evidence_refs": [
+          "ref-fcb5bb82076a93a9b0524834"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T19:46:41.391965+00:00",
+    "recorded_finished": "2026-11-13T19:47:26.288067+00:00",
+    "recorded_seconds": 44.902587042190135,
+    "response_contract_id": "aos-response-contract-v1"
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T19:47:26.288067+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/special_event_permit_readiness/scenario_23/integrated/run0/actor/run.json",
+      "sha256": "f856da4048f32ea4ea2c2974f52217e0dfde20bf4bded85236107e8c1d0308e4"
+    },
+    "cohort": "response-contract-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/special_event_permit_readiness/scenario_23/integrated/run0/generate.json",
+        "sha256": "4678435bfd12d4f73413e4875c257aef580557567fc3f41760131ec39db8d407",
+        "status": "ok",
+        "finished": "2026-11-13T19:47:26.305494+00:00",
+        "elapsed_seconds": 47.19
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/special_event_permit_readiness/scenario_23/integrated/run0/pipeline.json",
+      "sha256": "f7f44311972351a49b04e3b8537996dbed90b84ae54dfee96f189fc29da127f0"
+    }
+  }
+}

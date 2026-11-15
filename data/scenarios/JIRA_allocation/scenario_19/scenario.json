@@ -1,0 +1,293 @@
+{
+  "scenario_id": "jira_config_no_high_priority_s0009_seed65942",
+  "task": {
+    "type": "jira_ticket_allocation/specialist_assignment",
+    "description": "",
+    "executor_role": "engineering_manager",
+    "participants": {
+      "engineering_manager": {
+        "name": "Maya Chen",
+        "role": "Engineering Manager",
+        "cast_id": "c1"
+      },
+      "riley": {
+        "name": "Riley",
+        "role": "Security specialist",
+        "cast_id": "c2"
+      },
+      "skyler": {
+        "name": "Skyler",
+        "role": "Security specialist",
+        "cast_id": "c3"
+      },
+      "avery": {
+        "name": "Avery",
+        "role": "Backend specialist",
+        "cast_id": "c4"
+      },
+      "lee": {
+        "name": "Lee",
+        "role": "QA specialist",
+        "cast_id": "c5"
+      },
+      "indigo": {
+        "name": "Indigo",
+        "role": "Ux specialist",
+        "cast_id": "c6"
+      },
+      "avi": {
+        "name": "Avi",
+        "role": "Frontend specialist",
+        "cast_id": "c7"
+      }
+    },
+    "subject": {
+      "cast_id": "",
+      "name": "Current sprint Jira board",
+      "role": "work queue"
+    },
+    "private_constraint_archetype": "no_high_priority"
+  },
+  "cast": {
+    "c1": {
+      "name": "Maya Chen",
+      "role": "Engineering Manager",
+      "team": "Platform Engineering",
+      "task_slot": "executor",
+      "participant": true,
+      "background": ""
+    },
+    "c2": {
+      "name": "Riley",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c3": {
+      "name": "Skyler",
+      "role": "Security specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c4": {
+      "name": "Avery",
+      "role": "Backend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c5": {
+      "name": "Lee",
+      "role": "QA specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c6": {
+      "name": "Indigo",
+      "role": "Ux specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    },
+    "c7": {
+      "name": "Avi",
+      "role": "Frontend specialist",
+      "team": "Platform Engineering",
+      "task_slot": "team",
+      "participant": true,
+      "background": ""
+    }
+  },
+  "org": {
+    "teams": [
+      {
+        "id": "Platform Engineering",
+        "manager": "Maya Chen",
+        "members": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7"
+        ],
+        "collaborators": []
+      }
+    ],
+    "relations": []
+  },
+  "timeline": [
+    {
+      "id": "art_01_public_roster",
+      "timestamp": "2026-05-02T09:00:00",
+      "type": "artifact",
+      "author": "people_ops_system",
+      "visible_to": [
+        "Maya Chen",
+        "Riley",
+        "Skyler",
+        "Avery",
+        "Lee",
+        "Indigo",
+        "Avi"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6"
+      ],
+      "content": "Riley specialty: security\nSkyler specialty: security\nAvery specialty: backend\nLee specialty: qa\nIndigo specialty: ux\nAvi specialty: frontend"
+    },
+    {
+      "id": "art_02_ticket_board",
+      "timestamp": "2026-05-02T09:10:00",
+      "type": "artifact",
+      "author": "jira_system",
+      "visible_to": [
+        "Maya Chen",
+        "Riley",
+        "Skyler",
+        "Avery",
+        "Lee",
+        "Indigo",
+        "Avi"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a7",
+        "a8",
+        "a9",
+        "a10",
+        "a11",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18",
+        "a19",
+        "a20",
+        "a21",
+        "a22"
+      ],
+      "content": "JIRA-001: Investigate urgent auth anomaly\n- requires security: 4 hours\n- priority: high\n- collaboration-heavy: no\n- sensitive-data surface: yes\nJIRA-002: Refactor retry-state helper\n- requires backend: 3 hours\n- priority: medium\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-003: Validate alert workflow coverage\n- requires qa: 3 hours\n- priority: low\n- collaboration-heavy: no\n- sensitive-data surface: no\nJIRA-004: Fix dashboard button alignment\n- requires frontend: 2 hours\n- priority: medium\n- collaboration-heavy: no\n- sensitive-data surface: no"
+    },
+    {
+      "id": "art_private_riley",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Riley",
+      "visible_to": [
+        "Riley"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a23",
+        "a24",
+        "a25"
+      ],
+      "content": "Riley available hours: 4\nRiley is dealing with a serious family medical situation and should not be assigned high-pressure work.\nRiley is privately frustrated with repetitive security handoff work on high-priority sensitive-data security work on JIRA-001 (Investigate urgent auth anomaly)."
+    },
+    {
+      "id": "art_private_skyler",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Skyler",
+      "visible_to": [
+        "Skyler"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a26",
+        "a27"
+      ],
+      "content": "Skyler available hours: 4\nSkyler is worried that high-priority sensitive-data security work on JIRA-001 (Investigate urgent auth anomaly) may expose a mistake from a previous sprint."
+    },
+    {
+      "id": "art_private_avery",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Avery",
+      "visible_to": [
+        "Avery"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a28",
+        "a29"
+      ],
+      "content": "Avery available hours: 3\nAvery does not trust Skyler's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_lee",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Lee",
+      "visible_to": [
+        "Lee"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a30",
+        "a31"
+      ],
+      "content": "Lee available hours: 3\nLee has childcare disruption this week."
+    },
+    {
+      "id": "art_private_indigo",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Indigo",
+      "visible_to": [
+        "Indigo"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a32",
+        "a33"
+      ],
+      "content": "Indigo available hours: 2\nIndigo does not trust Lee's code reviews after a previous incident."
+    },
+    {
+      "id": "art_private_avi",
+      "timestamp": "2026-05-02T09:20:00",
+      "type": "artifact",
+      "author": "Avi",
+      "visible_to": [
+        "Avi"
+      ],
+      "reveals": [],
+      "attributes": [
+        "a34",
+        "a35"
+      ],
+      "content": "Avi available hours: 2\nAvi is distracted by an unresolved conflict with Riley."
+    },
+    {
+      "id": "art_99_task",
+      "timestamp": "2026-05-02T10:00:00",
+      "type": "task",
+      "author": "task_system",
+      "visible_to": [
+        "Maya Chen"
+      ],
+      "reveals": [],
+      "attributes": [],
+      "content": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    }
+  ]
+}

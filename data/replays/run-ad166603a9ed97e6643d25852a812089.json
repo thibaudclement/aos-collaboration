@@ -1,0 +1,485 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-ad166603a9ed97e6643d25852a812089",
+    "title": "Response contract development · meeting_allocation/scenario_28 · integrated-v3 · run 0 · response contract v1",
+    "case_id": "meeting_allocation__scenario_28",
+    "version": "integrated-v3",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T18:58:32.288797+00:00",
+    "updated": "2026-11-13T18:59:03.470970+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "ad166603a9ed97e6643d25852a8120899b76b8c6328d721c2e989d571085ef21",
+    "backend": "model",
+    "cohort": "response-contract-development",
+    "date_origin": "recorded_execution",
+    "response_contract_id": "aos-response-contract-v1",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "3bba204185e4895fb41faf581c44dac01fac4fa9d1974fafbc24977a63459f27"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-ad166603a9ed97e6643d25852a812089",
+    "source_sha256": "ad166603a9ed97e6643d25852a8120899b76b8c6328d721c2e989d571085ef21",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "meeting_allocation__scenario_28",
+      "task": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Maya Chen"
+      },
+      {
+        "id": "agent-002",
+        "name": "Iris"
+      },
+      {
+        "id": "agent-003",
+        "name": "Mika"
+      },
+      {
+        "id": "agent-004",
+        "name": "Nico"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-a61a276ea3c0720ea0a5aafd",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:38.264771+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-bf024e9a1e901837a53be0f9",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:45.079022+00:00",
+        "response": {
+          "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+          "status": "released",
+          "answer": "Room cedar has a capacity of 3 and features quiet and video.\nRoom delta has a capacity of 8 and features video, customer_ready, recording, and projector.\nMEET-001 is an Incident Retrospective with type architecture_review, duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.\nIris needs a room that provides quiet support.\nIris is unavailable during Monday 9:00-10:00.\nIris is unavailable during Tuesday 11:00-12:00.\nIris has a personal schedule conflict during Wednesday 10:00-11:00.",
+          "claims": [
+            {
+              "text": "Room cedar has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-ee2741c1969a526aef52a6db"
+              ]
+            },
+            {
+              "text": "Room delta has a capacity of 8 and features video, customer_ready, recording, and projector.",
+              "evidence_refs": [
+                "ref-ee2741c1969a526aef52a6db"
+              ]
+            },
+            {
+              "text": "MEET-001 is an Incident Retrospective with type architecture_review, duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+              "evidence_refs": [
+                "ref-6818e8010205cdbc869d7244"
+              ]
+            },
+            {
+              "text": "Iris needs a room that provides quiet support.",
+              "evidence_refs": [
+                "ref-dac81e397b8a43cd3ef29793"
+              ]
+            },
+            {
+              "text": "Iris is unavailable during Monday 9:00-10:00.",
+              "evidence_refs": [
+                "ref-dac81e397b8a43cd3ef29793"
+              ]
+            },
+            {
+              "text": "Iris is unavailable during Tuesday 11:00-12:00.",
+              "evidence_refs": [
+                "ref-dac81e397b8a43cd3ef29793"
+              ]
+            },
+            {
+              "text": "Iris has a personal schedule conflict during Wednesday 10:00-11:00.",
+              "evidence_refs": [
+                "ref-dac81e397b8a43cd3ef29793"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-e3c3778cba29f2c2cef229be",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:45.079822+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-a2b1bf2283a24eb2dd72b16b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:50.894385+00:00",
+        "response": {
+          "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+          "status": "released",
+          "answer": "Room cedar (Cedar) has a capacity of 3 and features quiet and video.\nRoom delta (Delta) has a capacity of 8 and features video, customer_ready, recording, and projector.\nMEET-001 (Incident Retrospective) is an architecture_review meeting with a duration of 60 minutes, required attendees Iris and Mika, candidate windows including Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.\nMika handles childcare drop-off before work and often reaches the office later than planned.",
+          "claims": [
+            {
+              "text": "Room cedar (Cedar) has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-aa2af9aef039f0436410d896"
+              ]
+            },
+            {
+              "text": "Room delta (Delta) has a capacity of 8 and features video, customer_ready, recording, and projector.",
+              "evidence_refs": [
+                "ref-aa2af9aef039f0436410d896"
+              ]
+            },
+            {
+              "text": "MEET-001 (Incident Retrospective) is an architecture_review meeting with a duration of 60 minutes, required attendees Iris and Mika, candidate windows including Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+              "evidence_refs": [
+                "ref-b850abcdbee54ca465d7d2aa"
+              ]
+            },
+            {
+              "text": "Mika handles childcare drop-off before work and often reaches the office later than planned.",
+              "evidence_refs": [
+                "ref-8583916da4175fdcfccde2c1"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-cc5b559b5672084927ee5df8",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-447ff19871744d60a4e8711278104897",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:50.895406+00:00",
+        "body": "Schedule each outstanding meeting in one room and one time window. Consult each attendee for any relevant scheduling information, including availability, constraints, preferences, and other context that may affect the schedule, then choose a schedule that satisfies the room inventory and meeting requirements. Return JSON with shape: {\"schedule\": {\"MEET-001\": {\"slot\": \"SLOT_ID\", \"room\": \"ROOM_ID\"}}} and include an explanation of why the schedule was chosen."
+      },
+      {
+        "event_id": "viewer-5cc06ae5a15f1337e00c8f85",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-447ff19871744d60a4e8711278104897",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T18:58:56.277157+00:00",
+        "response": {
+          "request_id": "req-447ff19871744d60a4e8711278104897",
+          "status": "released",
+          "answer": "Room cedar has a capacity of 3 and features quiet and video.\nRoom delta has a capacity of 8 and features video, customer_ready, recording, and projector.\nMEET-001 is an Incident Retrospective meeting of type architecture_review with a duration of 60 minutes, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+          "claims": [
+            {
+              "text": "Room cedar has a capacity of 3 and features quiet and video.",
+              "evidence_refs": [
+                "ref-e23685be85f768c2af0adc61"
+              ]
+            },
+            {
+              "text": "Room delta has a capacity of 8 and features video, customer_ready, recording, and projector.",
+              "evidence_refs": [
+                "ref-e23685be85f768c2af0adc61"
+              ]
+            },
+            {
+              "text": "MEET-001 is an Incident Retrospective meeting of type architecture_review with a duration of 60 minutes, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+              "evidence_refs": [
+                "ref-60fa40662dc50ca64da2f710"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-36e0412ca177a57be7d63f14",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-5624d6402259472389fd5f1429d030f9",
+          "status": "released",
+          "answer": "Room cedar (Cedar) has capacity 3 and features quiet, video.\nRoom delta (Delta) has capacity 8 and features video, customer_ready, recording, projector.\nMEET-001 is an Incident Retrospective meeting of type architecture_review with duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+          "claims": [
+            {
+              "text": "Room cedar (Cedar) has capacity 3 and features quiet, video.",
+              "evidence_refs": [
+                "ref-e10f68921b600979658c780a"
+              ]
+            },
+            {
+              "text": "Room delta (Delta) has capacity 8 and features video, customer_ready, recording, projector.",
+              "evidence_refs": [
+                "ref-e10f68921b600979658c780a"
+              ]
+            },
+            {
+              "text": "MEET-001 is an Incident Retrospective meeting of type architecture_review with duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+              "evidence_refs": [
+                "ref-b3ad38b24a6a95c28e7703a6"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 6,
+    "confirmed_received_responses": 3,
+    "answer": {
+      "state": "completed",
+      "text": "{\"final_response\":\"The schedule for MEET-001 is set to Tuesday 10:00-11:00 in room cedar. Explanation: Iris is unavailable Monday 9:00-10:00, Tuesday 11:00-12:00, and has a personal conflict Wednesday 10:00-11:00, leaving Tuesday 10:00-11:00 as the only available candidate window. Iris also needs a room that provides quiet support, and room cedar features quiet and video.\",\"schedule\":{\"MEET-001\":{\"slot\":\"Tuesday 10:00-11:00\",\"room\":\"cedar\"}}}",
+      "used_evidence_refs": [
+        "ref-60fa40662dc50ca64da2f710",
+        "ref-6818e8010205cdbc869d7244",
+        "ref-8583916da4175fdcfccde2c1",
+        "ref-aa2af9aef039f0436410d896",
+        "ref-b3ad38b24a6a95c28e7703a6",
+        "ref-b850abcdbee54ca465d7d2aa",
+        "ref-dac81e397b8a43cd3ef29793",
+        "ref-e10f68921b600979658c780a",
+        "ref-e23685be85f768c2af0adc61",
+        "ref-ee2741c1969a526aef52a6db"
+      ],
+      "insufficient_evidence": false
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-5624d6402259472389fd5f1429d030f9:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-5624d6402259472389fd5f1429d030f9",
+        "text": "Room cedar (Cedar) has capacity 3 and features quiet, video.",
+        "evidence_refs": [
+          "ref-e10f68921b600979658c780a"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-5624d6402259472389fd5f1429d030f9:c2",
+        "owner_id": "agent-001",
+        "request_id": "req-5624d6402259472389fd5f1429d030f9",
+        "text": "Room delta (Delta) has capacity 8 and features video, customer_ready, recording, projector.",
+        "evidence_refs": [
+          "ref-e10f68921b600979658c780a"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-5624d6402259472389fd5f1429d030f9:c3",
+        "owner_id": "agent-001",
+        "request_id": "req-5624d6402259472389fd5f1429d030f9",
+        "text": "MEET-001 is an Incident Retrospective meeting of type architecture_review with duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+        "evidence_refs": [
+          "ref-b3ad38b24a6a95c28e7703a6"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Room cedar has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-ee2741c1969a526aef52a6db"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c2",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Room delta has a capacity of 8 and features video, customer_ready, recording, and projector.",
+        "evidence_refs": [
+          "ref-ee2741c1969a526aef52a6db"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c3",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "MEET-001 is an Incident Retrospective with type architecture_review, duration 60 min, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+        "evidence_refs": [
+          "ref-6818e8010205cdbc869d7244"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c4",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Iris needs a room that provides quiet support.",
+        "evidence_refs": [
+          "ref-dac81e397b8a43cd3ef29793"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c5",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Iris is unavailable during Monday 9:00-10:00.",
+        "evidence_refs": [
+          "ref-dac81e397b8a43cd3ef29793"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c6",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Iris is unavailable during Tuesday 11:00-12:00.",
+        "evidence_refs": [
+          "ref-dac81e397b8a43cd3ef29793"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-1a2fcf12eef5480aa26330b105c867a2:c7",
+        "owner_id": "agent-002",
+        "request_id": "req-1a2fcf12eef5480aa26330b105c867a2",
+        "text": "Iris has a personal schedule conflict during Wednesday 10:00-11:00.",
+        "evidence_refs": [
+          "ref-dac81e397b8a43cd3ef29793"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-fcd7bd80207441e1a5e504fd22f953a1:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "text": "Room cedar (Cedar) has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-aa2af9aef039f0436410d896"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-fcd7bd80207441e1a5e504fd22f953a1:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "text": "Room delta (Delta) has a capacity of 8 and features video, customer_ready, recording, and projector.",
+        "evidence_refs": [
+          "ref-aa2af9aef039f0436410d896"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-fcd7bd80207441e1a5e504fd22f953a1:c3",
+        "owner_id": "agent-003",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "text": "MEET-001 (Incident Retrospective) is an architecture_review meeting with a duration of 60 minutes, required attendees Iris and Mika, candidate windows including Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+        "evidence_refs": [
+          "ref-b850abcdbee54ca465d7d2aa"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-fcd7bd80207441e1a5e504fd22f953a1:c4",
+        "owner_id": "agent-003",
+        "request_id": "req-fcd7bd80207441e1a5e504fd22f953a1",
+        "text": "Mika handles childcare drop-off before work and often reaches the office later than planned.",
+        "evidence_refs": [
+          "ref-8583916da4175fdcfccde2c1"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-447ff19871744d60a4e8711278104897:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-447ff19871744d60a4e8711278104897",
+        "text": "Room cedar has a capacity of 3 and features quiet and video.",
+        "evidence_refs": [
+          "ref-e23685be85f768c2af0adc61"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-447ff19871744d60a4e8711278104897:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-447ff19871744d60a4e8711278104897",
+        "text": "Room delta has a capacity of 8 and features video, customer_ready, recording, and projector.",
+        "evidence_refs": [
+          "ref-e23685be85f768c2af0adc61"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-447ff19871744d60a4e8711278104897:c3",
+        "owner_id": "agent-004",
+        "request_id": "req-447ff19871744d60a4e8711278104897",
+        "text": "MEET-001 is an Incident Retrospective meeting of type architecture_review with a duration of 60 minutes, required attendees Iris and Mika, candidate windows Monday 9:00-10:00, Tuesday 10:00-11:00, Tuesday 11:00-12:00, and Wednesday 10:00-11:00, candidate rooms delta and cedar, and medium priority.",
+        "evidence_refs": [
+          "ref-60fa40662dc50ca64da2f710"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T18:58:32.288797+00:00",
+    "recorded_finished": "2026-11-13T18:59:03.470970+00:00",
+    "recorded_seconds": 31.181596292182803,
+    "response_contract_id": "aos-response-contract-v1"
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T18:59:03.470970+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/meeting_allocation/scenario_28/integrated/run0/actor/run.json",
+      "sha256": "ad166603a9ed97e6643d25852a8120899b76b8c6328d721c2e989d571085ef21"
+    },
+    "cohort": "response-contract-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/meeting_allocation/scenario_28/integrated/run0/generate.json",
+        "sha256": "3bba204185e4895fb41faf581c44dac01fac4fa9d1974fafbc24977a63459f27",
+        "status": "ok",
+        "finished": "2026-11-13T18:59:03.478361+00:00",
+        "elapsed_seconds": 32.298
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/meeting_allocation/scenario_28/integrated/run0/pipeline.json",
+      "sha256": "545dec8df36c37f5bda2b82132ee14f5d4ae1a97dfd466e684b90db96723bcd9"
+    }
+  }
+}

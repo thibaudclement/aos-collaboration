@@ -1,0 +1,1445 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-6359fb2e8665b75b14d49ed2cfa0166f",
+    "title": "Integrated development · JIRA_allocation/scenario_07 · governed-v1 · run 0",
+    "case_id": "JIRA_allocation__scenario_07",
+    "version": "governed-v1",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T15:15:53.983996+00:00",
+    "updated": "2026-11-13T15:16:45.967500+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "6359fb2e8665b75b14d49ed2cfa0166f4aa5da3145078fab10916630eddf9020",
+    "backend": "model",
+    "cohort": "integrated-development",
+    "date_origin": "recorded_execution",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "2f3b359688238d981c636158392b899a17c1e4bf7be7db33d9ef8f2b7580a9a9"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-6359fb2e8665b75b14d49ed2cfa0166f",
+    "source_sha256": "6359fb2e8665b75b14d49ed2cfa0166f4aa5da3145078fab10916630eddf9020",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "JIRA_allocation__scenario_07",
+      "task": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Maya Chen"
+      },
+      {
+        "id": "agent-002",
+        "name": "Sasha"
+      },
+      {
+        "id": "agent-003",
+        "name": "Taylor"
+      },
+      {
+        "id": "agent-004",
+        "name": "Kai"
+      },
+      {
+        "id": "agent-005",
+        "name": "Avery"
+      },
+      {
+        "id": "agent-006",
+        "name": "Jordan"
+      },
+      {
+        "id": "agent-007",
+        "name": "Avi"
+      },
+      {
+        "id": "agent-008",
+        "name": "Riley"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-ffce3cb6af00b05f10bd2f75",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:15:59.705220+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-5b53a412042f1592e3729610",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:04.093117+00:00",
+        "response": {
+          "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours, security for 3 hours, and is high priority and collaboration-heavy.\nJIRA-002 requires qa for 3 hours and is low priority.\nJIRA-003 requires frontend for 2 hours and is low priority.\nJIRA-004 requires ux for 3 hours and is medium priority.\nJIRA-005 requires data for 2 hours and is low priority.\nSasha available hours: 4.\nSasha specialty: backend.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours, security for 3 hours, and is high priority and collaboration-heavy.",
+              "evidence_refs": [
+                "ref-9e3c9939ea404946811b6849"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours and is low priority.",
+              "evidence_refs": [
+                "ref-9e3c9939ea404946811b6849"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours and is low priority.",
+              "evidence_refs": [
+                "ref-9e3c9939ea404946811b6849"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours and is medium priority.",
+              "evidence_refs": [
+                "ref-9e3c9939ea404946811b6849"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours and is low priority.",
+              "evidence_refs": [
+                "ref-9e3c9939ea404946811b6849"
+              ]
+            },
+            {
+              "text": "Sasha available hours: 4.",
+              "evidence_refs": [
+                "ref-5ce91d01221cfa78b58ea0e3"
+              ]
+            },
+            {
+              "text": "Sasha specialty: backend.",
+              "evidence_refs": [
+                "ref-e54e53a44b0539dcf3a5e07e"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-36eef9cea3cc79b2637d561d",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:04.093934+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-e373ceda89401589315c779c",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:09.315195+00:00",
+        "response": {
+          "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours, security for 3 hours, has high priority, is collaboration-heavy, and has no sensitive-data surface.\nJIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.\nJIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.\nJIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has no sensitive-data surface.\nJIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.\nTaylor has 3 available hours.\nSasha specialty is backend.\nTaylor specialty is security.\nKai specialty is security.\nAvery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours, security for 3 hours, has high priority, is collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-d4ed2d56ad2e374b2ab7e36a"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-d4ed2d56ad2e374b2ab7e36a"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-d4ed2d56ad2e374b2ab7e36a"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-d4ed2d56ad2e374b2ab7e36a"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-d4ed2d56ad2e374b2ab7e36a"
+              ]
+            },
+            {
+              "text": "Taylor has 3 available hours.",
+              "evidence_refs": [
+                "ref-8a2b7c0f09b58a20b98fbcb3"
+              ]
+            },
+            {
+              "text": "Sasha specialty is backend.",
+              "evidence_refs": [
+                "ref-f7077c0cd439d4c7f537e28e"
+              ]
+            },
+            {
+              "text": "Taylor specialty is security.",
+              "evidence_refs": [
+                "ref-f7077c0cd439d4c7f537e28e"
+              ]
+            },
+            {
+              "text": "Kai specialty is security.",
+              "evidence_refs": [
+                "ref-f7077c0cd439d4c7f537e28e"
+              ]
+            },
+            {
+              "text": "Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+              "evidence_refs": [
+                "ref-f7077c0cd439d4c7f537e28e"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-e5ba4d3984ce40b48f5e6b21",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:09.316141+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-3cb9767728061d450aad71c1",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:16.500893+00:00",
+        "response": {
+          "request_id": "req-2d43da689ba24e4aa30043753178485a",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours and security for 3 hours, is high priority, collaboration-heavy, and has no sensitive-data surface.\nJIRA-002 requires qa for 3 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.\nJIRA-003 requires frontend for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.\nJIRA-004 requires ux for 3 hours, is medium priority, not collaboration-heavy, and has no sensitive-data surface.\nJIRA-005 requires data for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.\nSasha's specialty is backend.\nTaylor's specialty is security.\nKai's specialty is security.\nAvery's specialty is qa.\nJordan's specialty is frontend.\nAvi's specialty is ux.\nRiley's specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, is high priority, collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-f76e4b7673c33977824abae2"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-f76e4b7673c33977824abae2"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-f76e4b7673c33977824abae2"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours, is medium priority, not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-f76e4b7673c33977824abae2"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+              "evidence_refs": [
+                "ref-f76e4b7673c33977824abae2"
+              ]
+            },
+            {
+              "text": "Sasha's specialty is backend.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Taylor's specialty is security.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Kai's specialty is security.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Avery's specialty is qa.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Jordan's specialty is frontend.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Avi's specialty is ux.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            },
+            {
+              "text": "Riley's specialty is data.",
+              "evidence_refs": [
+                "ref-4de35e7fe2adf8d50b407ad9"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-cdad13148b61d21d8b1600ca",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:16.501995+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-22398a33a6514f60c9d1d6f3",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:20.702885+00:00",
+        "response": {
+          "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.\nJIRA-002 requires qa for 3 hours with low priority.\nJIRA-003 requires frontend for 2 hours with low priority.\nJIRA-004 requires ux for 3 hours with medium priority.\nJIRA-005 requires data for 2 hours with low priority.\nAvery has available hours: 3.\nSasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.",
+              "evidence_refs": [
+                "ref-ecf6c47bf05df2f8cc218c2b"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours with low priority.",
+              "evidence_refs": [
+                "ref-ecf6c47bf05df2f8cc218c2b"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-ecf6c47bf05df2f8cc218c2b"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+              "evidence_refs": [
+                "ref-ecf6c47bf05df2f8cc218c2b"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-ecf6c47bf05df2f8cc218c2b"
+              ]
+            },
+            {
+              "text": "Avery has available hours: 3.",
+              "evidence_refs": [
+                "ref-dd58010957e7a2f23aed3859"
+              ]
+            },
+            {
+              "text": "Sasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+              "evidence_refs": [
+                "ref-23d9f2b7e93a55ff0022c4cf"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-57dbdd3d00b819145b6410fa",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:20.704083+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-d63380a09400811407379dfd",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:24.890083+00:00",
+        "response": {
+          "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours and security for 3 hours with high priority.\nJIRA-002 requires qa for 3 hours with low priority.\nJIRA-003 requires frontend for 2 hours with low priority.\nJIRA-004 requires ux for 3 hours with medium priority.\nJIRA-005 requires data for 2 hours with low priority.\nJordan available hours: 2.\nSasha specialty is backend, Taylor specialty is security, Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours and security for 3 hours with high priority.",
+              "evidence_refs": [
+                "ref-cddf9fd9f9eae7157f635118"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours with low priority.",
+              "evidence_refs": [
+                "ref-cddf9fd9f9eae7157f635118"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-cddf9fd9f9eae7157f635118"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+              "evidence_refs": [
+                "ref-cddf9fd9f9eae7157f635118"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-cddf9fd9f9eae7157f635118"
+              ]
+            },
+            {
+              "text": "Jordan available hours: 2.",
+              "evidence_refs": [
+                "ref-33e3bc7fa169d5d189e295a2"
+              ]
+            },
+            {
+              "text": "Sasha specialty is backend, Taylor specialty is security, Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+              "evidence_refs": [
+                "ref-e3e64bdc4b6c7002d9574d99"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-766d300e131450e32a34b640",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:24.891422+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-b1d8f6ec5efc0bcccbe4a64b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:31.226861+00:00",
+        "response": {
+          "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.\nJIRA-002 requires qa for 3 hours with low priority.\nJIRA-003 requires frontend for 2 hours with low priority.\nJIRA-004 requires ux for 3 hours with medium priority.\nJIRA-005 requires data for 2 hours with low priority.\nAvi available hours: 3\nSasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.",
+              "evidence_refs": [
+                "ref-efc13cf4bc23a88a6ade0438"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours with low priority.",
+              "evidence_refs": [
+                "ref-efc13cf4bc23a88a6ade0438"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-efc13cf4bc23a88a6ade0438"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+              "evidence_refs": [
+                "ref-efc13cf4bc23a88a6ade0438"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-efc13cf4bc23a88a6ade0438"
+              ]
+            },
+            {
+              "text": "Avi available hours: 3",
+              "evidence_refs": [
+                "ref-129cee15ec892aa07635af95"
+              ]
+            },
+            {
+              "text": "Sasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+              "evidence_refs": [
+                "ref-dfd45eb6ef6c146b4486fca5"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-6cf1f4bbce97d1aecd54e605",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:31.228325+00:00",
+        "body": "Assign each Jira ticket to the members of the team, taking into considerartion all relevant facotrs like their availiability, their preferences etc. Report the assignemnets in this shape: {\"assignment\":{\"JIRA-001\":{\"backend\":\"person_id\"}}}. and include an explanation of the assignment reasoning."
+      },
+      {
+        "event_id": "viewer-3f9d60850e27478ee9d622d1",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T15:16:40.602074+00:00",
+        "response": {
+          "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours, requires security for 3 hours, has high priority, is collaboration-heavy, and has a non-sensitive data surface.\nJIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.\nJIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.\nJIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has a non-sensitive data surface.\nJIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.\nSasha's specialty is backend.\nTaylor's specialty is security and Kai's specialty is security.\nAvery's specialty is qa, Jordan's specialty is frontend, Avi's specialty is ux, and Riley's specialty is data.\nRiley has 2 available hours.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours, requires security for 3 hours, has high priority, is collaboration-heavy, and has a non-sensitive data surface.",
+              "evidence_refs": [
+                "ref-70ac43181bc5887fa0a71376"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+              "evidence_refs": [
+                "ref-70ac43181bc5887fa0a71376"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+              "evidence_refs": [
+                "ref-70ac43181bc5887fa0a71376"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+              "evidence_refs": [
+                "ref-70ac43181bc5887fa0a71376"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+              "evidence_refs": [
+                "ref-70ac43181bc5887fa0a71376"
+              ]
+            },
+            {
+              "text": "Sasha's specialty is backend.",
+              "evidence_refs": [
+                "ref-5bd192634bc678f33d6bef60"
+              ]
+            },
+            {
+              "text": "Taylor's specialty is security and Kai's specialty is security.",
+              "evidence_refs": [
+                "ref-5bd192634bc678f33d6bef60"
+              ]
+            },
+            {
+              "text": "Avery's specialty is qa, Jordan's specialty is frontend, Avi's specialty is ux, and Riley's specialty is data.",
+              "evidence_refs": [
+                "ref-5bd192634bc678f33d6bef60"
+              ]
+            },
+            {
+              "text": "Riley has 2 available hours.",
+              "evidence_refs": [
+                "ref-88d6ba9a4742c4709d0a64e3"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-8db7469335e0715502ac0594",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+          "status": "released",
+          "answer": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy.\nJIRA-002 requires qa for 3 hours with low priority.\nJIRA-003 requires frontend for 2 hours with low priority.\nJIRA-004 requires ux for 3 hours with medium priority.\nJIRA-005 requires data for 2 hours with low priority.\nSasha's specialty is backend.\nTaylor's specialty is security.\nKai's specialty is security.\nAvery's specialty is qa.\nJordan's specialty is frontend.\nAvi's specialty is ux.\nRiley's specialty is data.",
+          "claims": [
+            {
+              "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy.",
+              "evidence_refs": [
+                "ref-4e1ec6a8b13abf0b7ad174a2"
+              ]
+            },
+            {
+              "text": "JIRA-002 requires qa for 3 hours with low priority.",
+              "evidence_refs": [
+                "ref-4e1ec6a8b13abf0b7ad174a2"
+              ]
+            },
+            {
+              "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-4e1ec6a8b13abf0b7ad174a2"
+              ]
+            },
+            {
+              "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+              "evidence_refs": [
+                "ref-4e1ec6a8b13abf0b7ad174a2"
+              ]
+            },
+            {
+              "text": "JIRA-005 requires data for 2 hours with low priority.",
+              "evidence_refs": [
+                "ref-4e1ec6a8b13abf0b7ad174a2"
+              ]
+            },
+            {
+              "text": "Sasha's specialty is backend.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Taylor's specialty is security.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Kai's specialty is security.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Avery's specialty is qa.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Jordan's specialty is frontend.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Avi's specialty is ux.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            },
+            {
+              "text": "Riley's specialty is data.",
+              "evidence_refs": [
+                "ref-e3ba2fbc9cacf5435f4c4184"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 14,
+    "confirmed_received_responses": 7,
+    "answer": {
+      "state": "completed",
+      "text": "The Jira tickets have been assigned to team members according to their respective specialties and availability. Sasha (agent-002) is assigned to backend for JIRA-001 (agent-002 specialty backend, 4 hours required/available), Taylor (agent-003) or Kai (agent-004) can cover the security requirement for JIRA-001, Avery (agent-005) is assigned to JIRA-002 (qa, 3 hours available), Jordan (agent-006) is assigned to JIRA-003 (frontend, 2 hours available), Avi (agent-007) is assigned to JIRA-004 (ux, 3 hours available), and Riley (agent-008) is assigned to JIRA-005 (data, 2 hours available).",
+      "used_evidence_refs": [
+        "ref-129cee15ec892aa07635af95",
+        "ref-23d9f2b7e93a55ff0022c4cf",
+        "ref-33e3bc7fa169d5d189e295a2",
+        "ref-4de35e7fe2adf8d50b407ad9",
+        "ref-4e1ec6a8b13abf0b7ad174a2",
+        "ref-5bd192634bc678f33d6bef60",
+        "ref-5ce91d01221cfa78b58ea0e3",
+        "ref-70ac43181bc5887fa0a71376",
+        "ref-88d6ba9a4742c4709d0a64e3",
+        "ref-8a2b7c0f09b58a20b98fbcb3",
+        "ref-9e3c9939ea404946811b6849",
+        "ref-cddf9fd9f9eae7157f635118",
+        "ref-d4ed2d56ad2e374b2ab7e36a",
+        "ref-dd58010957e7a2f23aed3859",
+        "ref-dfd45eb6ef6c146b4486fca5",
+        "ref-e3ba2fbc9cacf5435f4c4184",
+        "ref-e3e64bdc4b6c7002d9574d99",
+        "ref-e54e53a44b0539dcf3a5e07e",
+        "ref-ecf6c47bf05df2f8cc218c2b",
+        "ref-efc13cf4bc23a88a6ade0438",
+        "ref-f7077c0cd439d4c7f537e28e",
+        "ref-f76e4b7673c33977824abae2"
+      ],
+      "insufficient_evidence": false
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy.",
+        "evidence_refs": [
+          "ref-4e1ec6a8b13abf0b7ad174a2"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c2",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "JIRA-002 requires qa for 3 hours with low priority.",
+        "evidence_refs": [
+          "ref-4e1ec6a8b13abf0b7ad174a2"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c3",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-4e1ec6a8b13abf0b7ad174a2"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c4",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+        "evidence_refs": [
+          "ref-4e1ec6a8b13abf0b7ad174a2"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c5",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "JIRA-005 requires data for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-4e1ec6a8b13abf0b7ad174a2"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c6",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Sasha's specialty is backend.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c7",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Taylor's specialty is security.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c8",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Kai's specialty is security.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c9",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Avery's specialty is qa.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c10",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Jordan's specialty is frontend.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c11",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Avi's specialty is ux.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-8222a4ba5feb40a0a87f7660b67f355d:c12",
+        "owner_id": "agent-001",
+        "request_id": "req-8222a4ba5feb40a0a87f7660b67f355d",
+        "text": "Riley's specialty is data.",
+        "evidence_refs": [
+          "ref-e3ba2fbc9cacf5435f4c4184"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "JIRA-001 requires backend for 4 hours, security for 3 hours, and is high priority and collaboration-heavy.",
+        "evidence_refs": [
+          "ref-9e3c9939ea404946811b6849"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c2",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "JIRA-002 requires qa for 3 hours and is low priority.",
+        "evidence_refs": [
+          "ref-9e3c9939ea404946811b6849"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c3",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "JIRA-003 requires frontend for 2 hours and is low priority.",
+        "evidence_refs": [
+          "ref-9e3c9939ea404946811b6849"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c4",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "JIRA-004 requires ux for 3 hours and is medium priority.",
+        "evidence_refs": [
+          "ref-9e3c9939ea404946811b6849"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c5",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "JIRA-005 requires data for 2 hours and is low priority.",
+        "evidence_refs": [
+          "ref-9e3c9939ea404946811b6849"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c6",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "Sasha available hours: 4.",
+        "evidence_refs": [
+          "ref-5ce91d01221cfa78b58ea0e3"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-e6507af7a97c4e0da837ef70dc1aad17:c7",
+        "owner_id": "agent-002",
+        "request_id": "req-e6507af7a97c4e0da837ef70dc1aad17",
+        "text": "Sasha specialty: backend.",
+        "evidence_refs": [
+          "ref-e54e53a44b0539dcf3a5e07e"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "JIRA-001 requires backend for 4 hours, security for 3 hours, has high priority, is collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-d4ed2d56ad2e374b2ab7e36a"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c2",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "JIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-d4ed2d56ad2e374b2ab7e36a"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c3",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "JIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-d4ed2d56ad2e374b2ab7e36a"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c4",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "JIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-d4ed2d56ad2e374b2ab7e36a"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c5",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "JIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-d4ed2d56ad2e374b2ab7e36a"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c6",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "Taylor has 3 available hours.",
+        "evidence_refs": [
+          "ref-8a2b7c0f09b58a20b98fbcb3"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c7",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "Sasha specialty is backend.",
+        "evidence_refs": [
+          "ref-f7077c0cd439d4c7f537e28e"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c8",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "Taylor specialty is security.",
+        "evidence_refs": [
+          "ref-f7077c0cd439d4c7f537e28e"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c9",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "Kai specialty is security.",
+        "evidence_refs": [
+          "ref-f7077c0cd439d4c7f537e28e"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-e37878ffda7a42f8a93b931889860e61:c10",
+        "owner_id": "agent-003",
+        "request_id": "req-e37878ffda7a42f8a93b931889860e61",
+        "text": "Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+        "evidence_refs": [
+          "ref-f7077c0cd439d4c7f537e28e"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c1",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, is high priority, collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-f76e4b7673c33977824abae2"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c2",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "JIRA-002 requires qa for 3 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-f76e4b7673c33977824abae2"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c3",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "JIRA-003 requires frontend for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-f76e4b7673c33977824abae2"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c4",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "JIRA-004 requires ux for 3 hours, is medium priority, not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-f76e4b7673c33977824abae2"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c5",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "JIRA-005 requires data for 2 hours, is low priority, not collaboration-heavy, and has no sensitive-data surface.",
+        "evidence_refs": [
+          "ref-f76e4b7673c33977824abae2"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c6",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Sasha's specialty is backend.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c7",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Taylor's specialty is security.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c8",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Kai's specialty is security.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c9",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Avery's specialty is qa.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c10",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Jordan's specialty is frontend.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c11",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Avi's specialty is ux.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-004:req-2d43da689ba24e4aa30043753178485a:c12",
+        "owner_id": "agent-004",
+        "request_id": "req-2d43da689ba24e4aa30043753178485a",
+        "text": "Riley's specialty is data.",
+        "evidence_refs": [
+          "ref-4de35e7fe2adf8d50b407ad9"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c1",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.",
+        "evidence_refs": [
+          "ref-ecf6c47bf05df2f8cc218c2b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c2",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "JIRA-002 requires qa for 3 hours with low priority.",
+        "evidence_refs": [
+          "ref-ecf6c47bf05df2f8cc218c2b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c3",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-ecf6c47bf05df2f8cc218c2b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c4",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+        "evidence_refs": [
+          "ref-ecf6c47bf05df2f8cc218c2b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c5",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "JIRA-005 requires data for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-ecf6c47bf05df2f8cc218c2b"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c6",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "Avery has available hours: 3.",
+        "evidence_refs": [
+          "ref-dd58010957e7a2f23aed3859"
+        ]
+      },
+      {
+        "claim_id": "agent-005:req-f83559ec4e83477d9c1d8ee575c14172:c7",
+        "owner_id": "agent-005",
+        "request_id": "req-f83559ec4e83477d9c1d8ee575c14172",
+        "text": "Sasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+        "evidence_refs": [
+          "ref-23d9f2b7e93a55ff0022c4cf"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c1",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "JIRA-001 requires backend for 4 hours and security for 3 hours with high priority.",
+        "evidence_refs": [
+          "ref-cddf9fd9f9eae7157f635118"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c2",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "JIRA-002 requires qa for 3 hours with low priority.",
+        "evidence_refs": [
+          "ref-cddf9fd9f9eae7157f635118"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c3",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-cddf9fd9f9eae7157f635118"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c4",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+        "evidence_refs": [
+          "ref-cddf9fd9f9eae7157f635118"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c5",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "JIRA-005 requires data for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-cddf9fd9f9eae7157f635118"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c6",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "Jordan available hours: 2.",
+        "evidence_refs": [
+          "ref-33e3bc7fa169d5d189e295a2"
+        ]
+      },
+      {
+        "claim_id": "agent-006:req-ce4e45c9e8ab4f66a354f6bc923c6046:c7",
+        "owner_id": "agent-006",
+        "request_id": "req-ce4e45c9e8ab4f66a354f6bc923c6046",
+        "text": "Sasha specialty is backend, Taylor specialty is security, Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+        "evidence_refs": [
+          "ref-e3e64bdc4b6c7002d9574d99"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c1",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "JIRA-001 requires backend for 4 hours and security for 3 hours, with high priority and collaboration-heavy status.",
+        "evidence_refs": [
+          "ref-efc13cf4bc23a88a6ade0438"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c2",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "JIRA-002 requires qa for 3 hours with low priority.",
+        "evidence_refs": [
+          "ref-efc13cf4bc23a88a6ade0438"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c3",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "JIRA-003 requires frontend for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-efc13cf4bc23a88a6ade0438"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c4",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "JIRA-004 requires ux for 3 hours with medium priority.",
+        "evidence_refs": [
+          "ref-efc13cf4bc23a88a6ade0438"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c5",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "JIRA-005 requires data for 2 hours with low priority.",
+        "evidence_refs": [
+          "ref-efc13cf4bc23a88a6ade0438"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c6",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "Avi available hours: 3",
+        "evidence_refs": [
+          "ref-129cee15ec892aa07635af95"
+        ]
+      },
+      {
+        "claim_id": "agent-007:req-cae7b96f61024ce28f37f1af8a7c8019:c7",
+        "owner_id": "agent-007",
+        "request_id": "req-cae7b96f61024ce28f37f1af8a7c8019",
+        "text": "Sasha specialty is backend, Taylor and Kai specialty is security, Avery specialty is qa, Jordan specialty is frontend, Avi specialty is ux, and Riley specialty is data.",
+        "evidence_refs": [
+          "ref-dfd45eb6ef6c146b4486fca5"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c1",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "JIRA-001 requires backend for 4 hours, requires security for 3 hours, has high priority, is collaboration-heavy, and has a non-sensitive data surface.",
+        "evidence_refs": [
+          "ref-70ac43181bc5887fa0a71376"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c2",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "JIRA-002 requires qa for 3 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+        "evidence_refs": [
+          "ref-70ac43181bc5887fa0a71376"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c3",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "JIRA-003 requires frontend for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+        "evidence_refs": [
+          "ref-70ac43181bc5887fa0a71376"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c4",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "JIRA-004 requires ux for 3 hours, has medium priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+        "evidence_refs": [
+          "ref-70ac43181bc5887fa0a71376"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c5",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "JIRA-005 requires data for 2 hours, has low priority, is not collaboration-heavy, and has a non-sensitive data surface.",
+        "evidence_refs": [
+          "ref-70ac43181bc5887fa0a71376"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c6",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "Sasha's specialty is backend.",
+        "evidence_refs": [
+          "ref-5bd192634bc678f33d6bef60"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c7",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "Taylor's specialty is security and Kai's specialty is security.",
+        "evidence_refs": [
+          "ref-5bd192634bc678f33d6bef60"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c8",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "Avery's specialty is qa, Jordan's specialty is frontend, Avi's specialty is ux, and Riley's specialty is data.",
+        "evidence_refs": [
+          "ref-5bd192634bc678f33d6bef60"
+        ]
+      },
+      {
+        "claim_id": "agent-008:req-b573a72fe4ff47a989a86ca838368154:c9",
+        "owner_id": "agent-008",
+        "request_id": "req-b573a72fe4ff47a989a86ca838368154",
+        "text": "Riley has 2 available hours.",
+        "evidence_refs": [
+          "ref-88d6ba9a4742c4709d0a64e3"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T15:15:53.983996+00:00",
+    "recorded_finished": "2026-11-13T15:16:45.967500+00:00",
+    "recorded_seconds": 51.9839989580214
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T15:16:45.967500+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-integrated-v3/development-composition-v1/slots/JIRA_allocation/scenario_07/governed-v1/run0/actor/run.json",
+      "sha256": "6359fb2e8665b75b14d49ed2cfa0166f4aa5da3145078fab10916630eddf9020"
+    },
+    "cohort": "integrated-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-integrated-v3/development-composition-v1/slots/JIRA_allocation/scenario_07/governed-v1/run0/generate.json",
+        "sha256": "2f3b359688238d981c636158392b899a17c1e4bf7be7db33d9ef8f2b7580a9a9",
+        "status": "ok",
+        "finished": "2026-11-13T15:16:45.977206+00:00",
+        "elapsed_seconds": 54.495
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-integrated-v3/development-composition-v1/slots/JIRA_allocation/scenario_07/governed-v1/run0/pipeline.json",
+      "sha256": "cfae0f557fb3b69539abce69a4673888426ae9faab9675ff5c6a74353fa54b72"
+    }
+  }
+}

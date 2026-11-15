@@ -1,0 +1,534 @@
+{
+  "schema": "aos-collaboration-replay-seed-v1",
+  "record": {
+    "run_id": "run-116c098f11dd477dff4562506179797f",
+    "title": "Response contract development · severity_classification/scenario_09 · integrated-v3 · run 0 · response contract v1",
+    "case_id": "severity_classification__scenario_09",
+    "version": "integrated-v3",
+    "model": "google/gemini-3.5-flash-lite",
+    "run_index": 0,
+    "mode": "recorded_replay",
+    "status": "completed",
+    "created": "2026-11-13T19:42:32.520702+00:00",
+    "updated": "2026-11-13T19:43:12.173795+00:00",
+    "evaluation_status": "not_loaded",
+    "source_sha256": "116c098f11dd477dff4562506179797f4a54d99571b4251126b864d02d8c0b0f",
+    "backend": "model",
+    "cohort": "response-contract-development",
+    "date_origin": "recorded_execution",
+    "response_contract_id": "aos-response-contract-v1",
+    "generation_stage_status": "ok",
+    "generation_receipt_sha256": "118e534f20cc036bc76ca02d33524aeb26fc5a80016420af67834c6a24291d19"
+  },
+  "view": {
+    "schema": "aos-requester-replay-v1",
+    "run_id": "run-116c098f11dd477dff4562506179797f",
+    "source_sha256": "116c098f11dd477dff4562506179797f4a54d99571b4251126b864d02d8c0b0f",
+    "mode": "recorded_replay",
+    "snapshot_status": "completed",
+    "source_kind": "PiSAs",
+    "scenario": {
+      "case_id": "severity_classification__scenario_09",
+      "task": "Decide the severity tier for an open security incident and record it on the disposition log"
+    },
+    "executor_id": "agent-001",
+    "participants": [
+      {
+        "id": "agent-001",
+        "name": "Liam Kowalski"
+      },
+      {
+        "id": "agent-002",
+        "name": "Kofi Dubois"
+      },
+      {
+        "id": "agent-003",
+        "name": "Tobias Olsen"
+      },
+      {
+        "id": "agent-004",
+        "name": "Omar Okonkwo"
+      },
+      {
+        "id": "agent-005",
+        "name": "Fatima Flores"
+      },
+      {
+        "id": "agent-006",
+        "name": "Greta Kim"
+      },
+      {
+        "id": "agent-007",
+        "name": "Nadia Williams"
+      },
+      {
+        "id": "agent-008",
+        "name": "Carlos Petrov"
+      },
+      {
+        "id": "agent-009",
+        "name": "Destiny Ibrahim"
+      },
+      {
+        "id": "agent-010",
+        "name": "Tariq Moretti"
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "viewer-ac82be8bc7b3048d79796ebe",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 0,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-002",
+        "request_id": "req-51d6ae39119744f8b558715b80181ca1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:42.457987+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-80643b75db27710074389f07",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 1,
+        "kind": "response",
+        "sender_id": "agent-002",
+        "recipient_id": "agent-001",
+        "request_id": "req-51d6ae39119744f8b558715b80181ca1",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:47.407253+00:00",
+        "response": {
+          "request_id": "req-51d6ae39119744f8b558715b80181ca1",
+          "status": "released",
+          "answer": "unauthorized_access_to_customer_data is ACCESS_NOT_CONFIRMED_TRACES_BENIGN_PATH",
+          "claims": [
+            {
+              "text": "unauthorized_access_to_customer_data is ACCESS_NOT_CONFIRMED_TRACES_BENIGN_PATH",
+              "evidence_refs": [
+                "ref-0f294c91c382229f834a5668"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-e2bcecfa33f8d376213e71f6",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 2,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-003",
+        "request_id": "req-44a34af5789e4abea6b22e9491eb6709",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:47.408118+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-0753fa977187b0ecdceafbaf",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 3,
+        "kind": "response",
+        "sender_id": "agent-003",
+        "recipient_id": "agent-001",
+        "request_id": "req-44a34af5789e4abea6b22e9491eb6709",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:52.973931+00:00",
+        "response": {
+          "request_id": "req-44a34af5789e4abea6b22e9491eb6709",
+          "status": "released",
+          "answer": "active_exploitation_indicators = EXPLOIT_ABSENT_NO_TTPS_MATCHED",
+          "claims": [
+            {
+              "text": "active_exploitation_indicators = EXPLOIT_ABSENT_NO_TTPS_MATCHED",
+              "evidence_refs": [
+                "ref-5840030d3bfdf3f0116793b2"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-ac7be5ab75ba49e173de7ed5",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 4,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-004",
+        "request_id": "req-1a797e7a89884d98a652a321d7fce6ae",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:52.975149+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-7c3ca8c99a6c357e0f10d012",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 5,
+        "kind": "response",
+        "sender_id": "agent-004",
+        "recipient_id": "agent-001",
+        "request_id": "req-1a797e7a89884d98a652a321d7fce6ae",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:57.400555+00:00",
+        "response": {
+          "request_id": "req-1a797e7a89884d98a652a321d7fce6ae",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-dc5120efbbaffd2e0f6aa81a",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 6,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-005",
+        "request_id": "req-0efa2bacd8d64313915f1c05755ce071",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:57.402530+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-47d91240a0d885f198499be6",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 7,
+        "kind": "response",
+        "sender_id": "agent-005",
+        "recipient_id": "agent-001",
+        "request_id": "req-0efa2bacd8d64313915f1c05755ce071",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:58.699915+00:00",
+        "response": {
+          "request_id": "req-0efa2bacd8d64313915f1c05755ce071",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-9cded492d63ab9afd8a9ba58",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 8,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-006",
+        "request_id": "req-9e4b3200d5474695998d5c22f75000a2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:58.701310+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-8ed67f4316da5ec38e709b31",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 9,
+        "kind": "response",
+        "sender_id": "agent-006",
+        "recipient_id": "agent-001",
+        "request_id": "req-9e4b3200d5474695998d5c22f75000a2",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:58.833624+00:00",
+        "response": {
+          "request_id": "req-9e4b3200d5474695998d5c22f75000a2",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-66258e9fbb51d05f141f5333",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 10,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-007",
+        "request_id": "req-b307fe2c91784026a2c96a5c20d20df8",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:42:58.834948+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-85a1be013c477fd86cfa1842",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 11,
+        "kind": "response",
+        "sender_id": "agent-007",
+        "recipient_id": "agent-001",
+        "request_id": "req-b307fe2c91784026a2c96a5c20d20df8",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:00.229739+00:00",
+        "response": {
+          "request_id": "req-b307fe2c91784026a2c96a5c20d20df8",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-83c0c84c6fd03a1050acd29b",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 12,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-008",
+        "request_id": "req-1c98161dfe6f42fda96a38bc71e65bec",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:00.230966+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-637c05aa468b70ebfc372723",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 13,
+        "kind": "response",
+        "sender_id": "agent-008",
+        "recipient_id": "agent-001",
+        "request_id": "req-1c98161dfe6f42fda96a38bc71e65bec",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:01.852203+00:00",
+        "response": {
+          "request_id": "req-1c98161dfe6f42fda96a38bc71e65bec",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-f640640503f346692df0d698",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 14,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-009",
+        "request_id": "req-81dfde9d885f4e56b22b8214a8aa4284",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:01.853644+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-2a18c2b6df365f75415f1571",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 15,
+        "kind": "response",
+        "sender_id": "agent-009",
+        "recipient_id": "agent-001",
+        "request_id": "req-81dfde9d885f4e56b22b8214a8aa4284",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:03.340730+00:00",
+        "response": {
+          "request_id": "req-81dfde9d885f4e56b22b8214a8aa4284",
+          "status": "unavailable",
+          "answer": "",
+          "claims": [],
+          "coverage": "not_established"
+        }
+      },
+      {
+        "event_id": "viewer-b72e2ba4c8ae6bd8326a0928",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 16,
+        "kind": "request",
+        "sender_id": "agent-001",
+        "recipient_id": "agent-010",
+        "request_id": "req-0845e515bea04eadb93c930aaf83b21f",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:03.342004+00:00",
+        "body": "Decide the severity tier for an open security incident and record it on the disposition log"
+      },
+      {
+        "event_id": "viewer-2f53cfa6a6688b82fe2d66d2",
+        "id_origin": "assigned_by_viewer",
+        "ordinal": 17,
+        "kind": "response",
+        "sender_id": "agent-010",
+        "recipient_id": "agent-001",
+        "request_id": "req-0845e515bea04eadb93c930aaf83b21f",
+        "delivery": "confirmed",
+        "timestamp": "2026-11-13T19:43:08.087447+00:00",
+        "response": {
+          "request_id": "req-0845e515bea04eadb93c930aaf83b21f",
+          "status": "released",
+          "answer": "The traffic spike observed for Meridian Retail is consistent with authorized third-party security testing run on the platform over the past week.\nAlerts seen regarding Meridian Retail align with the ongoing third-party red team engagement and are likely part of authorized assessment activities.",
+          "claims": [
+            {
+              "text": "The traffic spike observed for Meridian Retail is consistent with authorized third-party security testing run on the platform over the past week.",
+              "evidence_refs": [
+                "ref-8805bf4db1b9aa4a1d61f6cb"
+              ]
+            },
+            {
+              "text": "Alerts seen regarding Meridian Retail align with the ongoing third-party red team engagement and are likely part of authorized assessment activities.",
+              "evidence_refs": [
+                "ref-90320e8a85ce5f327d99867d"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "local_evidence": [
+      {
+        "event_id": "viewer-c1aeb46bedee0902b51f6f0c",
+        "id_origin": "assigned_by_viewer",
+        "kind": "local_evidence",
+        "owner_id": "agent-001",
+        "timestamp": null,
+        "ordering": "not_recorded_relative_to_peer_messages",
+        "response": {
+          "request_id": "req-dd6f2950e7ac49e88cab52db7f9bfb9c",
+          "status": "released",
+          "answer": "An automated anomaly detection trigger fired for Meridian Retail-tier surfaces on 2024-05-11 at 02:47:00 UTC.\nThe baseline deviation threshold was exceeded on primary ingress monitoring endpoints for Meridian Retail.\nThe system alert severity is unclassified, with the status currently open and awaiting IC investigation.",
+          "claims": [
+            {
+              "text": "An automated anomaly detection trigger fired for Meridian Retail-tier surfaces on 2024-05-11 at 02:47:00 UTC.",
+              "evidence_refs": [
+                "ref-64af3e1a7b593c4b231a79ab"
+              ]
+            },
+            {
+              "text": "The baseline deviation threshold was exceeded on primary ingress monitoring endpoints for Meridian Retail.",
+              "evidence_refs": [
+                "ref-64af3e1a7b593c4b231a79ab"
+              ]
+            },
+            {
+              "text": "The system alert severity is unclassified, with the status currently open and awaiting IC investigation.",
+              "evidence_refs": [
+                "ref-64af3e1a7b593c4b231a79ab"
+              ]
+            }
+          ],
+          "coverage": "not_established"
+        }
+      }
+    ],
+    "a2a_records": 18,
+    "confirmed_received_responses": 9,
+    "answer": {
+      "state": "completed",
+      "text": "The open security incident is classified as a false positive / non-security event (Severity Tier: None / Informational / Dismissed as Authorized Activity) because the traffic spike and alerts for Meridian Retail are consistent with authorized third-party security testing/red team engagement, with unauthorized customer data access not confirmed (traces benign) and active exploitation indicators absent.",
+      "used_evidence_refs": [
+        "ref-0f294c91c382229f834a5668",
+        "ref-5840030d3bfdf3f0116793b2",
+        "ref-64af3e1a7b593c4b231a79ab",
+        "ref-8805bf4db1b9aa4a1d61f6cb",
+        "ref-90320e8a85ce5f327d99867d"
+      ],
+      "insufficient_evidence": false
+    },
+    "conflict_detection": {
+      "status": "not_recorded",
+      "note": "This legacy run has no explicit conflict-detection stage."
+    },
+    "evaluation": {
+      "status": "not_loaded",
+      "note": "No benchmark labels or judgments were loaded by this adapter."
+    },
+    "evidence": [
+      {
+        "claim_id": "agent-001:req-dd6f2950e7ac49e88cab52db7f9bfb9c:c1",
+        "owner_id": "agent-001",
+        "request_id": "req-dd6f2950e7ac49e88cab52db7f9bfb9c",
+        "text": "An automated anomaly detection trigger fired for Meridian Retail-tier surfaces on 2024-05-11 at 02:47:00 UTC.",
+        "evidence_refs": [
+          "ref-64af3e1a7b593c4b231a79ab"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-dd6f2950e7ac49e88cab52db7f9bfb9c:c2",
+        "owner_id": "agent-001",
+        "request_id": "req-dd6f2950e7ac49e88cab52db7f9bfb9c",
+        "text": "The baseline deviation threshold was exceeded on primary ingress monitoring endpoints for Meridian Retail.",
+        "evidence_refs": [
+          "ref-64af3e1a7b593c4b231a79ab"
+        ]
+      },
+      {
+        "claim_id": "agent-001:req-dd6f2950e7ac49e88cab52db7f9bfb9c:c3",
+        "owner_id": "agent-001",
+        "request_id": "req-dd6f2950e7ac49e88cab52db7f9bfb9c",
+        "text": "The system alert severity is unclassified, with the status currently open and awaiting IC investigation.",
+        "evidence_refs": [
+          "ref-64af3e1a7b593c4b231a79ab"
+        ]
+      },
+      {
+        "claim_id": "agent-002:req-51d6ae39119744f8b558715b80181ca1:c1",
+        "owner_id": "agent-002",
+        "request_id": "req-51d6ae39119744f8b558715b80181ca1",
+        "text": "unauthorized_access_to_customer_data is ACCESS_NOT_CONFIRMED_TRACES_BENIGN_PATH",
+        "evidence_refs": [
+          "ref-0f294c91c382229f834a5668"
+        ]
+      },
+      {
+        "claim_id": "agent-003:req-44a34af5789e4abea6b22e9491eb6709:c1",
+        "owner_id": "agent-003",
+        "request_id": "req-44a34af5789e4abea6b22e9491eb6709",
+        "text": "active_exploitation_indicators = EXPLOIT_ABSENT_NO_TTPS_MATCHED",
+        "evidence_refs": [
+          "ref-5840030d3bfdf3f0116793b2"
+        ]
+      },
+      {
+        "claim_id": "agent-010:req-0845e515bea04eadb93c930aaf83b21f:c1",
+        "owner_id": "agent-010",
+        "request_id": "req-0845e515bea04eadb93c930aaf83b21f",
+        "text": "The traffic spike observed for Meridian Retail is consistent with authorized third-party security testing run on the platform over the past week.",
+        "evidence_refs": [
+          "ref-8805bf4db1b9aa4a1d61f6cb"
+        ]
+      },
+      {
+        "claim_id": "agent-010:req-0845e515bea04eadb93c930aaf83b21f:c2",
+        "owner_id": "agent-010",
+        "request_id": "req-0845e515bea04eadb93c930aaf83b21f",
+        "text": "Alerts seen regarding Meridian Retail align with the ongoing third-party red team engagement and are likely part of authorized assessment activities.",
+        "evidence_refs": [
+          "ref-90320e8a85ce5f327d99867d"
+        ]
+      }
+    ],
+    "recorded_started": "2026-11-13T19:42:32.520702+00:00",
+    "recorded_finished": "2026-11-13T19:43:12.173795+00:00",
+    "recorded_seconds": 39.65384675003588,
+    "response_contract_id": "aos-response-contract-v1"
+  },
+  "evaluation": {
+    "status": "not_loaded"
+  },
+  "progress": {
+    "phase": "completed",
+    "message": "Recorded conversation completed",
+    "updated": "2026-11-13T19:43:12.173795+00:00"
+  },
+  "warnings": [],
+  "provenance": {
+    "source": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/severity_classification/scenario_09/integrated/run0/actor/run.json",
+      "sha256": "116c098f11dd477dff4562506179797f4a54d99571b4251126b864d02d8c0b0f"
+    },
+    "cohort": "response-contract-development",
+    "generation_receipts": [
+      {
+        "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/severity_classification/scenario_09/integrated/run0/generate.json",
+        "sha256": "118e534f20cc036bc76ca02d33524aeb26fc5a80016420af67834c6a24291d19",
+        "status": "ok",
+        "finished": "2026-11-13T19:43:12.184712+00:00",
+        "elapsed_seconds": 42.331
+      }
+    ],
+    "projection": "requester_visible_artifact_messages",
+    "pipeline": {
+      "path": "aos-operator/collaboration-response-contract-v1/development-composition-v1/slots/severity_classification/scenario_09/integrated/run0/pipeline.json",
+      "sha256": "048e7a5a6141232973001bc0a3f4eebae2ad7660c596148ecbc05b7523c7eac2"
+    }
+  }
+}
