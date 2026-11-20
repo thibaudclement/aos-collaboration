@@ -3559,5 +3559,9 @@
     "new_unknown_cost_calls": 0,
     "evaluation_profile": "aos-judge-output-capacity-v1",
     "operational_profile": "aos-judge-reuse-v1"
+  },
+  "benchmark_answers": {
+    "path": "benchmark_answers.json",
+    "sha256": "3f6c147d630a885d93480365693a42d87eb932646ad8ff1fbd7bb59a9a8e851c"
   }
 }

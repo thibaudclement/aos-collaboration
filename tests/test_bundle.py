@@ -4,6 +4,7 @@ from collections import Counter
 import copy
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import threading
@@ -13,6 +14,7 @@ import pytest
 from aos.collaboration.demo.bootstrap import bundled_data, seed_bundle
 from aos.collaboration.demo.server import CollaborationServer
 from aos.collaboration.demo.store import DemoStore, StoreError, write_private
+from aos.collaboration.pisas import load_scenario
 from test_collaboration_demo_store import sample_run
 
 JIRA08_RUN_ID = "run-ebf7ee121c8ac0d7a463f91a5eb5800e"
@@ -42,11 +44,22 @@ def test_complete_bundle_is_portable_and_idempotent(tmp_path, monkeypatch):
     assert Counter(row["evaluation_status"] for row in records) == {"attached": 117, "not_loaded": 19}
     assert Counter(row["cohort"] for row in records)["external-baseline"] == 12
     assert Counter(row["cohort"] for row in records)["calibration"] == 18
+    references = json.loads((bundled_data() / "benchmark_answers.json").read_text())["cases"]
+    cases = {item["case_id"]: item for item in catalog["cases"]}
     for record in records:
         snapshot = store.snapshot(record["run_id"])
         assert snapshot["view"]["run_id"] == record["run_id"]
         assert snapshot["view"]["scenario"]["case_id"] == record["case_id"]
         assert snapshot["evaluation"]["status"] == record["evaluation_status"]
+        reference = snapshot["benchmark_reference"]
+        assert reference["status"] == "available"
+        assert reference["case_id"] == record["case_id"]
+        assert reference["answer"] == references[record["case_id"]]["answer"]
+        assert reference["scenario_sha256"] == cases[record["case_id"]]["source_sha256"]
+        assert "benchmark_reference" not in snapshot["view"]
+        directory = root / "runs" / record["run_id"]
+        assert snapshot["view"] == json.loads((directory / "view.json").read_text())
+        assert snapshot["evaluation"] == json.loads((directory / "evaluation.json").read_text())
     store.close()
     reopened = DemoStore(root)
     seed_bundle(reopened)
@@ -54,7 +67,135 @@ def test_complete_bundle_is_portable_and_idempotent(tmp_path, monkeypatch):
     assert len(reopened.catalog()["cases"]) == 265
     registry = json.loads((root / "registry.json").read_text())
     assert all(Path(item["scenario_path"]).is_relative_to(root) for item in registry["cases"].values())
+    assert set(registry["benchmark_references"]) == set(cases)
     reopened.close()
+
+
+# Preserve explicit labels and complete allocation outputs from the pinned benchmark annotations.
+def test_benchmark_answers_cover_every_bundled_scenario():
+    bundle = bundled_data()
+    manifest = json.loads((bundle / "manifest.json").read_text())
+    raw = (bundle / manifest["benchmark_answers"]["path"]).read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == manifest["benchmark_answers"]["sha256"]
+    references = json.loads(raw)
+    assert references["schema"] == "aos-benchmark-answers-v1"
+    assert references["dataset"] == manifest["dataset"]
+    cases = references["cases"]
+    assert set(cases) == {item["case_id"] for item in manifest["scenarios"]}
+    kinds = Counter()
+    for item in manifest["scenarios"]:
+        reference = cases[item["case_id"]]
+        assert set(reference) == {"scenario_sha256", "utility_sha256", "answer"}
+        assert reference["scenario_sha256"] == item["sha256"]
+        assert len(reference["utility_sha256"]) == 64
+        assert set(reference["utility_sha256"]) <= set("0123456789abcdef")
+        answer = reference["answer"]
+        kind = "decision" if isinstance(answer, str) else next(iter(answer))
+        kinds[kind] += 1
+        if kind == "decision":
+            assert answer.strip() and answer not in {"correct_assignment", "correct_schedule"}
+        else:
+            assert set(answer) == {kind} and isinstance(answer[kind], dict) and answer[kind]
+    assert kinds == {"decision": 205, "assignment": 25, "schedule": 35}
+    assert cases["uas_flight_readiness__scenario_20"]["answer"] == "resolve_altitude"
+    assert cases["thesis_readiness__scenario_17"]["answer"] == "ready_with_conditions"
+    replication = json.loads((bundle / "replication.json").read_text())
+    for name, case in replication["cases"].items():
+        annotation = case["annotations"]["utility.json"]
+        utility = json.loads(annotation["text"])
+        answer = utility["oracle_answer"]
+        if "oracle_assignment" in utility:
+            answer = {"assignment": utility["oracle_assignment"]}
+        elif "oracle_schedule" in utility:
+            answer = {"schedule": utility["oracle_schedule"]}
+        reference = cases[name.replace("/", "__")]
+        assert reference["utility_sha256"] == hashlib.sha256(annotation["text"].encode()).hexdigest()
+        assert reference["answer"] == answer
+
+
+# Keep benchmark information outside actor inputs and bind live references to frozen launch settings.
+def test_queued_benchmark_reference_is_operator_only(tmp_path, monkeypatch):
+    monkeypatch.setattr(DemoStore, "_launch", lambda *args: os.getpid())
+    store = DemoStore(tmp_path / "workspace", allow_live=True)
+    seed_bundle(store)
+    case_id = "uas_flight_readiness__scenario_20"
+    canary = "BENCHMARK_ANSWER_OPERATOR_ONLY_CANARY"
+    with store._locked() as registry:
+        registry["benchmark_references"][case_id]["answer"] = canary
+        registered = copy.deepcopy(registry["cases"][case_id])
+    receipt = store.start(case_id, "integrated-v3", "benchmark-reference-live")
+    snapshot = store.snapshot(receipt["run_id"])
+    assert snapshot["metadata"]["status"] == "queued"
+    assert snapshot["view"] is None
+    assert snapshot["benchmark_reference"]["answer"] == canary
+    assert snapshot["evaluation"] == {"status": "not_loaded"}
+    assert canary not in json.dumps(store.catalog())
+    assert canary not in json.dumps(load_scenario(registered["scenario_path"]))
+    with store._locked() as registry:
+        assert canary not in json.dumps(registry["runs"][receipt["run_id"]])
+        registry["cases"][case_id]["source_sha256"] = "0" * 64
+    assert store.snapshot(receipt["run_id"])["benchmark_reference"]["answer"] == canary
+    with store._locked() as registry:
+        registry["cases"][case_id] = registered
+        registry["runs"][receipt["run_id"]]["case"]["source_sha256"] = "0" * 64
+    assert store.snapshot(receipt["run_id"])["benchmark_reference"] == {"status": "not_available"}
+    store.close()
+
+
+# Omit unavailable or mismatched references without changing the saved outcome or evaluation.
+def test_benchmark_reference_fallback_preserves_replay(tmp_path):
+    store = DemoStore(tmp_path / "workspace")
+    seed_bundle(store)
+    before = store.snapshot(JIRA11_RUN_ID)
+    case_id = before["metadata"]["case_id"]
+    directory = store._directory(JIRA11_RUN_ID)
+    original_files = {path.name: path.read_bytes() for path in directory.iterdir() if path.is_file()}
+    with store._locked() as registry:
+        reference = registry["benchmark_references"].pop(case_id)
+        scenario_hash = registry["cases"][case_id]["source_sha256"]
+    missing = store.snapshot(JIRA11_RUN_ID)
+    assert missing["benchmark_reference"] == {"status": "not_available"}
+    assert missing["view"] == before["view"] and missing["evaluation"] == before["evaluation"]
+    with store._locked() as registry:
+        registry["benchmark_references"][case_id] = reference
+        registry["cases"][case_id]["source_sha256"] = "0" * 64
+    mismatch = store.snapshot(JIRA11_RUN_ID)
+    assert mismatch["benchmark_reference"] == {"status": "not_available"}
+    assert mismatch["view"] == before["view"] and mismatch["evaluation"] == before["evaluation"]
+    with store._locked() as registry:
+        registry["cases"][case_id]["source_sha256"] = scenario_hash
+    changed = copy.deepcopy(before["view"])
+    changed["scenario"]["case_id"] = "uas_flight_readiness__scenario_20"
+    write_private(directory / "view.json", changed)
+    assert store.snapshot(JIRA11_RUN_ID)["benchmark_reference"] == {"status": "not_available"}
+    (directory / "view.json").write_bytes(original_files["view.json"])
+    assert {path.name: path.read_bytes() for path in directory.iterdir() if path.is_file()} == original_files
+    source = tmp_path / "local-run.json"
+    write_private(source, sample_run())
+    imported = store.add_replay(source)
+    unknown = store.snapshot(imported["run_id"])
+    assert unknown["benchmark_reference"] == {"status": "not_available"}
+    assert unknown["view"]["answer"]["text"] == "Yes."
+    store.close()
+
+
+# Reject a rehashed answer bundle that claims a different scenario revision.
+def test_benchmark_answers_require_matching_scenario_hashes(tmp_path):
+    bundle = tmp_path / "bundle"
+    shutil.copytree(bundled_data(), bundle)
+    manifest_path = bundle / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    answers_path = bundle / manifest["benchmark_answers"]["path"]
+    answers = json.loads(answers_path.read_text())
+    answers["cases"]["uas_flight_readiness__scenario_20"]["scenario_sha256"] = "0" * 64
+    write_private(answers_path, answers)
+    manifest["benchmark_answers"]["sha256"] = hashlib.sha256(answers_path.read_bytes()).hexdigest()
+    write_private(manifest_path, manifest)
+    store = DemoStore(tmp_path / "workspace")
+    with pytest.raises(StoreError):
+        seed_bundle(store, bundle)
+    assert store.runs()["runs"] == []
+    store.close()
 
 
 # Preserve the bytes and paths of all prior scenarios and recorded conversations.
@@ -348,11 +489,13 @@ def test_opus_bundle_refresh_preserves_prior_records_and_local_run(tmp_path, mon
 
 
 # Reject altered packaged evidence before importing any paid conversation.
-def test_corrupt_bundle_cannot_be_imported(tmp_path):
+@pytest.mark.parametrize("kind", ["replay", "benchmark_answers"])
+def test_corrupt_bundle_cannot_be_imported(tmp_path, kind):
     bundle = tmp_path / "bundle"
     shutil.copytree(bundled_data(), bundle)
     manifest = json.loads((bundle / "manifest.json").read_text())
-    path = bundle / manifest["replays"][0]["path"]
+    item = manifest["replays"][0] if kind == "replay" else manifest["benchmark_answers"]
+    path = bundle / item["path"]
     path.write_bytes(path.read_bytes() + b" ")
     store = DemoStore(tmp_path / "workspace")
     with pytest.raises(StoreError, match="integrity"):

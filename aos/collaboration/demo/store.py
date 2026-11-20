@@ -304,6 +304,8 @@ class DemoStore:
             if run_id not in registry["runs"]:
                 raise StoreError("Unknown conversation", 404)
             record = copy.deepcopy(self._refresh_record(registry["runs"][run_id]))
+            case = copy.deepcopy(record.get("case") or registry["cases"].get(record["case_id"], {}))
+            benchmark_reference = copy.deepcopy(registry.get("benchmark_references", {}).get(record["case_id"]))
         view_path = directory / "view.json"
         view = read_bounded(view_path)[0] if view_path.exists() else None
         warnings = [record["warning"]] if record.get("warning") else []
@@ -322,8 +324,14 @@ class DemoStore:
         evaluation = read_bounded(evaluation_path)[0] if evaluation_path.exists() else {"status": "not_loaded"}
         progress_path = directory / "progress.json"
         progress = read_bounded(progress_path)[0] if progress_path.exists() else {"phase": record["status"], "message": "Waiting for an execution record", "updated": record["updated"]}
+        # Keep benchmark references outside the actor view and reject a different scenario revision.
+        if (not benchmark_reference or benchmark_reference.get("case_id") != record["case_id"]
+                or case.get("kind") != "pisas" or case.get("case_id") != record["case_id"]
+                or benchmark_reference.get("scenario_sha256") != case.get("source_sha256")
+                or (view is not None and view.get("scenario", {}).get("case_id") != record["case_id"])):
+            benchmark_reference = {"status": "not_available"}
         return {"metadata": self._summary(record), "view": view, "progress": progress,
-                "evaluation": evaluation, "warnings": warnings}
+                "evaluation": evaluation, "benchmark_reference": benchmark_reference, "warnings": warnings}
 
     # Launch one detached worker so browser closure does not interrupt or duplicate the conversation.
     def _launch(self, run_id, directory):

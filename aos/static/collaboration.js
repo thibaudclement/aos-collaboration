@@ -516,8 +516,18 @@
     if (metadata.generation_error_type) items.push(["Recorded error", metadata.generation_error_type]);
     items.forEach(function (pair) { target.appendChild(node("dt", "", pair[0])); target.appendChild(node("dd", "", pair[1])); });
   }
+  // Display the benchmark reference independently of recorded answers and replay progress.
+  function renderBenchmark(reference) {
+    var available = reference && reference.status === "available" && reference.answer != null;
+    byId("benchmark-answer").textContent = available ?
+      (typeof reference.answer === "string" ? reference.answer : JSON.stringify(reference.answer, null, 2)) :
+      "No benchmark expected outcome is available for this record.";
+    byId("benchmark-note").textContent = available ?
+      "Reference for the bundled PiSAs scenario. Not supplied to the agents." : "";
+  }
   // Update the selected conversation without reading private artifacts or changing the run.
   function renderConversation() {
+    renderBenchmark(selected && current ? current.benchmark_reference : null);
     byId("empty").hidden = !!selected;
     byId("conversation").hidden = !selected;
     if (!selected) { renderEndSummary(null, null, 0); renderNativeGathering(null, false); return; }

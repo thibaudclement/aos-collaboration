@@ -23,6 +23,12 @@ function example() {
   };
 }
 
+// Supply an operator reference separately from the saved actor view.
+function benchmarkReference(answer) {
+  return {status: "available", case_id: "example", answer, dataset: "ServiceNow/PiSAs",
+    data_revision: "test-revision", scenario_sha256: "a".repeat(64), utility_sha256: "b".repeat(64)};
+}
+
 // Rewinding affects visibility only and never changes the saved answer or peer count.
 test("the saved outcome appears only at replay end and hides again on rewind", () => {
   const {metadata, view} = example(), playback = createPlayback();
@@ -203,6 +209,80 @@ test("the DOM scopes empty replies and places an exact outcome outside the peer 
   assert.equal(summary.hidden, true);
   assert.equal(summary.children.length, 0);
   assert.equal(JSON.stringify(snapshot), before);
+});
+
+// Benchmark text remains visible during playback without changing or replacing the saved outcome.
+test("the benchmark reference survives replay controls and preserves literal text", async () => {
+  const snapshot = example();
+  snapshot.benchmark_reference = benchmarkReference("return_for_revision\n<literal benchmark text>");
+  const before = JSON.stringify(snapshot), browser = browserHarness(snapshot);
+  await browser.tick(); await browser.tick();
+  const expected = browser.elements.get("benchmark-answer"), note = browser.elements.get("benchmark-note");
+  const evaluation = browser.elements.get("evaluation-body").textContent;
+  assert.equal(expected.textContent, snapshot.benchmark_reference.answer);
+  assert.equal(expected.children.length, 0);
+  assert.equal(note.textContent, "Reference for the bundled PiSAs scenario. Not supplied to the agents.");
+  assert.equal(browser.elements.get("answer").textContent, snapshot.view.answer.text);
+  browser.click("play");
+  assert.equal(expected.textContent, snapshot.benchmark_reference.answer);
+  assert.match(browser.elements.get("answer").textContent, /appears after the final event/);
+  browser.click("step");
+  assert.equal(expected.textContent, snapshot.benchmark_reference.answer);
+  browser.click("show-all");
+  assert.equal(expected.textContent, snapshot.benchmark_reference.answer);
+  assert.equal(browser.elements.get("answer").textContent, snapshot.view.answer.text);
+  assert.equal(browser.elements.get("evaluation-body").textContent, evaluation);
+  assert.equal(JSON.stringify(snapshot), before);
+});
+
+// Assignment and schedule references retain their full structured content as readable JSON.
+test("structured benchmark answers display exact assignment and schedule objects", async () => {
+  for (const answer of [
+    {assignment: {"JIRA-001": {security: "indigo"}, "JIRA-002": {backend: "jordan"}}},
+    {schedule: {"MEET-001": {slot: "MON_0900", room: "atlas"}, "MEET-002": {slot: "MON_1000", room: "borealis"}}}
+  ]) {
+    const snapshot = example(); snapshot.benchmark_reference = benchmarkReference(answer);
+    const before = JSON.stringify(snapshot), browser = browserHarness(snapshot);
+    await browser.tick(); await browser.tick();
+    assert.equal(browser.elements.get("benchmark-answer").textContent, JSON.stringify(answer, null, 2));
+    assert.equal(browser.elements.get("answer").textContent, snapshot.view.answer.text);
+    assert.equal(JSON.stringify(snapshot), before);
+  }
+});
+
+// A benchmark reference does not supply an actor answer to a queued or failed attempt.
+test("queued and failed records show the reference without inventing a run outcome", async () => {
+  for (const status of ["queued", "failed"]) {
+    const snapshot = example(); snapshot.view = null;
+    Object.assign(snapshot.metadata, {mode: "live", status});
+    snapshot.benchmark_reference = benchmarkReference("ready");
+    const browser = browserHarness(snapshot);
+    await browser.tick(); await browser.tick();
+    assert.equal(browser.elements.get("benchmark-answer").textContent, "ready");
+    assert.equal(browser.elements.get("answer").textContent,
+      status === "queued" ? "The final answer will appear here." : "No accepted answer was recorded.");
+  }
+});
+
+// Missing references and a cleared selection cannot retain another record's expected answer.
+test("unavailable benchmark references and new selections clear previous reference text", async () => {
+  const snapshot = example(); snapshot.benchmark_reference = benchmarkReference("ready");
+  const browser = browserHarness(snapshot);
+  await browser.tick(); await browser.tick();
+  const expected = browser.elements.get("benchmark-answer"), note = browser.elements.get("benchmark-note");
+  assert.equal(expected.textContent, "ready");
+  for (const reference of [{status: "not_available"}, undefined]) {
+    snapshot.benchmark_reference = reference;
+    await browser.tick();
+    assert.equal(expected.textContent, "No benchmark expected outcome is available for this record.");
+    assert.equal(note.textContent, "");
+  }
+  snapshot.benchmark_reference = benchmarkReference("ready");
+  await browser.tick();
+  assert.equal(expected.textContent, "ready");
+  browser.click("new-session");
+  assert.equal(expected.textContent, "No benchmark expected outcome is available for this record.");
+  assert.equal(note.textContent, "");
 });
 
 // Native replay displays recorded text without manufacturing release evidence or delivery receipts.

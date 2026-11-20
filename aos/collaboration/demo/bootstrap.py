@@ -60,6 +60,39 @@ def _copy_scenario(path: Path, raw: bytes) -> None:
             os.unlink(temporary)
 
 
+# Bind operator-only expected outcomes to the exact bundled scenario revision.
+def _benchmark_references(root: Path, manifest: dict) -> dict:
+    item = manifest.get("benchmark_answers")
+    if item is None:
+        return {}
+    path, _ = _verified_file(root, item, "benchmark_answers.json")
+    source, _ = read_bounded(path)
+    dataset, entries = source.get("dataset"), source.get("cases")
+    scenarios = {entry["case_id"]: entry["sha256"] for entry in manifest["scenarios"]}
+    if (source.get("schema") != "aos-benchmark-answers-v1" or not isinstance(dataset, dict)
+            or dataset != manifest.get("dataset") or not isinstance(entries, dict)
+            or set(entries) != set(scenarios)):
+        raise StoreError("Bundled benchmark references do not match the scenario catalogue.")
+    references = {}
+    for case_id, entry in entries.items():
+        if (not isinstance(entry, dict) or entry.get("scenario_sha256") != scenarios[case_id]
+                or not isinstance(entry.get("utility_sha256"), str)
+                or not SHA256.fullmatch(entry["utility_sha256"])):
+            raise StoreError("Invalid benchmark reference source binding.")
+        answer = entry.get("answer")
+        structured = (isinstance(answer, dict) and len(answer) == 1
+                      and next(iter(answer)) in {"assignment", "schedule"}
+                      and isinstance(next(iter(answer.values())), dict) and next(iter(answer.values())))
+        if not ((isinstance(answer, str) and answer.strip()) or structured):
+            raise StoreError("A benchmark reference lacks its expected outcome.")
+        references[case_id] = {"status": "available", "case_id": case_id,
+                               "answer": copy.deepcopy(answer), "dataset": dataset["name"],
+                               "data_revision": dataset["revision"],
+                               "scenario_sha256": entry["scenario_sha256"],
+                               "utility_sha256": entry["utility_sha256"]}
+    return references
+
+
 # Validate all seed inputs before publishing their catalogue and replay records.
 def seed_bundle(store, root: Path | None = None) -> dict:
     root = (root or bundled_data()).resolve()
@@ -83,6 +116,7 @@ def seed_bundle(store, root: Path | None = None) -> dict:
                        "scenario": projection["scenario_name"], "kind": "pisas",
                        "participant_count": len(projection["participants"]),
                        "source_sha256": item["sha256"], "scenario_path": str(destination)}, raw))
+    benchmark_references = _benchmark_references(root, manifest)
     run_ids = set()
     for item in replays:
         path, _ = _verified_file(root, item, "replays")
@@ -123,6 +157,7 @@ def seed_bundle(store, root: Path | None = None) -> dict:
                 write_private(directory / f"{name}.json", seed.get(name, {}))
             registry["runs"][record["run_id"]] = record
         registry["cases"].pop("availability_demo__scenario_01", None)
+        registry["benchmark_references"] = benchmark_references
         registry["bundle"] = {"schema": BUNDLE_SCHEMA, "manifest_sha256": manifest_sha256,
                               "scenarios": len(cases), "replays": len(seeds)}
     return {"scenarios": len(cases), "replays": len(seeds), "manifest_sha256": manifest_sha256}

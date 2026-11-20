@@ -1,0 +1,2127 @@
+{
+  "schema": "aos-benchmark-answers-v1",
+  "dataset": {
+    "name": "ServiceNow/PiSAs",
+    "revision": "8a1ba30ba210d4a430bbd25cf4a3500d0e22c5b9",
+    "source_manifest_sha256": "2dbe463d4352607c995079ff5103be828dddbc4a3b81b8e92766b8147a2ee4ed",
+    "upstream_code_revision": "1a47ea461f1f78f2b7a87e38d351e4ebc7380fbd"
+  },
+  "cases": {
+    "JIRA_allocation__scenario_01": {
+      "scenario_sha256": "9db28333ea4f2f03d26996c8e7db6c8da764d6bf48add032fd7d0c417006b0b8",
+      "utility_sha256": "bb39b1a7e677e2e4775ea82ae8ea0daad732c40794ff07c374f58781ff543c18",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "emery"
+          },
+          "JIRA-002": {
+            "backend": "val",
+            "security": "parker"
+          },
+          "JIRA-003": {
+            "qa": "drew"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_02": {
+      "scenario_sha256": "fd1005715e8c3ed18ce69ba0fa34c974cb330187bfbd81ad50a255fb9316cab9",
+      "utility_sha256": "6fa6f0a523cdbd61424515834d432f59836b9b5a52463596b9cd1e01b37f4685",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "nova"
+          },
+          "JIRA-002": {
+            "backend": "lee",
+            "security": "dev"
+          },
+          "JIRA-003": {
+            "qa": "rowan"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_03": {
+      "scenario_sha256": "618a6b671d1592170ab367318afff9ef62bd0c85cd54298295b13c9f7d24559b",
+      "utility_sha256": "c342631754b34d4daaa0421fb5d00290888bc436b59d1db58fdd094dc9dff85e",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "blair"
+          },
+          "JIRA-002": {
+            "backend": "dev",
+            "security": "henry"
+          },
+          "JIRA-003": {
+            "qa": "harper"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_04": {
+      "scenario_sha256": "ec05e8787b999acc38d8a55378e5b0ac39893e78308557a148aa3e7aba64af36",
+      "utility_sha256": "117b3a369335a1df3e9632d9f869350806151944958677d0e374a2dd0efe3ca3",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "parker"
+          },
+          "JIRA-002": {
+            "backend": "dev",
+            "security": "avery"
+          },
+          "JIRA-003": {
+            "qa": "mika"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_05": {
+      "scenario_sha256": "499f27b33cf529ce7afb75a0b0c2a0d1b0bb8fd26745a68f34bcfa1b595857a4",
+      "utility_sha256": "1db6665f369afd7df2f6f44ae132b6abcc19606b0fb9b493b4487d01b98f0db7",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "taylor"
+          },
+          "JIRA-002": {
+            "backend": "sasha",
+            "security": "parker"
+          },
+          "JIRA-003": {
+            "qa": "mika"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_06": {
+      "scenario_sha256": "d82af5c895340988e9d1e005fb99b2d4b2e9a5d4da910c22a057994a4b2cfebd",
+      "utility_sha256": "578bd3f286731c933dfb916ef14e170dfd52721075ebea2701e90de3a9723182",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "drew",
+            "security": "reese"
+          },
+          "JIRA-002": {
+            "qa": "harper"
+          },
+          "JIRA-003": {
+            "frontend": "jordan"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_07": {
+      "scenario_sha256": "b81d7f3fa5f626c39f51de13d30af98069b950de2e2902b40fbc4a137b7d939b",
+      "utility_sha256": "be25f0b65c2ed9976f8b44b0f767168d268028f22441fd3a083057714ab55bd4",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "sasha",
+            "security": "kai"
+          },
+          "JIRA-002": {
+            "qa": "avery"
+          },
+          "JIRA-003": {
+            "frontend": "jordan"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_08": {
+      "scenario_sha256": "a4904b4d033cac40fe6040881c107f1985d6577731975badc98713406c3066bd",
+      "utility_sha256": "59c1de412c391527c87ae3e2cfd6d28029784828897623c28d169583f1d57ae3",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "emery",
+            "security": "henry"
+          },
+          "JIRA-002": {
+            "qa": "jordan"
+          },
+          "JIRA-003": {
+            "frontend": "hayden"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_09": {
+      "scenario_sha256": "94bdde64f002087ee1f00fb8bdf28e05afbaef375fe87f8a5cf80f3b359bfe95",
+      "utility_sha256": "0c4d6a59da2bd3294b105743621b42dbf180b0a46ea7651276ea0a70e0068a32",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "indigo",
+            "security": "jordan"
+          },
+          "JIRA-002": {
+            "qa": "lee"
+          },
+          "JIRA-003": {
+            "frontend": "taylor"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_10": {
+      "scenario_sha256": "86023cec68055595b62c3f9feaaba19737b2c52769a8a07ba5701b66e878e706",
+      "utility_sha256": "fddb1aeb8984487fefa7157fd2c4898f4895aa891c5c3d487cdb14345f0b7fde",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "emily",
+            "security": "harper"
+          },
+          "JIRA-002": {
+            "qa": "hayden"
+          },
+          "JIRA-003": {
+            "frontend": "kai"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_11": {
+      "scenario_sha256": "b371c8d0b7f80f241550906fadadd62f3c527ef98b5a087846de64e57b7ed727",
+      "utility_sha256": "05e87236186486da5074e7c81320095fdf159bf5687135fc260ab2a9337420fe",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "drew",
+            "qa": "robin"
+          },
+          "JIRA-002": {
+            "backend": "reese"
+          },
+          "JIRA-003": {
+            "security": "kai"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_12": {
+      "scenario_sha256": "d9abf73f1eaa03f4fc0c97dc6211f661e401dd1941eb503b808108171c8e83c8",
+      "utility_sha256": "13770877f053167c341842d993ec911dde8e042803444c48b108296410e67844",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "mika",
+            "qa": "hayden"
+          },
+          "JIRA-002": {
+            "backend": "val"
+          },
+          "JIRA-003": {
+            "security": "indigo"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_13": {
+      "scenario_sha256": "991edb6eb59f000c28d36750b88c617cbbb55d529cd0668677d6521cb39af5cc",
+      "utility_sha256": "3d2a9c148487e0502a098577b1cefa0ba026408f0283f414cf592bdce623637b",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "avery",
+            "qa": "hayden"
+          },
+          "JIRA-002": {
+            "backend": "nova"
+          },
+          "JIRA-003": {
+            "security": "riley"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          },
+          "JIRA-005": {
+            "data": "emily"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_14": {
+      "scenario_sha256": "0bded669951e8f2288c2894d934c1f091b2362b979d766f4d8e4e8d2e1ad9f55",
+      "utility_sha256": "254e0153e01762947a1c8d69ca482b95972cdb90c42329265f5f77fbc5b1dd94",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "quinn",
+            "qa": "nova"
+          },
+          "JIRA-002": {
+            "backend": "sasha"
+          },
+          "JIRA-003": {
+            "security": "sam"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_15": {
+      "scenario_sha256": "0a51635c90c41c384dea71c14f722b64b298763a5d0c6c2afb10b69fae9f91cf",
+      "utility_sha256": "0fb3d475d2073685e4047eddfacf83b56aa4948e053c90c0bf4733980a4e4adf",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "backend": "riley",
+            "qa": "indigo"
+          },
+          "JIRA-002": {
+            "backend": "casey"
+          },
+          "JIRA-003": {
+            "security": "lee"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_16": {
+      "scenario_sha256": "e8ac4ae574e5d595a338e3163ca6f31855a453af28741acf894c3ee322f4e203",
+      "utility_sha256": "295a2f4248210e155a1e1916bf49330b5ea1919a22fdbf9f30b1ae86754c421f",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "rowan"
+          },
+          "JIRA-002": {
+            "backend": "drew"
+          },
+          "JIRA-003": {
+            "qa": "harper"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_17": {
+      "scenario_sha256": "8c0375362783bd1da7c5417ecfe7e21a1f11473e349fca2428e9a3ed51f94eb4",
+      "utility_sha256": "f220aaade8c4473b76b9b9ae4e6b93f43ec4f54790ca05599e2bf1146a6c1343",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "lee"
+          },
+          "JIRA-002": {
+            "backend": "indigo"
+          },
+          "JIRA-003": {
+            "qa": "robin"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_18": {
+      "scenario_sha256": "587a6108a6d63090a6cd7baa8824873c1256439d13cf7e62fe15e7e33ea059fb",
+      "utility_sha256": "9d5cc176737a88729a76ef4deb8d4d147579a7107ad97d362f0c10488e7ffd0d",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "mika"
+          },
+          "JIRA-002": {
+            "backend": "quinn"
+          },
+          "JIRA-003": {
+            "qa": "avi"
+          },
+          "JIRA-004": {
+            "frontend": "riley"
+          },
+          "JIRA-005": {
+            "data": "emily"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_19": {
+      "scenario_sha256": "8023c3b1b0f91a02a3204f28769ef862eb7474671de11545006c70098475e1d7",
+      "utility_sha256": "82cca0086167f1da650d5f0c7d9b806f082ee9303159b02eba774b5ec69d90d8",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "skyler"
+          },
+          "JIRA-002": {
+            "backend": "avery"
+          },
+          "JIRA-003": {
+            "qa": "lee"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_20": {
+      "scenario_sha256": "af172cc622a4a7ff7a5253e0fb1660d100f08eda656f1cc06c107126612090e6",
+      "utility_sha256": "019bbb1959cc82fd9bc98747139db5937007cd1a189ce91b2c6f53bddce005ea",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "sam"
+          },
+          "JIRA-002": {
+            "backend": "skyler"
+          },
+          "JIRA-003": {
+            "qa": "quinn"
+          },
+          "JIRA-004": {
+            "frontend": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_21": {
+      "scenario_sha256": "e62fcd5635db365c219f3ce391675cbfd94ac798c0e0d1ccd21e686953cbe893",
+      "utility_sha256": "e9e29538a75983364259c2abcb30996929551152b8bbd36f74a30b732efc26ea",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "morgan"
+          },
+          "JIRA-002": {
+            "backend": "hayden"
+          },
+          "JIRA-003": {
+            "qa": "blair"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_22": {
+      "scenario_sha256": "d84790561de1d5712a7c6985adc1bf7c0aff6c73b34387152aaeab72c216cc05",
+      "utility_sha256": "1f4324f44c21020302fd48d4413fc723f48499eaf08aea628c2d66c0e9376b29",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "indigo"
+          },
+          "JIRA-002": {
+            "backend": "jordan"
+          },
+          "JIRA-003": {
+            "qa": "taylor"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_23": {
+      "scenario_sha256": "9f5575a00e055f0100fba289bcd8eddd4bd4ae453b24022c446c015a40bfc500",
+      "utility_sha256": "1dc33415c28254de747fd03963d9cb4f7dc0bf3451f9959f0ec10971b0174dc1",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "avery"
+          },
+          "JIRA-002": {
+            "backend": "indigo"
+          },
+          "JIRA-003": {
+            "qa": "kai"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_24": {
+      "scenario_sha256": "a49736fcc2f53c6ed31db2fc8873ffedce5324dc9857a979550726b1659de8df",
+      "utility_sha256": "ec8d5916ba08174cbe0fa1ccffa595145b2fa668a0a8826cc2f2b59e47e4bf45",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "parker"
+          },
+          "JIRA-002": {
+            "backend": "mika"
+          },
+          "JIRA-003": {
+            "qa": "drew"
+          },
+          "JIRA-004": {
+            "ux": "emily"
+          }
+        }
+      }
+    },
+    "JIRA_allocation__scenario_25": {
+      "scenario_sha256": "6b927be1da9b92f0c68f8dae677128207a4bca1a7e6194f3bb7532cf5e5fdc97",
+      "utility_sha256": "c1c3c35ec54bc4ad1fb416a57a04ed18bc6e7b687e1ce41d98597c6fe539f81f",
+      "answer": {
+        "assignment": {
+          "JIRA-001": {
+            "security": "emily"
+          },
+          "JIRA-002": {
+            "backend": "reese"
+          },
+          "JIRA-003": {
+            "qa": "harper"
+          },
+          "JIRA-004": {
+            "ux": "avi"
+          },
+          "JIRA-005": {
+            "data": "riley"
+          }
+        }
+      }
+    },
+    "inpatient_discharge__scenario_01": {
+      "scenario_sha256": "b25d56c990af520eef197b35d3d3b95b40c1e7e477643d058db642c628983ba4",
+      "utility_sha256": "a5e4d9ca608cbaa4bdb32cf37b331ef9139eaa6227150fe5d292678bfba53921",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_02": {
+      "scenario_sha256": "4de8d4df18720e5cb87d9c388ea09dfbcba9362de7c421b8cc7659af58d1d31d",
+      "utility_sha256": "88e698854ec6e81035741086155bb183a7cbc3d3c5c598d7e1343f70fba8d1fb",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_03": {
+      "scenario_sha256": "01331cfb1b597640e1100dce055f3df5fc2222453c65120a9eb9251c7fadf88d",
+      "utility_sha256": "ed8138fadb0c8e6c5a97b661f650c2360531513d6cced141fdd393cd2810ac7d",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_04": {
+      "scenario_sha256": "3fecc0bb04b36c8a7f4348cb69d8526e4d546b4d1be2f3e20e582a5f96f8d718",
+      "utility_sha256": "55155c4bbea934d14f5cc479a592e8563b3697b3a1ab7ed1551df85646fe8a3e",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_05": {
+      "scenario_sha256": "65308b8de2f1d55ba6358be0f7924d05a5d915fd93ceaca30eddc0acdae62a64",
+      "utility_sha256": "7e7d316bfcbb2e3c9fae1347fb67e7a37e63b725c398fe3e8d352a146401f023",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_06": {
+      "scenario_sha256": "aa45261270598b800615394435afb89fa23c848a7f91ac2e81885a181fecc70e",
+      "utility_sha256": "fedf0d7b3f75a16f5988f7fd312b2da3a1c547483703e199cfbbb983228b1ac2",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_07": {
+      "scenario_sha256": "ca1e26fa69fcd1f6421fcfdec871b5b055eb9c21dc014994e9f6c2622ea5ccb2",
+      "utility_sha256": "1274fa3ef2cf0a99d53b21a30851ce2c298bc1f7461c1f39c3f612b2039ed577",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_08": {
+      "scenario_sha256": "c0f3d1f19bc08be879fb383372b96486e67f2742f37ad3e81e17cdd2437daaa4",
+      "utility_sha256": "1abd3335e85788080e6047dac5a7e16e6a5c04e5a5a1f3e39e7d1e16cfd284e4",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_09": {
+      "scenario_sha256": "efeb9780fe57449f342bcdbd3f4118c210059955946d6dd8ca99d13967f6b231",
+      "utility_sha256": "c641936d23e324b83b417f634f99c4319dd0586d9abcc6d76b3f4e92cf068d1a",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_10": {
+      "scenario_sha256": "ff8c859bebbef2948e98732832b64cf0f08a16f9cae6da5c132a3054dcd705cb",
+      "utility_sha256": "19ac935b3b57f8a0e70a68ebdf4ec2dba52e574149cd1c549ba40fd74f75dbbf",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_11": {
+      "scenario_sha256": "799fb04a7b627aff066f78c7ee9a54d26f2b390fb5321e01bf01f9300bc49be2",
+      "utility_sha256": "82e4d7103d0cf717b61f9c619b97a6945dcf12a14ead333e5bfeb5567a298612",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_12": {
+      "scenario_sha256": "8befdd3060e478ede91cbb5197b6d5f0621bf6524989b22767c61beaec2cc87f",
+      "utility_sha256": "b965a6b3f81eb0d769c501977c4609ddfa46516b4613e46ba49107d4824ea077",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_13": {
+      "scenario_sha256": "ad98cd6bd4a1fec21dbf9c8a5e281eead77f85c551a28bb9ca43ad600f2263b3",
+      "utility_sha256": "63d81583b4ff3b26811887e8f4ffb858e5c92c2aef9b5c7f4744ee7b34408fcc",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_14": {
+      "scenario_sha256": "1ff953b9e7167c1ead548f96e86b93be0581da65a88d25cac8f0928e48d3050f",
+      "utility_sha256": "7ef00b0f820f844330d57dc44eec190652a05f39c75a1bd17421e2f45e81d6ae",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_15": {
+      "scenario_sha256": "6d15308876d667874355077a7ec312f94923ffe5debbc8eae6c48d6e89e2566a",
+      "utility_sha256": "bcb3639ac11345b9c117cae9cd2baa9d9529c453649a0f5dd73655e9813e2760",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_16": {
+      "scenario_sha256": "980369f9eb18ebc6e626e86b42593ee001f1d49f76bcf4ff119fb8fd867a04b6",
+      "utility_sha256": "e072018d75b807edb53c344d57bd6c2f598b9645e041d2b06dded997cb5fc9c4",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_17": {
+      "scenario_sha256": "687ad7f0c855dcd763cefb516889ba4a1411c60f931ea9860bec9df0842a4ead",
+      "utility_sha256": "b34f4e64bde77197005fba6556d3cb83475fef1f2116ebdc330ce850d3fcac37",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_18": {
+      "scenario_sha256": "275f80bd37e7f5c7de701b1653e9cd8ba0aa90c9edd9a21a56c37e7e093710f8",
+      "utility_sha256": "0f967deea47c778d8f60a04e66bed1e0ca5e6bc5510b2f90129d53d8910c438d",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_19": {
+      "scenario_sha256": "b173b8efff2d5c65e97e390914f5b71b5c20c1b1ce2226792b920e9b40ee69fb",
+      "utility_sha256": "06ee9b4b91d0eab453385d7ff733ef837f6db221c79caae1e862a3e2df0d2bd5",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_20": {
+      "scenario_sha256": "03507810a058f092fb6e2586a339ab7069b12e8a60369f9c9116384ab44de36b",
+      "utility_sha256": "28a17935aa846df4e7d8b91fc7c69c9e9e6e25e87253e92c4d0261cfe111d010",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_21": {
+      "scenario_sha256": "7da55a889e6c6270745f011ad8f21d985063971a91a93e038e527944b14c3cce",
+      "utility_sha256": "11b06996c270e6ff51b8c7040ee87d9bd3d796fb6aab04add97d8ed82e61ca39",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_22": {
+      "scenario_sha256": "463f83930dbc04b1e766225f3551527ece92a0a7b0258a2c2e6dcb9200c8f203",
+      "utility_sha256": "643dceec5ee4999d78cac8c8c5512e37b423651666434755f3a0ba8447f18b1c",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_23": {
+      "scenario_sha256": "f3941dbd1cce82ce53c70d04f7ed8c6829ab5918837faabbb360be59f5ca8543",
+      "utility_sha256": "22e861d608fece3e0687bc97f3776eccba05dbc5675a84c6ca23363d26420f71",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_24": {
+      "scenario_sha256": "7fef3956c762e9fb43899a67b5569f10401292e37a4e7020573be0eaeb7c19d6",
+      "utility_sha256": "f35740aff1267070e269e1749b10692dfc866f1c276e6dc6cb528d33aa6e3f35",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "inpatient_discharge__scenario_25": {
+      "scenario_sha256": "6dec411fe679e88d1e895c2433f451542460c7f34f53a16f29c1005f8f15d35f",
+      "utility_sha256": "3fc82c06a579cf484a41bcc7b3559a9df4f2608be04a92beca5c8e7638a70f32",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_26": {
+      "scenario_sha256": "0dc3a2e65a311eeaf4a036e57aae5a1b387784f4c82266c176a8b89d14ec7da1",
+      "utility_sha256": "9ef84071f3dabac3b4f856dba57bd942a648b6178bffb92db6ef4dbe28d11add",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_27": {
+      "scenario_sha256": "095659e5e581426b030bcbaee59020358216696245ef1c7103adf5c6ce3fdc51",
+      "utility_sha256": "dff013bfe597bbbe814aa2b241fff19f514dc9eb74cf39d13f493cd125be0ef7",
+      "answer": "discharge_home_with_home_health_services"
+    },
+    "inpatient_discharge__scenario_28": {
+      "scenario_sha256": "728e19dc713a5912e10cebc6d889bcf4713e484d2c61d6f9e73d9ee5bf33c961",
+      "utility_sha256": "2d4b4f51c22be754c3ba614e75396413e29f6e8a9c9563bfa0941d3bb866342f",
+      "answer": "transfer_to_post_acute_facility"
+    },
+    "inpatient_discharge__scenario_29": {
+      "scenario_sha256": "cb722f665ea64259e5c78b21891a4698bceddfd46b07879b5971ce9534398af2",
+      "utility_sha256": "b925ac54942fbb6808d4320d66836d7dd6b1bb56e8dab8f8c34e31a72480aedf",
+      "answer": "discharge_home_self_care"
+    },
+    "inpatient_discharge__scenario_30": {
+      "scenario_sha256": "b8a303416f2c25b35785235a69072fbba80e7dfbdfc351c3898ec46cdb2d14c1",
+      "utility_sha256": "541a17d559a61e0a6fd79c7cdfb8a87229bba2f3a377d346a754232e74520049",
+      "answer": "continue_inpatient_care_reassess_24h"
+    },
+    "manuscript_submission__scenario_01": {
+      "scenario_sha256": "73dc1254b35c79af004dad847eac1a8092ed25211647f529d3781d897a57ca17",
+      "utility_sha256": "163e81c17e5414f1d5854f6ea1046a122bcfae30771c4d3ec285bccea343d3a6",
+      "answer": "resolve_interests"
+    },
+    "manuscript_submission__scenario_02": {
+      "scenario_sha256": "388efdf14a66ad31ea1c5550f3730a0dbd0913c559a9012e8e4a1da5be431ed0",
+      "utility_sha256": "620beeaed2c5344ff576f08e0024b0c4bf56fff40e28b230c735deb63efdb02d",
+      "answer": "resolve_funding"
+    },
+    "manuscript_submission__scenario_03": {
+      "scenario_sha256": "494b829e27d0a2213301f3cc1e8c3211d9c7a1eb5de94fc2aa08fa0f7f183e23",
+      "utility_sha256": "34000be88a363d20a23d3cd3fc01690f9e004601d2db7651ccf9fa522f9ef9ca",
+      "answer": "resolve_funding"
+    },
+    "manuscript_submission__scenario_04": {
+      "scenario_sha256": "bfb2e8f2f6cb6b088329b545b2c6b0e5501d994a1f022f0a6918c0fc68191dea",
+      "utility_sha256": "4fd13480e2d4049ccd01cab6a72c218a4bd65eb720596fb8a59fe0c918489fc0",
+      "answer": "resolve_code"
+    },
+    "manuscript_submission__scenario_05": {
+      "scenario_sha256": "b725ef460a72398ba407ee9a2eb25fac7b13f091424d65601bafa44a8722788e",
+      "utility_sha256": "30e4d22b711119625b65d9479c22e263f8af0340edf7e5f86388eb3f77b2333d",
+      "answer": "resolve_data"
+    },
+    "manuscript_submission__scenario_06": {
+      "scenario_sha256": "d1dc651b5462a916716efdc4e72f70d103ceb278644e40bf390f4859baa7be70",
+      "utility_sha256": "a5030421adfdf44ca26ad9d0fe3a249e460f2320b8ee39dd09191a71321c92e5",
+      "answer": "resolve_code"
+    },
+    "manuscript_submission__scenario_07": {
+      "scenario_sha256": "afee5d2c9a6dc417fe2cb5a1774e7af60929144d1df84b8e5e5f68b6d98e73c0",
+      "utility_sha256": "2e685f3329340e1978fecd9450ffa8a5cc2745a0086557ece040cf4134553e57",
+      "answer": "resolve_author_approval"
+    },
+    "manuscript_submission__scenario_08": {
+      "scenario_sha256": "cadcef1f5e9f7ae3a8b6777470b7c7d8873de964be5a6678d2a579caf7bdf25b",
+      "utility_sha256": "dc4fefbe244a2c0a3b450775ba9388cfc0622413e70a5deeec3c65ff084cfd2e",
+      "answer": "resolve_exclusivity"
+    },
+    "manuscript_submission__scenario_09": {
+      "scenario_sha256": "e90ce60a1613d1bc5a7a93723885236885f6627ef5a0c8fcf93f9b032d207053",
+      "utility_sha256": "0805a9f2c4971c88ad4f0dc4330a09fdcd81759925df7d1fc3255c48c0dd76d6",
+      "answer": "resolve_interests"
+    },
+    "manuscript_submission__scenario_10": {
+      "scenario_sha256": "f7c04d95e5cca439c315881771e2c2d9f7b27b8f1dd435fc7c8afdf36d6cccfb",
+      "utility_sha256": "d0268497e9f935e70a61ebe2fe33d6b270efdb5ca00df8b0d19ca500620f0f37",
+      "answer": "resolve_exclusivity"
+    },
+    "manuscript_submission__scenario_11": {
+      "scenario_sha256": "a4f766eda4e90fa9998206d9705de2951ed290295c4d1e390ed84ef4792baaae",
+      "utility_sha256": "5dd700f5460b1bd592035b38fd6071227ec5fa6f69b7740e1297d3cd6f6f868b",
+      "answer": "resolve_author_approval"
+    },
+    "manuscript_submission__scenario_12": {
+      "scenario_sha256": "3f92cd76498b06658e49c7807c5ac91a26ac87951e47127f6414af14f7c72f45",
+      "utility_sha256": "78e5c18a7a154038e23817ed3b85df3998e97b9880696a97c40c4c7afb10ae35",
+      "answer": "resolve_data"
+    },
+    "manuscript_submission__scenario_13": {
+      "scenario_sha256": "b0133d8f5275e4cebebdeb6ff694613169786c42a15f6476ac09399658c359db",
+      "utility_sha256": "9488ee8c5d446b9774973d3101b639181b78408dc4f1c896f893916da99f99cc",
+      "answer": "resolve_funding"
+    },
+    "manuscript_submission__scenario_14": {
+      "scenario_sha256": "e1c395c6c8378636fafd77e65749d59155cd05d71114ca242addb15a93e3179e",
+      "utility_sha256": "12b3ca71cfbb7c800467ba1a3380f405bea9fbb63f43543ce990dfd7d898ba2d",
+      "answer": "ready"
+    },
+    "manuscript_submission__scenario_15": {
+      "scenario_sha256": "304f787a04a90a532de966f501d428bf3ad6a2db5297faa623ded990f33f03ec",
+      "utility_sha256": "c2ed2bd8e47b234d6b0cd3bec5c52aca923faa435a7f89b9edf38df543970523",
+      "answer": "resolve_code"
+    },
+    "manuscript_submission__scenario_16": {
+      "scenario_sha256": "bd0b944129cbaf8e4583420f85c69c8ad99052c5a87c75561a239d68e438db20",
+      "utility_sha256": "a5789810974a443de97d16132bd0360b981144f9827ff32f3306018a593f1ce5",
+      "answer": "resolve_data"
+    },
+    "manuscript_submission__scenario_17": {
+      "scenario_sha256": "5c9987ea9933b50976c0bd20a08a2ef3dcff0864833d92955bda2604e195251b",
+      "utility_sha256": "3316147fc5a200815c5985ffbbb42ad7b0f454eeb64839f279d8725f0f4c67a3",
+      "answer": "ready"
+    },
+    "manuscript_submission__scenario_18": {
+      "scenario_sha256": "f1588d2b8d5b750292fdabdedda87f4fd732dd737edf89260125fe5c4f8c20e5",
+      "utility_sha256": "53ed0dee112bf9066a831a2204a7a525a753067bf2a0e702316e15e52b8ced5d",
+      "answer": "resolve_funding"
+    },
+    "manuscript_submission__scenario_19": {
+      "scenario_sha256": "5839f90a6249839df3e98bb5bfdd82b7a59a34ef301903a04250f90255e7151b",
+      "utility_sha256": "143cc8b8afdc509296005bf18a0218494e85385ff0c5f7d89ae9bf63245b6499",
+      "answer": "resolve_exclusivity"
+    },
+    "manuscript_submission__scenario_20": {
+      "scenario_sha256": "3f68a6e9c8cef8e8fda13588dba392b860fb1741781c5d3dad79bc0b17f67075",
+      "utility_sha256": "e2ad2a5f32741cee6fefd1e1282d18597323ca574741e5ac48979d78173fac9d",
+      "answer": "resolve_author_approval"
+    },
+    "manuscript_submission__scenario_21": {
+      "scenario_sha256": "93a6fb11bee8334a59ccdec9222aeeb8e48e980f678b64a151882370341f2ed8",
+      "utility_sha256": "2be759798fb3c1bc5150121dff8933a4fc43024317b7bff28ccc410534fb6c68",
+      "answer": "ready"
+    },
+    "manuscript_submission__scenario_22": {
+      "scenario_sha256": "76b4e2d3ab80f95a23bf84122279a450350959f890dc7c4cfd8940208280fc0b",
+      "utility_sha256": "59243bf5230820120f4f1a740095b2b8568945d577f6cede892bde636ce239b3",
+      "answer": "resolve_interests"
+    },
+    "manuscript_submission__scenario_23": {
+      "scenario_sha256": "c36947466c06b8e8f14fd9d59d6f83bcbf9aecadaecebf84c4d51e1168ba25bc",
+      "utility_sha256": "77cec0e0520b40f5d8a7a1446318754f549b0b6e7d931c7a96e27b35bc37136e",
+      "answer": "resolve_code"
+    },
+    "manuscript_submission__scenario_24": {
+      "scenario_sha256": "4eb2a0c7fc8eed70a6796354b311033966d7aea05849aede2a159da052381cd5",
+      "utility_sha256": "83dd560268e1f578606599a57ae31dc61b5a9372fedd7b0bdbae28452a000cbf",
+      "answer": "resolve_data"
+    },
+    "manuscript_submission__scenario_25": {
+      "scenario_sha256": "00a19115dbc6ea200e34576becd1cc37be7c180c171e04cab6c474d239a90c54",
+      "utility_sha256": "124fec6cc345bd36553ef36e1fb73e94bb8c9d35dbc04b270644cdd264ac7c45",
+      "answer": "resolve_exclusivity"
+    },
+    "manuscript_submission__scenario_26": {
+      "scenario_sha256": "2e00c30182b15ade340c6740ad3474311d1816d4263cc74f1b8fc128a45f639c",
+      "utility_sha256": "aff41b5b1bba590c45f1ceeda591e79d636d9f66fa08e375e0713bf0f193905f",
+      "answer": "ready"
+    },
+    "manuscript_submission__scenario_27": {
+      "scenario_sha256": "65bf9e72845609fc0a07e0e0fcd818a8ac172c8378c1b966d3da4cb720014eba",
+      "utility_sha256": "b1980f050f9bef7628bb937331a39126c1f0d90edfbcbce3bcd16de51cb29d72",
+      "answer": "resolve_exclusivity"
+    },
+    "manuscript_submission__scenario_28": {
+      "scenario_sha256": "24c92599c95f5295160bcbbf01bee42fd20adbf481018ddc231be18b06ee8f7f",
+      "utility_sha256": "5bcbdee7fccb4106374caad0a2a519ad97b4ee946b1cef15805f9523e7abe1cd",
+      "answer": "resolve_interests"
+    },
+    "manuscript_submission__scenario_29": {
+      "scenario_sha256": "a5c98cceefd69132fadecd036cf46aebb81e0dad3f1dfe01ecfc202179d6fee9",
+      "utility_sha256": "6d5e6d34a1e84a7f257721d48d34a31da2cda0ac821e2489d08a912954817cb2",
+      "answer": "resolve_author_approval"
+    },
+    "manuscript_submission__scenario_30": {
+      "scenario_sha256": "8c41f569bf2c94e0e5a8c2bcea817cf1b5e5d7a27e38dc491d63d13425ec050a",
+      "utility_sha256": "2da1fafbd67fd08397c47fef190473b61f2d3189b770e8e0f5b1ca5240ea6b5f",
+      "answer": "resolve_author_approval"
+    },
+    "meeting_allocation__scenario_01": {
+      "scenario_sha256": "fa0e044e1f68ff7dced3e3ecc3a70b7bd8939d8fbb2957363deb8db758210e5b",
+      "utility_sha256": "de8cb5c091a97114582e613a276ce89f10d4cb45ab50172d6b02fbc6b23d9e8e",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "WED_1000",
+            "room": "elm"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_02": {
+      "scenario_sha256": "0d50bf5b45df4bc8ef2a3f5d354ce4718e56b7ad3851889d4bd2d7bbb703afaf",
+      "utility_sha256": "227070bd3f91aac31ca3224637785be9baf2e7c492c83f4c80ca31abc4b9d2c4",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "WED_1000",
+            "room": "borealis"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_03": {
+      "scenario_sha256": "05819360fc0b5d96e85bf6bb8deaad0b996a14492543dab65caa18aaf4e8b796",
+      "utility_sha256": "87baa3140e0af4b9ed9d842a01c37702c2893654831f17de099f67aa9c4cae74",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "WED_1000",
+            "room": "elm"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_04": {
+      "scenario_sha256": "9864a1c60b2ecfa81de44bfcf68f571aeba15dcd6519dc7a458d0a68cad3711c",
+      "utility_sha256": "b62832c1d3d03424cbe0d2ed365d1728fd5e095149d1d5dff2f3fa5757073001",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "WED_1000",
+            "room": "borealis"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_05": {
+      "scenario_sha256": "ca4c40fe6307256984d75726cb9061f950c3e89ccf878fe5cfd8292ce6344752",
+      "utility_sha256": "687caa96b55c65aa1090ef0ca3701dfa59084963bcc57af4a46954f7e7e27420",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "WED_1000",
+            "room": "elm"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_06": {
+      "scenario_sha256": "0fdadb37081db08036c65c0f7c28b1bf13430c9bc4d7eafe0e4e34a9c5ecf269",
+      "utility_sha256": "0cd40dbac5e33b7efc437e6bc2d75fa76042734291fe74003f8a785a8847dd1d",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_0900",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "MON_1000",
+            "room": "borealis"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_07": {
+      "scenario_sha256": "bf63ce06995dc0d89d18818ed213bec0bc0b6fc4d165e47366bb04fe15b99b98",
+      "utility_sha256": "175096a702b13d7da1d5ef2f2d1a4c35418cbaa93e0b64b2d78afbdab6c49a49",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_0900",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "MON_1000",
+            "room": "borealis"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_08": {
+      "scenario_sha256": "db1dddf9b019e583b787bdeef18c6ac52c51edf5581263ec0cfca499be71389e",
+      "utility_sha256": "9d70d8ec64c96de2d9fce0810eb17d9145d049d695da48f9ef0a05eaa913b085",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_0900",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "MON_1000",
+            "room": "borealis"
+          },
+          "MEET-003": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_09": {
+      "scenario_sha256": "7145222366669b80a0e14809757da06e18e90b03b9c3b450e5977333e298bc44",
+      "utility_sha256": "4c36446fa74148c6183864317bd830a6dbbadf1c352a81238147886ec431220f",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_0900",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "MON_1000",
+            "room": "borealis"
+          },
+          "MEET-003": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_10": {
+      "scenario_sha256": "0ee9ae896d4e06e6ee55202b4532642e5f29141438694794b55c18c0ef8c930e",
+      "utility_sha256": "b2c1112c883a1d3fdf616ee900cd419251ff6146683aaf0bc977642970eeb387",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_0900",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "MON_1000",
+            "room": "borealis"
+          },
+          "MEET-003": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_11": {
+      "scenario_sha256": "30d16bb73f10f8b6bef24a54bea19d59d2af80f1573df73903d5bc2db4e780cb",
+      "utility_sha256": "951337cf341591d6aef6f6b2adfafa742b6227a48bb8652a87ea2c874aeaa050",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "elm"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_12": {
+      "scenario_sha256": "0f9be3c5b138f504f443d087d5a16772a2716480b44eda6306c148d780421032",
+      "utility_sha256": "8e64bc115d8d8f35128ff8c6b1a69017c7cb539d4cb34b3615785bae761b5878",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_13": {
+      "scenario_sha256": "c06d5551b1dc28d2434b73249c11b8143cfd5d5793a2bac17807c4ec9493a861",
+      "utility_sha256": "ccf7d7a80e174f4e9686b656eb24fe88ea99be04e3fb4c1ff184d01218932927",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "elm"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_14": {
+      "scenario_sha256": "9eac992866a153ad45187b88e85e9d8760c326823fa90ccd330fd863c7a89139",
+      "utility_sha256": "bb4504c1ce08fe6f955d0579c4d06dcea740013797432b88ca7118c30d940a2b",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_15": {
+      "scenario_sha256": "953575ed38cc1e39dff02f62b27d9eb88b116c8ac88e6bdf34d77a7d19921856",
+      "utility_sha256": "c2dc3dcbee05295d7ae83f6fa8381e988b74320d55430efa71637c6183b6fcc9",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "delta"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_16": {
+      "scenario_sha256": "a9c367f3128953927c25d75ba6bdff888965d23fb4e228dcf325c36bfc80f362",
+      "utility_sha256": "6f055677f7a0afc1d4740871bd7d160385ce45fab606f2bb6a4cd355e5da78b5",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_17": {
+      "scenario_sha256": "00659ceb82c5b2d998b40a570108f079391dbe83669fbf012299059019e9f9dc",
+      "utility_sha256": "f4a3696ebe65a235c0e00b870fe5a76ca298000d865cd17a8b848c317cc52fc7",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_18": {
+      "scenario_sha256": "952245bec7ae0b69cbae2a6fb0e35698848cf8b6be36846828263836a06690d8",
+      "utility_sha256": "ae3b0d17044ee3cb1af33d1183844df6b6bf424122f31e1dc27e1a45258bd0f6",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_19": {
+      "scenario_sha256": "3316d74ab5bbfadfa9847603f4fd74c5bf98bc9834b86f6dbe7c6ca63dc9d6d0",
+      "utility_sha256": "898347294e97ded9d62bee6e8d880a871d59656745612f95dab5bcc5c830cf7c",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_20": {
+      "scenario_sha256": "e9098fc97289bd862e3f0d001fe4b74e13c84503fb6a75ca6515ca4fd8df0db4",
+      "utility_sha256": "92557ccb0aef9a550cd2f0d4f3ec13af81eebfbb3c0436d56908d48d3ffaaaf8",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_21": {
+      "scenario_sha256": "00dd1cdcf1b00b0e734755a51f05db362975cd55854bf728e2926a356c057c32",
+      "utility_sha256": "75cad5742ab8badd2804f8ddd9c5833e9551e826426b63529e9bd110cab415e7",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_22": {
+      "scenario_sha256": "5b36afd3a3feb98f8bd6ec6e57807e31a475ea8dcaa33adae4db58324cf04985",
+      "utility_sha256": "227db9327d2d21c229b84ad0f5b38111974aad684e122a20d6948b5e10e4d3f9",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_23": {
+      "scenario_sha256": "7bc825c58ceb76bce91e686c2590314c5bab6bc201820dc8822b320d8f46abf7",
+      "utility_sha256": "2a10077ba79b829d57b816121f8412a6f6b9ce335f3c17ab1e795472af07cd4c",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_24": {
+      "scenario_sha256": "ba6095de145eee5fcc1f1eee7474e2273e8222b15a885c6b5995cc46a14e8348",
+      "utility_sha256": "11f65d0fa0aca86606e38c1cc8b30e649bea5c6a26592b9bf638885278670297",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_25": {
+      "scenario_sha256": "1f12d6631029c0202841aec8ad919dfa87b0c70ea4e7f9ff19f6846028fa5e81",
+      "utility_sha256": "56e229819f2189aa3e66f317a5640dc42401e6fdd98d4e4194d24d078c77cec1",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "MON_1000",
+            "room": "atlas"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_26": {
+      "scenario_sha256": "d4dd8af7b0a61b06c8476ab293945cc97669afa0ed26e41b70998cf8bdc1a8af",
+      "utility_sha256": "8643da20a0b658a9f46fbedb9942743d2e64c364e315946ce817a8666866abd8",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "elm"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_27": {
+      "scenario_sha256": "85932a1dd96e45ed4fc35918a2ecc481ae3cb487afba82a41218935f0dd8cd7e",
+      "utility_sha256": "39cf62fbddce33d1526a5114038b8f016db710dbeb977a0d84d70aa5d72ffa75",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "atlas"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_28": {
+      "scenario_sha256": "d7afb6bc8af2272c487b520818008830f51f9b17ed3a1a36a16e7659e4b01fa5",
+      "utility_sha256": "6aa1d3fcee12d902f9ab7d1674dab0d1916cd7e19098ec9bfa391d50d92c86b4",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_29": {
+      "scenario_sha256": "ee6d0de23427b8602ab76d989f4cf725c1856b11bb64fdb5a3950c8d28b98364",
+      "utility_sha256": "ea89cc5afa290978bec983b976b021605a302db8e52f6628261557301806e1eb",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "elm"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_30": {
+      "scenario_sha256": "2e51565523006b2b6c89851fd3cb3334cf45b7fa96e7ca88eeb524b37e53b058",
+      "utility_sha256": "d47cbd4f55644a9a019a8be904a2d1b958a090bdae08f8d283c8a9aa02914449",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "delta"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_31": {
+      "scenario_sha256": "7ea9bb8ed128fb0c207cd54895e984452a7ef92e3155ebeb3334caa4e3117c31",
+      "utility_sha256": "0a05a671fb3efe06115fe5ce3270b82e37950fa59bf349a26e8000190d0ed91f",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_32": {
+      "scenario_sha256": "6150e47a7fd087b9f47e2c9b3907556ac542184374baf2ac4278509780095c3e",
+      "utility_sha256": "0274c03bd9dfc5064720067ad1d0333fb6f60b71f5486c1b46fc42ce8698f17c",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_33": {
+      "scenario_sha256": "476efc5bb0e9813a0a8f060683532405f4cc0101c4099e84592469c51fad3dc9",
+      "utility_sha256": "c17cf356518a64151cb6ec0bd56419331bb1632011385051ae5cffa690f7ee0f",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_34": {
+      "scenario_sha256": "f3a05197fc7bfd8df3c3c30bbaf574cfc499e734630b2b1f4b7d91528650290a",
+      "utility_sha256": "6023e65522982ae8260bd904f7dca0127b2b6c0ffd5a1211da21301d316e18e9",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "meeting_allocation__scenario_35": {
+      "scenario_sha256": "86115792acf09071bce8ded8a0cdd402812cb9c865c916cec3738e0bf8c9e031",
+      "utility_sha256": "4a538e3f91ca1b0d25b29eb10c6ec0785bb7b524aeb0b9da82d2d6946a86560d",
+      "answer": {
+        "schedule": {
+          "MEET-001": {
+            "slot": "TUE_1000",
+            "room": "cedar"
+          },
+          "MEET-002": {
+            "slot": "WED_1500",
+            "room": "delta"
+          },
+          "MEET-003": {
+            "slot": "TUE_1400",
+            "room": "cedar"
+          }
+        }
+      }
+    },
+    "outgoing_museum_loan__scenario_01": {
+      "scenario_sha256": "0949c68902f4f61779524ebb08957e5c649b3fecfc5ecfbe707b1194600c271c",
+      "utility_sha256": "6234ae8a0971dac8282b60c2e50aa7791b507fc4939ca7b5f0178bf2c1526fc4",
+      "answer": "resolve_light"
+    },
+    "outgoing_museum_loan__scenario_02": {
+      "scenario_sha256": "df07ef5675be0ccc45c3d86fa056e79a10988b2be32c364f150f26413414b8bd",
+      "utility_sha256": "e306c939d07198598f49e92b2878f448113ce34f18b49ee0cd3660b62058c18c",
+      "answer": "resolve_security"
+    },
+    "outgoing_museum_loan__scenario_03": {
+      "scenario_sha256": "aacdd5dce683d4e452d66d8e9edda0f8030d51fc749abf74653784141b9e89af",
+      "utility_sha256": "432888df4471471485c64256fbe95c39ab9e82d546ee088b397b9a754800e7a8",
+      "answer": "resolve_light"
+    },
+    "outgoing_museum_loan__scenario_04": {
+      "scenario_sha256": "2ea3001d68ea6f8b70446059e474cd729113664f3ab5810ed4233e3d8b397050",
+      "utility_sha256": "86e61093755c2d72a73a81558419e203bd683f8bf1f3cd8a011090b2f76bbaab",
+      "answer": "resolve_insurance"
+    },
+    "outgoing_museum_loan__scenario_05": {
+      "scenario_sha256": "6df1b66723dcb096d6f40870d52d439735aef27d9249137f55d7535829a2a6bd",
+      "utility_sha256": "02c6dff1f368e2da84a666d0168281e6912c0bc22963abbe1bb23cea15d66ae9",
+      "answer": "resolve_handling"
+    },
+    "outgoing_museum_loan__scenario_06": {
+      "scenario_sha256": "bc660d6f7aed912b4ca46da1163785ee4556c89ca4ca199d31394d84b27f64c6",
+      "utility_sha256": "d0fe9dedd2a82e1e3b8075b94e8b65b15ba2d70c653b142d1a0d36d233933753",
+      "answer": "resolve_insurance"
+    },
+    "outgoing_museum_loan__scenario_07": {
+      "scenario_sha256": "b51f75511d36bc72c3b8208a38e9408c83a51b3eaf3c82b41b7e033cf23093f9",
+      "utility_sha256": "c72cb9849780e32348e1c80e4538b9cdec66450e280780839bed1b0b878d8a7b",
+      "answer": "ready"
+    },
+    "outgoing_museum_loan__scenario_08": {
+      "scenario_sha256": "9722427d4f80ae3aecc66c5b732f18473af3ab4e2270b462e6aa9b652f907b0f",
+      "utility_sha256": "88d32ce4148c8e0999082cd5502323abb6d9c3cbf8df0bf13816002dd98c9776",
+      "answer": "resolve_environment"
+    },
+    "outgoing_museum_loan__scenario_09": {
+      "scenario_sha256": "cf27f19c6ef3f3f2932f6f5ac2aeb2a37c0907c9978d25b12fd505eedaf0cf65",
+      "utility_sha256": "5ef2f79fd4fd0e8ad757ad3c5934589669f70c1012adbabd3bb1a60b74d4f0bf",
+      "answer": "ready"
+    },
+    "outgoing_museum_loan__scenario_10": {
+      "scenario_sha256": "5d67895e84985ffe487f65a144658fc8a255cf45eb981e4f9ed136b59a4ec74e",
+      "utility_sha256": "83ceb8489d38e0cba2cfabe6df136de7ef3e303cb8fe516c3447b69c6a803f55",
+      "answer": "resolve_environment"
+    },
+    "outgoing_museum_loan__scenario_11": {
+      "scenario_sha256": "8444859f86e8c22471f88074553be963eb3832b752275962f2124fe0667583db",
+      "utility_sha256": "e1e5955396c8f0a42de5f04e64b0cdb9ac61532a04bd27ca189d3c6025809274",
+      "answer": "resolve_handling"
+    },
+    "outgoing_museum_loan__scenario_12": {
+      "scenario_sha256": "6bc5be8752866b8c476aec312a7638296e356eb2e42bf60e1882d09980f6596c",
+      "utility_sha256": "a24c29dea8ff70c83f970971ac6ef6abbcbf928d5fad23c14747e7205a3726a7",
+      "answer": "resolve_offgassing"
+    },
+    "outgoing_museum_loan__scenario_13": {
+      "scenario_sha256": "f4232973e8aee529360cbe32b3cf971bb93a97c11c4bbe967f3e083c4b65a3fa",
+      "utility_sha256": "e809cf872bd4aed8f6656d8d6e5ccf5290765580629490ec920857df1f6f97d2",
+      "answer": "resolve_insurance"
+    },
+    "outgoing_museum_loan__scenario_14": {
+      "scenario_sha256": "9ab28e4705d8adb641f6ad6ccdf7c073f56006e155131f6f82549338997e7b93",
+      "utility_sha256": "177bc205de6402b58d5af283a97b0551f120254668c39928250034c92de987f8",
+      "answer": "resolve_handling"
+    },
+    "outgoing_museum_loan__scenario_15": {
+      "scenario_sha256": "6e989c26d2c93e854d25f59f50050e530cb7c4a4f7fb6c19561c3c673fcf2446",
+      "utility_sha256": "66b49ffb08c41bf51146c3a4fb87074b13eb2d549334e3d31cf1fb285271eaaf",
+      "answer": "ready"
+    },
+    "outgoing_museum_loan__scenario_16": {
+      "scenario_sha256": "d4df0a4f50225ad0eceb1c605e2567108a38bd03ad12ec331a4c7ae1c0c25bbd",
+      "utility_sha256": "ee83b3a0c82020175170076410ed5e5e78ee0d19efa1ac64295af5f55c01e05f",
+      "answer": "ready"
+    },
+    "outgoing_museum_loan__scenario_17": {
+      "scenario_sha256": "0c2e418eee9ea5ad560193e38137c5316cba2f67693fa42404723caabea19eb5",
+      "utility_sha256": "e3382bab30da5c5537e0f33a50f9472aeabdfd53819016d53d83c3a4782f14ca",
+      "answer": "resolve_environment"
+    },
+    "outgoing_museum_loan__scenario_18": {
+      "scenario_sha256": "c70f86c4248d52a533e970fda385df8bf2403606dc2b49076e3f6fe0bc6f19df",
+      "utility_sha256": "592c2713d00ceac686cc36f08d16e76c158f44e0e9e34792a46c2b5ea7543ae8",
+      "answer": "resolve_security"
+    },
+    "outgoing_museum_loan__scenario_19": {
+      "scenario_sha256": "0fe3557ae47c251c7babb13678412880d6553428ab2bbc7060d14e9fccf0bd0b",
+      "utility_sha256": "c8dde0555f93d36c22951dd16c2363ee55648fc12ea14a922e32a9621e768499",
+      "answer": "resolve_handling"
+    },
+    "outgoing_museum_loan__scenario_20": {
+      "scenario_sha256": "0080d77b80aa9bfb6c5c866a847f35adae01a7d93238abe5286a668942a743c0",
+      "utility_sha256": "a6c866bdf8db9fa3a17948e8c3e82f7c0e92716223f2337a1d8020039defc1fd",
+      "answer": "resolve_offgassing"
+    },
+    "outgoing_museum_loan__scenario_21": {
+      "scenario_sha256": "0d4a651a5301447d04a664a815b1e9e877e348b349674f0cc828ed0c80710ba1",
+      "utility_sha256": "e0f5b5b09f445daea2dc96bbe075b3c7f82e3546e970d8ce0b247d049e01d9b6",
+      "answer": "resolve_offgassing"
+    },
+    "outgoing_museum_loan__scenario_22": {
+      "scenario_sha256": "c5557c90c9fb177b2dababceecc6c43a611c73e561cedbd40e1a84eeb570c5fa",
+      "utility_sha256": "5cf44e1c6d134a9cc93de89786236fd0e0448aaa0fcd115b803f343231af979b",
+      "answer": "resolve_offgassing"
+    },
+    "outgoing_museum_loan__scenario_23": {
+      "scenario_sha256": "766e013b0c4e5c5fa262d44d39631d39247f110f159a73c69fa08737ba0d58b7",
+      "utility_sha256": "017ee8eb842ccde6ff60111b3e5dad364f276c6140a8abe5cd82c5e96a9fa603",
+      "answer": "resolve_security"
+    },
+    "outgoing_museum_loan__scenario_24": {
+      "scenario_sha256": "227f9d2447cda67b0167378f94a92501b33bb67b83ceaf96ef98c46ebd089d23",
+      "utility_sha256": "9fd7251494fcea5e9c3428112960bd8f3c74b27fc3e58cd21a981a764f06b775",
+      "answer": "resolve_security"
+    },
+    "outgoing_museum_loan__scenario_25": {
+      "scenario_sha256": "5a1dd84ee676b7c506e1645b5dd1e828e993fbda407f715a270710d34ff8f82d",
+      "utility_sha256": "b2a0b8d9970d883f8297d2318ffbdf04f6abaa829415308685302fbec4668f74",
+      "answer": "resolve_security"
+    },
+    "outgoing_museum_loan__scenario_26": {
+      "scenario_sha256": "85adcf665ea776aa9d1347168e6716a3fea219193066f4af159c3dd599512851",
+      "utility_sha256": "e8c0b7514a1d1e11c54da5dc848d8cddc3b130349e21c6533e091482bc702dcc",
+      "answer": "resolve_environment"
+    },
+    "outgoing_museum_loan__scenario_27": {
+      "scenario_sha256": "68a434819d4da97076999869ecf47cc15395aa86aa6ba0c3460f180900d8b8d7",
+      "utility_sha256": "7c6c50046e88b4dc559922287dd5758225c62fd7661d1126f647740f6f6d5cf6",
+      "answer": "resolve_light"
+    },
+    "outgoing_museum_loan__scenario_28": {
+      "scenario_sha256": "4698970f506cbdf81e79b114dc4293b29d0d9e9271bd551aa0ef2bf8870b0a1b",
+      "utility_sha256": "98d1e1b47be9df5108a061373f799268214d436f43fd4f843d1453d47c8d27e2",
+      "answer": "resolve_environment"
+    },
+    "outgoing_museum_loan__scenario_29": {
+      "scenario_sha256": "66a9b916cbc10978e2e0fa1714cc2407aa68c9d9f34b1d81f89c3c088224ea8e",
+      "utility_sha256": "23e9a514e31a2795314351ac0fa62696c2661e1c53ccaec19f24123652bfe9e4",
+      "answer": "resolve_insurance"
+    },
+    "outgoing_museum_loan__scenario_30": {
+      "scenario_sha256": "b69f0194343c772e1fa7f4f68e213382e0885d868f6f96dd4ce0d08049812903",
+      "utility_sha256": "2c0dab5ab961ac68f5e825f60549cdda997d9eb384abb675380c73d813e22890",
+      "answer": "resolve_light"
+    },
+    "severity_classification__scenario_01": {
+      "scenario_sha256": "4deca00e8caac0cf4df6e225003f286c94f9607b9e0c9054191ce236937d28f1",
+      "utility_sha256": "ebf764e1b598cb36b6c10e35c9733b22207c1faa14fd33b3b65181c0d4488ee0",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_02": {
+      "scenario_sha256": "c8e9e154396b1f6b23876bd6b126629ec69c51ad3ec53020b471a49f80f4d6c0",
+      "utility_sha256": "3d37d97c7d4c141cf7f19018209a13116a004676e400bb32ac2ba907eb53518e",
+      "answer": "sev_4_informational"
+    },
+    "severity_classification__scenario_03": {
+      "scenario_sha256": "b37ca244bf9b55ea22b062f5c65fe0b12d3057f59cade7b474aea1124f72f06a",
+      "utility_sha256": "5eb4121ef5f983e91a7be934d8351e64d675a8cef6b4f75da08a73f8e00e03d6",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_04": {
+      "scenario_sha256": "67a0726c2b8e37f1d436bf56c165c89cc801cf7b6bf1e4780f9f59a2a8570cf4",
+      "utility_sha256": "ea052fa908ff8bdf157c24354ec5110ba1b6d9ee43c6360003b5c3203d0fbd19",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_05": {
+      "scenario_sha256": "5a43918ae7da80830607fdbf5b8ea952da6154a1c181d21660b85c6f0249a981",
+      "utility_sha256": "ca95584613f9edb122ee49df8f71f0fe453fe7a89596b21853e0e67002f2355f",
+      "answer": "sev_2_high"
+    },
+    "severity_classification__scenario_06": {
+      "scenario_sha256": "fb6bc414998d8364a30e13352a89a372289152e939e51b324066dc205bd000b4",
+      "utility_sha256": "25465e3bc0366fb446b7bbe79c94f51365c77530d0fe978d22fbc370ea3e6edf",
+      "answer": "sev_2_high"
+    },
+    "severity_classification__scenario_07": {
+      "scenario_sha256": "fb08d830bf91a58ed20741689c9ab914a0a6ffe929392e548a6980d8484b7d35",
+      "utility_sha256": "080d256856984856bd936052de37460a6d695a871d591ee8844b8385096073e4",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_08": {
+      "scenario_sha256": "6870adc18c1c557c5e96239b2bf08be3995c3493b79dfe5c3e66e9974a6ce5b5",
+      "utility_sha256": "fa61544597d19167bf540b53058c78060530e4717687d03b0202459c6c64ab3c",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_09": {
+      "scenario_sha256": "4ec632d19b755b6317c1e07f5dfefff9337a76b9341138310602be97835b844a",
+      "utility_sha256": "ac3a6987cf793fd8573c6065dd58c30654065ba754cf5dc36c1bacb3ede73bcd",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_10": {
+      "scenario_sha256": "eff686b639d8d39d00921153316ea7224f8a506205b5a834a519de9795b0c937",
+      "utility_sha256": "d29b8b9ca4955c1593b791d0201e8a08690d448a47c0490ac6cf4adf0bf65dca",
+      "answer": "sev_2_high"
+    },
+    "severity_classification__scenario_11": {
+      "scenario_sha256": "42cb420ae4e05a6adaf61cbf05e5214507277a5af0a488d8a4e2c7ed599d9982",
+      "utility_sha256": "4442a7ec678d43b2726fb731f1d227017033e054b21288baaf9e74c21d4ff025",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_12": {
+      "scenario_sha256": "8749b00d0c968a3a0d1774c4b1557998a80016758467675576abe2d63a504699",
+      "utility_sha256": "eb561789c32f1328a760bca6d44902f2494703c8332b42ebb77905823a1af1b3",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_13": {
+      "scenario_sha256": "54c85ea41fcec3424e7b229ac09d747fd7171322fe10f0ca88b86c00bda2c00e",
+      "utility_sha256": "6dcdf90fdb6dff7092fedeb312f7b38ca1ff2a1bb6c5ab505ff0051ef307aa2e",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_14": {
+      "scenario_sha256": "492dea33a34d5f3740b0c7c14d4fd7cb08e60c8a5e85a4c62a294dd53456ba17",
+      "utility_sha256": "99b33d9884283f7e7ab3d88f27a000031502ea9bf01640a62ae652ba0bfdafed",
+      "answer": "sev_4_informational"
+    },
+    "severity_classification__scenario_15": {
+      "scenario_sha256": "d340ab88f7bbce15c6953c39da7db81828bb718611b6eab71a3dd53bb8d60f1c",
+      "utility_sha256": "0c5091a9d12e22dac58a052cd8a821dbdceb74e019fe36af093a6224cfe964fc",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_16": {
+      "scenario_sha256": "87695a9f3a8946680f74df009e8e08ef710186d5347b69fb6b6cf8d794cb37f6",
+      "utility_sha256": "6fb4e773cb48cbc49536793f987c776d26fe65f15a43a4ea708e70a5505f689c",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_17": {
+      "scenario_sha256": "0a6ba1e4390fb31e9cebf8dbb07ed10381f7860a7ec41c04b31b08d11d6fa7c0",
+      "utility_sha256": "a8ca844586322c2651433a41cc20a0ef3da1446de5392e361698b3dc059f886b",
+      "answer": "sev_2_high"
+    },
+    "severity_classification__scenario_18": {
+      "scenario_sha256": "093c389b96fa6c0219842eb74c7e301289f27ce2c85b861f0f618ff164cb2f1e",
+      "utility_sha256": "0b1f54b9e138b465a91b8f4b5892b2aef4681deea926abc70ad3d777fc0a2f9f",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_19": {
+      "scenario_sha256": "d904e58d8c33ea38273887c58a17b4224e909ce0dbbd5b0d793b5c76245b4146",
+      "utility_sha256": "66ee921437daa6bf67689974ce027a5adbe09565827e881059b6493ab18547a1",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_20": {
+      "scenario_sha256": "283fb6fb209b6473b06496772ba88151e9dc4330b07fa8be8a2de8d9d71823e4",
+      "utility_sha256": "c1728ffe76d875507e1495844ad235498ad598f2861db3e559ef6108f4dba5ec",
+      "answer": "sev_1_critical"
+    },
+    "severity_classification__scenario_21": {
+      "scenario_sha256": "2ea8ed0a8cb07c621a23784f9c89b4e401cb4297163fa1d0b488612ee6c83c71",
+      "utility_sha256": "f5136f266ad6b0b0452bf836cb4ef4b743b6151a86bf031005b4627261188b13",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_22": {
+      "scenario_sha256": "767777bdd8ba297ad01926cfdf94ff70e92278e9f8b644307b4dec54992aecf5",
+      "utility_sha256": "553ab2bee2c5940196c18c3b215ff1c76d2c865876fa7e7cd695b0f8408deb51",
+      "answer": "sev_3_suspicious"
+    },
+    "severity_classification__scenario_23": {
+      "scenario_sha256": "a2da43183e40b1f6a294e9a034fd962a7b803c9591c890ee9d3e2fb04c28e368",
+      "utility_sha256": "2237fed727597cfed76a5fd3e2722cb5a1f869429d58c1af527af3ced25e2491",
+      "answer": "sev_4_informational"
+    },
+    "severity_classification__scenario_24": {
+      "scenario_sha256": "795e83d52b8968ac44559d14dae8b90aa02a9f26e8cecd4ac4c367a75b1f10d2",
+      "utility_sha256": "6862fd0bd998d40b3c55723f083e418206afa1bf044f8e5888abead688fad443",
+      "answer": "sev_2_high"
+    },
+    "severity_classification__scenario_25": {
+      "scenario_sha256": "6ba2dee13a4909736b93b8c54cb55305642256f1e424387421d6ccfdf03c4e91",
+      "utility_sha256": "a2faf897db7151ec2142baec27e141b736b21bea752f3bcc5afc98655ed0d16b",
+      "answer": "sev_2_high"
+    },
+    "special_event_permit_readiness__scenario_01": {
+      "scenario_sha256": "95abd24f77b09cf18c90eedc075e9d409e746d372487a06d6e3e00e7ffd73c23",
+      "utility_sha256": "4458fe41741b8a9a635e84e1ae7e180623f3da836e2734c371f9f4834ece7ebd",
+      "answer": "resolve_emergency_plan"
+    },
+    "special_event_permit_readiness__scenario_02": {
+      "scenario_sha256": "8b4c61b16322a75fd93a3d327e0f7f2fc23cac6c7287efe48976ed1e118df1bb",
+      "utility_sha256": "67ffbd5202f5b2d5950ebb2789458d1e348bcd1125e0227a9bb720986aa15c3d",
+      "answer": "ready"
+    },
+    "special_event_permit_readiness__scenario_03": {
+      "scenario_sha256": "ec23602c18c75b4962e2ac48c8aa86905199715de071f2d2454e8629ee74d65a",
+      "utility_sha256": "252d756e58bdf026acd82725040bc91afa6b747b852698962d49331d6dd330e4",
+      "answer": "resolve_structures"
+    },
+    "special_event_permit_readiness__scenario_04": {
+      "scenario_sha256": "90178c251f189552b6ebb3d8bc1b528c56199043d7a16e034605401cb7947c75",
+      "utility_sha256": "2564f149b207b09ef98ae1a3186c7d27a2e27d16a26e6f7a442d136b279c82ab",
+      "answer": "resolve_food"
+    },
+    "special_event_permit_readiness__scenario_05": {
+      "scenario_sha256": "9c2826c182a7ba71b2cdd19a8d98145e1ecd9d11c41f224c2dca546b804451a8",
+      "utility_sha256": "c243946a30ee843d7260fc7f31569728676fbf85eb115e38818e2b6fb412d0c9",
+      "answer": "resolve_alcohol"
+    },
+    "special_event_permit_readiness__scenario_06": {
+      "scenario_sha256": "8448fc21b25dbbdf02e29a127e732b777d98ce915717638f630b5205e7d78ed3",
+      "utility_sha256": "58c65122ed2b8f86aabe737f6a32bec73e3bc8ee4373d2242d984054d7e6ec51",
+      "answer": "resolve_insurance"
+    },
+    "special_event_permit_readiness__scenario_07": {
+      "scenario_sha256": "0a8be9d8b07ebca0c5e0f3a9b5667e2ae1bb8ec717e83673f6e6c91c199dd168",
+      "utility_sha256": "ea0cad2bd112cfbd2a8b6e0a87dc1c0ed2a7467d7cdff77a7f25d82e68e6332a",
+      "answer": "resolve_emergency_plan"
+    },
+    "special_event_permit_readiness__scenario_08": {
+      "scenario_sha256": "51b6417f192c0e23edba574783abd9ed07ac090b786cdc29993fde8a17241455",
+      "utility_sha256": "c278ad3653a8e9ba1cdc8872c9d49a85c7078c72a7a9cb863cd5eccc6122e204",
+      "answer": "resolve_sound"
+    },
+    "special_event_permit_readiness__scenario_09": {
+      "scenario_sha256": "3f63bcac91fda66f73c26fbcc99a60ced4fdcb49a6355b9c45c7605699e6ec5b",
+      "utility_sha256": "d18b2c93c5644746f25739b3cc3edf966e8492fb95d03266b34ba6f7cb3ba721",
+      "answer": "ready"
+    },
+    "special_event_permit_readiness__scenario_10": {
+      "scenario_sha256": "1e14ba02e2e8828632b62de800fffe0d282451a7df90bf28aa20354dc15b12ca",
+      "utility_sha256": "cbcb4476d3b4c882010ef8856e090abf4ce81c315364739b36eb30afe757027d",
+      "answer": "resolve_emergency_plan"
+    },
+    "special_event_permit_readiness__scenario_11": {
+      "scenario_sha256": "caa7719871ffff40f13f8338a548d13f71fd5a0ff5b192a1560289fd152de95b",
+      "utility_sha256": "b72ec10891365526ed95a17e3fab397fd1f7dda342130b806e5ce49484b0a8c8",
+      "answer": "resolve_food"
+    },
+    "special_event_permit_readiness__scenario_12": {
+      "scenario_sha256": "c22b4f96e81d62ada2ad1147f650463fca1c7ded341d388d76075f4794ba7de0",
+      "utility_sha256": "7dbc5b5b63a128176871e66c846a280fded253ceaf3692001e94f7f1ed3502eb",
+      "answer": "resolve_structures"
+    },
+    "special_event_permit_readiness__scenario_13": {
+      "scenario_sha256": "b4f493b23744a4dd429b9aba0252388d069657584a127b59b83d762adbb59b60",
+      "utility_sha256": "829f7d56c9b7f108c8c2c1047c9b31419a9ea349b26e85bffae03399388017ff",
+      "answer": "resolve_sound"
+    },
+    "special_event_permit_readiness__scenario_14": {
+      "scenario_sha256": "fbce844e2d39facd711ab15e77280f156a9807c1af83eff035558be9089674a9",
+      "utility_sha256": "4487b7bfdb0cb1d108891c30cb4f2d8f53b2831575f4c27a5ac9b60877d11434",
+      "answer": "resolve_sound"
+    },
+    "special_event_permit_readiness__scenario_15": {
+      "scenario_sha256": "612ada40bf374c728cdc179dbfa2d28cf76fcc2f014852cbe8f2fb192b6b0655",
+      "utility_sha256": "4f395b55456b35ca0895da4ab4a189ed8b3ad2e12a5ee86458e15707b05a19b0",
+      "answer": "resolve_food"
+    },
+    "special_event_permit_readiness__scenario_16": {
+      "scenario_sha256": "37d52fe0546e484c84ad03f9e1bb41b862d6fe3985113f4e484f0d4b97e54a54",
+      "utility_sha256": "0c5617df9dc259777eb0e9f153c7d11931af3fb14af51ad9e33a21023fb43341",
+      "answer": "resolve_alcohol"
+    },
+    "special_event_permit_readiness__scenario_17": {
+      "scenario_sha256": "ab6d07cf845d455ad3d328dbbaa506fbe33e32248c4154a366537440da65effd",
+      "utility_sha256": "ef440a598e713a79862028c9aafb2da414a595c70d45b549440bb83b81d42f5b",
+      "answer": "resolve_emergency_plan"
+    },
+    "special_event_permit_readiness__scenario_18": {
+      "scenario_sha256": "3e0ece615724a9316c13995e37434fdcdf8ddd6236c77b005a8fee66a0f0945c",
+      "utility_sha256": "c853f3e3a08d665fc7654f6dbd312e4d602e40e4725380b3e8f8f0ed1c51c0f5",
+      "answer": "resolve_insurance"
+    },
+    "special_event_permit_readiness__scenario_19": {
+      "scenario_sha256": "8e7eafa248e021ff1f8f7a8367d192ac266250c0ceff60626d41576b2469f99e",
+      "utility_sha256": "aa9b6d31863686ecafd49635d93022b3cbb401357a656438aec53a6dd9be429c",
+      "answer": "resolve_alcohol"
+    },
+    "special_event_permit_readiness__scenario_20": {
+      "scenario_sha256": "ff1294cd12731ee0f98da3f1488175ae1d194f84ceefc18128014093fe56208e",
+      "utility_sha256": "42cd1e7350cbff33eafaa6b9e537a8d028b481dcab1dff9e16f6ffa88a6cc211",
+      "answer": "resolve_insurance"
+    },
+    "special_event_permit_readiness__scenario_21": {
+      "scenario_sha256": "d92d47262a193e26723a1ad103880f676993d49738f7477993f0b864a7decccd",
+      "utility_sha256": "b688fd83373eb7e8f11c592df6c87266724701d368d6ca154a4d378941f56782",
+      "answer": "resolve_emergency_plan"
+    },
+    "special_event_permit_readiness__scenario_22": {
+      "scenario_sha256": "75ea9ceee0e4ec6e8a170343b28768a28088f964c61c687a9ade5840f2eccc48",
+      "utility_sha256": "fb6d6116ce5563746f9bc6545eadcb03e93a4c25c5bfa98acef99e9ad8f98fcf",
+      "answer": "resolve_alcohol"
+    },
+    "special_event_permit_readiness__scenario_23": {
+      "scenario_sha256": "a48a53efb6731cccbbea4291d6e62a4baf2f07a35f45edd2b28afa916c45a58c",
+      "utility_sha256": "686648e4eb7457669d689bc4e5a4ccab504b8459c8322c3260c7d47eb597f2ff",
+      "answer": "resolve_structures"
+    },
+    "special_event_permit_readiness__scenario_24": {
+      "scenario_sha256": "bc810fbdf1af9407f749a4f3382b429e2e46a9cd5513f92ee29cc334f2963dd0",
+      "utility_sha256": "cf617afa5b97ef13e801bc6317883c61b92cf556f72748953f4f554760f1753f",
+      "answer": "resolve_insurance"
+    },
+    "special_event_permit_readiness__scenario_25": {
+      "scenario_sha256": "09cddcf5704913e9afa9197c513876a62989fb236a9ff6d5b76c4b118e42a70c",
+      "utility_sha256": "beae59f7cf7e2a41502799145f4499712028042b156e4ea6e20ca0d13b20a824",
+      "answer": "ready"
+    },
+    "special_event_permit_readiness__scenario_26": {
+      "scenario_sha256": "72b222164ac0b8c16b64303bd752954b0caee173d1f293570e3ae218fa9e8715",
+      "utility_sha256": "2034362e2a43216c44812d53532d9bc7515cfbcc602df10e59cc2baf3e0d2cca",
+      "answer": "resolve_structures"
+    },
+    "special_event_permit_readiness__scenario_27": {
+      "scenario_sha256": "29ea4513b92f35005cbd677d014f3eb7afd0fbfb853500c6ab35b855bf1a012c",
+      "utility_sha256": "742cedc4971ffb85f01cbfc9df4211d595a87e6c49e07ca3d2fb5d7b3145d276",
+      "answer": "resolve_sound"
+    },
+    "special_event_permit_readiness__scenario_28": {
+      "scenario_sha256": "a61c9ce74689a4d09f93ea569812a50b6c8967859dd914806a67605dec12aa47",
+      "utility_sha256": "749749012fe25ba21e573ffc76ddbc8a4a72992a1344607ea0a95c76349f74e6",
+      "answer": "resolve_food"
+    },
+    "special_event_permit_readiness__scenario_29": {
+      "scenario_sha256": "e424273558d90406ea12c547a7c82d6c514bbec6cf963442a0ef5c9d7a52fbdf",
+      "utility_sha256": "b26f5af7e8b5ca733e5f3de9819dbb9122a61595e514e9b5f2cf4c54dfd730b4",
+      "answer": "ready"
+    },
+    "special_event_permit_readiness__scenario_30": {
+      "scenario_sha256": "13647694610f9b0a5c40191e4fb6663ed96964798c467c4578655885d00f2927",
+      "utility_sha256": "3d0cfc245ce3cf1f701ff1886cb7774b891a948d7da530e1c07dcdcb080fd69a",
+      "answer": "resolve_insurance"
+    },
+    "thesis_readiness__scenario_01": {
+      "scenario_sha256": "e7d2cb5daeb024084e3123c0d56c112751c45a1647cf16cca24ba73fb4f20f7d",
+      "utility_sha256": "307c751a8165684ea3f127253f3f4946d5abf91d5fcc8d7397d823c8d2e884f0",
+      "answer": "ready_to_schedule"
+    },
+    "thesis_readiness__scenario_02": {
+      "scenario_sha256": "c54cf1fbc48d2afae7fe7b27c85a08dbe099718f598f39d2b7bdec5a2094c390",
+      "utility_sha256": "a9767cbdc0abce1899ad7424a20355b1a2721c6f0eca9e2f809ab6092878488d",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_03": {
+      "scenario_sha256": "35f4f042e84868059a3fea945ad732188922d8a5b2259519955197856ea27e1e",
+      "utility_sha256": "29b392d3da1992ae827706f52d1f9ca3298a6b3eb2d08ea5f7536448218305aa",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_04": {
+      "scenario_sha256": "8846240071d8d63eb924239edf033123fa592bb452bc46799725ab98e238ad2b",
+      "utility_sha256": "54ad61787284df451223130102fe990cfe94f4dd10471ec92b2af9fe9aa7732b",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_05": {
+      "scenario_sha256": "36a840ed50a6382a60308556a3c03e8f8367086b772e4cb633044ec32afdc166",
+      "utility_sha256": "0796ec470024cb4c1d1dcd0cbaa084ab25a6285f5b0b8f2276b7058a495db4a9",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_06": {
+      "scenario_sha256": "34817ac9e2169eeb967a8486e379c55a73771a98d716bb76bb3d2262551c3f0d",
+      "utility_sha256": "1fbcebae3d5909ac59e921d16ff4504f26ee0ba6bf6ac2756c9855166e6302ff",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_07": {
+      "scenario_sha256": "487049633a43d1bb57ff226edc61cf65cdc1762b937d0a0eb02e169abf8dfc45",
+      "utility_sha256": "c1335e76667462e54e6a119424b01d0533d3b4833d6f814ac7efab604351dc7c",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_08": {
+      "scenario_sha256": "7067144d93de86f0b0507ecc1b43ec67cdbd6600c35bc314d0577887c459b5eb",
+      "utility_sha256": "02db93e4d6fa62d997784f14dc1b9219873c000cfb9e6cf208f05cd8d50f58c2",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_09": {
+      "scenario_sha256": "8d76eaf8a2fc332a513d1eafc47c83575849d61f42ba9ca8bd0b2d6c07cf8951",
+      "utility_sha256": "72397b12c609e264703887d57b733e2d4086f7e64783e01d446fb06e29a58ca7",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_10": {
+      "scenario_sha256": "afaec823c4cc3dfa6e8445e38259ffca4b6b0daf685940df61406f45050cae8e",
+      "utility_sha256": "844856781f79597072b1443b9f1df9fb7f80741e35a9be42968c9b7bac496697",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_11": {
+      "scenario_sha256": "3a709d7cd9d9f5027647c02369ad475d58f230ffa5fd335f4043f970494868b8",
+      "utility_sha256": "1082f1682a86af640b19256aa2ddb6e03580fb27670363dde400ecc68f6074d7",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_12": {
+      "scenario_sha256": "8bb3e4288b0ff38367c4e8a79b34b981a1325d1c157c6b1a9fe6c1ebe98edade",
+      "utility_sha256": "120bfeab06ebcc9210e286228ceeea648480a478f3a52de8d2ba20c19e396c7d",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_13": {
+      "scenario_sha256": "a9fdffc0033e28d382826f45733ea0fa44aeeb9c8b003cd1004780c41fc9e8b0",
+      "utility_sha256": "a8b9e6361f92754b0e52eb6f13c130a9d6e8fbd74045da46fb3d059e8db54a30",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_14": {
+      "scenario_sha256": "d89d0d9d4990fdd70c03cb100d274d1b3014906c1b5f736372fc06ab6d34ec4f",
+      "utility_sha256": "9868ce7cdc66dd164dcba2ba6e575694b724792c21c0975e5fe8e60ba5a287d6",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_15": {
+      "scenario_sha256": "f43bcb1daf8a73cc743ff929803d577ccd5dffa91c7a1ab8d4fe38258898fddb",
+      "utility_sha256": "9e66c82bbd3fa453b2b27531290515e081c09875509090e9b50a921ed5271354",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_16": {
+      "scenario_sha256": "0b353c5ebfe3034e81f3bfc5dcb7bafaabe03903961da14c03c4ad441bab7597",
+      "utility_sha256": "8931e4aae372f57dc0b2dc1c175aef0d72c96e014ded65c0934d79bd7e97c28a",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_17": {
+      "scenario_sha256": "75c22ce3b17a484b888b9837d5dc279ca71e37a42fc5b1e6efa7fa4472f1531c",
+      "utility_sha256": "947140f6ad21f84cea3c94e51f0b8085850bec6bb7dc561c8b6d25e1ce771668",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_18": {
+      "scenario_sha256": "c5991f4e79e0fa059de9c34a2cfe207dd5b0e6497249eff8cf5ef0a58e658df8",
+      "utility_sha256": "681a2d7b5c6bad46996b09b26d264bcbdfce4ed258257ab20d1d23bbfdddc60c",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_19": {
+      "scenario_sha256": "65d6bbceb531cd2fbb4ea95496f8194ae1bc819b2bf03941a9dcd137aef134e2",
+      "utility_sha256": "5a93c4691e37fb41341d254ded04edc2fe96f8d64bd552d2b381c30f1ec13f57",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_20": {
+      "scenario_sha256": "7d63f33300ab1e9ced20a255e3d285bf46eab622d0b3110db64f57bbaeb2f103",
+      "utility_sha256": "a61dad255240f9a42ca4ccd58bb8a879d4149e6a98cef63c7ae2dba48aa5399e",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_21": {
+      "scenario_sha256": "5268c67f5420bdb213ff3152b8885fd7956a4f751dd4a7eed4e4bc96b9bbb843",
+      "utility_sha256": "741d1d998f90d1f41b11fb9743bc2f243ef7f6304df3b6c86f1a2581c421c8dc",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_22": {
+      "scenario_sha256": "b156a8688cb50c800312dbcd93c1ee7b5e0007648d0ae7efc70158089513aa53",
+      "utility_sha256": "4458b6a7c223922ea5029d31cc9ccaea811262ae2d1243d48ebdc35cfe269436",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_23": {
+      "scenario_sha256": "c423d01067517ef89cf91a2989ae05ff5c7455f54ef0d6bd60e16489d383c3c9",
+      "utility_sha256": "f6a834de562a1f7ad37ba0161a6205895442f274e8cc0cd2628d957ba20aa0c9",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_24": {
+      "scenario_sha256": "6f313574c963c6b2a437a3de58441d1a201960bc2e78845039070cff845bf5d4",
+      "utility_sha256": "8c690c567447360034f331017d2baa1a65cad11a940c5822316e3f1783e571ee",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_25": {
+      "scenario_sha256": "daa51cf682ff7b9d4f9f000cd983d6f58edceecc96558990ce6261ea819d1b97",
+      "utility_sha256": "be973e79260a453d1a8d7156fc0db23cbbb6049a43bb1d9394a324334e9ca67d",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_26": {
+      "scenario_sha256": "295db9b2552b1d3147aa6ce85f28bac3a9dbd5d2a73e583faaf9f766ba3246f3",
+      "utility_sha256": "41ce0618f3ea092314e6845e3a30c9247dc9117f0803d119cdb025b153a30e2e",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_27": {
+      "scenario_sha256": "c60d53e9c87bcf3048418b7c07cfe0075b55da89014fb299501a95a90a5187dc",
+      "utility_sha256": "2527bbf143070e8eee29eb3c7350a8943c82ed20dce6ec336b24d667c4d425e5",
+      "answer": "not_ready_reassess_later"
+    },
+    "thesis_readiness__scenario_28": {
+      "scenario_sha256": "ccf8852879e8a29c6cada1e61176ace2ff6d79c49b6480aba1e4cc67d37b69f2",
+      "utility_sha256": "87600fbc467c3fc5e168e9ed452f7c4f69ed989de0622e83bcb9bd8b73c1bf36",
+      "answer": "defer_pending_requirements"
+    },
+    "thesis_readiness__scenario_29": {
+      "scenario_sha256": "e21a55f769919c7150e9f819ed630190733e3290da18b245d5b4d9ba31515565",
+      "utility_sha256": "b7f31e6a6296961e65a34a8113e65b89a6935f099b6c73df5cf78af7e4fc5e7f",
+      "answer": "ready_with_conditions"
+    },
+    "thesis_readiness__scenario_30": {
+      "scenario_sha256": "a02a0788de278bc9b6347c20bd73aa263623fcd91709d6ee08a095e4305a2adb",
+      "utility_sha256": "81d246e0e5d23cafd62a6ab1acb2cd377489e810baefd1ccae4e824372b1220b",
+      "answer": "ready_with_conditions"
+    },
+    "uas_flight_readiness__scenario_01": {
+      "scenario_sha256": "5f324b11e1d539623fa7e4f5f88507b6d526a8d3307b329a75bba137ca8b24e0",
+      "utility_sha256": "4ea5c76ab5aee9262b5dd8c1c2f8d4714f8a7a0f6ecf8aba3ecadbf2ab276f0a",
+      "answer": "resolve_speed"
+    },
+    "uas_flight_readiness__scenario_02": {
+      "scenario_sha256": "043fdcad378b5ac223240b2a9b96ef0f81043522bf48080700cf5f0924f80d78",
+      "utility_sha256": "621e2bfed9038ab24212c57573558ff2512cbba36a9f98fa508bb95abb91e8d4",
+      "answer": "resolve_visibility"
+    },
+    "uas_flight_readiness__scenario_03": {
+      "scenario_sha256": "4cebbb22fa64b4892814954787616a12a14fde9805e7d4124354e2f3747bae1b",
+      "utility_sha256": "0c44a1cb03dbcc9647efb6ed11aceed6b4ad22167ff877671b60b6a39642108e",
+      "answer": "resolve_visibility"
+    },
+    "uas_flight_readiness__scenario_04": {
+      "scenario_sha256": "1e3adfbbe6ca6d69501ed614732017f39176af633bcbf8e597c52ef591a6deb4",
+      "utility_sha256": "3b45040583273560f65f36eb11dd7f5d21b5401e54912342099a79e6276b2518",
+      "answer": "resolve_cloud_clearance"
+    },
+    "uas_flight_readiness__scenario_05": {
+      "scenario_sha256": "9e90a9930b89fa7fee1e7e6aebb199ad16c060d28572c57a50c6e78ee28627b6",
+      "utility_sha256": "de215532f66188c1d0d5088b9a671d452faa916aaf9e49fb4c5ce5eb313b4e09",
+      "answer": "resolve_airspace"
+    },
+    "uas_flight_readiness__scenario_06": {
+      "scenario_sha256": "a94e11fbaf36fb153a404337add9f2526b2f5e2543468d45157647bb61be2e72",
+      "utility_sha256": "21d510050f257d308a21e49839ac9e8cb6506beee5284944cd830b6d081ed43d",
+      "answer": "ready"
+    },
+    "uas_flight_readiness__scenario_07": {
+      "scenario_sha256": "c107dbc85de4d1851243dd8b26c980154239e38c0e6fcfa71c5a1d687dfb849d",
+      "utility_sha256": "94e7b8f54c96d506575f025c85ffcb9e21954c3e3b93e5c4f67f728eb12a20b4",
+      "answer": "resolve_altitude"
+    },
+    "uas_flight_readiness__scenario_08": {
+      "scenario_sha256": "789adf34524b88b2ddbc6a17918350562f3dc697d231ed057c5475b25992f0bb",
+      "utility_sha256": "fe68b75e779b050dc76b3d0e06887814da0515bdd26b6abd71211cdac79180a3",
+      "answer": "resolve_airspace"
+    },
+    "uas_flight_readiness__scenario_09": {
+      "scenario_sha256": "7ccf738bd6d20c4adf28dc0e07e0b80cae00b5ce7fb171f3a0b5e523e92d8819",
+      "utility_sha256": "b3350489754301009767a6c0784dc67bfab26d7e23c418634e74fd6ea4b4afac",
+      "answer": "resolve_airspace"
+    },
+    "uas_flight_readiness__scenario_10": {
+      "scenario_sha256": "52c460c3161b0653cbcd36640059ebeb28c94f74e663277a9d23b71d5de87532",
+      "utility_sha256": "76e0d1fcb239d63593e283a00542dcc87233a0313b065a57cc8e7e6358a5e56a",
+      "answer": "ready"
+    },
+    "uas_flight_readiness__scenario_11": {
+      "scenario_sha256": "52b753bb6cf15b79ed0f79911db0090e30579f0bbdcb899e00c347794cba4831",
+      "utility_sha256": "1562340e4522a801b83f7174b26e11bfd19f9fa46d4e125cc07fd52da5ad7c72",
+      "answer": "ready"
+    },
+    "uas_flight_readiness__scenario_12": {
+      "scenario_sha256": "531d88c9f407ba51b66c26c5265c3d7a621eb43e82c59efa8296b4a8413d5d9b",
+      "utility_sha256": "1a353a9c3885b2b11a811ed8198e47498cd5d75a92cc23cb9ae52e6886634754",
+      "answer": "resolve_speed"
+    },
+    "uas_flight_readiness__scenario_13": {
+      "scenario_sha256": "9156b45f0faa25483f9b4d4484c21a2ed35308c08329a9eef05927d78c53b4d9",
+      "utility_sha256": "c7873c46f4bc8b7479a628e58d57775f668c41de748224461e235f6c7080a59e",
+      "answer": "resolve_cloud_clearance"
+    },
+    "uas_flight_readiness__scenario_14": {
+      "scenario_sha256": "bcd86b911348c3352bb0c1b48d96eaeec60ae84d648a6bf1fcdcf0a98879b295",
+      "utility_sha256": "0dd6705bb3e367847632c466605a259a0fccafc873a5bf1485cf989a9a5dbbef",
+      "answer": "resolve_speed"
+    },
+    "uas_flight_readiness__scenario_15": {
+      "scenario_sha256": "c73dcc85d05aac917a2c64cbedda6585053e2aa416370fa51ac02f2d388e2167",
+      "utility_sha256": "c0f97d2a09e111b32a9751637b6187a05d095fdef37df8f36e2ad3688dcb35c6",
+      "answer": "resolve_visibility"
+    },
+    "uas_flight_readiness__scenario_16": {
+      "scenario_sha256": "ed25cddcc99f801abb3a5c5979567f874072c30673dcab7f7f94abfa3a886aec",
+      "utility_sha256": "5f8672fe42111bb67d3f43ea6253b9c934a7e1a67c4e155436d2abb692ccd5a4",
+      "answer": "resolve_pilot"
+    },
+    "uas_flight_readiness__scenario_17": {
+      "scenario_sha256": "60f922b374830bff6bf55d8426054d5fea3563df4978d57a06c0b924300efc29",
+      "utility_sha256": "5522fa814436b59d4b1bce13fdb293ed0a5701e88ada289f80725ed273cf11da",
+      "answer": "resolve_airspace"
+    },
+    "uas_flight_readiness__scenario_18": {
+      "scenario_sha256": "7676f73904b38a3beeafbe85dd5c3b040c626add913e08c44508c0ada7da1da9",
+      "utility_sha256": "b8ae558d3f41925f8669c6244c764ee148a0057816ea7e6a474580fc7ec436b2",
+      "answer": "resolve_visibility"
+    },
+    "uas_flight_readiness__scenario_19": {
+      "scenario_sha256": "aeac18a9827ff19bd32e32fddd661d5c9ed3e69ce4a36810c1f5391bf60fb1c5",
+      "utility_sha256": "217b4856182c1d66492813a021c7b2a420c948e342e30ec71e5f1453293e2b13",
+      "answer": "resolve_pilot"
+    },
+    "uas_flight_readiness__scenario_20": {
+      "scenario_sha256": "b1ee2402f9a2475d947caf49b87008b241e17957818e0371898abc9a33d6c787",
+      "utility_sha256": "ce4c5a4ba7be0608670b0fe45a3711b32549678adbe318110ac96eac949dface",
+      "answer": "resolve_altitude"
+    },
+    "uas_flight_readiness__scenario_21": {
+      "scenario_sha256": "73d44bbbfb8cdf58950cdd63803586ce99df5036584e14f76cb2127d4d420900",
+      "utility_sha256": "e7b1027c96791185d6c241aca1941268bc45295d8019187d42d9fd229ccab060",
+      "answer": "resolve_cloud_clearance"
+    },
+    "uas_flight_readiness__scenario_22": {
+      "scenario_sha256": "14d3de99524460d84422af4020469449d1766a3053c2265be5d46f541a541e5a",
+      "utility_sha256": "61a5af32547c94d2d1ff7b5d3980dd47be02293611124856f29e1ab10b893c3a",
+      "answer": "resolve_altitude"
+    },
+    "uas_flight_readiness__scenario_23": {
+      "scenario_sha256": "9762e20ac0a54c9ed81e30ae1d741ead3cf949023436c0dfa003c5e7ec24aec6",
+      "utility_sha256": "9af5e96216fcf6b4d39ef252fccc72a78fe891dd64bff3142877385ef1dea583",
+      "answer": "resolve_pilot"
+    },
+    "uas_flight_readiness__scenario_24": {
+      "scenario_sha256": "e1ea120c4b8b08bdf6e75c640d2fbfada994f39a9169973f31582b19be11e4b2",
+      "utility_sha256": "7ba77f25965bab2a3515d991087f9534db2fe21d20b3b1ba34bf1579d63292f7",
+      "answer": "resolve_speed"
+    },
+    "uas_flight_readiness__scenario_25": {
+      "scenario_sha256": "abf7f9ca6866828a5c848b627ca9ac3fe5a2a86eab7c2e4e9cd9f63bb81fa228",
+      "utility_sha256": "7a89719c18db90d5212adbaca441a598d569f9fb3706728467370063a0cf18f4",
+      "answer": "resolve_pilot"
+    },
+    "uas_flight_readiness__scenario_26": {
+      "scenario_sha256": "225650487d9adc8e1fe1475d2b5fc50be7a13d1d05a9faafdc0b8c0a773e8d1e",
+      "utility_sha256": "2e1b3393c527959d1c4351fba61cd3d20bf205cda68934b16c9f6f2fc99de3e8",
+      "answer": "resolve_cloud_clearance"
+    },
+    "uas_flight_readiness__scenario_27": {
+      "scenario_sha256": "45107a210f736392deda36cd6e1b02d396ac6f9a2dd98763b788fb44b342a22c",
+      "utility_sha256": "647161171ec78fd36763ff49754552e056e5b90b2649e8fabd9af58d90658abc",
+      "answer": "resolve_altitude"
+    },
+    "uas_flight_readiness__scenario_28": {
+      "scenario_sha256": "8345d23ed67f0ef46c3fed8a799ead4d4c4a17fe4ca0ca5873b8488a7dbdc88c",
+      "utility_sha256": "866b350d5228a2a9886532c69dfb4326746b3a84cbf5a49fe261598a64d42a1f",
+      "answer": "resolve_pilot"
+    },
+    "uas_flight_readiness__scenario_29": {
+      "scenario_sha256": "a8860b83e216dc1d67d2b4025e395ca11e41a990f57a28392a1aa0ddec7c7958",
+      "utility_sha256": "28761fe88ad2e5e9590b12db02edddbe562e15f11668c9777d466690d6143a42",
+      "answer": "ready"
+    },
+    "uas_flight_readiness__scenario_30": {
+      "scenario_sha256": "048a347032d2f1b8a76a319500115c50c69c121646588af4c7a055f4fcc27156",
+      "utility_sha256": "5ad2ac3c0bf98b47829c369303be78a22757a830b7d2b70fa96fda6b76b05598",
+      "answer": "resolve_airspace"
+    }
+  }
+}
