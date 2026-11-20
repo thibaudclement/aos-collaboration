@@ -17,6 +17,8 @@ cp -n .env.example .env
 
 For new collaborations, set `API_KEY` in `.env`. The defaults use OpenRouter, so use an OpenRouter key with those settings. To use another OpenAI-compatible provider, also set `BASE_URL` and `AOS_MODEL` to its endpoint and model identifier. Leave `API_KEY` blank to browse and replay saved runs without model calls. Each new collaboration uses your API credits.
 
+To launch the demo:
+
 ```bash
 aos-collaboration
 ```
