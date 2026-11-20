@@ -23,7 +23,7 @@ To launch the demo:
 aos-collaboration
 ```
 
-Open **http://127.0.0.1:8770/collaboration**. The catalog and saved runs load automatically. Search the sidebar for `External baseline`, `Calibration`, `Reserved wave 3`, a task, or a system; select a scenario and decision behavior to start a new collaboration. The Expected outcome panel shows the bundled PiSAs reference answer, including the full assignment or schedule for allocation tasks; it is not supplied to the agents. Saved evaluations are displayed when available; replay and live collaboration never invoke a judge.
+Open **http://127.0.0.1:8770/collaboration**. The catalog and saved runs load automatically. Search the sidebar for `External baseline`, `Calibration`, `Reserved wave 3`, a task, or a system; select a scenario and decision behavior to start a new collaboration. The Expected outcome panel shows the bundled PiSAs reference answer, including the full assignment or schedule for allocation tasks (it is not supplied to the agents). Saved evaluations are displayed when available. Replay and live collaboration never invoke a judge.
 
 Local conversations persist in `.aos-collaboration/`, which is excluded from Git. Use `aos-collaboration --offline` to force replay-only mode, or `aos-collaboration --port 8771` if the default port is occupied. Press Ctrl+C to stop the server; an already-started collaboration continues in its local worker.
 
