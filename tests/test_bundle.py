@@ -18,6 +18,9 @@ from test_collaboration_demo_store import sample_run
 JIRA08_RUN_ID = "run-ebf7ee121c8ac0d7a463f91a5eb5800e"
 JIRA08_ACTOR_SHA256 = "ebf7ee121c8ac0d7a463f91a5eb5800e0dc87c40d49d8a5c39f6450e7944a322"
 JIRA08_PIPELINE_SHA256 = "d84e8e9307e4bf6803c7829d93388fc0ca1af6ebf461f2e516373febf314e2e8"
+JIRA11_RUN_ID = "run-67a113b254558e2facc62cd64680835c"
+JIRA11_ACTOR_SHA256 = "67a113b254558e2facc62cd64680835ce747258102595415195250ceb8266269"
+JIRA11_PIPELINE_SHA256 = "64951920c330dfad917b6bebe3bc8702c57154692fcbc03e9d65bd3cf05cc181"
 
 
 # Seed every shipped case and replay without creating a model, then reopen the workspace.
@@ -34,9 +37,9 @@ def test_complete_bundle_is_portable_and_idempotent(tmp_path, monkeypatch):
     assert catalog["versions"] == ["governed-v1", "observed-v2", "integrated-v3"]
     assert all(not item["live_enabled"] for item in catalog["cases"])
     records = store.runs()["runs"]
-    assert len(records) == 109
-    assert Counter(row["status"] for row in records) == {"completed": 105, "failed": 4}
-    assert Counter(row["evaluation_status"] for row in records) == {"attached": 90, "not_loaded": 19}
+    assert len(records) == 136
+    assert Counter(row["status"] for row in records) == {"completed": 132, "failed": 4}
+    assert Counter(row["evaluation_status"] for row in records) == {"attached": 117, "not_loaded": 19}
     assert Counter(row["cohort"] for row in records)["external-baseline"] == 12
     assert Counter(row["cohort"] for row in records)["calibration"] == 18
     for record in records:
@@ -52,6 +55,20 @@ def test_complete_bundle_is_portable_and_idempotent(tmp_path, monkeypatch):
     registry = json.loads((root / "registry.json").read_text())
     assert all(Path(item["scenario_path"]).is_relative_to(root) for item in registry["cases"].values())
     reopened.close()
+
+
+# Preserve the bytes and paths of all prior scenarios and recorded conversations.
+def test_prior_bundle_inputs_remain_byte_identical():
+    bundle = bundled_data()
+    manifest = json.loads((bundle / "manifest.json").read_text())
+    prior_replays = [item for item in manifest["replays"] if item["cohort"] != "wave3"]
+    assert len(prior_replays) == 109
+    assert len(manifest["scenarios"]) == 265
+    identities = {item["path"]: hashlib.sha256((bundle / item["path"]).read_bytes()).hexdigest()
+                  for item in manifest["scenarios"] + prior_replays}
+    assert len(identities) == 374
+    digest = hashlib.sha256(json.dumps(identities, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    assert digest == "87d9a65ca63f24e34f93ea1638af362f26935981939bd6ac24bbf2a11c9c765d"
 
 
 # Bind every wave-two score to its recorded actor and retain the recovered evaluation's history.
@@ -130,6 +147,85 @@ def test_wave_two_receipt_bindings_and_recovered_actor_identity():
     assert recovery["new_unknown_cost_calls"] == 0
 
 
+# Bind all Opus replays to the completed actor and judge receipts for their exact case and system.
+def test_opus_wave_receipt_bindings_and_system_identity():
+    bundle = bundled_data()
+    manifest = json.loads((bundle / "manifest.json").read_text())
+    items = [item for item in manifest["replays"] if item["cohort"] == "wave3"]
+    cases = {"JIRA_allocation__scenario_11", "inpatient_discharge__scenario_16",
+             "manuscript_submission__scenario_02", "meeting_allocation__scenario_25",
+             "outgoing_museum_loan__scenario_08", "severity_classification__scenario_23",
+             "special_event_permit_readiness__scenario_15", "thesis_readiness__scenario_17",
+             "uas_flight_readiness__scenario_20"}
+    arms = {"governed-v1": "governed-v1", "integrated-v3": "integrated", "native-decentralized": "native"}
+    assert len(items) == 27
+    assert {(item["case_id"], item["version"]) for item in items} == {(case, version) for case in cases for version in arms}
+    seeds = {}
+    for item in items:
+        raw = (bundle / item["path"]).read_bytes()
+        assert hashlib.sha256(raw).hexdigest() == item["sha256"]
+        seed = json.loads(raw)
+        seeds[item["run_id"]] = seed
+        record, view, evaluation, provenance = seed["record"], seed["view"], seed["evaluation"], seed["provenance"]
+        assert record["run_id"] == view["run_id"] == item["run_id"]
+        assert record["case_id"] == item["case_id"] == view["scenario"]["case_id"]
+        assert record["version"] == item["version"]
+        assert record["model"] == "anthropic/claude-opus-5.5"
+        assert record["title"].startswith("Reserved wave 3 · Opus")
+        assert record["status"] == item["status"] == "completed"
+        assert record["evaluation_status"] == item["evaluation_status"] == evaluation["status"] == "attached"
+        assert record["source_sha256"] == view["source_sha256"] == provenance["source"]["sha256"]
+        assert len(provenance["generation_receipts"]) == 1
+        generation = provenance["generation_receipts"][0]
+        judge = provenance["judge_receipt"]
+        for receipt, stage in ((generation, "generate"), (judge, "judge")):
+            assert receipt["status"] == "ok"
+            assert receipt["stage"] == stage
+            assert receipt["case"] == record["case_id"].replace("__", "/")
+            assert receipt["arm"] == arms[record["version"]]
+            assert len(receipt["sha256"]) == 64
+            assert set(receipt["sha256"]) <= set("0123456789abcdef")
+        assert record["generation_stage_status"] == evaluation["stage_receipt_status"] == "ok"
+        assert record["generation_receipt_sha256"] == evaluation["generation_receipt_sha256"] == generation["sha256"]
+        assert evaluation["stage_receipt_sha256"] == judge["sha256"]
+        assert evaluation["binding"] == "verified_stage_receipt"
+        assert evaluation["pipeline_content_checked"] is True
+        assert evaluation["pipeline_sha256"] == provenance["pipeline"]["sha256"] == judge["evaluated_pipeline_sha256"]
+        assert generation["verified_artifact_sha256"][provenance["pipeline"]["path"]] == evaluation["pipeline_sha256"]
+        assert generation["verified_artifact_sha256"][provenance["source"]["path"]] == record["source_sha256"]
+        assert evaluation["judgment_sha256"] == provenance["judgment"]["sha256"]
+        assert judge["verified_artifact_sha256"][provenance["judgment"]["path"]] == evaluation["judgment_sha256"]
+        if record["version"] == "native-decentralized":
+            assert record["source_sha256"] == evaluation["pipeline_sha256"]
+            assert "response_contract_id" not in record
+            assert "response_contract_id" not in view
+            assert "response contract" not in record["title"].lower()
+        else:
+            assert record["response_contract_id"] == view["response_contract_id"] == "aos-response-contract-v1"
+    recovered = seeds[JIRA11_RUN_ID]
+    assert recovered["record"]["source_sha256"] == JIRA11_ACTOR_SHA256
+    assert recovered["evaluation"]["pipeline_sha256"] == JIRA11_PIPELINE_SHA256
+    assert recovered["evaluation"]["stage_receipt_sha256"] == "5fec084347823446c481fcbfbb70e6c5763703420c1600ca9c0c7c86e6b87d51"
+    provenance = recovered["provenance"]
+    assert [receipt["sha256"] for receipt in provenance["judge_failures"]] == [
+        "f19e4f1544dcfbef4875cda9b6029d880ad8ba2108397e711aec4c266c0bbb4a"]
+    assert provenance["judge_failures"][0]["status"] == "failed"
+    recovery = provenance["recovery"]
+    assert recovery["previous_evaluation_status"] == "failed"
+    assert recovery["current_evaluation_status"] == "attached"
+    assert recovery["generation_reused_unchanged"] is True
+    assert recovery["recorded_actor_sha256"] == JIRA11_ACTOR_SHA256
+    assert recovery["recorded_pipeline_sha256"] == JIRA11_PIPELINE_SHA256
+    assert recovery["reused_responses"] == 115
+    assert recovery["new_attempted_calls"] == 612
+    assert recovery["logical_calls"] == 727
+    assert recovery["historical_attempted_calls"] == 116
+    assert recovery["historical_unknown_cost_calls"] == 1
+    assert recovery["new_unknown_cost_calls"] == 0
+    assert all(warning in recovered["record"]["warning"] for warning in recovered["warnings"])
+    assert any("unknown cost" in warning for warning in recovered["warnings"])
+
+
 # Refresh a persisted older workspace without duplicating its recovered actor or changing local imports.
 def test_bundle_refresh_preserves_existing_actor_and_unrelated_local_record(tmp_path, monkeypatch):
     # Fail if refreshing recorded evidence constructs a provider client.
@@ -143,6 +239,8 @@ def test_bundle_refresh_preserves_existing_actor_and_unrelated_local_record(tmp_
     new_ids = {item["run_id"] for item in manifest["replays"]
                if item["cohort"] == "wave2" and item["run_id"] != JIRA08_RUN_ID}
     assert len(new_ids) == 26
+    opus_ids = {item["run_id"] for item in manifest["replays"] if item["cohort"] == "wave3"}
+    assert len(opus_ids) == 27
     recovered_directory = root / "runs" / JIRA08_RUN_ID
     provenance = json.loads((recovered_directory / "provenance.json").read_text())
     failed_attempts = copy.deepcopy(provenance["judge_failures"])
@@ -154,7 +252,7 @@ def test_bundle_refresh_preserves_existing_actor_and_unrelated_local_record(tmp_
         "message": "The recorded judge attempts failed; no official evaluation was completed for this conversation.",
         "attempts": failed_attempts})
     with store._locked() as registry:
-        for run_id in new_ids:
+        for run_id in new_ids | opus_ids:
             registry["runs"].pop(run_id)
             shutil.rmtree(root / "runs" / run_id)
         record = registry["runs"][JIRA08_RUN_ID]
@@ -176,10 +274,10 @@ def test_bundle_refresh_preserves_existing_actor_and_unrelated_local_record(tmp_
     local_files = {path.name: path.read_bytes() for path in local_directory.iterdir() if path.is_file()}
     store.close()
     refreshed = DemoStore(root)
-    assert seed_bundle(refreshed)["replays"] == 109
+    assert seed_bundle(refreshed)["replays"] == 136
     records = refreshed.runs()["runs"]
-    assert len(records) == 110
-    assert {record["run_id"] for record in records} == older_ids | new_ids | {local_id}
+    assert len(records) == 137
+    assert {record["run_id"] for record in records} == older_ids | new_ids | opus_ids | {local_id}
     persisted = json.loads((root / "registry.json").read_text())["runs"]
     assert [run_id for run_id, record in persisted.items() if record["source_sha256"] == JIRA08_ACTOR_SHA256] == [JIRA08_RUN_ID]
     updated = refreshed.snapshot(JIRA08_RUN_ID)
@@ -200,6 +298,52 @@ def test_bundle_refresh_preserves_existing_actor_and_unrelated_local_record(tmp_
     assert json.loads((recovered_directory / "provenance.json").read_text()) == updated_provenance
     assert reopened.snapshot(local_id) == local_snapshot
     assert {path.name: path.read_bytes() for path in local_directory.iterdir() if path.is_file()} == local_files
+    reopened.close()
+
+
+# Add the Opus collection to a saved 109-record workspace without changing its existing records.
+def test_opus_bundle_refresh_preserves_prior_records_and_local_run(tmp_path, monkeypatch):
+    # Fail if importing recorded conversations attempts to create a provider client.
+    def forbidden_client(*args, **kwargs):
+        raise AssertionError("Bundle refresh must not construct a model client")
+    monkeypatch.setattr("aos.llm.OpenAI", forbidden_client)
+    root = tmp_path / "workspace"
+    store = DemoStore(root)
+    seed_bundle(store)
+    manifest = json.loads((bundled_data() / "manifest.json").read_text())
+    opus_ids = {item["run_id"] for item in manifest["replays"] if item["cohort"] == "wave3"}
+    assert len(opus_ids) == 27
+    with store._locked() as registry:
+        for run_id in opus_ids:
+            registry["runs"].pop(run_id)
+            shutil.rmtree(root / "runs" / run_id)
+        registry["bundle"].update(replays=109, manifest_sha256="0" * 64)
+    assert len(store.runs()["runs"]) == 109
+    source = tmp_path / "local-run.json"
+    write_private(source, sample_run())
+    local_id = store.add_replay(source, title="My local conversation")["run_id"]
+    local_snapshot = store.snapshot(local_id)
+    prior_records = json.loads((root / "registry.json").read_text())["runs"]
+    prior_files = {path.relative_to(root): path.read_bytes() for path in root.rglob("*")
+                   if path.is_file() and path.name not in {"registry.json", "registry.lock"}}
+    assert len(prior_records) == 110
+    store.close()
+    refreshed = DemoStore(root)
+    assert seed_bundle(refreshed)["replays"] == 136
+    records = refreshed.runs()["runs"]
+    assert len(records) == 137
+    registry = json.loads((root / "registry.json").read_text())
+    assert set(registry["runs"]) == set(prior_records) | opus_ids
+    assert {run_id: registry["runs"][run_id] for run_id in prior_records} == prior_records
+    assert all((root / path).read_bytes() == raw for path, raw in prior_files.items())
+    assert refreshed.snapshot(local_id) == local_snapshot
+    current_files = {path.relative_to(root): path.read_bytes() for path in root.rglob("*") if path.is_file()}
+    refreshed.close()
+    reopened = DemoStore(root)
+    seed_bundle(reopened)
+    assert reopened.runs()["runs"] == records
+    assert reopened.snapshot(local_id) == local_snapshot
+    assert {path.relative_to(root): path.read_bytes() for path in root.rglob("*") if path.is_file()} == current_files
     reopened.close()
 
 
@@ -230,7 +374,7 @@ def test_populated_server_without_credentials(tmp_path):
         assert len(catalog["cases"]) == 265
         with urlopen(server.url + "/api/collaboration/runs") as response:
             records = json.load(response)["runs"]
-        assert len(records) == 109
+        assert len(records) == 136
         request = Request(server.url + "/api/collaboration/start", method="POST",
                           headers={"Content-Type": "application/json"},
                           data=json.dumps({"case_id": catalog["cases"][0]["case_id"],
@@ -238,7 +382,7 @@ def test_populated_server_without_credentials(tmp_path):
         with pytest.raises(HTTPError) as error:
             urlopen(request)
         assert error.value.code == 403
-        assert len(store.runs()["runs"]) == 109
+        assert len(store.runs()["runs"]) == 136
     finally:
         server.shutdown()
         thread.join(timeout=5)

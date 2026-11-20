@@ -2150,6 +2150,36 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-06be33fcb7b1159046990d38eb22185e",
+      "path": "replays/run-06be33fcb7b1159046990d38eb22185e.json",
+      "sha256": "c0bb9c42fad065c22fa5a2429455193b4dbea461fc667a22a08623264ebc5051",
+      "case_id": "meeting_allocation__scenario_25",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-0a02a13d5e4b7c36d3ac3ead4a97303b",
+      "path": "replays/run-0a02a13d5e4b7c36d3ac3ead4a97303b.json",
+      "sha256": "5579c6512109fe7df14980561b025ba36f81303a4e07e2d8cd09f2718f58a78d",
+      "case_id": "manuscript_submission__scenario_02",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-0cb32bf7d4b6f754def2ea4bb32c7cfb",
+      "path": "replays/run-0cb32bf7d4b6f754def2ea4bb32c7cfb.json",
+      "sha256": "20ebc25e5599d503d9635ccf5ac65abae3a43099c3ed738a3d4d38687b1f918f",
+      "case_id": "outgoing_museum_loan__scenario_08",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-116c098f11dd477dff4562506179797f",
       "path": "replays/run-116c098f11dd477dff4562506179797f.json",
       "sha256": "72cf455b19d68851703194b44dc298039cd9804f3d9c8f3648c3114a5e8885fb",
@@ -2176,6 +2206,16 @@
       "case_id": "uas_flight_readiness__scenario_02",
       "cohort": "initial-pilot",
       "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-1769d6189e233a576191fcfb743557c4",
+      "path": "replays/run-1769d6189e233a576191fcfb743557c4.json",
+      "sha256": "3cf319b5e8f131f4a75783479d936802ed43cc041009d12fccb816e9afe3ea21",
+      "case_id": "severity_classification__scenario_23",
+      "cohort": "wave3",
+      "version": "native-decentralized",
       "status": "completed",
       "evaluation_status": "attached"
     },
@@ -2225,6 +2265,16 @@
       "sha256": "f45f365658be2982d4a9bbee8a79847e7bcc2cdc70a5ed827fbc011f1eef8f8c",
       "case_id": "JIRA_allocation__scenario_08",
       "cohort": "wave2",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-1e671e038f0615fa6ab0e22b9dcf97c3",
+      "path": "replays/run-1e671e038f0615fa6ab0e22b9dcf97c3.json",
+      "sha256": "25f113b54bbebc97d81c6df55a4c3021a8c93105d6323364f4757bfc5241cf0d",
+      "case_id": "thesis_readiness__scenario_17",
+      "cohort": "wave3",
       "version": "governed-v1",
       "status": "completed",
       "evaluation_status": "attached"
@@ -2326,6 +2376,16 @@
       "case_id": "uas_flight_readiness__scenario_02",
       "cohort": "external-baseline",
       "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-360252ca74dddbf7f0a65318b35286bd",
+      "path": "replays/run-360252ca74dddbf7f0a65318b35286bd.json",
+      "sha256": "6777eb48ad1e9ace263ef92f4ba72c0921b79cac0d8d17411115fcf10b2b2c03",
+      "case_id": "inpatient_discharge__scenario_16",
+      "cohort": "wave3",
+      "version": "integrated-v3",
       "status": "completed",
       "evaluation_status": "attached"
     },
@@ -2530,6 +2590,26 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-5db55a1b5e1cefc331c7f0a5da13e1f7",
+      "path": "replays/run-5db55a1b5e1cefc331c7f0a5da13e1f7.json",
+      "sha256": "338e1fb4f1f39a1646ce43a5a1faf18bfb2058639a4e999c09a13c5c1639d429",
+      "case_id": "thesis_readiness__scenario_17",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-5dcfeca83c7bcf995e1a89de3b1ce769",
+      "path": "replays/run-5dcfeca83c7bcf995e1a89de3b1ce769.json",
+      "sha256": "00152dc52e84fdca91c26bb4ac0c3cc6dc117a673e46235d2edb7fb6bd0b399c",
+      "case_id": "inpatient_discharge__scenario_16",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-5e183cfdc14adac308ed7f3b279b4166",
       "path": "replays/run-5e183cfdc14adac308ed7f3b279b4166.json",
       "sha256": "efafe893cdcf9113e6d5b381af996db817bcb03f7557f36d532af459d0ac1e26",
@@ -2590,6 +2670,26 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-67a113b254558e2facc62cd64680835c",
+      "path": "replays/run-67a113b254558e2facc62cd64680835c.json",
+      "sha256": "fa3d22e39710186ba501ec92594f53d044c5c03d18ee05d298239c8bb5595b3e",
+      "case_id": "JIRA_allocation__scenario_11",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-6c4018fef3030276f263852c32270272",
+      "path": "replays/run-6c4018fef3030276f263852c32270272.json",
+      "sha256": "c4301bfc872edb0fb243ab9251c2e9e471e0dd277b5bc565b2d72182106b6533",
+      "case_id": "thesis_readiness__scenario_17",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-6d3b3368d7f7832769e9e4ae3ec12c00",
       "path": "replays/run-6d3b3368d7f7832769e9e4ae3ec12c00.json",
       "sha256": "a390df7d5b62064ace25e2c2f387985485adedba0c4e51e0a508cec0aff54d46",
@@ -2620,6 +2720,26 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-7109f9e1c09cf28aefaf94bae7386d8f",
+      "path": "replays/run-7109f9e1c09cf28aefaf94bae7386d8f.json",
+      "sha256": "d00aa0ceae03872a53c5fb271651660380893f28688d5a94b26a7d9536646abd",
+      "case_id": "severity_classification__scenario_23",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-7155cc0927f87ca10b283c34a9d03ae5",
+      "path": "replays/run-7155cc0927f87ca10b283c34a9d03ae5.json",
+      "sha256": "9be4b4d04eb96b3e96b78daa262d07006d08f5884d2f7530d7d6df56bc7be222",
+      "case_id": "manuscript_submission__scenario_02",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-72b18a5abdd1d65dee40d498731e285a",
       "path": "replays/run-72b18a5abdd1d65dee40d498731e285a.json",
       "sha256": "db478f625abac7f8bd70db83d5db8632c7a6007d6d91dbde22214ba7dbfc4ea5",
@@ -2628,6 +2748,36 @@
       "version": "governed-v1",
       "status": "completed",
       "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-73b35708f7a3e41d0d85ce36b7b2ecdf",
+      "path": "replays/run-73b35708f7a3e41d0d85ce36b7b2ecdf.json",
+      "sha256": "ebb1a6bb90c2fadf4facbdea25ead548b88a7f314b478a9833c1c18855787356",
+      "case_id": "special_event_permit_readiness__scenario_15",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-7408819387ff1becf7bea037702a4688",
+      "path": "replays/run-7408819387ff1becf7bea037702a4688.json",
+      "sha256": "1722ba5ada122c8844d3884fdd4809809554b3ce72554fb4ef7da2fffd2a17ad",
+      "case_id": "JIRA_allocation__scenario_11",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-75fcfd323d0a940495530a6825331e7b",
+      "path": "replays/run-75fcfd323d0a940495530a6825331e7b.json",
+      "sha256": "0310b54d26725b65f615999af9de5623e00f52f47c69144a1722d17f87bae2ed",
+      "case_id": "uas_flight_readiness__scenario_20",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
     },
     {
       "run_id": "run-77748887fcb87aafb93a917ec822d40a",
@@ -2660,6 +2810,16 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-7a14373ad157cc68ef27a3e112bf27c1",
+      "path": "replays/run-7a14373ad157cc68ef27a3e112bf27c1.json",
+      "sha256": "2730d444aefe043495732438fedff1f3c107459ac89b000de86065ac1255e5ff",
+      "case_id": "outgoing_museum_loan__scenario_08",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-7bc7a2955ec9b5d7dc1acf9294d67079",
       "path": "replays/run-7bc7a2955ec9b5d7dc1acf9294d67079.json",
       "sha256": "163a4fdc8eaf01e83fe5f928483dadc3deadb2f0ed099ff1454b7b0da4bcbbdc",
@@ -2685,6 +2845,16 @@
       "sha256": "34c38f1224805881642b8ec57a5172582b932513e0568a511dccc1631b911f31",
       "case_id": "uas_flight_readiness__scenario_02",
       "cohort": "external-baseline",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-836de5a3e8266bac184af1e617c45695",
+      "path": "replays/run-836de5a3e8266bac184af1e617c45695.json",
+      "sha256": "4b6f25749d89d9d85f341e48d020657c12ab639b200e3208756d91abf0c4ca03",
+      "case_id": "special_event_permit_readiness__scenario_15",
+      "cohort": "wave3",
       "version": "native-decentralized",
       "status": "completed",
       "evaluation_status": "attached"
@@ -2810,6 +2980,16 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-a1fc9c9378be6324b1f473af22660854",
+      "path": "replays/run-a1fc9c9378be6324b1f473af22660854.json",
+      "sha256": "34d2ef78f0e40dcddc747d1f6443ee76ce5a3796e57f99e47b449e8790058a9f",
+      "case_id": "JIRA_allocation__scenario_11",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-a3b2b44947eefa7acc00e7d0a027df84",
       "path": "replays/run-a3b2b44947eefa7acc00e7d0a027df84.json",
       "sha256": "4dbc044c3f7a08369562c1c722fff7d30b21ecf033354b89e405febbf4bad94a",
@@ -2900,6 +3080,16 @@
       "evaluation_status": "not_loaded"
     },
     {
+      "run_id": "run-afb2117c5bb28670a3721b7db98c0ce0",
+      "path": "replays/run-afb2117c5bb28670a3721b7db98c0ce0.json",
+      "sha256": "0d699b6612ff6f1ffd596b970be6f550d573f5a222c819bf9993a84338d9a260",
+      "case_id": "inpatient_discharge__scenario_16",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-b0f3e10011800d5ebd056cf2c5822212",
       "path": "replays/run-b0f3e10011800d5ebd056cf2c5822212.json",
       "sha256": "56bdfa22dd59a511515e4ed5ab4090b1e7be00f401f5b25b8f9cf64a5eeb9d1c",
@@ -2930,6 +3120,16 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-b5116dc36cba335bb636571bbea3584a",
+      "path": "replays/run-b5116dc36cba335bb636571bbea3584a.json",
+      "sha256": "77e6905976ce614b014c6a499dc238054a2ef9f153a1e9d59822404df444d24c",
+      "case_id": "outgoing_museum_loan__scenario_08",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-b66c382837f222641bc2184fac851de5",
       "path": "replays/run-b66c382837f222641bc2184fac851de5.json",
       "sha256": "a1e2d9569f1027e092695edfaf3d128373a93627edcf2089556e836595568fce",
@@ -2946,6 +3146,16 @@
       "case_id": "uas_flight_readiness__scenario_02",
       "cohort": "initial-pilot",
       "version": "prompt-only-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-b87e78232d654448b4d8d61b699365c9",
+      "path": "replays/run-b87e78232d654448b4d8d61b699365c9.json",
+      "sha256": "036a97e5fcb99f280872e8706ec4dce7b89eb8f695a8eeb6503d1200b4122415",
+      "case_id": "special_event_permit_readiness__scenario_15",
+      "cohort": "wave3",
+      "version": "integrated-v3",
       "status": "completed",
       "evaluation_status": "attached"
     },
@@ -3010,12 +3220,42 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-c9141ce6a3909428f8c9d11d06762e37",
+      "path": "replays/run-c9141ce6a3909428f8c9d11d06762e37.json",
+      "sha256": "cc23998298f8c8cc1e7ca613d78c7d1152ccee6b9527e3843645cdfd53841dac",
+      "case_id": "uas_flight_readiness__scenario_20",
+      "cohort": "wave3",
+      "version": "native-decentralized",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-d02497a2ca0bd52fc705e2152f05dba3",
+      "path": "replays/run-d02497a2ca0bd52fc705e2152f05dba3.json",
+      "sha256": "4ef39411c5609f20e2ae11ded648ea8730f0591a4bc36684ed9d1d9ad88bef4e",
+      "case_id": "meeting_allocation__scenario_25",
+      "cohort": "wave3",
+      "version": "integrated-v3",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-d0d4b6043144613d9528d22916175f8c",
       "path": "replays/run-d0d4b6043144613d9528d22916175f8c.json",
       "sha256": "5e005b4495ec1e5989b493a27c5743b4a8dc688916f40a1cb52a73da9e6c557c",
       "case_id": "meeting_allocation__scenario_19",
       "cohort": "wave2",
       "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-d27a75ebbe84590063134b785382571a",
+      "path": "replays/run-d27a75ebbe84590063134b785382571a.json",
+      "sha256": "4e0969f2b5ca7b338cac6998deceace0f922e03fa95beab5f438ba93984cf883",
+      "case_id": "meeting_allocation__scenario_25",
+      "cohort": "wave3",
+      "version": "native-decentralized",
       "status": "completed",
       "evaluation_status": "attached"
     },
@@ -3028,6 +3268,16 @@
       "version": "integrated-v3",
       "status": "completed",
       "evaluation_status": "not_loaded"
+    },
+    {
+      "run_id": "run-d5f49c797090399ded596db342c332e7",
+      "path": "replays/run-d5f49c797090399ded596db342c332e7.json",
+      "sha256": "6ea0e28a48409722e845d5b2100d0badb5efb37d4aeda5ac77caa1475e5d05b1",
+      "case_id": "uas_flight_readiness__scenario_20",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
     },
     {
       "run_id": "run-d5fdbb467202fca61f387fbf13bbd2f2",
@@ -3120,6 +3370,16 @@
       "evaluation_status": "attached"
     },
     {
+      "run_id": "run-ebb50c064fb2df09cb2594d9c0f66abd",
+      "path": "replays/run-ebb50c064fb2df09cb2594d9c0f66abd.json",
+      "sha256": "1a67bd14acf854f6e38ed67c87425780b092d950169a37d785a1f2ee9d15f5b8",
+      "case_id": "severity_classification__scenario_23",
+      "cohort": "wave3",
+      "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
       "run_id": "run-ebf7ee121c8ac0d7a463f91a5eb5800e",
       "path": "replays/run-ebf7ee121c8ac0d7a463f91a5eb5800e.json",
       "sha256": "5f2ac735a6758d952a0e57c5eff4dcb9c7031a85f782a6fd4da7565d7969ee53",
@@ -3136,6 +3396,16 @@
       "case_id": "inpatient_discharge__scenario_07",
       "cohort": "calibration",
       "version": "governed-v1",
+      "status": "completed",
+      "evaluation_status": "attached"
+    },
+    {
+      "run_id": "run-ee75c1dd157ec92bfb6262b6254f2869",
+      "path": "replays/run-ee75c1dd157ec92bfb6262b6254f2869.json",
+      "sha256": "658ab6748c0c1aecf9ba63110132c708fd3cd8a89871d905ef6276b9a713188a",
+      "case_id": "manuscript_submission__scenario_02",
+      "cohort": "wave3",
+      "version": "integrated-v3",
       "status": "completed",
       "evaluation_status": "attached"
     },
@@ -3224,7 +3494,7 @@
     "scenarios": 265,
     "task_descriptions": 205,
     "task_fallbacks": 60,
-    "replays": 109,
+    "replays": 136,
     "by_cohort": {
       "calibration": 18,
       "canary": 2,
@@ -3235,21 +3505,22 @@
       "observed-demo": 1,
       "response-contract-development": 12,
       "wave1": 19,
-      "wave2": 27
+      "wave2": 27,
+      "wave3": 27
     },
     "by_version": {
-      "governed-v1": 50,
-      "integrated-v3": 17,
-      "native-decentralized": 34,
+      "governed-v1": 59,
+      "integrated-v3": 26,
+      "native-decentralized": 43,
       "observed-v2": 1,
       "prompt-only-v1": 7
     },
     "by_status": {
-      "completed": 105,
+      "completed": 132,
       "failed": 4
     },
     "by_evaluation_status": {
-      "attached": 90,
+      "attached": 117,
       "not_loaded": 19
     }
   },
@@ -3265,6 +3536,26 @@
     "updated_conversation_id": "run-ebf7ee121c8ac0d7a463f91a5eb5800e",
     "preserved_prior_failed_judge_attempts": 3,
     "historical_unknown_cost_calls": 1,
+    "new_unknown_cost_calls": 0,
+    "evaluation_profile": "aos-judge-output-capacity-v1",
+    "operational_profile": "aos-judge-reuse-v1"
+  },
+  "wave3_completion": {
+    "archive": "opus-wave-cumulative-analysis-20261119-091846.zip",
+    "archive_sha256": "356d2e83c17ce00aa01ac419016c48bb163975bcaf635f4763b9d7839a32e37a",
+    "analysis_index_sha256": "3fdee757a11645a0aa1631e3f80890abf84976480cb33f7caa4ae0fb2c192921",
+    "status_sha256": "8a8ed1f0310f107b7ea110a46637f4976800ac82a8ef5bd5937e49d7749fccee",
+    "readout_sha256": "d6da76318d4295514745d38e988de35c3508f208bf956e1d6c3a0b7327f65df3",
+    "replay_index_sha256": "46c213e7d39fc0f52874df4d5f93b466d67fa33e7dd189be0fef4f0801be1193",
+    "actor_model": "anthropic/claude-opus-5.5",
+    "cases": 9,
+    "conversations": 27,
+    "successful_stages": 54,
+    "new_conversations": 27,
+    "updated_conversations": 0,
+    "preserved_prior_failed_judge_attempts": 1,
+    "preserved_wave3_unknown_cost_calls": 1,
+    "export_cumulative_historical_unknown_cost_calls": 2,
     "new_unknown_cost_calls": 0,
     "evaluation_profile": "aos-judge-output-capacity-v1",
     "operational_profile": "aos-judge-reuse-v1"

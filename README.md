@@ -1,6 +1,6 @@
 # AOS Collaboration
 
-A focused demo of collaboration between agents, built on AOS’s workspace, task, and model-client infrastructure: request and review evidence from separate workspaces, then record a shared decision. It includes 265 PiSAs scenarios and 109 saved conversations, with `governed-v1`, `observed-v2`, and `integrated-v3` available for new collaborations.
+A focused demo of collaboration between agents, built on AOS’s workspace, task, and model-client infrastructure: request and review evidence from separate workspaces, then record a shared decision. It includes 265 PiSAs scenarios and 136 saved conversations, with `governed-v1`, `observed-v2`, and `integrated-v3` available for new collaborations.
 
 ## Run locally
 
@@ -21,7 +21,7 @@ For new collaborations, set `API_KEY` in `.env`. The defaults use OpenRouter, so
 aos-collaboration
 ```
 
-Open **http://127.0.0.1:8770/collaboration**. The catalog and saved runs load automatically. Search the sidebar for `External baseline`, `Calibration`, a task, or a system; select a scenario and decision behavior to start a new collaboration. Saved evaluations are displayed when available; replay and live collaboration never invoke a judge.
+Open **http://127.0.0.1:8770/collaboration**. The catalog and saved runs load automatically. Search the sidebar for `External baseline`, `Calibration`, `Reserved wave 3`, a task, or a system; select a scenario and decision behavior to start a new collaboration. Saved evaluations are displayed when available; replay and live collaboration never invoke a judge.
 
 Local conversations persist in `.aos-collaboration/`, which is excluded from Git. Use `aos-collaboration --offline` to force replay-only mode, or `aos-collaboration --port 8771` if the default port is occupied. Press Ctrl+C to stop the server; an already-started collaboration continues in its local worker.
 
