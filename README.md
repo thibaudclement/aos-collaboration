@@ -25,9 +25,11 @@ Open **http://127.0.0.1:8770/collaboration**. The catalog and saved runs load au
 
 Local conversations persist in `.aos-collaboration/`, which is excluded from Git. Use `aos-collaboration --offline` to force replay-only mode, or `aos-collaboration --port 8771` if the default port is occupied. Press Ctrl+C to stop the server; an already-started collaboration continues in its local worker.
 
-## CLI experiment replication
+## CLI experiments replication
 
-A cleaned-up implementation for replicating this project's experiments—rather than the original development codebase. It fixes the original cases, actor models, systems, and response contracts, reuses the AOS actor components and pinned PiSAs evaluator, and produces one consistent export format. Results are nondeterministic. Replication outputs are separate from the demo and **do not appear in the GUI automatically**.
+A cleaned-up implementation for replicating this project's experiments—rather than the original development codebase. It fixes the original cases, actor models, systems, and response contracts, reuses the AOS actor components and pinned PiSAs evaluator, and produces one consistent export format. Results are nondeterministic. Replication outputs are separate from the demo and do not appear in the GUI automatically.
+
+**IMPORTANT:**
 
 > **Paid execution can take hours and consume substantial API credit.** Wave 3 recorded approximately **$22 in known charges and 6.4 hours of active stage execution**, or about **10 hours elapsed** including interruptions. One request had no recorded price; these figures are historical observations, not a price quote or spending cap. The CLI does not cap spending. Set appropriate limits with the providers before running a batch.
 
