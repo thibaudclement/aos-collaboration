@@ -14,6 +14,7 @@ dev = ["pytest==9.1.1"]
 
 [project.scripts]
 aos-collaboration = "aos.collaboration.demo.launch:main"
+aos-experiments = "aos.collaboration.replication.__main__:main"
 
 [build-system]
 requires = ["hatchling>=1.26,<2"]
